@@ -5,7 +5,7 @@ This is our amazing team:
 ## Yannik
 
 - 15 years old
-- a really big dwarf
+- a really tall dwarf
 
 ## Christian
 
