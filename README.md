@@ -5,7 +5,7 @@ This is our amazing team:
 ## Yannik
 
 - 15 years old
-- smells smelly
+- a really big dwarf
 
 ## Christian
 
