@@ -16,3 +16,5 @@ This is our amazing team:
 
 - 15 years but much older
 - likes cheese
+
+![A ninja Cat](ninja_cat.jpg)
