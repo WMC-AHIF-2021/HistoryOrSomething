@@ -15,5 +15,5 @@ This is our amazing team:
 ## Marcus
 
 - 15 years but much older
-- Tries to work hard, isn´t very smart
+- Tries to work hard, isn´t very smart (Spaß)
  
