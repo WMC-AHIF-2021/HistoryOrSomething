@@ -15,7 +15,7 @@ This is our amazing team:
 ## Marcus
 
 - 15 years but much older
-- work smart, not hard
+- work hard, not smart
 
 #
 
