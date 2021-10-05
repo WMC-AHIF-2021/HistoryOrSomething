@@ -18,3 +18,4 @@ This is our amazing team:
 - likes cheese
 
 ![A ninja Cat](ninja_cat.jpg)
+
