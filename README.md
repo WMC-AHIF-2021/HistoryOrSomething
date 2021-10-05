@@ -7,7 +7,7 @@ This is our amazing team:
 - 15 years old
 - a really tall dwarf
 
-## Christian
+## Christiann
 
 - 15 years old but slightly older
 - Christian ha fatto esplodere i fornelli!
@@ -15,7 +15,7 @@ This is our amazing team:
 ## Marcus
 
 - 15 years but much older
-- likes cheese
+- likes cheese 
 
 ![A ninja Cat](ninja_cat.jpg)
 
