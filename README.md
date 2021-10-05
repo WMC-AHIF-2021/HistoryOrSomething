@@ -17,10 +17,8 @@ This is our amazing team:
 - 15 years but much older
 - work hard, not smart
 
-#
-
 ## Project Information
 
-This website "HistoryOrSomething" will be a simple information site, where you can explore and inform yourself about countries and their most glorious times.
+The website "HistoryOrSomething" will be a simple information site, where you can explore and inform yourself about countries at their most glorious times.
 
 We will include multiple data such as population, land area and much more.
