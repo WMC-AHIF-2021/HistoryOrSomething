@@ -28,3 +28,5 @@ First there will be three available countries:
 - Germany
 - the United Kingdom
 - France
+
+In the future more countries will be added to the list.
