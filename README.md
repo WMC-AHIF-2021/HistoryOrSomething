@@ -15,4 +15,4 @@ This is our amazing team:
 ## Marcus
 
 - 15 years but much older
-- likes cheese
+-tries to work smart, not hard
