@@ -4,6 +4,7 @@ This is our amazing team:
 
 ## Yannik
 
+- Group-Leader
 - 15 years old
 - a really tall dwarf
 
