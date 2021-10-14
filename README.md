@@ -31,3 +31,7 @@ First there will be three available countries:
 - France
 
 In the future more countries will be added to the list.
+
+# Milestones
+
+- Gather as much information as possible (while working on website)
