@@ -5,16 +5,19 @@ This is our amazing team:
 ## Yannik
 
 - Group-Leader
+- responsible for France
 - 15 years old
 - a really tall dwarf
 
 ## Christian
 
+- responsible for the UK
 - 15 years old but slightly older
 - Christian ha fatto esplodere i fornelli!
 
 ## Marcus
 
+- responsible for Germany
 - 15 years but much older
 - work hard, not smart
 
