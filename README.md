@@ -19,7 +19,7 @@ This is our amazing team:
 
 - responsible for Germany
 - 15 years but much older
-- work hard, not smart
+- work smart, not hard
 
 # Project Information
 
