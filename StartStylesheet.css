@@ -1,7 +1,7 @@
 html {
   width: 100%;
   height: auto;
-  background-image: url("background_start.jpg");
+  background-image: url("background.png");
   font-family: Copperplate, Papyrus, fantasy;
 }
 
@@ -42,6 +42,7 @@ html {
   background-image: url("flags/Italy_flag.jpg");
 }
 button {
+  transition-duration: 0.4s;
   height: 100px;
   width: 400px;
   font-family: Copperplate, Papyrus, fantasy;
