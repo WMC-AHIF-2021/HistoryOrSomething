@@ -1,0 +1,56 @@
+html {
+  width: 100%;
+  height: auto;
+  background-image: url("background_start.jpg");
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.Title {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+.nationsList {
+  text-align: center;
+}
+
+.germany {
+  background-image: url("flags/Germany_flag.jpg");
+}
+.germany:hover {
+  transition-duration: 0.4s;
+  background-image: url("flags/Germany_flag2.jpg");
+}
+.france {
+  background-image: url("flags/France_flag.jpg");
+}
+.france:hover {
+  transition-duration: 0.4s;
+  background-image: url("flags/France_flag2.jpg");
+}
+.uk {
+  background-image: url("flags/UK_flag.jpg");
+}
+.uk:hover {
+  transition-duration: 0.4s;
+  background-image: url("flags/UK_flag2.jpg");
+}
+.austria {
+  background-image: url("flags/Austria_flag.jpg");
+}
+.italy {
+  background-image: url("flags/Italy_flag.jpg");
+}
+button {
+  height: 100px;
+  width: 400px;
+  font-family: Copperplate, Papyrus, fantasy;
+  color: white;
+  font-size: 30px;
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%;
+}
+.austria,
+.italy {
+  color: black;
+}
