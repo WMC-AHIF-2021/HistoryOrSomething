@@ -1,0 +1,36 @@
+html {
+  background: url(../FranceImg/FrBackGround2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+.CountryOptions {
+  text-align: left;
+  background-color: black;
+}
+
+.germany {
+  background-image: url("../../../flags/Germany_flag.jpg");
+}
+.germany:hover {
+  transition-duration: 0.4s;
+  background-image: url("../../../flags/Germany_flag2.jpg");
+}
+button {
+  transition-duration: 0.4s;
+  height: 40%;
+  width: 15%;
+  font-family: Copperplate, Papyrus, fantasy;
+  color: white;
+  font-size: 25px;
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%;
+}
