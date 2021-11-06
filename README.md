@@ -37,4 +37,8 @@ In the future more countries will be added to the list.
 
 # Milestones
 
-- Gather as much information as possible (while working on website)
+## Achievements until 1. Semester-End
+
+- Information gathering
+- overall layout
+- Agreement of the team in terms of background
