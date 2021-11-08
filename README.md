@@ -56,3 +56,7 @@ In the future more countries will be added to the list.
 - Marcus: Germany site and Login System with Database
 - Yannik: France site and Main Page (index.html)
 - Christian: Uk site and Quizes for each Country
+
+## Goal
+
+- Being able to get Information quickly and have fun learning about diefferent countries
