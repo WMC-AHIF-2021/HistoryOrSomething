@@ -51,7 +51,7 @@ In the future more countries will be added to the list.
 - Being able to unlock new Countries
 - Create A Login System with Database for Users current Status
 
-## Who is responsible for what
+## Who is responsible for what?
 
 - Marcus: Germany site and Login System with Database
 - Yannik: France site and Main Page (index.html)
