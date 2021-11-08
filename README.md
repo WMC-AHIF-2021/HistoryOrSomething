@@ -59,4 +59,4 @@ In the future more countries will be added to the list.
 
 ## Goal
 
-- Being able to get Information quickly and have fun learning about diefferent countries
+- Being able to get Information quickly and have fun learning about different countries
