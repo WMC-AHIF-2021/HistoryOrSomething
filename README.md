@@ -42,3 +42,11 @@ In the future more countries will be added to the list.
 - Information gathering
 - overall layout
 - Agreement of the team in terms of background
+
+## Achievements unitl 2. Semester-End
+
+### Dynamik
+
+- Create quizes for each country starting
+- Being able to unlock new Countries
+- Create A Login System with Database for Users current Status
