@@ -50,3 +50,9 @@ In the future more countries will be added to the list.
 - Create quizes for each country starting
 - Being able to unlock new Countries
 - Create A Login System with Database for Users current Status
+
+## Who is responsible for what
+
+- Marcus: Germany site and Login System with Database
+- Yannik: France site and Main Page (index.html)
+- Christian: Uk site and Quizes for each Country
