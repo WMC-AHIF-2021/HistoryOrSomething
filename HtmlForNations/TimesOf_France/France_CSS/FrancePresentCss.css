@@ -1,20 +1,26 @@
-html {
-  background: url(../FranceImg/FrBackGround2.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+  background-image: url("../FranceImg/FrBackGround2_Rendered.jpg");
+  background-color: lightgray;
+  background-size: 1860px auto;
+  background-repeat: no-repeat;
   font-family: Copperplate, Papyrus, fantasy;
 }
 h1 {
   color: white;
   text-align: center;
   font-size: 60px;
+  padding: 10px;
 }
 
-.CountryOptions {
-  text-align: left;
-  background-color: black;
+button {
+  transition-duration: 0.4s;
+  width: 15%;
+  font-size: 150%;
+  padding: 10px;
+  font-family: Copperplate, Papyrus, fantasy;
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%;
+  color: white;
 }
 
 .germany {
@@ -24,13 +30,73 @@ h1 {
   transition-duration: 0.4s;
   background-image: url("../../../flags/Germany_flag2.jpg");
 }
-button {
+
+.uk {
+  background-image: url("../../../flags/UK_flag.jpg");
+}
+.uk:hover {
   transition-duration: 0.4s;
-  height: 40%;
-  width: 15%;
-  font-family: Copperplate, Papyrus, fantasy;
-  color: white;
-  font-size: 25px;
-  background-repeat: no-repeat, repeat;
-  background-size: 100% 100%;
+  background-image: url("../../../flags/UK_flag2.jpg");
+}
+#imgPos {
+  text-align: center;
+}
+
+#bigImg {
+  border: 10px solid black;
+  width: 800px;
+  height: auto;
+}
+#basicInf {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.5em;
+  background-color: rgba(211, 211, 211, 0.6);
+  margin-bottom: 1.5;
+  margin-top: 1.5em;
+}
+th,
+td {
+  padding: 5px;
+  border: 1px solid black;
+  text-align: left;
+}
+th {
+  border-right: 0px;
+}
+td {
+  border-left: 0px;
+}
+
+#text {
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: lightgray;
+  padding: 25px;
+  margin-top: 3.7em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-collapse: collapse;
+}
+#posFlag1 {
+  text-align: right;
+}
+#posFlag2 {
+  text-align: left;
+}
+
+.sideFlag {
+  width: 15em;
+  height: 35em;
+  position: absolute;
+  top: 300px;
+  border: 3px solid black;
+  border-radius: 2em;
+}
+#sideFlag1 {
+  right: 90em;
+}
+#sideFlag2 {
+  left: 90em;
 }
