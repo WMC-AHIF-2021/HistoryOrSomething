@@ -1,5 +1,5 @@
 body {
-  background-image: url("../FranceImg/FrBackGround2_Rendered.jpg");
+  background-image: url("../FranceImg/NapoleonSchlacht1.jpg");
   background-color: lightgray;
   background-size: 1860px auto;
   background-repeat: no-repeat;
@@ -46,6 +46,7 @@ button {
   border: 10px solid black;
   width: 800px;
   height: auto;
+  background-color: white;
 }
 #basicInf {
   margin: 0 auto;
@@ -100,11 +101,7 @@ td {
 #sideFlag2 {
   left: 90em;
 }
-.NapoleonicFrance {
+.times {
   color: black;
-  font-size: 2em;
-  background-color: blanchedalmond;
-}
-.NapoleonicFrance:hover {
-  transition-duration: 0.4s;
+  background-color: navajowhite;
 }
