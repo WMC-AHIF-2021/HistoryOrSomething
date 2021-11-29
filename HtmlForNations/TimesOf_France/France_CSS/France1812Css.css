@@ -1,6 +1,6 @@
 body {
-  background-image: url("../FranceImg/NapoleonSchlacht1.jpg");
-  background-color: lightgray;
+  background-image: url("../FranceImg/1812Img/NapoleonSchlacht1.jpg");
+  background-color: peru;
   background-size: 1860px auto;
   background-repeat: no-repeat;
   font-family: Copperplate, Papyrus, fantasy;
@@ -14,30 +14,19 @@ h1 {
 
 button {
   transition-duration: 0.4s;
-  width: 15%;
-  font-size: 150%;
-  padding: 10px;
+  position: absolute;
+  width: 9em;
+  height: 2em;
+  font-size: 120%;
+  padding: 8px;
+  border-color: black;
+  border-bottom: none;
   font-family: Copperplate, Papyrus, fantasy;
   background-repeat: no-repeat, repeat;
   background-size: 100% 100%;
   color: white;
 }
 
-.germany {
-  background-image: url("../../../flags/Germany_flag.jpg");
-}
-.germany:hover {
-  transition-duration: 0.4s;
-  background-image: url("../../../flags/Germany_flag2.jpg");
-}
-
-.uk {
-  background-image: url("../../../flags/UK_flag.jpg");
-}
-.uk:hover {
-  transition-duration: 0.4s;
-  background-image: url("../../../flags/UK_flag2.jpg");
-}
 #imgPos {
   text-align: center;
 }
@@ -69,11 +58,10 @@ td {
   border-left: 0px;
 }
 
-#text {
+p.text {
   color: black;
   font-size: 1.5em;
   text-align: center;
-  background-color: lightgray;
   padding: 25px;
   margin-top: 3.7em;
   padding-top: 2em;
@@ -102,6 +90,33 @@ td {
   left: 90em;
 }
 .times {
-  color: black;
-  background-color: navajowhite;
+  text-align: center;
+}
+
+#Present {
+  margin-top: -2em;
+  margin-left: -350px;
+}
+
+#ColonialTime {
+  margin-top: -2em;
+  margin-left: -175px;
+}
+
+#NapoleonicTime {
+  margin-top: -2em;
+}
+
+#CarolingianTime {
+  margin-top: -2em;
+  margin-left: 175px;
+}
+
+#NapoleonPortrait {
+  border-radius: 1.5em;
+  position: absolute;
+  width: 20em;
+  height: auto;
+  margin-top: -35em;
+  margin-left: 95em;
 }

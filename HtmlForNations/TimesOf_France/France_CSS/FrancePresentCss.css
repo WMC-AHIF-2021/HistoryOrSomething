@@ -1,5 +1,5 @@
 body {
-  background-image: url("../FranceImg/FrBackGround2_Rendered.jpg");
+  background-image: url("../FranceImg/PresentImg/FrBackGround2_Rendered.jpg");
   background-color: lightgray;
   background-size: 1860px auto;
   background-repeat: no-repeat;
@@ -14,30 +14,19 @@ h1 {
 
 button {
   transition-duration: 0.4s;
-  width: 15%;
-  font-size: 150%;
-  padding: 10px;
+  position: absolute;
+  width: 9em;
+  height: 2em;
+  font-size: 120%;
+  padding: 8px;
+  border-color: black;
+  border-bottom: none;
   font-family: Copperplate, Papyrus, fantasy;
   background-repeat: no-repeat, repeat;
   background-size: 100% 100%;
   color: white;
 }
 
-.germany {
-  background-image: url("../../../flags/Germany_flag.jpg");
-}
-.germany:hover {
-  transition-duration: 0.4s;
-  background-image: url("../../../flags/Germany_flag2.jpg");
-}
-
-.uk {
-  background-image: url("../../../flags/UK_flag.jpg");
-}
-.uk:hover {
-  transition-duration: 0.4s;
-  background-image: url("../../../flags/UK_flag2.jpg");
-}
 #imgPos {
   text-align: center;
 }
@@ -100,11 +89,26 @@ td {
 #sideFlag2 {
   left: 90em;
 }
-.NapoleonicFrance {
-  color: black;
-  font-size: 2em;
-  background-color: blanchedalmond;
+
+.times {
+  text-align: center;
 }
-.NapoleonicFrance:hover {
-  transition-duration: 0.4s;
+
+#Present {
+  margin-top: -2em;
+  margin-left: -350px;
+}
+
+#ColonialTime {
+  margin-top: -2em;
+  margin-left: -175px;
+}
+
+#NapoleonicTime {
+  margin-top: -2em;
+}
+
+#CarolingianTime {
+  margin-top: -2em;
+  margin-left: 175px;
 }
