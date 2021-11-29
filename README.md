@@ -45,7 +45,7 @@ In the future more countries will be added to the list.
 
 ## Achievements unitl 2. Semester-End
 
-### Dynamik
+### Dynamic
 
 - Create quizes for each country starting
 - Being able to unlock new Countries
