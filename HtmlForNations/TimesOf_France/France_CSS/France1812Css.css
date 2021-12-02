@@ -1,6 +1,6 @@
 body {
   background-image: url("../FranceImg/1812Img/NapoleonSchlacht1.jpg");
-  background-color: peru;
+  background-color: rgb(184, 130, 77);
   background-size: 1860px auto;
   background-repeat: no-repeat;
   font-family: Copperplate, Papyrus, fantasy;
@@ -47,7 +47,7 @@ button {
 }
 th,
 td {
-  padding: 5px;
+  padding: 0.5em;
   border: 1px solid black;
   text-align: left;
 }

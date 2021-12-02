@@ -3,7 +3,7 @@ body {
   background-color: lightgray;
   background-size: 1860px auto;
   background-repeat: no-repeat;
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1 {
   color: white;
@@ -13,6 +13,7 @@ h1 {
 }
 
 button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition-duration: 0.4s;
   position: absolute;
   width: 9em;
@@ -21,7 +22,6 @@ button {
   padding: 8px;
   border-color: black;
   border-bottom: none;
-  font-family: Copperplate, Papyrus, fantasy;
   background-repeat: no-repeat, repeat;
   background-size: 100% 100%;
   color: white;
@@ -39,14 +39,13 @@ button {
 #basicInf {
   margin: 0 auto;
   border-collapse: collapse;
-  font-size: 1.5em;
+  font-size: 1.3em;
   background-color: rgba(211, 211, 211, 0.6);
-  margin-bottom: 1.5;
   margin-top: 1.5em;
 }
 th,
 td {
-  padding: 5px;
+  padding: 0.8em;
   border: 1px solid black;
   text-align: left;
 }
@@ -63,9 +62,9 @@ td {
   text-align: center;
   background-color: lightgray;
   padding: 25px;
-  margin-top: 3.7em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  margin-top: 2.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-collapse: collapse;
 }
 #posFlag1 {
@@ -111,4 +110,20 @@ td {
 #CarolingianTime {
   margin-top: -2em;
   margin-left: 175px;
+}
+
+.FlagAtBottom {
+  height: 135px;
+  width: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#BottomFlags {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tableCellFlags {
+  border: none;
 }
