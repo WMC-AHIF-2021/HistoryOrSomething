@@ -50,6 +50,7 @@ td {
 #textClass {
   margin-top: 1em;
   padding-top: 1em;
+  padding-top: 1em;
   padding-bottom: 1em;
   background-color: rgba(247, 255, 253, 0.8);
   font-size: 2em;
@@ -60,5 +61,13 @@ td {
 }
 
 #buttonRow {
-  padding-right: 45em;
+  padding-right: 42em;
+}
+
+.bottomFlag {
+  margin-top: 2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  height: 8em;
+  width: auto;
 }
