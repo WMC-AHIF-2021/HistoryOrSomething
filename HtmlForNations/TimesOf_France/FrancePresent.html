@@ -2,144 +2,125 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="France_CSS/FrancePresentCss.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="France_CSS\FrancePresentCss.css" />
     <title>France Present</title>
   </head>
   <body>
-    <section>
-      <h1>France - Present</h1>
-    </section>
+    <div id="bg">
+      <div id="content">
+        <h1 class="text-center" id="Main-Header">France - Present</h1>
+        <div id="buttonRow" class="text-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger">Countries</button>
+            <button
+              type="button"
+              class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a
+                class="dropdown-item"
+                href="../TimesOf_Germany/GermanyPresent.html"
+                >Germany</a
+              >
+              <a class="dropdown-item" href="../TimesOf_UK/ukPresent.html"
+                >UK</a
+              >
+            </div>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Times</button>
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="">1920</a>
+              <a class="dropdown-item" href="France1812.html">1812</a>
+              <a class="dropdown-item" href="France814.html">814</a>
+            </div>
+          </div>
+        </div>
 
-    <secion class="times">
-      <form action="FrancePresent.html">
-        <button
-          id="Present"
-          style="color: black; background-color: gray"
-          disabled
-        >
-          Present
-        </button>
-      </form>
-    </secion>
-
-    <secion class="times">
-      <form action="France1812.html">
-        <button
-          id="NapoleonicTime"
-          style="color: black; background-color: navajowhite"
-        >
-          1812
-        </button>
-      </form>
-    </secion>
-
-    <secion class="times">
-      <form action="">
-        <button
-          id="CarolingianTime"
-          style="color: black; background-color: navajowhite"
-        >
-          814
-        </button>
-      </form>
-    </secion>
-
-    <secion class="times">
-      <form action="">
-        <button
-          id="ColonialTime"
-          style="color: black; background-color: navajowhite"
-        >
-          1920
-        </button>
-      </form>
-    </secion>
-
-    <section id="imgPos">
-      <img id="bigImg" src="FranceImg/PresentImg/FrancePresentMap.jpg" />
-    </section>
-    <section>
-      <table id="basicInf">
-        <tr>
-          <th>Capital:</th>
-          <td>Paris</td>
-          <th>Population:</th>
-          <td>67,39 Mio</td>
-        </tr>
-        <tr>
-          <th>Current Leader:</th>
-          <td>Emmanuel Macron</td>
-          <th>Land Area:</th>
-          <td>632.734 km²</td>
-        </tr>
-        <tr>
-          <th>Type of Government:</th>
-          <td>Parliamentary Republic</td>
-          <th>Currency:</th>
-          <td>the Euro</td>
-        </tr>
-      </table>
-    </section>
-    <section>
-      <p id="text">
-        In the modern day, France is still a influential nation as a founding
-        member<br />
-        of various important organisations such as the EU or the UNO.<br />
-        It's economy is in the top 10 and the military of the french is also
-        top-class. <br />
-        With Britain out of the EU, France and Germany have become the major
-        leaders of the Union.
-        <br />Because of historic reasons, many of its former colonies have<br />
-        french as an official language, making french one of the most spread
-        languages.<br /><br />
-        France's Prime may be over and their status has started to fade,<br />
-        but it still plays an important role in the world.
-      </p>
-    </section>
-
-    <article>
-      <table id="BottomFlags">
-        <td id="tableCellFlags">
+        <div class="text-center">
           <img
-            class="FlagAtBottom"
-            id="EU"
-            src="FranceImg/PresentImg/EU_Flag1.png"
-            alt="Flag of the European Union"
+            style="width: 60em; height: auto"
+            id="bigImg"
+            src="FranceImg/PresentImg/FrancePresentMap.jpg"
+            alt="FrankishEmpire.png"
           />
-          <img
-            class="FlagAtBottom"
-            id="UN"
-            src="FranceImg/PresentImg/UN_Flag.png"
-            alt="Flag of the UN"
-          />
-          <img
-            class="FlagAtBottom"
-            id="NATO"
-            src="FranceImg/PresentImg/Nato_Flag.png"
-            alt="NATO-Flag"
-          />
-        </td>
-      </table>
-    </article>
+          <table id="basicInf">
+            <tr>
+              <th>Capital:</th>
+              <td>Paris</td>
+              <th>Population:</th>
+              <td>67,39 Mio</td>
+            </tr>
+            <tr>
+              <th>Current Leader:</th>
+              <td>Emmanuel Macron</td>
+              <th>Land Area:</th>
+              <td>632.734 km²</td>
+            </tr>
+            <tr>
+              <th>Type of Government:</th>
+              <td>Parliamentary Republic</td>
+              <th>Currency:</th>
+              <td>the Euro</td>
+            </tr>
+          </table>
+        </div>
 
-    <section id="posFlag1">
-      <img
-        class="sideFlag"
-        id="sideFlag1"
-        src="FranceImg/PresentImg/france_present_normal.png"
-        alt="French Flag"
-      />
-    </section>
-
-    <section id="posFlag2">
-      <img
-        class="sideFlag"
-        id="sideFlag2"
-        src="FranceImg/PresentImg/france_present_normal.png"
-        alt="French Flag"
-      />
-    </section>
+        <div id="textClass" class="text-center">
+          <p>
+            In the modern day, France is still a influential nation as a
+            founding member<br />
+            of various important organisations such as the EU or the UNO.<br />
+            It's economy is in the top 10 and the military of the french is also
+            top-class. <br />
+            With Britain out of the EU, France and Germany have become the major
+            leaders of the Union.
+            <br />Because of historic reasons, many of its former colonies
+            have<br />
+            french as an official language, making french one of the most spread
+            languages.<br /><br />
+            France's Prime may be over and their status has started to fade,<br />
+            but it still plays an important role in the world.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

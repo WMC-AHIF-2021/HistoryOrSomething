@@ -1,42 +1,31 @@
 body {
+  background-color: rgb(143, 102, 51);
+}
+
+#bg {
   background-image: url("../FranceImg/1812Img/NapoleonSchlacht1.jpg");
-  background-color: rgb(184, 130, 77);
-  background-size: 1860px auto;
   background-repeat: no-repeat;
-  font-family: Copperplate, Papyrus, fantasy;
-}
-h1 {
-  color: white;
-  text-align: center;
-  font-size: 60px;
-  padding: 10px;
+  background-size: 100%;
+  height: 80em;
 }
 
-button {
-  transition-duration: 0.4s;
-  position: absolute;
-  width: 9em;
-  height: 2em;
-  font-size: 120%;
-  padding: 8px;
-  border-color: black;
-  border-bottom: none;
+#content {
+  margin-bottom: 2em;
   font-family: Copperplate, Papyrus, fantasy;
-  background-repeat: no-repeat, repeat;
-  background-size: 100% 100%;
-  color: white;
 }
 
-#imgPos {
-  text-align: center;
+#Main-Header {
+  padding-top: 0.7em;
+  padding-bottom: 0.3em;
+  font-size: 5em;
+  color: white;
 }
 
 #bigImg {
-  border: 10px solid black;
-  width: 800px;
-  height: auto;
   background-color: white;
+  border: solid black;
 }
+
 #basicInf {
   margin: 0 auto;
   border-collapse: collapse;
@@ -45,6 +34,7 @@ button {
   margin-bottom: 1.5;
   margin-top: 1.5em;
 }
+
 th,
 td {
   padding: 0.5em;
@@ -58,65 +48,26 @@ td {
   border-left: 0px;
 }
 
-p.text {
-  color: black;
-  font-size: 1.5em;
-  text-align: center;
-  padding: 25px;
-  margin-top: 3.7em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  border-collapse: collapse;
-}
-#posFlag1 {
-  text-align: right;
-}
-#posFlag2 {
-  text-align: left;
+#textClass {
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgba(255, 179, 79, 0.8);
+  font-size: 2em;
 }
 
-.sideFlag {
-  width: 15em;
-  height: 35em;
-  position: absolute;
-  top: 300px;
-  border: 3px solid black;
-  border-radius: 2em;
-}
-#sideFlag1 {
-  right: 90em;
-}
-#sideFlag2 {
-  left: 90em;
-}
-.times {
-  text-align: center;
-}
-
-#Present {
-  margin-top: -2em;
-  margin-left: -350px;
-}
-
-#ColonialTime {
-  margin-top: -2em;
-  margin-left: -175px;
-}
-
-#NapoleonicTime {
-  margin-top: -2em;
-}
-
-#CarolingianTime {
-  margin-top: -2em;
-  margin-left: 175px;
-}
-
-#NapoleonPortrait {
-  border-radius: 1.5em;
-  position: absolute;
+#charlemagne {
   width: 20em;
   height: auto;
-  margin-top: -35em;
-  margin-left: 95em;
+  position: absolute;
+  top: 24em;
+  border-radius: 5%;
+}
+
+#imgPos {
+  padding-left: 70em;
+}
+
+#buttonRow {
+  padding-right: 45em;
 }
