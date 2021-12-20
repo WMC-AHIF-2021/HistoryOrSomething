@@ -1,9 +1,9 @@
 body {
-  background-color: rgb(143, 102, 51);
+  background-color: rgb(165, 147, 125);
 }
 
 #bg {
-  background-image: url("../FranceImg/1812Img/NapoleonSchlacht1.jpg");
+  background-image: url("../FranceImg/1939Img/France1939bg.jpg");
   background-repeat: no-repeat;
   background-size: 120em;
   height: 80em;
@@ -11,11 +11,11 @@ body {
 
 #content {
   margin-bottom: 2em;
-  font-family: Garamond, serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #startBlock {
-  background-color: rgb(255, 193, 112);
+  background-color: rgb(165, 147, 125);
 }
 
 #Main-Header {
@@ -24,7 +24,6 @@ body {
   margin-bottom: 0.5em;
   font-size: 5em;
   color: black;
-  border-bottom: 0.2em solid rgb(143, 102, 51);
 }
 
 #bigImg {
@@ -55,27 +54,21 @@ td {
 }
 
 #textClass {
-  border-top: 0.2em solid rgb(143, 102, 51);
   margin-top: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: rgba(255, 179, 79, 0.8);
-  font-size: 2em;
+  background-color: rgb(165, 147, 125);
+  font-size: 1.7em;
 }
 
-#Napoleon {
-  transition-duration: 0.5s;
+#AlbertLebrun {
+  position: absolute;
+  top: 50em;
+  margin-left: 22em;
   width: 10em;
   height: auto;
-  position: absolute;
-  top: 41em;
-  margin-left: 18em;
-  border-radius: 5%;
-  border: 0.08em solid black;
-}
-
-#imgPos {
-  padding-left: 70em;
+  border: solid black;
+  border-radius: 1em;
 }
 
 #buttonRow {
