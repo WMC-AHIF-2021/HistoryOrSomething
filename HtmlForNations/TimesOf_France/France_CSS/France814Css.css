@@ -4,7 +4,8 @@ body {
 
 #bg {
   background-image: url("../FranceImg/813Img/Background.jpg");
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 120em;
   height: 80em;
 }
 
@@ -13,11 +14,17 @@ body {
   font-family: Copperplate, Papyrus, fantasy;
 }
 
+#startBlock {
+  background-color: rgb(59, 42, 19);
+}
+
 #Main-Header {
   padding-top: 0.7em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.7em;
+  margin-bottom: 0.5em;
   font-size: 5em;
   color: white;
+  border-bottom: solid black;
 }
 
 #bigImg {
@@ -48,25 +55,27 @@ td {
 }
 
 #textClass {
+  color: white;
   margin-top: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: rgba(255, 179, 79, 0.8);
+  background-color: rgba(59, 42, 19, 0.9);
   font-size: 2em;
 }
 
 #charlemagne {
-  width: 20em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  width: 10em;
   height: auto;
-  position: absolute;
-  top: 24em;
   border-radius: 5%;
-}
-
-#imgPos {
-  padding-left: 70em;
 }
 
 #buttonRow {
   padding-right: 42em;
+}
+
+#source {
+  margin-top: 2em;
+  font-size: 0.5em;
 }

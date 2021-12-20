@@ -4,20 +4,25 @@ body {
 
 #bg {
   background-image: url("../FranceImg/PresentImg/FrBackGround2.jpg");
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 120em;
   height: 80em;
 }
 
 #content {
-  margin-bottom: 2em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#startBlock {
+  background-color: rgb(211, 211, 211);
 }
 
 #Main-Header {
   padding-top: 0.7em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.7em;
+  margin-bottom: 0.5em;
   font-size: 5em;
-  color: white;
+  color: black;
 }
 
 #bigImg {
@@ -56,8 +61,12 @@ td {
   font-size: 2em;
 }
 
-#imgPos {
-  padding-left: 70em;
+.FlagImg {
+  position: absolute;
+  width: 20em;
+  height: 65em;
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
 
 #buttonRow {
@@ -70,4 +79,9 @@ td {
   margin-right: 0.5em;
   height: 8em;
   width: auto;
+}
+
+#source {
+  margin-top: 2em;
+  font-size: 0.5em;
 }
