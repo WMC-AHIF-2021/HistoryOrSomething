@@ -6,19 +6,19 @@ This is our amazing team:
 
 - Group-Leader
 - responsible for France
-- 15 years old
+- 01.02.2006 (old)
 - a really tall dwarf
 
 ## Christian
 
 - responsible for the UK
-- 15 years old but slightly older
+- 13.01.2006 (elder)
 - Christian ha fatto esplodere i fornelli!
 
 ## Marcus
 
 - responsible for Germany
-- 15 years but much older
+- 18.12.2005 (eldest)
 - work smart, not hard
 
 # Project Information
