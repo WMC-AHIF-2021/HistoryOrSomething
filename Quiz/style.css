@@ -1,0 +1,72 @@
+.content {
+    border: 1px solid grey;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 2em;
+    padding-left: 3em;
+    font-family: sans-serif;
+}
+
+.custom-card {
+    border: 1px solid transparent;
+    border-radius: 0.5em;
+    transition: 0.3s;
+    box-shadow: 0 0 2px #888888;
+    max-width: 15em;
+    max-height: 15em;
+    text-align: center;
+}
+
+.custom-card:hover {
+    box-shadow: 0 0 7px #888888;
+}
+
+.custom-container {
+    padding: 2px 16px;
+}
+
+.flags {
+    max-width: 10em;
+}
+
+.quiz-link {
+    color: black;
+    text-decoration: none;
+}
+
+.quiz-link:hover {
+    color: black;
+}
+
+.custom-button {
+    padding:0.3em;
+    padding-left:0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    color:black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.custom-button:hover{
+    background-color: rgb(14, 224, 14);
+    border: none;
+    border-radius: 0.7em;
+    color: white;
+}
+
+.custom-carousel{
+    width:  30em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#main-img{
+    max-width: 40em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+}
