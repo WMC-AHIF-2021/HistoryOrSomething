@@ -8,9 +8,9 @@ html {
 }
 
 .Title {
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 60px;
+  font-size: 5em;
 }
 .nationsList {
   text-align: center;

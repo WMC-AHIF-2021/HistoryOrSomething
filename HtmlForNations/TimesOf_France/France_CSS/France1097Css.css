@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(165, 147, 125);
+}
+
+#bg {
+  background-image: url("../FranceImg/1097Img/France1097Bg.jpg");
+  background-position: 0em 10em;
+  background-repeat: no-repeat;
+  background-size: 120em;
+  height: 80em;
+}
+
+#content {
+  margin-bottom: 2em;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+#startBlock {
+  background-color: rgb(165, 147, 125);
+}
+
+#Main-Header {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  margin-bottom: 0.5em;
+  font-size: 5em;
+  color: black;
+}
+
+#bigImg {
+  background-color: white;
+  border: solid black;
+}
+
+#basicInf {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.5em;
+  background-color: rgba(211, 211, 211, 0.6);
+  margin-bottom: 1.5;
+  margin-top: 1.5em;
+}
+
+th,
+td {
+  padding: 0.5em;
+  border: 1px solid black;
+  text-align: left;
+}
+th {
+  border-right: 0px;
+}
+td {
+  border-left: 0px;
+}
+
+#textClass {
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgb(165, 147, 125);
+  font-size: 1.7em;
+}
+
+#Flag {
+  position: absolute;
+  top: 50em;
+  margin-left: 22em;
+  width: 10em;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+#buttonRow {
+  padding-right: 42em;
+}
+
+#source {
+  margin-top: 2em;
+  font-size: 0.5em;
+}
