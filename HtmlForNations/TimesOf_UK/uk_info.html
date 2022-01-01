@@ -20,105 +20,111 @@
     />
 
     <body id="body">
-      <div id="topNav">
-        <div class="row">
-          <div class="col-9">
-            <h1>United Kingdom - Present</h1>
+      <div class="row" id="navBar">
+        <div class="col-9">
+          <h1>United Kingdom - Present</h1>
+        </div>
+        <div class="col">
+          <div class="cDropdown">
+            <button class="cDropbtn">Times</button>
+            <div class="cDropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
-          <div class="col-md-auto">
-            <div class="cDropdown">
-              <button class="cDropbtn">Times</button>
-              <div class="cDropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
+          <div class="cDropdown">
+            <button class="cDropbtn">Menu</button>
+            <div class="cDropdown-content">
+              <a href="../../index.html">Home</a>
+              <a href="../../Quiz/index.html">Quizes</a>
             </div>
-            <div class="cDropdown">
-              <button class="cDropbtn">Menu</button>
-              <div class="cDropdown-content">
-                <a href="../../index.html">Home</a>
-                <a href="../../Quiz/index.html">Quizes</a>
-              </div>
-            </div>
+          </div>
 
-            <img src="Images/Icons/moon.png" id="icon" width="20px" />
+          <img src="Images/Icons/moon.png" id="icon" width="20px" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-6 col-md-5 col-md-push-7">
+          <img
+            class="mainImg"
+            src="Images/united-kingdom-map-now.gif"
+            alt="Map of UK"
+          />
+        </div>
+        <!--Info Table next to Map Image-->
+        <div
+          class="
+            col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5
+            d-flex
+            align-items-center
+          "
+        >
+          <div class="infoTable">
+            <table class="table" id="table">
+              <thead>
+                <tr>
+                  <th colspan="3" scope="col">Info Table</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th colspan="2" scope="row">Capital:</th>
+                  <td>
+                    <button class="collapsible">London</button>
+                    <div class="content">
+                      <p>
+                        London is the capital city of the United Kingdom. It is
+                        the U.K.'s largest metropolis and its economic,
+                        transportation, and cultural centre. London is also
+                        among the oldest of the world's great cities, with its
+                        history spanning nearly two millennia.
+                        <a href="https://www.britannica.com/place/London"
+                          >More Information</a
+                        >
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="2" scope="row">Current Leader:</th>
+                  <td>Boris Johnson (Prime Minister)</td>
+                </tr>
+                <tr>
+                  <th colspan="2" scope="row">Type of Government:</th>
+                  <td>Constitutional monarchy</td>
+                </tr>
+                <tr>
+                  <th colspan="2" scope="row">Population:</th>
+                  <td>67.22 million (2020)</td>
+                </tr>
+                <tr>
+                  <th colspan="2" scope="row">Land Area:</th>
+                  <td>242,495 km²</td>
+                </tr>
+                <tr>
+                  <th colspan="2" scope="row">Currency:</th>
+                  <td>Pound sterling</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
-
-      <div class="mainContent">
-        <div class="row">
-          <div class="col d-flex align-items-center">
-            <img
-              class="mainImg"
-              src="Images/united-kingdom-map-now.gif"
-              alt="Map of UK"
-            />
-          </div>
-          <div class="col">
-            <div class="infoTable table">
-              <table class="table" id="table">
-                <thead>
-                  <tr>
-                    <th colspan="3" scope="col">Info Table</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th colspan="2" scope="row">Capital:</th>
-                    <td>
-                      <button class="collapsible">London</button>
-                      <div class="content">
-                        <p>
-                          London is the capital city of the United Kingdom. It
-                          is the U.K.'s largest metropolis and its economic,
-                          transportation, and cultural centre. London is also
-                          among the oldest of the world's great cities, with its
-                          history spanning nearly two millennia.
-                          <a href="https://www.britannica.com/place/London"
-                            >More Information</a
-                          >
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th colspan="2" scope="row">Current Leader:</th>
-                    <td>Boris Johnson (Prime Minister)</td>
-                  </tr>
-                  <tr>
-                    <th colspan="2" scope="row">Type of Government:</th>
-                    <td>Constitutional monarchy</td>
-                  </tr>
-                  <tr>
-                    <th colspan="2" scope="row">Population:</th>
-                    <td>67.22 million (2020)</td>
-                  </tr>
-                  <tr>
-                    <th colspan="2" scope="row">Land Area:</th>
-                    <td>242,495 km²</td>
-                  </tr>
-                  <tr>
-                    <th colspan="2" scope="row">Currency:</th>
-                    <td>Pound sterling</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+      <!--General Info Box at Bottom Page-->
+      <div class="row">
+        <div class="col">
+          <div class="generalInfo">
+            <p>
+              The United Kingdom is a highly developed nation that exerts
+              considerable international economic, political, scientific and
+              cultural influence. Located off the northwest corner of Europe,
+              the country includes the island of Great Britain – which contains
+              England, Scotland and Wales – and the northern portion of the
+              island of Ireland.
+            </p>
           </div>
         </div>
-      </div>
-
-      <div class="generalInfo">
-        <p>
-          The United Kingdom is a highly developed nation that exerts
-          considerable international economic, political, scientific and
-          cultural influence. Located off the northwest corner of Europe, the
-          country includes the island of Great Britain – which contains England,
-          Scotland and Wales – and the northern portion of the island of
-          Ireland.
-        </p>
       </div>
 
       <script

@@ -6,7 +6,6 @@
   --infoBox-color: #f7f1ea;
 
   --opacity: 0.95;
-  --font-family: "Roboto", sans-serif;
 }
 
 .dark-theme {
@@ -23,17 +22,16 @@
   background-image: url("Images/Backgound/background-1.jpg");
   background-repeat: repeat;
 
-  margin: 2em 3em 2em 3em;
-  font-family: var(--font-family);
+  margin: 2em 3em;
+  font-family: "Roboto", sans-serif;
+  opacity: var(--opacity);
 }
 
-#topNav {
+#navBar {
   background-color: var(--background-color);
   color: var(--text-color);
 
   border-radius: 10px;
-  opacity: var(--opacity);
-  max-width: 90em;
   padding: 1em;
   margin-bottom: 1em;
 }
@@ -89,19 +87,14 @@
   background-color: var(--navBarItemOnHover-color);
 }
 
-#navIcon {
-  display: flex;
-  align-items: center;
-  padding: auto;
-}
-
 .mainContent {
   margin-left: 0.5em;
   margin-bottom: 1em;
 }
 
 .mainImg {
-  max-width: 90%;
+  max-width: 100%;
+  margin-bottom: 1em;
 }
 
 .infoTable {
@@ -109,20 +102,10 @@
   background-color: var(--background-color);
   border-radius: 10px;
   padding: 1em;
-  opacity: var(--opacity);
 }
 
 #table {
   color: var(--text-color);
-}
-
-.generalInfo {
-  background-color: var(--background-color);
-  border-radius: 10px;
-  padding: 1em;
-  opacity: var(--opacity);
-  color: var(--text-color);
-  font-size: 1.2em;
 }
 
 /*Custom Collapsible*/
@@ -136,6 +119,7 @@
   outline: none;
   font-size: 1em;
   color: var(--text-color);
+  opacity: var(--opacity);
 }
 
 .active,
@@ -163,4 +147,14 @@
   transition: max-height 0.2s ease-out;
   padding: 0 18px;
   border: 1px solid var(--navBarItemOnHover-color);
+}
+
+/*General Info at Bottom of Page - Done*/
+.generalInfo {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  padding: 1em;
+  margin-top: 1em;
+  color: var(--text-color);
+  font-size: 1.2em;
 }
