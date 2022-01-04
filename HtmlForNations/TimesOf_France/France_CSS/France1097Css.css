@@ -79,3 +79,7 @@ td {
   margin-top: 2em;
   font-size: 0.5em;
 }
+
+a {
+  color: rgb(24, 24, 109);
+}
