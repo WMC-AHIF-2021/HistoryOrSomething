@@ -52,7 +52,7 @@
 .cDropdown {
   position: relative;
   display: inline-block;
-  margin-right: 2em;
+  margin-right: 0.5em;
 }
 
 /* Dropdown Content (Hidden by Default) */
