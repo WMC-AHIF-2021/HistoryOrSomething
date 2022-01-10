@@ -12,7 +12,7 @@ body {
 
 #content {
   margin-bottom: 2em;
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: "Tangerine", cursive;
 }
 
 #startBlock {
@@ -20,46 +20,45 @@ body {
 }
 
 #Main-Header {
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
+  padding-bottom: 0.5em;
   margin-bottom: 0.5em;
-  font-size: 5em;
+  font-size: 8em;
   color: black;
 }
 
 #bigImg {
   background-color: white;
   border: solid black;
+  width: 50%;
+  height: auto;
 }
 
 #basicInf {
-  margin: 0 auto;
-  border-collapse: collapse;
-  font-size: 1.5em;
+  text-align: left;
+  border: 1px solid black;
+  margin-top: 1em;
+  font-size: 3em;
   background-color: rgba(211, 211, 211, 0.6);
-  margin-bottom: 1.5;
-  margin-top: 1.5em;
 }
 
 th,
 td {
-  padding: 0.5em;
+  padding: 0.4em;
   border: 1px solid black;
-  text-align: left;
-}
-th {
-  border-right: 0px;
-}
-td {
-  border-left: 0px;
 }
 
 #textClass {
-  margin-top: 1em;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-bottom: 1em;
   background-color: rgb(165, 147, 125);
-  font-size: 1.7em;
+  font-size: 3em;
+}
+
+#WorldMap {
+  border: solid black;
+  border-radius: 5%;
+  width: 40%;
+  height: auto;
 }
 
 #Flag {
@@ -72,7 +71,8 @@ td {
 }
 
 #buttonRow {
-  padding-right: 42em;
+  padding-top: 4em;
+  padding-left: 2em;
 }
 
 #source {
@@ -80,6 +80,7 @@ td {
   font-size: 0.5em;
 }
 
-a {
-  color: rgb(24, 24, 109);
+a,
+a:hover {
+  color: black;
 }

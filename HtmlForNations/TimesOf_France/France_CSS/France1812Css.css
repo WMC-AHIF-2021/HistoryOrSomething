@@ -11,7 +11,7 @@ body {
 
 #content {
   margin-bottom: 2em;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "IM Fell Great Primer", serif;
 }
 
 #startBlock {
@@ -19,7 +19,6 @@ body {
 }
 
 #Main-Header {
-  padding-top: 0.7em;
   padding-bottom: 0.7em;
   margin-bottom: 0.5em;
   font-size: 5em;
@@ -30,28 +29,22 @@ body {
 #bigImg {
   background-color: white;
   border: solid black;
+  width: 50%;
+  height: auto;
 }
 
 #basicInf {
-  margin: 0 auto;
-  border-collapse: collapse;
+  text-align: left;
+  border: 1px solid black;
+  margin-top: 1em;
   font-size: 1.5em;
   background-color: rgba(211, 211, 211, 0.6);
-  margin-bottom: 1.5;
-  margin-top: 1.5em;
 }
 
 th,
 td {
-  padding: 0.5em;
+  padding: 0.4em;
   border: 1px solid black;
-  text-align: left;
-}
-th {
-  border-right: 0px;
-}
-td {
-  border-left: 0px;
 }
 
 #textClass {
@@ -74,15 +67,28 @@ td {
   border: 0.08em solid black;
 }
 
+#WorldMap {
+  border: solid black;
+  border-radius: 5%;
+  width: 55%;
+  height: auto;
+}
+
 #imgPos {
   padding-left: 70em;
 }
 
 #buttonRow {
-  padding-right: 42em;
+  padding-top: 4em;
+  padding-left: 2em;
 }
 
 #source {
   margin-top: 2em;
   font-size: 0.5em;
+}
+
+a,
+a:hover {
+  color: black;
 }

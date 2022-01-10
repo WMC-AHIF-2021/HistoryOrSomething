@@ -11,104 +11,109 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="France_CSS\FrancePresentCss.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <title>France Present</title>
   </head>
   <body>
     <div id="bg">
       <div id="content">
-        <div class="text-center">
-          <img
-            class="FlagImg"
-            style="margin-left: 35em"
-            src="FranceImg/PresentImg/france_present_normal.png"
-            alt="FranceFlag"
-          />
-          <img
-            class="FlagImg"
-            style="margin-left: -55em"
-            src="FranceImg/PresentImg/france_present_normal.png"
-            alt="FranceFlag"
-          />
-        </div>
-        <div id="startBlock" class="text-center">
-          <h1 id="Main-Header">France - Present</h1>
-        </div>
-
-        <div id="buttonRow" class="text-center">
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-danger btn-lg"
-              onclick="location.href='../../index.html'"
-            >
-              Countries
-            </button>
-            <button
-              type="button"
-              class="btn btn-danger btn-lg dropdown-toggle dropdown-toggle-split"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu">
-              <a
-                class="dropdown-item"
-                href="../TimesOf_Germany/german-present.html"
-                >Germany</a
+        <div id="startBlock">
+          <div id="buttonRow">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-danger btn-lg"
+                onclick="location.href='../../index.html'"
               >
-              <a class="dropdown-item" href="../TimesOf_UK/uk_info.html">UK</a>
+                Countries
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger btn-lg dropdown-toggle dropdown-toggle-split"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item"
+                  href="../TimesOf_Germany/german-present.html"
+                  >Germany</a
+                >
+                <a class="dropdown-item" href="../TimesOf_UK/uk_info.html"
+                  >UK</a
+                >
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-secondary btn-lg dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Times
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="France1939.html">1939</a>
+                <a class="dropdown-item" href="France1812.html">1812</a>
+                <a class="dropdown-item" href="France1097.html">1097</a>
+                <a class="dropdown-item" href="France814.html">814</a>
+              </div>
             </div>
           </div>
 
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-secondary btn-lg dropdown-toggle"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Times
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="France1939.html">1939</a>
-              <a class="dropdown-item" href="France1812.html">1812</a>
-              <a class="dropdown-item" href="France1097.html">1097</a>
-              <a class="dropdown-item" href="France814.html">814</a>
-            </div>
-          </div>
+          <h1 class="text-center" id="Main-Header">France - Present</h1>
         </div>
 
         <div class="text-center">
           <img
-            style="width: 60em; height: auto"
             id="bigImg"
             src="FranceImg/PresentImg/FrancePresentMap.jpg"
             alt="FrankishEmpire.png"
           />
 
-          <table id="basicInf">
-            <tr>
-              <th>Capital:</th>
-              <td>Paris</td>
-              <th>Population:</th>
-              <td>67,39 Mio</td>
-            </tr>
-            <tr>
-              <th>Current Leader:</th>
-              <td>Emmanuel Macron</td>
-              <th>Land Area:</th>
-              <td>643.800 km²</td>
-            </tr>
-            <tr>
-              <th>Type of Government:</th>
-              <td>Parliamentary Republic</td>
-              <th>Currency:</th>
-              <td>the Euro</td>
-            </tr>
-          </table>
+          <div class="d-flex justify-content-center marginTop">
+            <table id="basicInf">
+              <tr>
+                <th class="fs-3 borderCell">
+                  Currency:
+                  <a href="https://en.wikipedia.org/wiki/Euro">the Euro</a>
+                </th>
+                <th class="fs-3 borderRight">
+                  President:
+                  <a href="https://en.wikipedia.org/wiki/Emmanuel_Macron"
+                    >Emmanuel Macron</a
+                  >
+                </th>
+              </tr>
+              <tr>
+                <th class="fs-3 borderCell">Area: 643.800 km²</th>
+                <th class="fs-3 borderRight">
+                  Govermant:
+                  <a href="https://en.wikipedia.org/wiki/Parliamentary_system"
+                    >Parliamentary Republic</a
+                  >
+                </th>
+              </tr>
+              <tr>
+                <th class="fs-3 borderCell">Population: 67,39 Mio</th>
+                <th class="fs-3 borderRight">
+                  Capital:
+                  <a href="https://en.wikipedia.org/wiki/Paris">Paris</a>
+                </th>
+              </tr>
+            </table>
+          </div>
         </div>
 
         <div id="textClass" class="text-center">
@@ -129,21 +134,93 @@
             but it still plays an important role in the world.
           </p>
 
-          <img
-            class="bottomFlag"
-            src="FranceImg/PresentImg/EU_Flag1.png"
-            alt="EU_Flag"
-          />
-          <img
-            class="bottomFlag"
-            src="FranceImg/PresentImg/Nato_Flag.png"
-            alt="NATO_Flag"
-          />
-          <img
-            class="bottomFlag"
-            src="FranceImg/PresentImg/UN_Flag.png"
-            alt="UN_Flag"
-          />
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="d-block w-50"
+                    class="carouselImg"
+                    src="FranceImg/PresentImg/france_present_normal.png"
+                    alt="Second slide"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="d-block w-50"
+                    class="carouselImg"
+                    src="FranceImg/PresentImg/EU_Flag1.png"
+                    alt="Second slide"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="d-block w-50"
+                    class="carouselImg"
+                    src="FranceImg/PresentImg/UN_Flag.png"
+                    alt="Second slide"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <img
+                    class="d-block w-50"
+                    class="carouselImg"
+                    src="FranceImg/PresentImg/Nato_Flag.png"
+                    alt="Second slide"
+                  />
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
           <div>
             <p id="source">

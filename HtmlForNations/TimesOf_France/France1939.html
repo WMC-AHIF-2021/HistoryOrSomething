@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,84 +22,102 @@
   <body>
     <div id="bg">
       <div id="content">
-        <div id="startBlock" class="text-center">
-          <h1 id="Main-Header">France 1939</h1>
-        </div>
-
-        <div id="buttonRow" class="text-center">
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-danger btn-lg"
-              onclick="location.href='../../index.html'"
-            >
-              Countries
-            </button>
-            <button
-              type="button"
-              class="btn btn-danger btn-lg dropdown-toggle dropdown-toggle-split"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <div class="dropdown-menu">
-              <a
-                class="dropdown-item"
-                href="../TimesOf_Germany/german-present.html"
-                >Germany</a
+        <div id="startBlock">
+          <div id="buttonRow">
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-danger btn-lg"
+                onclick="location.href='../../index.html'"
               >
-              <a class="dropdown-item" href="../TimesOf_UK/uk_info.html">UK</a>
+                Countries
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger btn-lg dropdown-toggle dropdown-toggle-split"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item"
+                  href="../TimesOf_Germany/german-present.html"
+                  >Germany</a
+                >
+                <a class="dropdown-item" href="../TimesOf_UK/uk_info.html"
+                  >UK</a
+                >
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-secondary btn-lg dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Times
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="FrancePresent.html">2020</a>
+                <a class="dropdown-item" href="France1812.html">1812</a>
+                <a class="dropdown-item" href="France1097.html">1097</a>
+                <a class="dropdown-item" href="France814.html">814</a>
+              </div>
             </div>
           </div>
 
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-secondary btn-lg dropdown-toggle"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Times
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="FrancePresent.html">2020</a>
-              <a class="dropdown-item" href="France1812.html">1812</a>
-              <a class="dropdown-item" href="France1097.html">1097</a>
-              <a class="dropdown-item" href="France814.html">814</a>
-            </div>
-          </div>
+          <h1 class="text-center" id="Main-Header">France 1939</h1>
         </div>
 
         <div class="text-center">
           <img
-            style="width: 60em; height: auto"
             id="bigImg"
             src="FranceImg/1939Img/ColonialEmpireImg.png"
             alt="By Blank map of Europe.svg: maix¿? derivative work: Alphathon - This file was derived from: Blank map of Europe.svg:Data sources:Main data: http://www.lib.utexas.edu/maps/historical/shepherd/byzantine_empires_814.jpg (A lower quality version is available on commons: Europe around 800.gif)Bulgarian Empire: Territorial expansion during the reign of Khan Krum (803-814).png, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48980912"
           />
-          <table id="basicInf">
-            <tr>
-              <th>Capital:</th>
-              <td>Paris</td>
-              <th>Population:</th>
-              <td>110 Mio. (worldwide)</td>
-            </tr>
-            <tr>
-              <th>Current Leader:</th>
-              <td>Albert Lebrun</td>
-              <th>Land Area:</th>
-              <td>~11.000.000 km²</td>
-            </tr>
-            <tr>
-              <th>Type of Government:</th>
-              <td>Republic</td>
-              <th>Currency:</th>
-              <td>the French franc</td>
-            </tr>
-          </table>
+
+          <div class="d-flex justify-content-center marginTop">
+            <table id="basicInf">
+              <tr>
+                <th class="fs-3 borderCell">
+                  Currency:
+                  <a href="https://en.wikipedia.org/wiki/French_franc"
+                    >the French franc</a
+                  >
+                </th>
+                <th class="fs-3 borderRight">
+                  Current Leader:
+                  <a href="https://de.wikipedia.org/wiki/Albert_Lebrun"
+                    >Albert Lebrun</a
+                  >
+                </th>
+              </tr>
+              <tr>
+                <th class="fs-3 borderCell">Area: ~11.000.000 km²</th>
+                <th class="fs-3 borderRight">
+                  Govermant:
+                  <a href="https://en.wikipedia.org/wiki/Parliamentary_system"
+                    >Parliamentary Republic</a
+                  >
+                </th>
+              </tr>
+              <tr>
+                <th class="fs-3 borderCell">
+                  Population: 110 Mio. (worldwide)
+                </th>
+                <th class="fs-3 borderRight">
+                  Capital:
+                  <a href="https://en.wikipedia.org/wiki/Paris">Paris</a>
+                </th>
+              </tr>
+            </table>
+          </div>
         </div>
 
         <div id="textClass" class="text-center">
@@ -109,7 +133,8 @@
             Altogether, they need to catch up.<br /><br />
             A man named <strong>Adolf Hitler</strong> took power in Germany
             and<br />
-            declared the <strong>Third Reich</strong>.<br />
+            declared the
+            <a href="../TimesOf_Germany/german-1939.html">Third Reich</a>.<br />
             And because of the <strong>Appeasement-Policy</strong> by the
             allies, <br />
             he managed to annex Austria and to invade Czechoslovakia.<br />
@@ -130,7 +155,7 @@
 
           <div>
             <img
-              style="margin-top: 0.5em; border: solid black; border-radius: 1em"
+              id="WorldMap"
               src="FranceImg/1939Img/ColonialEmpire_worldwide.png"
               alt="FranceWorldMap"
             />
