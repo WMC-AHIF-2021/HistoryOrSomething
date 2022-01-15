@@ -1,5 +1,25 @@
+:root {
+  --background-color: #d3d7ff;
+  --navBarItem-color: #d3d7ff;
+  --navBarItemOnHover-color: #d3d7ff;
+  --text-color: #000;
+  --infoBox-color: #d3d7ff;
+
+  --opacity: 0.95;
+}
+
+.dark-theme {
+  --background-color: #505050;
+  --navBarItem-color: #373838;
+  --navBarItemOnHover-color: #303333;
+  --text-color: #fff;
+  --infoBox-color: #1e2222;
+
+  --text-color: #fff;
+}
+
 body {
-  background-color: rgb(165, 147, 125);
+  background-color: var(--background-color);
 }
 
 #bg {
@@ -16,14 +36,17 @@ body {
 }
 
 #startBlock {
-  background-color: rgb(165, 147, 125);
+  background-color: var(--background-color);
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  margin-bottom: 3em;
 }
 
 #Main-Header {
-  padding-bottom: 0.7em;
-  margin-bottom: 0.5em;
   font-size: 5em;
-  color: black;
+  color: var(--text-color);
 }
 
 #bigImg {
@@ -38,7 +61,8 @@ body {
   border: 1px solid black;
   margin-top: 1em;
   font-size: 1.5em;
-  background-color: rgba(211, 211, 211, 0.6);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 th,
@@ -48,10 +72,11 @@ td {
 }
 
 #textClass {
+  color: var(--text-color);
   margin-top: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: rgb(165, 147, 125);
+  background-color: var(--background-color);
   font-size: 1.7em;
 }
 
@@ -72,21 +97,16 @@ td {
   height: auto;
 }
 
-#buttonRow {
-  padding-top: 4em;
-  padding-left: 2em;
-}
-
 #source {
   margin-top: 2em;
   font-size: 0.5em;
 }
 
 a {
-  color: black;
+  color: var(--text-color);
   font-weight: bold;
 }
 a:hover {
-  color: black;
+  color: var(--text-color);
   font-weight: bolder;
 }
