@@ -80,16 +80,6 @@ td {
   font-size: 1.7em;
 }
 
-#AlbertLebrun {
-  position: absolute;
-  top: 50em;
-  margin-left: 22em;
-  width: 10em;
-  height: auto;
-  border: solid black;
-  border-radius: 1em;
-}
-
 #WorldMap {
   border: solid black;
   border-radius: 5%;
