@@ -1,5 +1,6 @@
 html{
   background-color: #282828;
+  cursor: default;
 }
 
 #headBlock{
@@ -163,6 +164,7 @@ html{
 #popUpTitle{
   color: darkgoldenrod;
   padding-top: 2vh;
+  font-size: 5vh;
 }
 
 #facts{
