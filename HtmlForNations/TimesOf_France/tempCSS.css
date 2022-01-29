@@ -1,0 +1,101 @@
+html{
+    font-family: "Public Sans", sans-serif;
+    background-color: lightgrey;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+#startCont{
+    grid-gap: 10px;
+    padding: 10px;
+    background-image: url("FranceImg/PresentImg/FrBackgr3.jpg");
+    background-size: cover;
+}
+
+.grid-container > div
+{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+}
+.item1
+{
+    grid-column-start: 1;
+    grid-column-end:4;
+    border-bottom: solid black;
+    float:left;
+
+}
+.innerItem1{
+    grid-column-start: 1;
+    grid-column-end:5;
+    float:left;
+}
+.innerItem2{
+    grid-column-start: 1;
+    grid-column-end:5;
+    float:left;
+}
+#header
+{
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+}
+.item2
+{
+    background-color: rgba(128, 128, 128, 0);
+    grid-column-start: 1;
+    grid-column-end:4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 25em;
+}
+.EuroPic
+{
+    float:left;
+    background-image: url("FranceImg/PresentImg/FrancePresentMap.jpg");
+    background-size: cover;
+    border: solid black;
+    width: 55%;
+    height: 90%;
+    border-radius: 0.2em;
+
+}
+.InfTab
+{
+    background-color: rgba(211, 211, 211, 0.5);
+    float: right;
+    justify-content: center;
+    text-align: center;
+    width: 38%;
+    height: 90%;
+    border-radius: 0.2em;
+}
+.text
+{
+    padding-top: 2em;
+    background-color: lightgrey;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+#titel{
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.4em;
+    font-size: 3.5em;
+}
+
+#headBlock{
+    color: black;
+    background-color: grey;
+    font-family: 'IM Fell DW Pica SC', serif;
+    border-bottom: 1px solid black;
+}
