@@ -14,7 +14,10 @@ let things =
         "Johnny Appleseed is real.",
         "Former U.S. President Bill Clinton lost Nuclear Launch Codes.",
         "The dutch actually ate their prime minister.",
-        "Australia actually fought a war against its national bird ...and lost!"
+        "Australia actually fought a war against its national bird ...and lost!",
+        "In Liechtenstein's last military engagement (1886)," +
+        "they sent in 80 soldiers. " +
+        "81 came back, including a new italian friend."
     ];
 let ran = Math.floor(Math.random()*things.length);
 

@@ -27,6 +27,18 @@ html{
   color: darkgoldenrod;
   text-decoration-line: underline;
 }
+.bottomLink{
+  color: white;
+  font-style: normal;
+}
+.bottomLink:hover{
+  cursor: pointer;
+  color: white;
+  text-decoration-line: underline;
+}
+.bottomLink:visited{
+  color: white;
+}
 
 #titel{
   padding-left: 4%;
@@ -58,6 +70,7 @@ html{
 }
 
 .carousel .carousel-inner{
+  z-index: 0;
   background-color: #282828;
   width: 100%;
   height: auto;
@@ -67,7 +80,7 @@ html{
 }
 
 #buttonRow{
-  width: 100%;
+  width: 100.8%;
   background-color: #3a3a3a;
   padding-top: 3.5pc;
   padding-bottom: 3.5pc;
@@ -75,6 +88,7 @@ html{
   color: darkgoldenrod;
   text-align: center;
   font-family: 'Red Hat Mono', monospace;
+  padding-left: -10px;
 }
 
 .button{
@@ -198,20 +212,53 @@ html{
 */
 #section1{
   background-color: #282828;
-  padding-bottom: 3.5pc;
   font-family: 'Red Hat Mono', monospace;
   color: darkgoldenrod;
+  padding-bottom: 1vh;
   padding-top: 2%;
-  padding-left: 1%;
   font-size: 5vh;
   text-align: center;
+}
+
+.descriptionText{
+  font-family: 'Red Hat Mono', monospace;
+  color: white;
+  padding-bottom: 3.5pc;
+  font-size: 3vh;
+}
+
+#leftText{
+  text-align: left;
+  padding-left: 4vh;
+}
+
+#rightText{
+  text-align: right;
+  padding-right: 4vh;
 }
 
 #section2{
   font-family: 'Red Hat Mono', monospace;
   color: darkgoldenrod;
   padding-top: 2%;
+  padding-bottom: 2%;
   padding-left: 1%;
   font-size: 5vh;
 }
 
+#profileRow{
+  padding-top: 2%;
+  background-color: #3a3a3a;
+  width: 100.8%;
+}
+.profilePic{
+  width: 40%;
+  height: auto;
+}
+.profileText{
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family: 'Red Hat Mono', monospace;
+  color: white;
+  font-size: 2vh;
+}
