@@ -1,53 +1,96 @@
-html{
+html {
   background-color: #282828;
   cursor: default;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-#headBlock{
-  font-family: 'IM Fell DW Pica SC', serif;
+.preload {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #6e7a7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  z-index: 100;
+}
+
+.preload h1 {
+  position: absolute;
+  top: 75%;
+  color: #fff;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+.globe {
+  width: 10em;
+  height: 10em;
+  animation: globe 1s ease infinite alternate;
+}
+
+@keyframes globe {
+  from {
+    transform: translateY(0em);
+  }
+  to {
+    transform: translateY(3em);
+  }
+}
+#headBlock {
+  font-family: "IM Fell DW Pica SC", serif;
   background-color: #282828;
   color: darkgoldenrod;
   margin: 0px;
   width: 100%;
 }
 
-#rightData{
-  font-family: 'Red Hat Mono', monospace;
+#rightData {
+  font-family: "Red Hat Mono", monospace;
   text-align: right;
   font-size: 3vh;
   padding-right: 4%;
   padding-top: 1%;
 }
 
-.upperLink{
+.upperLink {
   color: darkgoldenrod;
   font-style: normal;
 }
-.upperLink:hover{
+.upperLink:hover {
   cursor: pointer;
   color: darkgoldenrod;
   text-decoration-line: underline;
 }
-.bottomLink{
+.bottomLink {
   color: white;
   font-style: normal;
 }
-.bottomLink:hover{
+.bottomLink:hover {
   cursor: pointer;
   color: white;
   text-decoration-line: underline;
 }
-.bottomLink:visited{
+.bottomLink:visited {
   color: white;
 }
 
-#titel{
+#titel {
   padding-left: 4%;
   padding-top: 2%;
   padding-bottom: 1%;
   font-size: 4.5vh;
 }
-.grid-container{
+.grid-container {
   background-color: #282828;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -55,32 +98,32 @@ html{
   grid-gap: 10px;
 }
 
-.item1{
+.item1 {
   background-color: #282828;
   grid-column-start: 1;
   grid-column-end: 4;
 }
-.item2{
+.item2 {
   grid-column-start: 1;
   grid-column-end: 4;
 }
-.item3{
+.item3 {
   background-color: #282828;
   grid-column-start: 1;
   grid-column-end: 4;
 }
 
-.carousel .carousel-inner{
+.carousel .carousel-inner {
   z-index: 0;
   background-color: #282828;
   width: 100%;
   height: auto;
 }
-#countryCarousel{
+#countryCarousel {
   background-color: #3a3a3a;
 }
 
-#buttonRow{
+#buttonRow {
   width: 100.8%;
   background-color: #3a3a3a;
   padding-top: 3.5pc;
@@ -88,11 +131,11 @@ html{
   font-size: 4vh;
   color: darkgoldenrod;
   text-align: center;
-  font-family: 'Red Hat Mono', monospace;
+  font-family: "Red Hat Mono", monospace;
   padding-left: -10px;
 }
 
-.button{
+.button {
   transition-duration: 1s;
   width: 55%;
   height: 50vh;
@@ -101,16 +144,16 @@ html{
   color: white;
   background-color: dimgrey;
 }
-.button:hover{
+.button:hover {
   transition-duration: 1s;
   background-color: darkgrey;
   border: solid #4f4f4f;
   cursor: pointer;
 }
 
-.countryButton{
+.countryButton {
   font-size: 4vh;
-  font-family: 'Red Hat Mono', monospace;
+  font-family: "Red Hat Mono", monospace;
   color: white;
   border: none;
   border-radius: 0.3em;
@@ -121,33 +164,33 @@ html{
   border-collapse: collapse;
 }
 
-#button1{
+#button1 {
   background-image: url("flags/UK_flag2.jpg");
   background-size: 100% 100%;
 }
-#button2{
+#button2 {
   color: black;
   background-image: url("flags/France_flag2.jpg");
   background-size: 100% 100%;
 }
-#button3{
+#button3 {
   background-image: url("flags/Germany_flag2.jpg");
   background-size: 100% 100%;
 }
-#button4{
+#button4 {
   color: black;
   background-image: url("flags/Austria_flag.jpg");
   background-size: 100% 100%;
 }
-.countryButton:hover{
+.countryButton:hover {
   transition-duration: 1s;
   background-color: darkgrey;
   cursor: pointer;
 }
 
-.popUp{
+.popUp {
   display: none;
-  font-family: 'Red Hat Mono', monospace;
+  font-family: "Red Hat Mono", monospace;
   background-color: #282828;
   border-radius: 10px;
   position: fixed;
@@ -161,19 +204,19 @@ html{
   color: white;
 }
 
-#popUpTitle{
+#popUpTitle {
   color: darkgoldenrod;
   padding-top: 2vh;
   font-size: 5vh;
 }
 
-#facts{
+#facts {
   color: white;
   padding-top: 2vh;
   font-size: 2vh;
 }
 
-#highlight_close{
+#highlight_close {
   height: 5vh;
   padding: 1vh;
   float: right;
@@ -181,7 +224,7 @@ html{
   border-radius: 25px;
   background-color: darkgoldenrod;
 }
-#highlight_close:hover{
+#highlight_close:hover {
   cursor: pointer;
 }
 /*
@@ -211,9 +254,9 @@ html{
   text-align: right;
 }
 */
-#section1{
+#section1 {
   background-color: #282828;
-  font-family: 'Red Hat Mono', monospace;
+  font-family: "Red Hat Mono", monospace;
   color: darkgoldenrod;
   padding-bottom: 1vh;
   padding-top: 2%;
@@ -221,25 +264,25 @@ html{
   text-align: center;
 }
 
-.descriptionText{
-  font-family: 'Red Hat Mono', monospace;
+.descriptionText {
+  font-family: "Red Hat Mono", monospace;
   color: white;
   padding-bottom: 3.5pc;
   font-size: 3vh;
 }
 
-#leftText{
+#leftText {
   text-align: left;
   padding-left: 4vh;
 }
 
-#rightText{
+#rightText {
   text-align: right;
   padding-right: 4vh;
 }
 
-#section2{
-  font-family: 'Red Hat Mono', monospace;
+#section2 {
+  font-family: "Red Hat Mono", monospace;
   color: darkgoldenrod;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -247,19 +290,19 @@ html{
   font-size: 5vh;
 }
 
-#profileRow{
+#profileRow {
   padding-top: 2%;
   background-color: #3a3a3a;
   width: 100.8%;
 }
-.profilePic{
+.profilePic {
   width: 40%;
   height: auto;
 }
-.profileText{
+.profileText {
   padding-top: 2em;
   padding-bottom: 2em;
-  font-family: 'Red Hat Mono', monospace;
+  font-family: "Red Hat Mono", monospace;
   color: white;
   font-size: 2vh;
 }
