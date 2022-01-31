@@ -62,6 +62,7 @@
 .upperLink {
     color: darkgoldenrod;
     font-style: normal;
+    text-decoration-line: none;
 }
 .upperLink:hover {
     cursor: pointer;
