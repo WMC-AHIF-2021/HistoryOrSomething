@@ -1,8 +1,3 @@
-$(".carousel").carousel({
-  interval: 5000,
-  transition: 2000,
-});
-
 let things = [
   "The Mayan people worshipped turkeys like Gods.",
   "Napoleon was once attacked by a horde of bunnies.",
