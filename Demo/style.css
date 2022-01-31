@@ -7,49 +7,66 @@ body {
   margin: 0;
 }
 
-#section1 {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  flex: 1;
+.grid-container {
+  display: grid;
+  grid-row: auto auto auto;
+  width: 100%;
+}
+
+.item-1 {
+  border: solid red;
+  justify-content: center;
+  height: 20vh;
+}
+
+.item-2 {
+  border: solid blue;
+  height: 70vh;
+
+  display: grid;
   justify-content: center;
   align-items: center;
+}
+
+.item-3 {
+  border: solid green;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+#section1::before {
+  content: "";
   background-image: url("Images/background-1.jpg");
   background-repeat: repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
 }
 
 #section2 {
-  display: flex;
   width: 100vw;
   height: 100vh;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
 }
 
 .mainTitle {
-  font-size: 5vw;
+  text-align: center;
+  font-size: 4vw;
 }
 
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.2;
+@media only screen and (max-width: 800px) {
+  .mainTitle {
+    font-size: 30px;
+  }
 }
 
 .downArrow {
   width: 2em;
   height: 2em;
-  opacity: 0.2;
-  transition: 1s ease-out;
-}
-
-.upArrow {
-  width: 2em;
-  height: 2em;
-  bottom: 1em;
   opacity: 0.2;
   transition: 1s ease-out;
 }

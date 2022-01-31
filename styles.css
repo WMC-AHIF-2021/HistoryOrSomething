@@ -192,23 +192,23 @@ html {
   cursor: pointer;
 }
 
-#buttonImg1{
+#buttonImg1 {
   background-image: url("neededImg/world-map.png");
   background-size: 80% auto;
 }
-#buttonImg1:hover{
+#buttonImg1:hover {
   background-size: 90% auto;
 }
 
-#buttonImg2{
+#buttonImg2 {
   background-image: url("neededImg/surveys.png");
   background-size: 30% auto;
 }
-#buttonImg2:hover{
+#buttonImg2:hover {
   background-size: 40% auto;
 }
 
-.buttonText{
+.buttonText {
   padding-top: 35vh;
 }
 
