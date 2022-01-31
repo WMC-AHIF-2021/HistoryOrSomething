@@ -1,10 +1,12 @@
 html {
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
 }
+
 #section1 {
   display: flex;
   width: 100vw;
@@ -24,8 +26,8 @@ body {
 }
 
 .mainTitle {
-  color: white;
-  font-size: 8vw;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 5vw;
 }
 
 .background {
@@ -33,13 +35,19 @@ body {
   height: 100%;
   position: absolute;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .downArrow {
   width: 2em;
   height: 2em;
-  position: absolute;
+  opacity: 0.2;
+  transition: 1s ease-out;
+}
+
+.upArrow {
+  width: 2em;
+  height: 2em;
   bottom: 1em;
   opacity: 0.2;
   transition: 1s ease-out;
