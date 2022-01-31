@@ -143,6 +143,8 @@ html {
   border-radius: 0.3em;
   color: white;
   background-color: dimgrey;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .button:hover {
   transition-duration: 1s;
@@ -161,7 +163,6 @@ html {
   margin-bottom: 40px;
   width: 80%;
   height: 50vh;
-  border-collapse: collapse;
 }
 
 #button1 {
@@ -188,8 +189,29 @@ html {
   cursor: pointer;
 }
 
+#buttonImg1{
+  background-image: url("neededImg/world-map.png");
+  background-size: 80% auto;
+}
+#buttonImg1:hover{
+  background-size: 90% auto;
+}
+
+#buttonImg2{
+  background-image: url("neededImg/surveys.png");
+  background-size: 30% auto;
+}
+#buttonImg2:hover{
+  background-size: 40% auto;
+}
+
+.buttonText{
+  padding-top: 35vh;
+}
+
 .popUp {
   display: none;
+  box-shadow: black;
   font-family: "Red Hat Mono", monospace;
   background-color: #282828;
   border: 1px solid black;
