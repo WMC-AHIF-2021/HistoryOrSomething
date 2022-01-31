@@ -155,6 +155,7 @@ html {
 }
 
 .countryButton {
+  text-align: center;
   font-size: 4vh;
   font-family: "Red Hat Mono", monospace;
   color: white;
