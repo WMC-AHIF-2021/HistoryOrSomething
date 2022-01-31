@@ -233,6 +233,8 @@ html {
 #popUpTitle {
   color: darkgoldenrod;
   padding-top: 2vh;
+  padding-left: 2em;
+  padding-right: 2em;
   font-size: 5vh;
 }
 
