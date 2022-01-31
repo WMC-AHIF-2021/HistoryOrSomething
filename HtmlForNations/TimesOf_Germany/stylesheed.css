@@ -206,8 +206,13 @@ body
 }
 .textField
 {
+    font-size: 1.2vw;
     padding-top: 5%;
     color: black;
+}
+.textFieldHeader
+{
+    font-size: 1.5vw;
 }
 .buttonDown
 {
@@ -262,7 +267,5 @@ body
     color: white;
 
 }
-
-
 
 
