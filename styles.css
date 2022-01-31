@@ -137,6 +137,7 @@ html {
 
 .button {
   transition-duration: 1s;
+  margin: 0.5em;
   width: 55%;
   height: 50vh;
   border: solid black;
