@@ -104,11 +104,12 @@ html {
   grid-column-end: 4;
 }
 .item2 {
+  background-color: #3a3a3a;
   grid-column-start: 1;
   grid-column-end: 4;
 }
 .item3 {
-  background-color: #282828;
+  background-color: #3a3a3a;
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -124,7 +125,7 @@ html {
 }
 
 #buttonRow {
-  width: 100.8%;
+  width: 100%;
   background-color: #3a3a3a;
   padding-top: 3.5pc;
   padding-bottom: 3.5pc;
@@ -282,6 +283,7 @@ html {
 #section1 {
   background-color: #282828;
   font-family: "Red Hat Mono", monospace;
+  margin: 0px;
   color: darkgoldenrod;
   padding-bottom: 1vh;
   padding-top: 2%;
@@ -291,8 +293,9 @@ html {
 
 .descriptionText {
   font-family: "Red Hat Mono", monospace;
+  margin: 0px;
+  background-color: #282828;
   color: white;
-  padding-bottom: 3.5pc;
   font-size: 3vh;
 }
 
@@ -308,9 +311,10 @@ html {
 
 #section2 {
   font-family: "Red Hat Mono", monospace;
+  background-color: #282828;
   color: darkgoldenrod;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
   padding-left: 1%;
   font-size: 5vh;
 }
@@ -319,7 +323,7 @@ html {
   padding-top: 4%;
   padding-bottom: 4%;
   background-color: #3a3a3a;
-  width: 100.8%;
+  width: 100%;
 }
 .profilePic {
   height: 25vh;
@@ -334,6 +338,7 @@ html {
 
 #bottomText {
   padding: 2vh;
+  padding-top: 4vh;
   font-family: "Red Hat Mono", monospace;
   text-align: center;
   background-color: #282828;
