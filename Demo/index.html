@@ -2,7 +2,6 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../HtmlForNations/startBlock.css" />
 
     <link href="https://css.gg/menu.css" rel="stylesheet" />
     <link
@@ -23,7 +22,7 @@
               <h4>HistoryOrSomething</h4>
             </div>
             <ul class="nav-links">
-              <li><a href="#">Home</a></li>
+              <li><a href="../index.html">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Work</a></li>
               <li><a href="#">Projects</a></li>
@@ -33,7 +32,25 @@
               <div class="line2"></div>
               <div class="line3"></div>
             </div>
+
+            <i
+            onclick="openForm()"
+            id="randomFacts"
+            >Say something smart!</i
+          >
           </nav>
+
+          <!--Random Facts Pop up Form-->
+          <div class="popUp" id="myForm">
+            <img
+              src="../../neededImg/remove.png"
+              onclick="closeForm()"
+              id="highlight_close"
+            />
+            <h2 id="popUpTitle">Did you know?</h2>
+            <p id="facts"></p>
+          </div>
+
         </div>
           <div class="item-2">
             <h1 class="mainTitle">United Kingdom - Present</h1>

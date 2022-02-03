@@ -1,3 +1,4 @@
+/*Basic Styling for all Elements*/
 html {
   scroll-behavior: smooth;
   overflow: hidden;
@@ -9,37 +10,84 @@ html {
   box-sizing: border-box;
 }
 
+/*Navigation Bar*/
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 10vh;
   background-color: #282828;
 }
 
+/*Elements inside Navbar*/
+/*Logo Container*/
 .logo {
   color: darkgoldenrod;
   font-family: "Nanum Myeongjo", serif;
 }
 
+/*Text inside Logo Container*/
+.logo h4 {
+  font-size: 30px;
+}
+
+/*Say Something Smart - Section*/
+#randomFacts {
+  color: darkgoldenrod;
+  font-style: normal;
+  font-family: "Nanum Myeongjo", serif;
+  text-decoration-line: none;
+  font-size: 25px;
+}
+
+#randomFacts:hover {
+  cursor: pointer;
+  color: darkgoldenrod;
+  text-decoration-line: underline;
+}
+
+/*All Links inside the Menu*/
 .nav-links {
+  position: absolute;
+  right: 0px;
+  height: 90vh;
+  top: 10vh;
+  background-color: whitesmoke;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  width: 40%;
+  align-items: center;
+  z-index: 30;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in;
 }
 
 .nav-links li {
   list-style-type: none;
+  opacity: 0;
 }
 
 .nav-links a {
   color: darkgoldenrod;
   text-decoration: none;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 30px;
+  text-align: center;
+  border: 0.1rem solid #333;
+  padding: 0.2em 10rem;
+}
+
+.nav-links a:hover {
+  color: darkgoldenrod;
+  text-decoration: underline;
 }
 
 .burger {
-  display: none;
+  display: block;
+  cursor: pointer;
 }
+
 .burger div {
   width: 25px;
   height: 3px;
@@ -48,35 +96,31 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 55%;
-  }
+.mainTitle {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 @media screen and (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #282828;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 30;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    top: 13.5vh;
   }
 
-  .nav-links li {
-    opacity: 0;
+  .mainTitle {
+    font-size: 2.3rem;
+  }
+
+  nav {
+    flex-direction: column;
   }
 
   .burger {
-    display: block;
-    cursor: pointer;
+    padding: 0.6rem 0;
+  }
+
+  .nav-links a {
+    padding: 0.2em 5rem;
   }
 }
 
@@ -142,18 +186,6 @@ nav {
   height: 100vh;
 }
 
-.mainTitle {
-  text-align: center;
-  font-size: 4rem;
-  font-family: "Nanum Myeongjo", serif;
-}
-
-@media only screen and (max-width: 800px) {
-  .mainTitle {
-    font-size: 2rem;
-  }
-}
-
 .downArrow {
   width: 2em;
   height: 2em;
@@ -164,4 +196,47 @@ nav {
 .downArrow:hover {
   opacity: 1;
   transition: 1s ease;
+}
+
+.popUp {
+  display: none;
+  font-family: "Red Hat Mono", monospace;
+  background-color: #282828;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 99;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+#popUpTitle {
+  color: darkgoldenrod;
+  padding-top: 2vh;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 5vh;
+}
+
+#facts {
+  color: white;
+  padding: 2vh;
+  font-size: 2vh;
+}
+
+#highlight_close {
+  height: 5vh;
+  padding: 1vh;
+  float: right;
+  color: black;
+  border-radius: 25px;
+  background-color: darkgoldenrod;
+}
+#highlight_close:hover {
+  cursor: pointer;
 }
