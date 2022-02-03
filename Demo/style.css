@@ -58,9 +58,9 @@ body {
   font-size: 4vw;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .mainTitle {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 
