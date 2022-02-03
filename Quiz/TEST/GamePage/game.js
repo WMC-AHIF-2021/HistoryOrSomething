@@ -14,41 +14,15 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-  {
-    question: "What does UK stand for?",
-    choice1: "U stink",
-    choice2: "United Kindom",
-    choice3: "United Kingdom",
-    choice4: "United K-POP",
-    answer: 3,
-  },
-  {
-    question: "What is the main language spoken in Germany",
-    choice1: "English",
-    choice2: "French",
-    choice3: "Spanish",
-    choice4: "German",
-    answer: 4,
-  },
-  {
-    question: "What is 3 + 5 x (3 x (9 + 4))",
-    choice1: "198",
-    choice2: "184",
-    choice3: "152",
-    choice4: "196",
-    answer: 1,
-  },
-];
-
-// fetch("questions.json")
-//   .then((res) => {
-//     return res.json();
-//   })
-//   .then((loadedQuestions) => {
-//     questions = loadedQuestions;
-//
-//   });
+let questions = [];
+fetch("questions.json")
+  .then((res) => {
+    return res.json();
+  })
+  .then((loadedQuestions) => {
+    questions = loadedQuestions;
+    startGame();
+  });
 
 //Constants
 const CORRECT_BONUS = 10;
@@ -115,5 +89,3 @@ const incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
 };
-
-startGame();
