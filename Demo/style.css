@@ -3,8 +3,108 @@ html {
   overflow: hidden;
 }
 
-body {
-  margin: 0;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #282828;
+}
+
+.logo {
+  color: darkgoldenrod;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: darkgoldenrod;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: darkgoldenrod;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 30;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .grid-container {
@@ -14,38 +114,27 @@ body {
 }
 
 .item-1 {
-  border: solid red;
   justify-content: center;
-  height: 20vh;
+  height: 15vh;
+  z-index: 20;
 }
 
 .item-2 {
-  border: solid blue;
-  height: 70vh;
-
+  height: 75vh;
   display: grid;
   justify-content: center;
   align-items: center;
+  background-image: url("Images//background-1-opacity.jpg");
+  background-repeat: repeat;
+  margin: 0em 1em 0em 1em;
+  border: 0.1rem solid #333;
 }
 
 .item-3 {
-  border: solid green;
   display: grid;
   justify-content: center;
   align-items: center;
   height: 10vh;
-}
-
-#section1::before {
-  content: "";
-  background-image: url("Images/background-1.jpg");
-  background-repeat: repeat;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
 }
 
 #section2 {
@@ -55,12 +144,13 @@ body {
 
 .mainTitle {
   text-align: center;
-  font-size: 4vw;
+  font-size: 4rem;
+  font-family: "Nanum Myeongjo", serif;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .mainTitle {
-    font-size: 35px;
+    font-size: 2rem;
   }
 }
 
