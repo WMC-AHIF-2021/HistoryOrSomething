@@ -46,7 +46,7 @@ nav {
   text-decoration-line: underline;
 }
 
-/*All Links inside the Menu*/
+/*Links inside the Menu*/
 .nav-links {
   position: absolute;
   right: 0px;
@@ -83,6 +83,11 @@ nav {
   text-decoration: underline;
 }
 
+.nav-active {
+  transform: translateX(0%);
+}
+
+/*Menu Icon*/
 .burger {
   display: block;
   cursor: pointer;
@@ -96,49 +101,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-.mainTitle {
-  text-align: center;
-  font-size: 4rem;
-  font-family: "Nanum Myeongjo", serif;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-links {
-    top: 13.5vh;
-  }
-
-  .mainTitle {
-    font-size: 2.3rem;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  .burger {
-    padding: 0.6rem 0;
-  }
-
-  .nav-links a {
-    padding: 0.2em 5rem;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
+/*Each Line of the Burger*/
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -150,6 +113,8 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/*End of Navbar*/
 
 .grid-container {
   display: grid;
@@ -181,11 +146,14 @@ nav {
   height: 10vh;
 }
 
-#section2 {
-  width: 100vw;
-  height: 100vh;
+/*Content of Item-2*/
+.mainTitle {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Nanum Myeongjo", serif;
 }
 
+/*Content of Item-3*/
 .downArrow {
   width: 2em;
   height: 2em;
@@ -198,6 +166,7 @@ nav {
   transition: 1s ease;
 }
 
+/*Random Facts Pop Up Form Style*/
 .popUp {
   display: none;
   font-family: "Red Hat Mono", monospace;
@@ -237,6 +206,54 @@ nav {
   border-radius: 25px;
   background-color: darkgoldenrod;
 }
+
 #highlight_close:hover {
   cursor: pointer;
+}
+
+/*End of Form*/
+
+#section2 {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*General Styling for Mobile and Table View*/
+@media screen and (max-width: 768px) {
+  /*Change the top height between Menu and Navbar*/
+  .nav-links {
+    top: 13.5vh;
+  }
+
+  /*Decrease the Fontsize of the Main Title*/
+  .mainTitle {
+    font-size: 2.3rem;
+  }
+
+  /*Stack each element on top of each other in the Navbar*/
+  nav {
+    flex-direction: column;
+  }
+
+  /*Increase the Menu Icon bottom and top padding*/
+  .burger {
+    padding: 0.6rem 0;
+  }
+
+  /*Decreae the Border Area of the links inside the Menu*/
+  .nav-links a {
+    padding: 0.2em 5rem;
+  }
+}
+
+/*Animation for slidding in the Links*/
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
