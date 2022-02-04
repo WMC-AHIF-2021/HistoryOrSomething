@@ -35,7 +35,7 @@ nav {
 
 /*Text inside Logo Container*/
 .logo h4 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /*Say Something Smart - Section*/
@@ -66,8 +66,9 @@ nav {
   align-items: center;
   z-index: 30;
   width: 100%;
-  transform: translateY(100%);
+  transform: translateX(100%);
   transition: transform 0.5s ease-in;
+  padding: 1em;
 }
 
 .nav-links li {
@@ -80,7 +81,6 @@ nav {
   text-decoration: none;
   font-family: "Nanum Myeongjo", serif;
   font-size: 30px;
-  text-align: center;
 }
 
 .nav-links a:hover {
@@ -151,6 +151,31 @@ nav {
   height: 10vh;
 }
 
+.item-4 {
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  height: 10vh;
+  z-index: 20;
+  padding-bottom: 2.5vh;
+}
+
+.item-5 {
+  height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-repeat: repeat;
+  margin: 0em 1em 0em 1em;
+  border: 0.1rem solid #333;
+}
+
+.item-6 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
 /*Content of Item-2*/
 .mainTitle {
   text-align: center;
@@ -225,16 +250,27 @@ nav {
 
 /*General Styling for Mobile and Table View*/
 @media screen and (max-width: 768px) {
-  /*Change the top height between Menu and Navbar*/
-  .nav-links {
-    top: 13.5vh;
+  /*Decrease the Fontsize of the Main Title*/
+  .item-1 {
+    height: 20vh;
   }
 
-  /*Decrease the Fontsize of the Main Title*/
+  .item-2 {
+    height: 70vh;
+  }
+
   .mainTitle {
     font-size: 2.3rem;
   }
 
+  .nav-links {
+    top: 18vh;
+    height: 82vh;
+  }
+
+  .nav-links a {
+    font-size: 25px;
+  }
   /*Stack each element on top of each other in the Navbar*/
   nav {
     flex-direction: column;
@@ -243,20 +279,6 @@ nav {
   /*Increase the Menu Icon bottom and top padding*/
   .burger {
     padding: 0.6rem 0;
-  }
-
-  .nav-links a {
-    padding-right: 1em;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .item-2 {
-    height: 70vh;
-    margin-top: 2.5em;
-  }
-  .nav-links {
-    top: 19vh;
   }
 }
 
