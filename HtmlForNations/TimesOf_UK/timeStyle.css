@@ -74,8 +74,6 @@ nav {
   font-family: "Nanum Myeongjo", serif;
   font-size: 30px;
   text-align: center;
-  border: 0.1rem solid #333;
-  padding: 0.2em 10rem;
 }
 
 .nav-links a:hover {
@@ -133,7 +131,7 @@ nav {
   display: grid;
   justify-content: center;
   align-items: center;
-  background-image: url("Images//background-1-opacity.jpg");
+  background-image: url("Images/Backgound/background-1-opacity.jpg");
   background-repeat: repeat;
   margin: 0em 1em 0em 1em;
   border: 0.1rem solid #333;
