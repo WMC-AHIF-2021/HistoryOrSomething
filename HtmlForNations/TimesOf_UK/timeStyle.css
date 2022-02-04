@@ -1,4 +1,11 @@
 /*Basic Styling for all Elements*/
+:root {
+  --background-color: #282828;
+}
+.light-mode {
+  --background-color: whitesmoke;
+}
+
 html {
   scroll-behavior: smooth;
   overflow: hidden;
@@ -16,7 +23,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: #282828;
+  background-color: var(--background-color);
 }
 
 /*Elements inside Navbar*/
@@ -52,7 +59,7 @@ nav {
   right: 0px;
   height: 90vh;
   top: 10vh;
-  background-color: whitesmoke;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around;

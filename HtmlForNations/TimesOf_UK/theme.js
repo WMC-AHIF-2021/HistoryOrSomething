@@ -1,13 +1,13 @@
 let icon = document.getElementById("icon");
 
 icon.onclick = function () {
-  document.body.classList.toggle("dark-theme");
+  document.body.classList.toggle("light-mode");
 
-  if (document.body.classList.contains("dark-theme")) {
-    icon.src = "Images/Icons/sun.png";
+  if (document.body.classList.contains("light-mode")) {
+    icon.src = "../Icons/moon.png";
     //document.getElementById("table").className = "table table-dark table-hover";
   } else {
-    icon.src = "Images/Icons/moon.png";
+    icon.src = "../Icons/sun.png";
   }
 };
 
