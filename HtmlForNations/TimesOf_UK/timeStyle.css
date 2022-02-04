@@ -245,9 +245,18 @@ nav {
     padding: 0.6rem 0;
   }
 
-  /*Decreae the Border Area of the links inside the Menu*/
   .nav-links a {
-    padding: 0.2em 5rem;
+    padding-right: 1em;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .item-2 {
+    height: 70vh;
+    margin-top: 2.5em;
+  }
+  .nav-links {
+    top: 19vh;
   }
 }
 
