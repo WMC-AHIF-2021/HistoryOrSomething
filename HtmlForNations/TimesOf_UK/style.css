@@ -75,15 +75,6 @@ nav {
   transition: transform 0.5s ease-in;
 }
 
-@keyframes increase {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 .nav-links li {
   list-style-type: none;
   opacity: 0;
