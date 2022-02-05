@@ -64,15 +64,24 @@ nav {
   height: 90vh;
   top: 10vh;
   background-color: var(--background-color);
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   z-index: 30;
   width: 100%;
+  padding: 1em;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
-  padding: 1em;
+}
+
+@keyframes increase {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .nav-links li {
