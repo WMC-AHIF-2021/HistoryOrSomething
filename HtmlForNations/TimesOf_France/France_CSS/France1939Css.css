@@ -23,6 +23,7 @@ html {
 
 /*Navigation Bar*/
 nav {
+  z-index: 99;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -39,7 +40,7 @@ nav {
 
 /*Text inside Logo Container*/
 .logo h4 {
-  font-size: 3.5vh;
+  font-size: 5vh;
 }
 
 /*Say Something Smart - Section*/
@@ -48,7 +49,7 @@ nav {
   font-style: normal;
   font-family: "Red Hat Mono", monospace;
   text-decoration-line: none;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 #randomFacts:hover {
@@ -144,9 +145,9 @@ nav {
 }
 
 .infTable{
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Special Elite', cursive;
   color: var(--fontColor);
-  font-size: 2vw;
+  font-size: 2.9vw;
 }
 .links{
   color: var(--fontColor);
@@ -164,17 +165,16 @@ nav {
 .item-1 {
   justify-content: center;
   height: 15vh;
-  z-index: 20;
 }
 
 .textField{
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Special Elite', cursive;
   color: var(--fontColor);
-  font-size: 1vw;
+  font-size: 1.1vw;
 }
 
 .textFieldHeader{
-  font-size: 2vw;
+  font-size: 2.2vw;
 }
 
 .item-2 {
@@ -187,6 +187,7 @@ nav {
   background-size: 100% 100%;
   margin: 0em 1em 0em 1em;
   border: 0.1rem solid #333;
+  z-index: 0;
 }
 
 .item-3 {
@@ -223,7 +224,7 @@ nav {
 }
 /*Content of Item-2*/
 .mainTitle {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Special Elite', cursive;
   text-align: center;
   font-size: 4rem;
 }
