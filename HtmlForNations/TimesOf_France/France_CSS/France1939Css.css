@@ -1,270 +1,349 @@
-.snap-wrapper {
-  width: 100%;
-  height: 100vh;
+/*Basic Styling for all Elements*/
+:root {
+  --background-color: #282828;
+  --secbackground-color: #3a3a3a;
+  --fontColor: white;
 }
-.snap-box {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-}
-
-.box-1 {
-  background-image: url("../FranceImg/1939Img/franceFlagDark.png");
-  background-size: cover;
-  color: white;
-  z-index: 0;
-}
-.box-2 {
-  background-color: black;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  width: 100%;
-}
-.secGrid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  width: 100%;
-  color: white;
-}
-.secGrid-container > div {
-  padding: 20px;
-  margin: 10px;
-}
-.secGridItemThree {
-  grid-row-start: 2;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 8;
-  margin-top: 5%;
-}
-.secGridItemFour {
-  grid-row-start: 5;
-  grid-row-end: 7;
-  grid-column-start: 1;
-  grid-column-end: 8;
-  text-align: center;
-}
-.secGridItemOne {
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-column-start: 1;
-  grid-column-end: 8;
-  justify-content: center;
-  width: 100%;
-}
-.secGridItemTwo {
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 8;
-  float: right;
-}
-.grid-container > div {
-  /*
-    padding: 20px;
-    margin: 10px;
-     */
-}
-.yearsBut {
-  margin-right: 1%;
-}
-.but {
-  font-size: 130%;
-}
-#startHeader {
-  background-color: #282828;
-}
-.item1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  justify-content: end;
-  height: 20%;
-  width: 100%;
+.light-mode {
+  --background-color: whitesmoke;
+  --secbackground-color: white;
+  --fontColor: black;
 }
 
-.item2 {
-  text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 5em;
-  text-shadow: 3px 3px 4px #777;
-  margin-top: 50px;
-  background-color: black;
-}
-.secFlexContainer {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  text-decoration: none;
-  align-items: center;
-}
-.header {
-  font-family: Arial;
-  color: black;
-  font-size: 500%;
-  text-shadow: 3px 3px 4px #777;
-}
-.borderPic {
-  width: 100%;
-  border-radius: 0.5em;
-}
-.infTable {
-  width: 100%;
-  height: 60%;
-}
-.infTableItem {
-  color: white;
-  background-color: black;
-  width: 100%;
-  font-size: 2vw;
-  margin-top: 2%;
-}
-
-.colBackground {
-  background-color: black;
-  color: white;
-  border: none;
-}
-#firstPage {
-  font-size: 150%;
-}
-body {
-  background-color: black;
-  color: white;
-  margin: 0px;
+html {
+  scroll-behavior: smooth;
   overflow: hidden;
 }
-.item3 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  justify-content: center;
-  text-align: center;
-}
-#carouselExampleControls {
-  border: black solid;
-  width: 40vw;
-}
-.buttonDownWhite {
-  color: white;
-  font-size: 300%;
-  text-decoration: none;
-  text-align: center;
-}
-#secondPage {
-  color: black;
-}
-.textField {
-  font-size: 1.2vw;
-  padding-top: 5%;
-  color: black;
-}
-.textFieldHeader {
-  font-size: 1.5vw;
-}
-.buttonDown {
-  color: black;
-  font-size: 300%;
-  text-decoration: none;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.buttonDown:hover {
-  color: black;
-  text-decoration: none;
+/*Navigation Bar*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: var(--background-color);
 }
-.buttonDownWhite:hover {
-  color: white;
-  text-decoration: none;
+
+/*Elements inside Navbar*/
+/*Logo Container*/
+.logo {
+  color: darkgoldenrod;
+  font-family: "IM Fell DW Pica SC", serif;
 }
-.thirdGrid {
-  display: grid;
-  grid-template-columns: auto auto auto;
+
+/*Text inside Logo Container*/
+.logo h4 {
+  font-size: 3.5vh;
+}
+
+/*Say Something Smart - Section*/
+#randomFacts {
+  color: darkgoldenrod;
+  font-style: normal;
+  font-family: "Red Hat Mono", monospace;
+  text-decoration-line: none;
+  font-size: 25px;
+}
+
+#randomFacts:hover {
+  cursor: pointer;
+  color: darkgoldenrod;
+  text-decoration-line: underline;
+}
+
+/*Links inside the Menu*/
+.nav-links {
+  position: absolute;
+  right: 0px;
+  height: 90vh;
+  top: 10vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 30;
   width: 100%;
-  color: white;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+  padding: 1em;
 }
 
-.thirdGridItemOne {
-  height: 100%;
-  width: 90%;
-  padding-left: 5%;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  border: black solid;
-}
-.thirdGridItemTwo {
-  height: 70%;
-  width: 100%;
-  grid-column-start: 3;
-}
-.links {
-  color: white;
-  text-decoration: none;
-}
-.links:hover {
-  text-decoration: none;
-  color: white;
+.nav-links li {
+  list-style-type: none;
+  opacity: 0;
 }
 
-/*Dropdown on navbar*/
-/* Style The Dropdown Button */
-.cDropbtn {
-  background-color: var(--navBarItem-color);
-  color: var(--text-color);
-  padding: 0.5em 0.5em;
-  font-size: 1em;
-  border-radius: 5px;
-  border: none;
+.nav-links a {
+  color: darkgoldenrod;
+  text-decoration: none;
+  font-family: "Red Hat Mono", monospace;
+  font-size: 30px;
+}
+
+.nav-links a:hover {
+  color: darkgoldenrod;
+  text-decoration: underline;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+/*Menu Icon*/
+.burger {
+  display: block;
   cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.cDropdown {
-  position: relative;
-  margin-right: 0.8rem;
-  display: inline-block;
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: darkgoldenrod;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.cDropdown-content {
+/*Each Line of the Burger*/
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*End of Navbar*/
+
+.grid-container {
+  display: grid;
+  grid-row: auto auto auto;
+  width: 100%;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img{
+  width: 45vw;
+  height: auto;
+  border: 1px solid black;
+}
+
+.infTable{
+  font-family: 'Epilogue', sans-serif;
+  color: var(--fontColor);
+  font-size: 2vw;
+}
+.links{
+  color: var(--fontColor);
+  text-decoration-line: none;
+}
+.links:hover{
+  color: var(--fontColor);
+  text-decoration-line: underline;
+}
+.links:visited{
+  color: var(--fontColor);
+  text-decoration-line: none;
+}
+
+.item-1 {
+  justify-content: center;
+  height: 15vh;
+  z-index: 20;
+}
+
+.textField{
+  font-family: 'Epilogue', sans-serif;
+  color: var(--fontColor);
+  font-size: 1vw;
+}
+
+.textFieldHeader{
+  font-size: 2vw;
+}
+
+.item-2 {
+  height: 75vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../FranceImg/1939Img/franceFlagDark.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0em 1em 0em 1em;
+  border: 0.1rem solid #333;
+}
+
+.item-3 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.item-4 {
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  height: 10vh;
+  z-index: 20;
+  padding-bottom: 2.5vh;
+}
+
+.item-5 {
+  padding: 7vh;
+  height: 80vh;
+  display: grid;
+  background-repeat: repeat;
+  margin: 0em 1em 0em 1em;
+  border: 0.1rem solid #333;
+  background-color: var(--background-color);
+}
+
+.item-6 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+/*Content of Item-2*/
+.mainTitle {
+  font-family: 'Epilogue', sans-serif;
+  text-align: center;
+  font-size: 4rem;
+}
+
+/*Content of Item-3*/
+.downArrow {
+  width: 2em;
+  height: 2em;
+  opacity: 0.2;
+  transition: 1s ease-out;
+}
+
+.downArrow:hover {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+/*Random Facts Pop Up Form Style*/
+.popUp {
   display: none;
-  position: absolute;
-  min-width: 10em;
+  font-family: "Red Hat Mono", monospace;
+  background-color: var(--background-color);
+  border: 1px solid black;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 99;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--fontColor);
 }
 
-/* Links inside the dropdown */
-.cDropdown-content a {
-  color: var(--text-color);
-  padding: 0.8em 1em;
-  text-decoration: none;
-  display: block;
+#popUpTitle {
+  color: darkgoldenrod;
+  padding-top: 2vh;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 5vh;
 }
 
-/* Change color of dropdown links on hover */
-.cDropdown-content a:hover {
-  background-color: var(--navBarItemOnHover-color);
-  color: var(--text-color);
+#facts {
+  color: var(--fontColor);
+  padding: 2vh;
+  font-size: 2vh;
 }
 
-/* Show the dropdown menu on hover */
-.cDropdown:hover .cDropdown-content {
-  display: block;
-  text-align: left;
+#highlight_close {
+  height: 5vh;
+  padding: 1vh;
+  float: right;
+  color: black;
+  border-radius: 25px;
+  background-color: darkgoldenrod;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown
-.cDropdown:hover .cDropbtn {
-  background-color: var(--navBarItemOnHover-color);
+#highlight_close:hover {
+  cursor: pointer;
 }
- */
+
+/*End of Form*/
+
+#section1{
+  background-color: var(--secbackground-color);
+}
+
+#section2 {
+  background-color: var(--secbackground-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+#section3{
+  background-color: var(--secbackground-color);
+}
+
+/*General Styling for Mobile and Table View*/
+@media screen and (max-width: 768px) {
+  /*Decrease the Fontsize of the Main Title*/
+  .item-1 {
+    height: 20vh;
+  }
+
+  .item-2 {
+    height: 70vh;
+  }
+
+  .mainTitle {
+    font-size: 2.3rem;
+  }
+
+  .nav-links {
+    top: 18vh;
+    height: 82vh;
+  }
+
+  .nav-links a {
+    font-size: 25px;
+  }
+  /*Stack each element on top of each other in the Navbar*/
+  nav {
+    flex-direction: column;
+  }
+
+  /*Increase the Menu Icon bottom and top padding*/
+  .burger {
+    padding: 0.6rem 0;
+  }
+}
+
+/*Animation for slidding in the Links*/
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
