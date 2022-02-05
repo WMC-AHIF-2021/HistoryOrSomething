@@ -9,9 +9,6 @@
 html {
   scroll-behavior: smooth;
   overflow: hidden;
-}
-
-body {
   position: relative;
 }
 
@@ -295,12 +292,9 @@ nav {
     height: 82vh;
   }
 
-  .nav-links a {
-    font-size: 25px;
-  }
-  /*Stack each element on top of each other in the Navbar*/
   nav {
     flex-direction: column;
+    height: 18vh;
   }
 
   /*Increase the Menu Icon bottom and top padding*/
