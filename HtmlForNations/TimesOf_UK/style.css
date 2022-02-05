@@ -9,6 +9,9 @@
 html {
   scroll-behavior: smooth;
   overflow: hidden;
+}
+
+body {
   position: relative;
 }
 
@@ -61,7 +64,7 @@ nav {
   height: 90vh;
   top: 10vh;
   background-color: var(--background-color);
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
