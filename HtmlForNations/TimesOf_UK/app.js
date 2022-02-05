@@ -54,10 +54,19 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+// Dark Mode
 
-window.addEventListener("load", () => {
-  const preload = document.querySelector(".preload");
-  preload.classList.add("preload-finish");
-});
+let icon = document.getElementById("icon");
+
+icon.onclick = function () {
+  document.body.classList.toggle("light-mode");
+
+  if (document.body.classList.contains("light-mode")) {
+    icon.src = "../Icons/moon.png";
+    //document.getElementById("table").className = "table table-dark table-hover";
+  } else {
+    icon.src = "../Icons/sun.png";
+  }
+};
 
 navSlide();

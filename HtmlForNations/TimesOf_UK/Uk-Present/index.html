@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    <link rel="stylesheet" href="../timeStyle.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,48 +12,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Demo</title>
 
     <body>
-
       <div id="section1">
-        <div class="item-1">
-          <nav>
-            <div class="logo">
-              <h4>HistoryOrSomething</h4>
+        <div class="grid-container">
+          <div class="item-1">
+            <nav>
+              <div class="logo">
+                <h4>HistoryOrSomething</h4>
+              </div>
+              <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../Quiz/TEST/index.html">Quiz</a></li>
+                <li><a href="#">UK - 1900</a></li>
+                <li><a href="#">UK - 1500</a></li>
+                <li><a href="#">UK - 1000</a></li>
+                <li><img src="../Icons/sun.png" id="icon" width="30px" /></li>
+              </ul>
+              <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+
+              <i onclick="openForm()" id="randomFacts">Say something smart!</i>
+            </nav>
+            <!--Random Facts Pop up Form-->
+            <div class="popUp" id="myForm">
+              <img
+                src="../Icons/remove.png"
+                onclick="closeForm()"
+                id="highlight_close"
+              />
+              <h2 id="popUpTitle">Did you know?</h2>
+              <p id="facts"></p>
             </div>
-            <ul class="nav-links">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="#">Quiz</a></li>
-              <li><a href="#">UK - 1900</a></li>
-              <li><a href="#">UK - 1500</a></li>
-              <li><a href="#">UK - 1000</a></li>
-              <li><img src="../Icons/sun.png" id="icon" width="30px" /></li>
-            </ul>
-            <div class="burger">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </div>
-    
-            <i
-            onclick="openForm()"
-            id="randomFacts"
-            >Say something smart!</i
-          >
-          </nav>
-          <!--Random Facts Pop up Form-->
-          <div class="popUp" id="myForm">
-            <img
-              src="../Icons/remove.png"
-              onclick="closeForm()"
-              id="highlight_close"
-            />
-            <h2 id="popUpTitle">Did you know?</h2>
-            <p id="facts"></p>
           </div>
-        </div>
           <div class="item-2">
             <h1 class="mainTitle">United Kingdom - Present</h1>
           </div>
@@ -73,7 +68,52 @@
               <img class="downArrow" src="../Icons/collapse-arrow.png" />
             </a>
           </div>
-          <div class="item-5"></div>
+          <div class="item-5">
+            <div class="content-grid">
+              <div class="content-item">
+                <img
+                  src="../Images/united-kingdom-map-now.gif"
+                  alt="Map of the United Kindom"
+                  class="contentImg"
+                />
+              </div>
+              <div class="content-item-2">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" colspan="2">Info Table</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Capital</th>
+                      <td>London</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Prime Minister</th>
+                      <td>Boris Johnson</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Type of Government</th>
+                      <td>Constitutional monarchy</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Population</th>
+                      <td>67.22 million (2020)</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Land Area</th>
+                      <td>242,495 km²</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Currency</th>
+                      <td>Pound sterling</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
           <div class="item-6">
             <a href="#section3">
               <img class="downArrow" src="../Icons/expand-arrow.png" />
@@ -104,7 +144,6 @@
         crossorigin="anonymous"
       ></script>
       <script src="../app.js"></script>
-      <script src="../theme.js"></script>
     </body>
   </head>
 </html>
