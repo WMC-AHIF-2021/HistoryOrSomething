@@ -1,12 +1,5 @@
 .mainTitle-Item {
-  background: url("../Images//1945/BackgroundImg/germany-surrenders-wwii-og.jpg")
+  background: url("../Images//1945/BackgroundImg/germany-surrenders-wwii-og-opacity.jpg")
     no-repeat center fixed;
   background-size: cover;
-}
-
-.mainTitle {
-  color: white;
-  background-color: #333;
-  padding: 0.1em;
-  border-radius: 10px;
 }
