@@ -161,7 +161,7 @@ nav {
 
 .mainContent-Item {
   margin: 0em 1em 0em 1em;
-  border: 0.1em solid var(--border-color);
+  border: 0.05em solid var(--border-color);
 }
 
 .content-grid {
