@@ -132,7 +132,6 @@ nav {
 .grid-container {
   display: grid;
   width: 100%;
-  background-color: var(--background-color);
 }
 
 .navBar-Item {
