@@ -3,3 +3,7 @@
     no-repeat center fixed;
   background-size: cover;
 }
+
+.mainContent-Item {
+  background-color: whitesmoke;
+}

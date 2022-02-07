@@ -1,119 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .preload {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #6e7a7c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.5s ease;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #6e7a7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  z-index: 100;
 }
 
 .preload h1 {
-    position: absolute;
-    top: 75%;
-    color: #fff;
-    font-family: "Nanum Myeongjo", serif;
+  position: absolute;
+  top: 75%;
+  color: #fff;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 .preload-finish {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 .globe {
-    width: 10em;
-    height: 10em;
-    animation: globe 1s ease infinite alternate;
+  width: 10em;
+  height: 10em;
+  animation: globe 1s ease infinite alternate;
 }
 
 @keyframes globe {
-    from {
-        transform: translateY(0em);
-    }
-    to {
-        transform: translateY(3em);
-    }
+  from {
+    transform: translateY(0em);
+  }
+  to {
+    transform: translateY(3em);
+  }
 }
 #headBlock {
-    font-family: "IM Fell DW Pica SC", serif;
-    background-color: #282828;
-    color: darkgoldenrod;
-    margin: 0px;
-    width: 100%;
+  font-family: "IM Fell DW Pica SC", serif;
+  background-color: #282828;
+  color: darkgoldenrod;
+  margin: 0px;
+  width: 100%;
 }
 
 #rightData {
-    font-family: "Red Hat Mono", monospace;
-    text-align: right;
-    font-size: 3vh;
-    padding-right: 4%;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+  font-family: "Red Hat Mono", monospace;
+  text-align: right;
+  font-size: 3vh;
+  padding-right: 4%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
 .upperLink {
-    color: darkgoldenrod;
-    font-style: normal;
-    text-decoration-line: none;
+  color: darkgoldenrod;
+  font-style: normal;
+  text-decoration-line: none;
 }
 .upperLink:hover {
-    cursor: pointer;
-    color: darkgoldenrod;
-    text-decoration-line: underline;
+  cursor: pointer;
+  color: darkgoldenrod;
+  text-decoration-line: underline;
 }
 #titel {
-    padding-left: 4%;
-    padding-top: 2%;
-    font-size: 4.5vh;
+  padding-left: 4%;
+  padding-top: 2%;
+  font-size: 4.5vh;
 }
 
 .popUp {
-    display: none;
-    font-family: "Red Hat Mono", monospace;
-    background-color: #282828;
-    border: 1px solid black;
-    border-radius: 10px;
-    position: fixed;
-    z-index: 99;
-    width: auto;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+  display: none;
+  font-family: "Red Hat Mono", monospace;
+  background-color: #282828;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 99;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
 }
 
 #popUpTitle {
-    color: darkgoldenrod;
-    padding-top: 2vh;
-    padding-left: 2em;
-    padding-right: 2em;
-    font-size: 5vh;
+  color: darkgoldenrod;
+  padding-top: 2vh;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 5vh;
 }
 
 #facts {
-    color: white;
-    padding: 2vh;
-    font-size: 2vh;
+  color: white;
+  padding: 2vh;
+  font-size: 2vh;
 }
 
 #highlight_close {
-    height: 5vh;
-    padding: 1vh;
-    float: right;
-    color: black;
-    border-radius: 25px;
-    background-color: darkgoldenrod;
+  height: 5vh;
+  padding: 1vh;
+  float: right;
+  color: black;
+  border-radius: 25px;
+  background-color: darkgoldenrod;
 }
 #highlight_close:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
