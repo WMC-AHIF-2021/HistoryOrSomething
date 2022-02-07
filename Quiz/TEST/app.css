@@ -1,5 +1,5 @@
 :root {
-  background-color: #333;
+  background-color: whitesmoke;
   font-size: 62.5%;
 }
 
@@ -20,7 +20,7 @@ h4 {
 
 h1 {
   font-size: 5.4rem;
-  color: whitesmoke;
+  color: #333;
   margin-bottom: 5rem;
 }
 
