@@ -141,10 +141,11 @@ nav {
   width: 45vw;
   height: auto;
   border: 1px solid black;
+  background-color: white;
 }
 
 .infTable{
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Metamorphous', cursive;
   color: var(--fontColor);
   font-size: 2vw;
 }
@@ -168,7 +169,7 @@ nav {
 }
 
 .textField{
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Metamorphous', cursive;
   color: var(--fontColor);
   font-size: 1vw;
 }
@@ -181,8 +182,7 @@ nav {
   height: 75vh;
   display: grid;
   justify-content: center;
-  align-items: center;
-  background-image: url("../FranceImg/1939Img/franceFlagDark.png");
+  background-image: url("../FranceImg/1812Img/franceFlag1812.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin: 0em 1em 0em 1em;
@@ -223,9 +223,10 @@ nav {
 }
 /*Content of Item-2*/
 .mainTitle {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Metamorphous', cursive;
   text-align: center;
   font-size: 4rem;
+  padding-top: 1em;
 }
 
 /*Content of Item-3*/
