@@ -32,7 +32,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: var(--background-color);
+  background-color: #2f353a;
 }
 
 /*Elements inside Navbar*/
@@ -47,6 +47,15 @@ nav {
   font-size: 25px;
 }
 
+.homeAnchor {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.homeAnchor:hover {
+  color: var(--primary-color);
+}
 /*Say Something Smart - Section*/
 #funFacts {
   color: var(--primary-color);
@@ -132,7 +141,7 @@ nav {
 .grid-container {
   display: grid;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: #3b4248;
 }
 
 .navBar-Item {
@@ -147,7 +156,6 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 0em 1em 0em 1em;
-  border: 0.1em solid var(--border-color);
 }
 
 .downButton-Item {
@@ -167,7 +175,6 @@ nav {
 
 .mainContent-Item {
   margin: 0em 1em 0em 1em;
-  border: 0.05em solid var(--border-color);
 }
 
 .content-grid {
@@ -277,7 +284,6 @@ nav {
 .card-body {
   background-color: var(--background-color);
   color: var(--secondary-color);
-  border-radius: 0.5rem;
 }
 
 .card-body a {
