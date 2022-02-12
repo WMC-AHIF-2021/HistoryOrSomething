@@ -43,6 +43,11 @@ nav {
   font-size: 3.5vh;
 }
 
+#titleLink{
+  color: darkgoldenrod;
+  text-decoration-line: none;
+}
+
 /*Say Something Smart - Section*/
 #randomFacts {
   color: darkgoldenrod;
@@ -177,6 +182,29 @@ nav {
 
 .textFieldHeader{
   font-size: 2.2vw;
+}
+
+.downButton-Item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.upButton-Item {
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  height: 10vh;
+  padding-bottom: 2.5vh;
+}
+
+.arrow{
+  color: grey;
+}
+.arrow:hover{
+  transition-duration: 0.5s;
+  color: #c2c2c2;
 }
 
 .item-2 {

@@ -90,6 +90,10 @@ html {
   padding-top: 2%;
   font-size: 4.5vh;
 }
+#titelLink{
+  color: darkgoldenrod;
+  text-decoration-line: none;
+}
 .grid-container {
   background-color: #282828;
   display: grid;
