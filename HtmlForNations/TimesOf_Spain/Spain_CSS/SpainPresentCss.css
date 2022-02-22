@@ -146,14 +146,14 @@ nav {
 }
 
 .img{
-  width: 30vw;
+  width: 45vw;
   height: auto;
 }
 
 .infTable{
   font-family: 'Epilogue', sans-serif;
   color: var(--fontColor);
-  font-size: 2.9vw;
+  font-size: 2vw;
 }
 .links{
   color: var(--fontColor);
@@ -212,7 +212,7 @@ nav {
   display: grid;
   justify-content: center;
   align-items: center;
-  background-image: url("../FranceImg/PresentImg/franceFlag.png");
+  background-image: url("../SpainImg/Spain2022/SpainFlag.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin: 0em 1em 0em 1em;
