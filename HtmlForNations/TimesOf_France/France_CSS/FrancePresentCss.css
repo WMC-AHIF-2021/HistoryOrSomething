@@ -47,23 +47,20 @@ nav {
   font-family: "IM Fell DW Pica SC", serif;
 }
 
-.logo:hover{
-  cursor: pointer;
-}
-
 /*Text inside Logo Container*/
 .logo h4 {
   font-size: 25px;
 }
 
 .homeAnchor {
-  font-size: 25px;
+  font-size: 33px;
   text-decoration: none;
   color: var(--primary-color);
 }
 
 .homeAnchor:hover {
   color: var(--primary-color);
+  cursor: pointer;
 }
 /*Say Something Smart - Section*/
 #funFacts {

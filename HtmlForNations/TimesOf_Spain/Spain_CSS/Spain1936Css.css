@@ -57,13 +57,14 @@ nav {
 }
 
 .homeAnchor {
-  font-size: 25px;
+  font-size: 33px;
   text-decoration: none;
   color: var(--primary-color);
 }
 
 .homeAnchor:hover {
   color: var(--primary-color);
+  cursor: pointer;
 }
 /*Say Something Smart - Section*/
 #funFacts {
