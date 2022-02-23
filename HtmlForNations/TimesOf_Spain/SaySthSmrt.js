@@ -10,14 +10,14 @@ let things = [
   "The dutch actually ate their prime minister.",
   "Australia actually fought a war against its national bird ...and lost!",
   "In Liechtenstein's last military engagement (1886)," +
-  "they sent in 80 soldiers. " +
-  "81 came back, including a new italian friend.",
+    "they sent in 80 soldiers. " +
+    "81 came back, including a new italian friend.",
   "Julius Caesar was stabbed 23 times.",
   "In 1386, a pig was executed in France.",
   "Since 1945, all British tanks are equipped with tea-making facilities.",
   "During World War I, the French built a “fake Paris”.",
   "Albert Einstein turned down the presidency of Israel.",
-  "In 1913 Stalin, Hitler, Trotsky, Tito all lived in Vienna for a couple of months."
+  "In 1913 Stalin, Hitler, Trotsky, Tito all lived in Vienna for a couple of months.",
 ];
 let ran = Math.floor(Math.random() * things.length);
 
@@ -26,11 +26,7 @@ function openForm() {
   document.getElementById("myForm").style.display = "block";
   document.getElementById("facts").innerHTML = things[ran];
 }
+
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
-
-window.addEventListener("load", () => {
-  const preload = document.querySelector(".preload");
-  preload.classList.add("preload-finish");
-});
