@@ -18,6 +18,9 @@ let things = [
   "During World War I, the French built a “fake Paris”.",
   "Albert Einstein turned down the presidency of Israel.",
   "In 1913 Stalin, Hitler, Trotsky, Tito all lived in Vienna for a couple of months.",
+  "Abraham Lincoln is in the wrestling hall of fame",
+  "In 500bc, a messenger died after he ran to athens to deliver the message, that the greeks defeated the persians." +
+  "He covered a distance of 41,2km and the city he started from was named Marathon."
 ];
 let ran = Math.floor(Math.random() * things.length);
 
