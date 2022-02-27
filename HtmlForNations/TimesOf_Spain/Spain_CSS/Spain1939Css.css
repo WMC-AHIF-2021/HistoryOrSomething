@@ -219,7 +219,7 @@ nav {
 }
 
 .table-item{
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Special Elite', cursive;
   color: var(--fontColor);
 }
 
@@ -239,7 +239,7 @@ nav {
 
 .mainTitle {
   font-size: 4rem;
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Special Elite', cursive;
   text-align: center;
 }
 
@@ -311,7 +311,7 @@ nav {
 }
 
 .card-body {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Special Elite', cursive;
   background-color: var(--background-color);
   color: var(--secondary-color);
 }
