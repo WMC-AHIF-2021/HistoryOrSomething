@@ -192,7 +192,12 @@ html {
 }
 
 #button5 {
-  background-image: url("flags/Spain_flag.png");
+  background-image: url("flags/Spain_flag2.png");
+  background-size: 100% 100%;
+}
+
+#button7 {
+  background-image: url("flags/Japan_flag.jpg");
   background-size: 100% 100%;
 }
 .countryButton:hover {
