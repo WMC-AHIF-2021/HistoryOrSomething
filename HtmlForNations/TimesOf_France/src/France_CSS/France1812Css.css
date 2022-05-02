@@ -87,7 +87,7 @@ nav {
   right: 0px;
   height: 90vh;
   top: 10vh;
-  background-color: var(--background-color);
+  background-color: var(--secbackground-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -151,7 +151,7 @@ nav {
 .grid-container {
   display: grid;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--secbackground-color);
 }
 
 .navBar-Item {
@@ -386,7 +386,9 @@ nav {
 
 .mainTitle-Item {
   background-image: url("../FranceImg/1812Img/franceFlag1812.png");
-  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mainContent-Item {

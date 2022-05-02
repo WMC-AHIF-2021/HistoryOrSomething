@@ -43,17 +43,19 @@ nav {
 /*Elements inside Navbar*/
 /*Logo Container*/
 .logo {
-  color: var(--primary-color);
   font-family: "IM Fell DW Pica SC", serif;
 }
 
-.logo:hover{
-  cursor: pointer;
+/*Text inside Logo Container*/
+.logo a {
+  text-decoration-line: none;
+  color: var(--primary-color);
+  font-size: 2rem;
 }
 
-/*Text inside Logo Container*/
-.logo h4 {
-  font-size: 25px;
+#logo-text:hover{
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
 .homeAnchor {
@@ -210,8 +212,8 @@ nav {
 }
 
 .content-img {
-  max-width: 80%;
-  max-height: 80%;
+  width: 30vw;
+  height: auto;
 }
 
 .table {
@@ -388,8 +390,10 @@ nav {
 }
 
 .mainTitle-Item {
-  background-image: url("../FranceImg/1939Img/franceFlagDark.png");
-  background-size: 100% 100%;
+  background-image: url("../Images/1939/BackgroundImg/Flag2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .mainContent-Item {
