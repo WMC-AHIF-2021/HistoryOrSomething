@@ -151,7 +151,7 @@ nav {
 .grid-container {
   display: grid;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--secbackground-color);
 }
 
 .navBar-Item {
@@ -399,7 +399,7 @@ nav {
 }
 
 .mainContent-Item {
-  background-color: var(--secbackground-color);
+  background-color: var(--background-color);
 }
 
 /*Animation for slidding in the Links*/

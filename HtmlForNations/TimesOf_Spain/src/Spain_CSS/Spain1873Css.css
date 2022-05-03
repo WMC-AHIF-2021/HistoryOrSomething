@@ -151,7 +151,7 @@ nav {
 .grid-container {
   display: grid;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--secbackground-color);
 }
 
 .navBar-Item {
@@ -382,11 +382,13 @@ nav {
 
 .mainTitle-Item {
   background-image: url("../SpainImg/Spain1873/SpainFlag.png");
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .mainContent-Item {
-  background-color: var(--secbackground-color);
+  background-color: var(--background-color);
 }
 
 /*Animation for slidding in the Links*/
