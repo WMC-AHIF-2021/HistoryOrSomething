@@ -48,6 +48,9 @@ html {
 }
 #headBlock {
   font-family: "IM Fell DW Pica SC", serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: #282828;
   color: darkgoldenrod;
   margin: 0px;
