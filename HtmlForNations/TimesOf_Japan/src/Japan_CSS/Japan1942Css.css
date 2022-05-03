@@ -382,7 +382,9 @@ nav {
 
 .mainTitle-Item {
   background-image: url("../JapanImg/1942Img/BackgroundFlag.png");
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .mainContent-Item {
