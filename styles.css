@@ -64,6 +64,7 @@ html {
   padding-right: 4%;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  user-select: none;
 }
 
 #aboutUs:hover{
@@ -275,9 +276,11 @@ html {
   padding-left: 2em;
   padding-right: 2em;
   font-size: 5vh;
+  user-select: none;
 }
 
 #facts {
+  user-select: none;
   color: white;
   padding: 2vh;
   font-size: 2vh;
@@ -330,6 +333,7 @@ html {
   padding-top: 2%;
   font-size: 5vh;
   text-align: center;
+  user-select: none;
 }
 
 .descriptionText {
@@ -338,6 +342,7 @@ html {
   background-color: #282828;
   color: white;
   font-size: 3vh;
+  user-select: none;
 }
 
 #leftText {
@@ -359,6 +364,7 @@ html {
   padding-bottom: 3%;
   padding-left: 1%;
   font-size: 5vh;
+  user-select: none;
 }
 
 #profileRow {
@@ -368,10 +374,12 @@ html {
   width: 100%;
 }
 .profilePic {
+  user-select: none;
   height: 25vh;
   width: auto;
 }
 .profileText {
+  user-select: none;
   padding-top: 3vh;
   font-family: "Red Hat Mono", monospace;
   color: white;
@@ -379,6 +387,7 @@ html {
 }
 
 #bottomText {
+  user-select: none;
   padding-top: 4vh;
   font-family: "Red Hat Mono", monospace;
   text-align: center;

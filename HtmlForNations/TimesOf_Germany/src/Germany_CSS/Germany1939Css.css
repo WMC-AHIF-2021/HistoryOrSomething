@@ -286,12 +286,14 @@ nav {
   padding-left: 2em;
   padding-right: 2em;
   font-size: 5vh;
+  user-select: none;
 }
 
 #facts {
   color: var(--secondary-color);
   padding: 2vh;
   font-size: 3vh;
+  user-select: none;
 }
 
 #highlight_close {
@@ -316,6 +318,7 @@ nav {
   font-family: 'Special Elite', cursive;
   background-color: var(--background-color);
   color: var(--secondary-color);
+  user-select: none;
 }
 
 .card-body a {
@@ -333,6 +336,7 @@ nav {
   padding: 0.5em;
   border: solid black;
   border-radius: 10px;
+  user-select: none;
 }
 
 /*General Styling for Mobile View*/
