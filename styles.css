@@ -66,14 +66,19 @@ html {
   padding-bottom: 3vh;
 }
 
+#aboutUs:hover{
+  text-decoration-line: none;
+}
+
 .upperLink {
+  transition-duration: 0.5s;
   color: darkgoldenrod;
   font-style: normal;
 }
 .upperLink:hover {
+  transition-duration: 0.5s;
   cursor: pointer;
-  color: darkgoldenrod;
-  text-decoration-line: underline;
+  color: #fcb50c;
 }
 .bottomLink {
   color: white;
@@ -92,6 +97,11 @@ html {
   padding-left: 4%;
   padding-top: 2%;
   font-size: 4.5vh;
+  user-select: none;
+}
+
+#titel:hover {
+  cursor: pointer;
 }
 #titelLink{
   color: darkgoldenrod;
@@ -308,16 +318,6 @@ html {
   padding-top: 2%;
   font-size: 5vh;
   text-align: center;
-}
-
-#bulbImg{
-  height: 5vh;
-  width: auto;
-  background-color: #3a3a3a;
-}
-
-#bulbImg:hover{
-  background-color: #464646;
 }
 
 .descriptionText {
