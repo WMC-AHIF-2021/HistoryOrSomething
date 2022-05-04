@@ -291,7 +291,7 @@ html {
   padding: 1vh;
   float: right;
   color: black;
-  border-radius: 25px;
+  border-radius: 2em;
   background-color: darkgoldenrod;
 }
 #highlight_close:hover {

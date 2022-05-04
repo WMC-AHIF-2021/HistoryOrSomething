@@ -300,7 +300,7 @@ nav {
   height: 4vh;
   padding: 1vh;
   float: right;
-  border-radius: 25px;
+  border-radius: 2em;
   background-color: var(--primary-color);
 }
 
