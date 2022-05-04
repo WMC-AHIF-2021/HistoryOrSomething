@@ -310,6 +310,16 @@ html {
   text-align: center;
 }
 
+#bulbImg{
+  height: 5vh;
+  width: auto;
+  background-color: #3a3a3a;
+}
+
+#bulbImg:hover{
+  background-color: #464646;
+}
+
 .descriptionText {
   font-family: "Red Hat Mono", monospace;
   margin: 0px;

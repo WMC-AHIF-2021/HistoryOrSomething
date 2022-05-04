@@ -53,7 +53,7 @@ nav {
 
 /*Text inside Logo Container*/
 .logo h4 {
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 .homeAnchor {
@@ -151,7 +151,7 @@ nav {
 .grid-container {
   display: grid;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--secbackground-color);
 }
 
 .navBar-Item {
@@ -210,8 +210,9 @@ nav {
 }
 
 .content-img {
-  max-width: 80%;
-  max-height: 80%;
+  width: 40vw;
+  height: auto;
+  border: 0.3rem double var(--primary-color);
 }
 
 .table {
@@ -381,12 +382,14 @@ nav {
 }
 
 .mainTitle-Item {
-  background-image: url("../JapanImg/1942Img/BackgroundFlag.png");
-  background-size: 100% 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_the_Japanese_Emperor.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .mainContent-Item {
-  background-color: var(--secbackground-color);
+  background-color: var(--background-color);
 }
 
 /*Animation for slidding in the Links*/
