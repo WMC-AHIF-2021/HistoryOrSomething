@@ -67,18 +67,18 @@ html {
 }
 
 #aboutUs:hover{
-  text-decoration-line: none;
+  color: darkgoldenrod;
+  text-decoration-line: underline;
 }
 
 .upperLink {
-  transition-duration: 0.5s;
   color: darkgoldenrod;
   font-style: normal;
 }
 .upperLink:hover {
   transition-duration: 0.5s;
   cursor: pointer;
-  color: #fcb50c;
+  text-decoration-line: underline;
 }
 .bottomLink {
   color: white;
@@ -187,31 +187,43 @@ html {
 
 #button1 {
   background-image: url("flags/UK_flag2.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 #button2 {
   color: black;
   background-image: url("flags/France_flag2.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 #button3 {
   background-image: url("flags/Germany_flag2.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 #button4 {
   color: black;
   background-image: url("flags/Austria_flag.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #button5 {
   background-image: url("flags/Spain_flag2.png");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #button7 {
   background-image: url("flags/Japan_flag.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .countryButton:hover {
   transition-duration: 1s;
