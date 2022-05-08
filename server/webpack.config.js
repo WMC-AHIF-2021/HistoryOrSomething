@@ -3,8 +3,8 @@ const path = require('path')
 module.exports = {
     mode: "development",
     entry: {
-        bundle: '../build/index.js',
-        test: '../build/test.js'
+        bundle: './build/index.js',
+        test: './build/test.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
