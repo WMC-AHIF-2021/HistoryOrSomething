@@ -1,4 +1,4 @@
-import {Server} from "./index.js";
+import {Server} from "./server-client.js";
 
 const server = new Server();
 

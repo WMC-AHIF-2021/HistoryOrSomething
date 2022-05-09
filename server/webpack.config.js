@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
     mode: "development",
     entry: {
-        bundle: './build/index.js',
+        bundle: './build/server-client.js',
         test: './build/test.js'
     },
     output: {

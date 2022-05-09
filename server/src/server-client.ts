@@ -22,18 +22,62 @@ initializeApp(firebaseConfig);
 const db = getFirestore();
 const auth = getAuth();
 
+// collection ref
+const colRef = collection(db, "quizes");
+
 export class Server {
-    public getDatabase():any {
-        return db;
-    }
 
     public test(): void {
         console.log("database function working!");
     }
+
+    // Log in User
+    public loginUser(email: string, password: string,): boolean {
+        let success: boolean = false;
+        signInWithEmailAndPassword(auth, email, password)
+            .then((cred) => {
+                console.log("user logged in: ", cred.user)
+                success = true;
+            })
+            .catch((err) => console.log(err.message))
+
+        return success;
+    }
+
+    // Sign out User
+    public logoutUser(): boolean {
+        let success: boolean = false;
+        signOut(auth)
+            .then(() => {
+                console.log("the user signed out");
+                success = true;
+            })
+            .catch((err) => console.log(err.message))
+
+        return success;
+    }
+
+    public signUpUser(email: string, password: string):boolean {
+        let success: boolean = false;
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((cred) => {
+                (db as any).collection("users").doc(cred.user.uid).set({
+                    score: 1
+                })
+                    .then(() => {
+                        console.log("doc success");
+                        success = true;
+                    });
+                //setDoc(doc(db, "/users", cred.user.uid), {score: 0})
+                console.log('user created: ', cred.user);
+            })
+            .catch((err) => console.log(err.message));
+
+        return success;
+    }
 }
 
-// collection ref
-const colRef = collection(db, "quizes");
+
 
 // queries
 const q = query(colRef,
