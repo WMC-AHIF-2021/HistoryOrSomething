@@ -187,41 +187,41 @@ html {
 }
 
 #button1 {
-  background-image: url("flags/UK_flag2.jpg");
+  background-image: url("Resources/flags/UK_flag2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 #button2 {
   color: black;
-  background-image: url("flags/France_flag2.jpg");
+  background-image: url("Resources/flags/France_flag2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 #button3 {
-  background-image: url("flags/Germany_flag2.jpg");
+  background-image: url("Resources/flags/Germany_flag2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 #button4 {
   color: black;
-  background-image: url("flags/Austria_flag.jpg");
+  background-image: url("Resources/flags/Austria_flag.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #button5 {
-  background-image: url("flags/Spain_flag2.png");
+  background-image: url("Resources/flags/Spain_flag2.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #button7 {
-  background-image: url("flags/Japan_flag.jpg");
+  background-image: url("Resources/flags/Japan_flag.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -233,7 +233,7 @@ html {
 }
 
 #buttonImg1 {
-  background-image: url("neededImg/world-map.png");
+  background-image: url("Resources/neededImg/world-map.png");
   background-size: 80% auto;
 }
 #buttonImg1:hover {
@@ -241,7 +241,7 @@ html {
 }
 
 #buttonImg2 {
-  background-image: url("neededImg/surveys.png");
+  background-image: url("Resources/neededImg/surveys.png");
   background-size: 30% auto;
 }
 #buttonImg2:hover {
