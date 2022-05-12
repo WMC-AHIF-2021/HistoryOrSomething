@@ -21,7 +21,7 @@ loginForm.addEventListener("submit", (e) => {
     let success = server.loginUser(email, password);
     console.log(success);
     if (success) {
-        window.location.assign("../../src/index.html");
+        window.location.assign("../../index.html");
     }
 });
 //# sourceMappingURL=userAuth.js.map

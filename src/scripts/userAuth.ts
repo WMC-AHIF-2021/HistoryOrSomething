@@ -21,6 +21,6 @@ loginForm.addEventListener("submit", (e) => {
     console.log(success);
 
     if (success) {
-        window.location.assign("../../src/index.html");
+        window.location.assign("../../index.html");
     }
 })
