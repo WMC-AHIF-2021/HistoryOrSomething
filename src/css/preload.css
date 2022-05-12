@@ -29,3 +29,12 @@
     height: 10em;
     animation: globe 1s ease infinite alternate;
 }
+
+@keyframes globe {
+    from {
+        transform: translateY(0em);
+    }
+    to {
+        transform: translateY(3em);
+    }
+}
