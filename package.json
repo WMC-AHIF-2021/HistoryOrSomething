@@ -1,0 +1,28 @@
+{
+  "name": "historyorsomething",
+  "version": "1.0.0",
+  "description": "Our Website: https://wmc-ahif-2021.github.io/HistoryOrSomething/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WMC-AHIF-2021/HistoryOrSomething.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WMC-AHIF-2021/HistoryOrSomething/issues"
+  },
+  "homepage": "https://github.com/WMC-AHIF-2021/HistoryOrSomething#readme",
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "firebase": "^9.8.1"
+  }
+}

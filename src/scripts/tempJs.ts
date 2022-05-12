@@ -29,6 +29,7 @@ function openForm() {
   document.getElementById("myForm").style.display = "block";
   document.getElementById("facts").innerHTML = things[ran];
 }
+
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
@@ -37,3 +38,28 @@ window.addEventListener("load", () => {
   const preload = document.querySelector(".preload");
   preload.classList.add("preload-finish");
 });
+
+const loginForm = document.getElementById("modal-login");
+
+function openLogin() {
+  loginForm.style.display = "block";
+}
+
+function reveal() {
+  const reveals = document.querySelectorAll(".reveal");
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+reveal();
+
+window.addEventListener("scroll", reveal);
+

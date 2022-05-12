@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #F2F4F3;
+    padding: 1em 0;
+}
+
+.navItemStyle {
+    color:  #5E503F;
+    font-family: "Times New Roman", "sans-serif";
+    font-size: 1.4rem;
+}
+
+.nav-item {
+    padding-left: 1em;
+    text-align: center;
+}
+
+.mainTitle {
+    font-size: 1.6rem;
+}
+
+.nav-item:hover{
+    text-decoration-line: underline;
+}

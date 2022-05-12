@@ -1,0 +1,51 @@
+@import url("../css/navbar.css");
+@import url("../css/root.css");
+@import url("../css/preload.css");
+@import url("saySomethingSmart.css");
+
+.content{
+    background-color: var(--primary-color);
+    padding: 1em;
+}
+
+.sectionHeader{
+    font-family: "Times New Roman", "sans-serif";
+    margin-top: 5em;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--secondary-color);
+
+    border-bottom: 1px solid #5E503F;
+    border-top: 1px solid #5E503F;
+
+    margin-bottom: 1em;
+}
+
+.countryBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-1);
+
+    padding: 1em;
+    margin: 1em;
+    border-radius: 15px;
+    max-width: 30em;
+}
+
+.countryBox:hover{
+    background-color: white;
+    transition: background-color 0.5s;
+}
+.countryBox img{
+    width: 50%;
+}
+
+.countryBox span {
+    font-family: "Times New Roman", "sans-serif";
+    font-size: 2rem;
+}
+

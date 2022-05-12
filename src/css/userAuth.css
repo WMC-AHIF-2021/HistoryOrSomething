@@ -1,0 +1,68 @@
+#modal-account {
+    display: none;
+}
+
+
+#modal-signup {
+    display: none;
+}
+
+
+#modal-login {
+    background-color: #f4f3ee;
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.input-field {
+    font-family: 'Epilogue', sans-serif;
+    color: #8a817c;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content h2 {
+    font-family: 'Epilogue', sans-serif;
+    color: #8a817c;
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+.modal-content h1 {
+    color: #463f3a;
+}
+
+.textInput {
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+
+.button {
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: #2f353a;
+    border-color: #2f353a;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/userAuth.css">
+
+</head>
+<body>
+<!-- SIGN UP MODAL -->
+<div id="modal-signup" class="modal">
+    <div class="modal-content">
+        <h4>Sign up</h4>
+        <form class="signup">
+            <div class="input-field">
+                <input type="email" id="signup-email" required/>
+                <label for="signup-email">Email address</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="signup-password" required/>
+                <label for="signup-password">Choose password</label>
+            </div>
+            <button class="button">Sign up</button>
+        </form>
+    </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="modal-login" class="modal">
+    <div class="modal-content">
+        <h1>HistoryOrSomething</h1>
+        <h2>Login</h2>
+        <form class="login">
+            <div class="input-field">
+                <input class="textInput" type="email" name="email" placeholder="Email" required/>
+            </div>
+            <div class="input-field">
+                <input class="textInput" placeholder="Password" type="password" name="password" required/>
+            </div>
+            <button class="button">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- ACCOUNT MODAL -->
+<div id="modal-account" class="modal">
+    <div class="modal-content center-align">
+        <h4>Account details</h4><br/>
+        <div class="account-details"></div>
+    </div>
+</div>
+
+<script src="../../dist/userAuth.js"></script>
+</body>
+</html>

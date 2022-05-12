@@ -1,0 +1,124 @@
+@import url("css/navbar.css");
+@import url("css/saySomethingSmart.css");
+@import url("css/root.css");
+@import url("css/preload.css");
+
+/*Layout of main page */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 5em 4em 0 4em;
+    background-color: var(--primary-color);
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 1em;
+}
+
+.item2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+}
+
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.item4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    margin-top: 3em;
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 1em;
+}
+
+
+.introduction-text {
+    font-family: "Times New Roman", "sans-serif";
+    color: var(--secondary-color);
+    text-align: center;
+
+    font-size: 1.5rem;
+    max-width: 80%;
+}
+
+.imageSlide {
+    border: 1px solid var(--secondary-color);
+    padding: 1em;
+}
+
+.box {
+    font-family: "Times New Roman", "sans-serif";
+    background-color: var(--background-color-1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    font-size: medium;
+    max-width: 30%;
+    text-align: center;
+}
+
+.box:hover {
+    background-color: white;
+    transition: background-color 0.5s;
+}
+
+.boxImage {
+    width: 30%;
+    padding-bottom: 1em;
+}
+
+.box a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#myForm{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .item3 {
+        flex-direction: column;
+    }
+
+    .box{
+        margin-bottom: 1em;
+        max-width: 100%;
+    }
+
+    .imageSlide{
+        border: none;
+        padding: 0;
+    }
+}
+
+button{
+    border: none;
+    width: 100%;
+}

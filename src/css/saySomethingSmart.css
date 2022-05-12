@@ -1,0 +1,43 @@
+@import url("root.css");
+
+.popUp {
+    display: none;
+    box-shadow: black;
+    font-family: "Times New Roman", "sans-serif";
+    background-color: var(--background-color-1);
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#popUpTitle {
+
+    padding-top: 2vh;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 5vh;
+    user-select: none;
+}
+
+#facts {
+    user-select: none;
+    color: var(--secondary-color);
+    padding: 2vh;
+    font-size: 2vh;
+}
+
+#highlight_close {
+    height: 4vh;
+    padding: 1vh;
+    float: right;
+    background-color: var(--color-optional);
+}
+#highlight_close:hover {
+    cursor: pointer;
+}
