@@ -1,6 +1,6 @@
 .navbar {
     background-color: #F2F4F3;
-    padding: 1em 0;
+    padding-top: 1em;
 }
 
 .navItemStyle {
@@ -10,8 +10,8 @@
 }
 
 .nav-item {
-    padding-left: 1em;
-    text-align: center;
+    text-align: left;
+    padding-left: 3em;
 }
 
 .mainTitle {
