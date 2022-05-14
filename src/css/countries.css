@@ -4,21 +4,19 @@
 @import url("saySomethingSmart.css");
 
 .content{
-    background-color: var(--primary-color);
+
     padding: 1em;
+}
+
+body{
+    background-color: var(--primary-color);
+    overflow-x: hidden;
 }
 
 .sectionHeader{
     font-family: "Times New Roman", "sans-serif";
-    margin-top: 5em;
     text-align: center;
-    text-decoration: underline;
-    color: var(--secondary-color);
-
-    border-bottom: 1px solid #5E503F;
-    border-top: 1px solid #5E503F;
-
-    margin-bottom: 1em;
+    color: white;
 }
 
 .countryBox {
@@ -31,9 +29,9 @@
     background-color: var(--background-color-1);
 
     padding: 1em;
-    margin: 1em;
-    border-radius: 15px;
     max-width: 30em;
+
+    margin-bottom: 1em;
 }
 
 .countryBox:hover{
@@ -49,3 +47,48 @@
     font-size: 2rem;
 }
 
+/*Layout of main page */
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5em 4em 0 4em;
+    background-color: var(--primary-color);
+
+    width: 100vw;
+    height: 100vh;
+    max-height: 45em;
+}
+
+.item1 {
+    background-image: url("../Resources/backgroundImg/Flag_of_Europe.svg.png");
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.item4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    margin-top: 3em;
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.box1{
+    margin-bottom: 1em;
+}
