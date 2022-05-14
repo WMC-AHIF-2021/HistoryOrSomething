@@ -4,10 +4,10 @@ module.exports = {
     mode: "development",
     entry:  {
         server: "./build/server-client.js",
-        userAuth: "./build/userAuth.js"
+        userAuthBundle: "./build/userAuth.js"
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: '[name].js',
         sourceMapFilename: "[name].js.map"
     },
