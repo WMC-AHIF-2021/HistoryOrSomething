@@ -7,7 +7,7 @@ module.exports = {
         userAuthBundle: "./build/userAuth.js"
     },
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'bundles'),
         filename: '[name].js',
         sourceMapFilename: "[name].js.map"
     },
