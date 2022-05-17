@@ -1,7 +1,10 @@
-const path = require('path')
+const path = require('path');
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
-    mode: "development",
+    mode: "production",
+    devtool: "source-map",
+    watch: true,
     entry:  {
         server: "./build/server-client.js",
         userAuthBundle: "./build/userAuth.js"
@@ -11,6 +14,5 @@ module.exports = {
         filename: '[name].js',
         sourceMapFilename: "[name].js.map"
     },
-    devtool: "source-map",
-    watch: true
-}
+    plugins: [new CompressionPlugin()],
+};
