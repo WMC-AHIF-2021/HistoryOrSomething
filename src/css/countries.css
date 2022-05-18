@@ -2,6 +2,7 @@
 @import url("../css/root.css");
 @import url("../css/preload.css");
 @import url("saySomethingSmart.css");
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 .content{
 
@@ -14,9 +15,11 @@ body{
 }
 
 .sectionHeader{
-    font-family: "Times New Roman", "sans-serif";
+    font-family: 'IM Fell English SC', serif;
     text-align: center;
-    color: white;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
 
 .countryBox {
@@ -43,44 +46,45 @@ body{
 }
 
 .countryBox span {
-    font-family: "Times New Roman", "sans-serif";
+    font-family: 'IM Fell English SC', serif;
     font-size: 2rem;
 }
 
 /*Layout of main page */
 .grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 70%;
+    grid-row-gap: 1em;
     padding: 5em 4em 0 4em;
     background-color: var(--primary-color);
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     max-height: 45em;
 }
 
 .item1 {
-    background-image: url("../Resources/backgroundImg/Flag_of_Europe.svg.png");
-    background-size:100% 100%;
+    background-image: linear-gradient(var(--background-image-curtain), var(--background-image-curtain)), url("../Resources/neededImg/EurpeImg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 1em;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .item2 {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
 
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .item4{
-    grid-column-start: 1;
-    grid-column-end: 4;
     text-align: center;
     margin-top: 3em;
     border-top: 1px solid var(--secondary-color);
@@ -91,4 +95,26 @@ body{
 
 .box1{
     margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 700px){
+    .countryBox span{
+        font-size: 0.8rem;
+    }
+
+    .sectionHeader{
+        font-size: 0.9rem;
+    }
+
+    .grid-container{
+        margin-top: 15vh;
+        padding: 2em 1.5em 0 1.5em;
+    }
+
+    .countryBox{
+        padding: 0.5em;
+        max-width: 15em;
+
+        margin-bottom: 0.5em;
+    }
 }

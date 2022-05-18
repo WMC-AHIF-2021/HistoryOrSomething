@@ -5,8 +5,9 @@
 
 .navItemStyle {
     color:  #5E503F;
-    font-family: "Times New Roman", "sans-serif";
+    font-family: 'IM Fell English SC', serif;
     font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .nav-item {
@@ -15,9 +16,16 @@
 }
 
 .mainTitle {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
+    font-family: 'IM Fell English SC', serif;
 }
 
 .nav-item:hover{
     text-decoration-line: underline;
+}
+
+@media only screen and (max-width: 700px){
+    .mainTitle{
+        font-size: 1.5rem;
+    }
 }

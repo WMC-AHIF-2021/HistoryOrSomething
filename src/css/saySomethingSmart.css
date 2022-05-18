@@ -3,7 +3,7 @@
 .popUp {
     display: none;
     box-shadow: black;
-    font-family: "Times New Roman", "sans-serif";
+    font-family: 'IM Fell English SC', serif;
     background-color: var(--background-color-1);
     border-radius: 10px;
     position: fixed;
@@ -21,7 +21,7 @@
     padding-top: 2vh;
     padding-left: 2em;
     padding-right: 2em;
-    font-size: 5vh;
+    font-size: 3rem;
     user-select: none;
 }
 
@@ -40,4 +40,10 @@
 }
 #highlight_close:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    #popUpTitle{
+        font-size: 2rem;
+    }
 }
