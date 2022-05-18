@@ -1,16 +1,25 @@
-const path = require('path')
+const path = require('path');
+let BrotliPlugin = require('brotli-webpack-plugin');
 
 module.exports = {
-    mode: "development",
+    mode: "production",
+    devtool: "source-map",
+    watch: true,
     entry:  {
         server: "./build/server-client.js",
-        userAuth: "./build/userAuth.js"
+        userAuthBundle: "./build/userAuth.js"
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'bundles'),
         filename: '[name].js',
         sourceMapFilename: "[name].js.map"
     },
-    devtool: "source-map",
-    watch: true
-}
+    plugins: [
+        new BrotliPlugin({
+            asset: '[path].br[query]',
+            test: /\.(js|css|html|svg)$/,
+            threshold: 10240,
+            minRatio: 0.8
+        })
+    ]
+};
