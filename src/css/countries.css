@@ -37,6 +37,7 @@ body{
     max-width: 30em;
 
     margin-bottom: 1em;
+    cursor: pointer;
 }
 
 .countryBox:hover{

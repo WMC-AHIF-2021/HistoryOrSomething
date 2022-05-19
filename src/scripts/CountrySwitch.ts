@@ -1,4 +1,4 @@
-let europeNames: string[][] = [
+const europeNames: string[][] = [
     ["Germany", "../Resources/flags/germany.png", "../Nations/TimesOf_Germany/src/german-present.html"],
     ["Austria", "../Resources/flags/austria.png", ""],
     ["France", "../Resources/flags/france.png", "../Nations/TimesOf_France/src/FrancePresent.html"],
@@ -8,29 +8,75 @@ let europeNames: string[][] = [
     ["Greece", "../Resources/flags/greece.png", ""]
 ]
 
-let asiaNames: string[][] = [
+const asiaNames: string[][] = [
     ["Japan", "../Resources/flags/japan.png", "../Nations/TimesOf_Japan/src/Japan2022.html"],
-    ["China", "../Resources/flags/china.png", ""]
+    ["China", "../Resources/flags/china.png", ""],
+    ["India", "../Resources/flags/india.png", ""],
+    ["Korea", "../Resources/flags/south-korea.png", ""],
+    ["Iran", "../Resources/flags/iran.png", ""],
+    ["Saudi-Arabia", "../Resources/flags/saudi-arabia.png", ""]
+]
+/*
+const africaNames: string[][] = [
+    ["Ethiopia","../Resources/flags/ethiopia.png",""],
+    ["South Africa","../Resources/flags/south-africa.png",""],
+    ["Morocco","../Resources/flags/morocco.png",""],
+    ["Egypt","../Resources/flags/egypt.png",""],
+    ["Nigeria","../Resources/flags/nigeria.png",""]
 ]
 
-function switchContinent(){
+const northAmerica: string[][] = [
+    ["USA","../Resources/flags/united-states.png",""],
+    ["Canada","../Resources/flags/canada.png",""],
+    ["Mexico","../Resources/flags/mexico.png",""],
+    ["Honduras","../Resources/flags/honduras.png",""],
+    ["Cuba","../Resources/flags/cuba.png",""],
+]
+
+const southAmerica: string[][] = [
+    ["Brazil","../Resources/flags/brazil.png",""],
+    ["Colombia","../Resources/flags/colombia.png",""],
+    ["Argentina","../Resources/flags/argentina.png",""],
+    ["Venezuela","../Resources/flags/venezuela.png",""],
+    ["Peru","../Resources/flags/peru.png",""],
+]
+*/
+enum Direction {
+    left = -1,
+    right = 1,
+    none = 0
+}
+
+const arr = [
+    [europeNames, "Europe"],
+    [asiaNames, "Asia"],
+    /*
+    [africaNames, "Africa"],
+    [northAmerica, "North America"],
+    [southAmerica, "South America"]
+    */
+]
+
+let current: number = 0;
+
+
+function switchContinent(direction: Direction){
     let sectionHeader = document.getElementById('sectionHeaderTS');
     let continent = sectionHeader.innerText;
 
-    switch(continent){
-        case "Europe":
-            document.getElementById('sectionHeaderBackground').style.backgroundImage =
-                "linear-gradient(var(--background-image-curtain), var(--background-image-curtain)), url(\"../Resources/neededImg/AsiaImg.jpg\")";
-            document.getElementById('sectionHeaderTS').innerText = "Asia";
-            changeContent(asiaNames);
-            break;
-        default:
-            document.getElementById('sectionHeaderBackground').style.backgroundImage =
-                "linear-gradient(var(--background-image-curtain), var(--background-image-curtain)), url(\"../Resources/neededImg/EuropeImg.jpg\")";
-            document.getElementById('sectionHeaderTS').innerText = "Europe";
-            changeContent(europeNames);
-            break;
+    current += direction;
+    if(current < 0){
+        current = arr.length-1;
     }
+    if(current >= arr.length){
+        current = 0;
+    }
+    let cur: string[][] = arr[current][0] as string[][];
+
+    document.getElementById('sectionHeaderBackground').style.backgroundImage =
+        "linear-gradient(var(--background-image-curtain), var(--background-image-curtain)), url(\"../Resources/neededImg/" + arr[current][1] + "Img.jpg\")";
+    document.getElementById('sectionHeaderTS').innerText = arr[current][1] as string;
+    changeContent(cur);
 }
 
 function changeContent(arr: string[][]){
@@ -54,5 +100,5 @@ function changeContent(arr: string[][]){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    switchContinent();
+    switchContinent(Direction.none);
 } )
