@@ -12,6 +12,7 @@
 body{
     background-color: var(--primary-color);
     overflow-x: hidden;
+
 }
 
 .sectionHeader{
@@ -109,7 +110,7 @@ body{
     padding-top: 1em;
     padding-right: 2em;
     padding-left: 2em;
-
+    height: 100%;
 }
 
 #bottomText{

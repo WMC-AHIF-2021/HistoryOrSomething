@@ -33,13 +33,11 @@
 }
 
 #highlight_close {
+    cursor: pointer;
     height: 4vh;
     padding: 1vh;
     float: right;
     background-color: var(--color-optional);
-}
-#highlight_close:hover {
-    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px){
