@@ -21,7 +21,13 @@ let things = [
   "Abraham Lincoln is in the wrestling hall of fame",
   "In 500bc, a messenger died after he ran to athens to deliver the message, that the greeks defeated the persians." +
     "He covered a distance of 41,2km and the city he started from was named Marathon.",
-  "No one knows how much nuclear bombs the Ussr lost. In comparison, the US lost 6."
+  "No one knows how much nuclear bombs the Ussr lost. In comparison, the US lost 6.",
+  "Thomas Edison didn't invent the light bulb.",
+  "Columbus wasn't the first person to discover America.",
+  "A lot of History's Disasters were caused by lack of sleep.",
+  "Before alarm clocks existed, there literally were people whose jobs was to knock an your window and wake you up for work.",
+  "Charlie Chaplin once entered a Charlie Chaplin lookalike contest – and came in 20th place."
+
 ];
 let ran = Math.floor(Math.random() * things.length);
 

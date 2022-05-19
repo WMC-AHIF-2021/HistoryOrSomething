@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 .navbar {
     background-color: #F2F4F3;
     padding-top: 1em;
@@ -22,10 +24,4 @@
 
 .nav-item:hover{
     text-decoration-line: underline;
-}
-
-@media only screen and (max-width: 700px){
-    .mainTitle{
-        font-size: 2rem;
-    }
 }
