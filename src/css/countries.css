@@ -104,17 +104,14 @@ body{
 }
 
 .item4{
+    position: relative;
     text-align: center;
     margin-top: 3em;
     border-top: 1px solid var(--secondary-color);
     padding-top: 1em;
     padding-right: 2em;
     padding-left: 2em;
-    height: 100%;
-}
-
-#bottomText{
-    margin-bottom: 0;
+    bottom: 0;
 }
 
 .box1{
