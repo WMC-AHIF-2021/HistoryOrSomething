@@ -20,6 +20,8 @@ body{
     justify-content: center;
     align-items: center;
     color: black;
+    user-select: none;
+    width: 10%;
 }
 
 .countryBox {
@@ -64,7 +66,7 @@ body{
 }
 
 .item1 {
-    background-image: linear-gradient(var(--background-image-curtain), var(--background-image-curtain)), url("../Resources/neededImg/EurpeImg.jpg");
+    background-image: linear-gradient(var(--background-image-curtain), var(--background-image-curtain)), url("../Resources/neededImg/EuropeImg.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -74,6 +76,21 @@ body{
     margin-right: 1em;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+
+.left{
+    padding-right: 30%;
+}
+
+.right{
+    padding-left: 30%;
+}
+
+.pointer{
+    cursor: pointer;
+    height: 2em;
+    width: auto;
+    user-select: none;
 }
 
 .item2 {
@@ -126,5 +143,18 @@ body{
         max-width: 15em;
 
         margin-bottom: 0.5em;
+    }
+
+    .left{
+        padding-right: 15%;
+    }
+
+    .right{
+        padding-left: 15%;
+    }
+
+    .pointer{
+        height: 1.5em;
+        width: auto;
     }
 }

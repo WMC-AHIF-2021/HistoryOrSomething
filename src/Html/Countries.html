@@ -8,6 +8,7 @@
 
     <script src="../../build/tempJs.js"></script>
     <link rel="stylesheet" href="../css/countries.css">
+    <script src="../../build/CountrySwitch.js"></script>
 
 </head>
 <body>
@@ -66,29 +67,33 @@
 
 <!--Container-->
 <div class="grid-container">
-    <div class="item1">
+    <div id="sectionHeaderBackground" class="item1">
+        <div onclick="switchContinent()" class="left">
+            <img class="pointer" src="../Resources/neededImg/arrow-previous-left.png">
+        </div>
         <div class="sectionHeader">
-            <h1>Europe</h1>
+            <h1 id="sectionHeaderTS"></h1>
+        </div>
+        <div onclick="switchContinent()" class="right">
+            <img class="pointer" src="../Resources/neededImg/arrow-next-right.png">
         </div>
     </div>
 
     <div class="item2">
         <div class="row row-cols-3">
-            <div onclick="location.href = '../Nations/TimesOf_Germany/src/german-present.html'" class="col">
+            <div class="col">
                 <div class="countryBox">
-                    <a href="../Nations/TimesOf_Germany/src/german-present.html">
-                        <img class="boxImage" src="../Resources/flags/germany.png" alt="German-Page"/>
-                    </a>
+                    <img class="boxImage" src="../Resources/flags/germany.png" alt="German-Page"/>
                     <span>Germany</span>
                 </div>
             </div>
-            <div onclick="location.href = ''" class="col">
+            <div class="col">
                 <div class="countryBox">
                     <img src="../Resources/flags/austria.png" alt="Austrian Flag" />
                     <span>Austria</span>
                 </div>
             </div>
-            <div onclick="location.href = '../Nations/TimesOf_France/FrancePresent.html'" class="col">
+            <div class="col">
                 <div class="countryBox">
                     <a href="../Nations/TimesOf_France/FrancePresent.html">
                         <img class="boxImage" src="../Resources/flags/france.png" alt="German-Page"/>
@@ -96,28 +101,28 @@
                     <span>France</span>
                 </div>
             </div>
-            <div onclick="location.href = ''" class="col">
+            <div class="col">
                 <div class="countryBox">
                     <img src="../Resources/flags/italy.png" alt="Italian Flag" />
                     <span>Italy</span>
                 </div>
             </div>
 
-            <div onclick="location.href = '../Nations/TimesOf_Spain/src/SpainPresent.html'" class="col">
+            <div class="col">
                 <div class="countryBox">
                     <img src="../Resources/flags/spain.png" alt="Spanish Flag" />
                     <span>Spain</span>
                 </div>
             </div>
 
-            <div onclick="location.href = '../Nations/TimesOf_UK/src/UK2022.html'" class="col box1">
+            <div class="col box1">
                 <div class="countryBox" style="margin-bottom: 1em">
                     <img src="../Resources/flags/united-kingdom.png" alt="Uk Flag" />
                     <span>The UK</span>
                 </div>
             </div>
 
-            <div onclick="location.href = ''" class="col box1">
+            <div class="col box1">
                 <div class="countryBox" style="margin-bottom: 1em">
                     <img src="../Resources/flags/greece.png" alt="Greece Flag" />
                     <span>Greece</span>
