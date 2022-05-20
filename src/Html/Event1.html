@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="../../build/tempJs.js"></script>
+    <link rel="stylesheet" href="../css/event.css">
+    <script src="../../build/eventJS.js"></script>
+</head>
+<body>
+<!--Preload-->
+<div class="preload">
+    <img class="globe" src="../Resources/neededImg/globe.png" alt="globe Image"/>
+    <h1>HistoryOrSomething</h1>
+</div>
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="../../index.html">
+            <span class="navItemStyle mainTitle">HistoryOrSomething</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+            </ul>
+            <ul class="d-flex navbar-nav me-5">
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <span class="navItemStyle" onclick="openForm()">Say Something Smart</span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../Html/aboutUs.html">
+                        <span class="navItemStyle">About us</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../Html/UserAuth.html">
+                        <span class="navItemStyle">Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Say something smart form-->
+<div class="popUp" id="myForm">
+    <img
+            src="../Resources/neededImg/remove.png"
+            onclick="closeForm()"
+            id="highlight_close"
+            alt="Close Icon"
+    />
+    <h2 id="popUpTitle">Did you know?</h2>
+    <p id="facts"></p>
+</div>
+
+<div class="content">
+    <div class="introSection">
+        <div class="introHeader">
+            <h1 id="introHeader-content">The First World War</h1>
+            <h3 id="timeSpan">1914-1918</h3>
+        </div>
+    </div>
+
+    <div class="content-table">
+        <h4 id="content-table-Header">Content-Table</h4>
+        <ol class="content-table-list">
+            <li class="content-table-item">
+                <a class="content-table-link" href="#titel1">Overall</a>
+            </li>
+            <li class="content-table-item">
+                <a class="content-table-link">Backstory</a>
+            </li>
+            <li class="content-table-item">
+                <a class="content-table-link">Points of view</a>
+            </li>
+            <li class="content-table-item">
+                <a class="content-table-link">The Great War</a>
+            </li>
+            <li class="content-table-item">
+                <a class="content-table-link">Last months</a>
+            </li>
+        </ol>
+    </div>
+
+    <div id="titel1" class="section">
+        <div class="sectionHeaderBox">
+            <h2 class="sectionHeader">Overall</h2>
+        </div>
+        <p class="normalText">
+            The First World War was a global war between 1914 and 1918, with round 40 nations involved:
+        </p>
+
+        <table class="allianceTable">
+            <tr>
+                <th>Axis Powers</th>
+                <th>Entente</th>
+            </tr>
+            <tr>
+                <td>German Empire</td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>Austro-Hungarian Empire</td>
+                <td>United Kingdom</td>
+            </tr>
+            <tr>
+                <td>Ottoman Empire</td>
+                <td>Russia</td>
+            </tr>
+            <tr>
+                <td>Bulgaria</td>
+                <td>Italy</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Romania</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Belgium & Luxemburg</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Japan</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Serbia</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>MANY MORE</td>
+            </tr>
+        </table>
+
+        <p class="normalText">
+            It is also known as „the Great War“ or „the War to end all wars“, as it’s one of the bloodiest wars in human history with 17 million people dead.
+            New technology and military tactics came into use, what the involved countries soon realised, would change the form of war, forever.
+        </p>
+    </div>
+
+    <div id="title2" class="section">
+        <div class="sectionHeaderBox">
+            <h2 class="sectionHeader">Points of view</h2>
+        </div>
+
+        s
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

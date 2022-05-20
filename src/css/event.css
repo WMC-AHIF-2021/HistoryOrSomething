@@ -1,0 +1,159 @@
+@import url("../css/navbar.css");
+@import url("../css/root.css");
+@import url("../css/preload.css");
+@import url("saySomethingSmart.css");
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--background-color-1);
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+}
+
+.content{
+    margin-top: 5em;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--background-color-1);
+}
+
+.introSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f353a;
+    height: 80vh;
+    background-image: linear-gradient(var(--background-image-curtain), var(--background-image-curtain)) ,url("../Resources/backgroundImg/ww1BackgroundImg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.introHeader h1{
+    color: black;
+    font-size: 7rem;
+}
+
+#introHeader-content{
+    font-family: 'UnifrakturMaguntia', cursive;
+    border-bottom: 5px solid black;
+    padding: 0 1em;
+}
+
+#timeSpan{
+    text-align: center;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.content-table{
+    margin: 3em 2em;
+    padding: 1em 1em;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 1em;
+    font-family: 'Epilogue', sans-serif;
+}
+
+#content-table-Header{
+    font-size: 2rem;
+}
+
+.content-table ol li{
+    margin: 0.5em 0;
+}
+
+.content-table ol li:last-child{
+    margin-bottom: 0;
+}
+
+.content-table-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.content-table-link:hover {
+    color: #5d5d5d;
+}
+
+.section{
+    margin: 0 2em;
+    padding: 1em 1em;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.sectionHeaderBox{
+    margin-bottom: 1em;
+}
+
+.sectionHeader{
+    width: 100%;
+    border-bottom: solid black;
+}
+
+.normalText{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.2rem;
+}
+
+.allianceTable{
+    width: 100%;
+    margin: 2em 0;
+    border: 1px solid black;
+}
+
+th:nth-child(odd){
+    background-color: rgba(255,99,75, 0.8);
+}
+
+td:nth-child(odd){
+    background-color: rgba(255,99,75, 0.5);
+}
+
+th:nth-child(even){
+    background-color: rgba(35,99,175, 0.8);
+}
+
+td:nth-child(even){
+    background-color: rgba(35,99,175, 0.5);
+}
+
+td, th {
+    font-size: 1.2em;
+    padding: 0.2em 0.5em;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width:1300px){
+    .introHeader h1{
+        font-size: 5rem;
+    }
+
+    .introSection{
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .introSection{
+        height: 50vh;
+    }
+
+    .introHeader h1{
+        font-size: 2.5rem;
+    }
+
+    .content-table{
+        width: initial;
+    }
+}
