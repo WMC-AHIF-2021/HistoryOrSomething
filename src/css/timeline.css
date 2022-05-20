@@ -76,6 +76,11 @@ html{
     letter-spacing: 2px;
 }
 
+.icon{
+    width: 1.5em;
+    height: auto;
+}
+
 @media only screen and (min-width: 768px){
     .timeline::before{
         content: '';
