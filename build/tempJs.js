@@ -28,13 +28,17 @@ function openForm() {
     document.getElementById("myForm").style.display = "block";
     document.getElementById("facts").innerHTML = things[ran];
 }
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-}
 window.addEventListener("load", () => {
+    console.log("Preload working");
     const preload = document.querySelector(".preload");
     preload.classList.add("preload-finish");
 });
+document.addEventListener("DOMContentLoaded", (event) => {
+    console.log("working");
+});
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
 const loginForm = document.getElementById("modal-login");
 function openLogin() {
     loginForm.style.display = "block";

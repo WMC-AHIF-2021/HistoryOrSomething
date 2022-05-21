@@ -7,6 +7,8 @@ import {
 
 import { getAuth, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword } from "firebase/auth"
 import {QuerySnapshot} from "@firebase/firestore";
+import firebase from "firebase/compat";
+import Firestore = firebase.firestore.Firestore;
 
 const firebaseConfig = {
     apiKey: "AIzaSyCr7_Es7xBQzlXHejZukEr1ovanvYYo_Z4",
@@ -28,6 +30,7 @@ const auth = getAuth();
 const colRef = collection(db, "quizes");
 
 export class Server {
+    private readonly db = getFirestore();
 
     public test(): void {
         console.log("database function working!");
@@ -57,6 +60,11 @@ export class Server {
             .catch((err) => console.log(err.message))
 
         return success;
+    }
+
+    // Check user Auth
+    public checkUserAuth(): boolean{
+        return true;
     }
 
     public signUpUser(email: string, password: string):boolean {
