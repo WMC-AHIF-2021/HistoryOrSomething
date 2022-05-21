@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 .navbar {
     background-color: #F2F4F3;
     padding-top: 1em;
@@ -5,8 +7,10 @@
 
 .navItemStyle {
     color:  #5E503F;
-    font-family: "Times New Roman", "sans-serif";
+    font-family: 'IM Fell English SC', serif;
     font-size: 1.4rem;
+    cursor: pointer;
+    user-select: none;
 }
 
 .nav-item {
@@ -19,7 +23,8 @@
 }
 
 .mainTitle {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-family: 'IM Fell English SC', serif;
 }
 
 .nav-item:hover{

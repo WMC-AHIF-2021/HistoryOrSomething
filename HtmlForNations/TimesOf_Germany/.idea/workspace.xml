@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a80f9a24-99df-4758-a445-92eb0f1d63e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Countries.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Countries.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css/1939.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css/1945.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css/2022.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/german-1939.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/german-1945.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/german-present.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Icons/collapse-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Icons/expand-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Icons/moon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Icons/remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Icons/sun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1939/BackgroundImg/poland-1939.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1939/ContentImg/germany-1939-First.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1939/ContentImg/germany-1939-Fourth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1939/ContentImg/germany-1939-Third.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1939/MapImg/europa-1939.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1945/BackgroundImg/germany-surrenders-wwii-og.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1945/ContentImg/1945 Bombing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1945/ContentImg/germany-1945-Fourth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1945/ContentImg/germany-img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/1945/MapImg/germany-map-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/2022/BackgroundImg/germanyflag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/2022/ContentImg/germany-img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/2022/ContentImg/germany-img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/2022/ContentImg/germany-img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/2022/MapImg/germanMap-2022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/1945.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/2022.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/german-1939.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/german-1945.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/german-present.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/austriaflag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/englandflag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/europa-1939.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/europa-1945.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/europa-2022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/franceflag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-1939-First.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-1939-Fourth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-1939-Second.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-1939-Third.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-1945-First.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-1945-Fourth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-1945-Second.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-1945-Third.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-2022-Fifth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-2022-Fourth.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-2022-Second.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germany-2022-Third.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/pics/germanyflag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/stylesheed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old_Html/tempJs.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28cBKs0Np9o0oy3ydD1UpOTI8ul" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a80f9a24-99df-4758-a445-92eb0f1d63e4" name="Changes" comment="" />
+      <created>1651505933585</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651505933585</updated>
+      <workItem from="1651505934741" duration="1051000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

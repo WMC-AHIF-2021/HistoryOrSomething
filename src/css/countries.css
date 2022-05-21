@@ -2,10 +2,12 @@
 @import url("../css/root.css");
 @import url("../css/preload.css");
 @import url("saySomethingSmart.css");
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 
 .content{
-
     padding: 1em;
+    min-height: 100vh;
 }
 
 body{
@@ -14,9 +16,13 @@ body{
 }
 
 .sectionHeader{
-    font-family: "Times New Roman", "sans-serif";
+    font-family: 'IM Fell English SC', serif;
     text-align: center;
-    color: white;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    user-select: none;
+    width: 10%;
 }
 
 .countryBox {
@@ -32,6 +38,7 @@ body{
     max-width: 30em;
 
     margin-bottom: 1em;
+    cursor: pointer;
 }
 
 .countryBox:hover{
@@ -43,52 +50,114 @@ body{
 }
 
 .countryBox span {
-    font-family: "Times New Roman", "sans-serif";
+    font-family: 'IM Fell English SC', serif;
     font-size: 2rem;
 }
 
 /*Layout of main page */
 .grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 70%;
+    grid-row-gap: 1em;
     padding: 5em 4em 0 4em;
     background-color: var(--primary-color);
 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    max-height: 45em;
+    max-height: 50em;
+}
+
+#bottomText{
+    font-size: 0.7rem;
 }
 
 .item1 {
-    background-image: url("../Resources/backgroundImg/Flag_of_Europe.svg.png");
-    background-size:100% 100%;
+    background-image: linear-gradient(var(--background-image-curtain), var(--background-image-curtain)), url("../Resources/neededImg/EuropeImg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 1em;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.left{
+    padding-right: 30%;
+}
+
+.right{
+    padding-left: 30%;
+}
+
+.pointer{
+    cursor: pointer;
+    height: 2em;
+    width: auto;
+    user-select: none;
 }
 
 .item2 {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
 
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .item4{
-    grid-column-start: 1;
-    grid-column-end: 4;
     text-align: center;
     margin-top: 3em;
     border-top: 1px solid var(--secondary-color);
     padding-top: 1em;
     padding-right: 2em;
     padding-left: 2em;
+    bottom: 0;
 }
 
 .box1{
     margin-bottom: 1em;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .content{
+        padding: 0.5em;
+    }
+
+    .countryBox span{
+        font-size: 0.8rem;
+    }
+
+    .sectionHeader{
+        font-size: 0.9rem;
+    }
+
+    .grid-container{
+        margin-top: 15vh;
+        padding: 2em 1.5em 0 1.5em;
+    }
+
+    .countryBox{
+        padding: 0.5em;
+        max-width: 15em;
+
+        margin-bottom: 0.5em;
+    }
+
+    .left{
+        padding-right: 15%;
+    }
+
+    .right{
+        padding-left: 15%;
+    }
+
+    .pointer{
+        height: 1.5em;
+        width: auto;
+    }
 }

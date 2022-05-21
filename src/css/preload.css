@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 .preload {
     position: fixed;
@@ -16,7 +17,7 @@
     position: absolute;
     top: 75%;
     color: var(--secondary-color);
-    font-family: "Nanum Myeongjo", serif;
+    font-family: 'IM Fell English SC', serif;
 }
 
 .preload-finish {
