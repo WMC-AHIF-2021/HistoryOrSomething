@@ -35,3 +35,4 @@ Flags Attribution
 <a href="https://www.flaticon.com/free-icons/war" title="war icons">War icons created by max.icons - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/bomb" title="bomb icons">Bomb icons created by Adib Sulthon - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/napoleon" title="napoleon icons">Napoleon icons created by Good Ware - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/russia" title="russia icons">Russia icons created by Freepik - Flaticon</a>
