@@ -43,7 +43,7 @@ nav {
 /*Elements inside Navbar*/
 /*Logo Container*/
 .logo {
-  color: var(--primary-color);
+  color: var(--fontColor);
   font-family: "IM Fell DW Pica SC", serif;
   user-select: none;
 }
@@ -56,7 +56,7 @@ nav {
 .homeAnchor {
   font-size: 33px;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--fontColor);
 }
 
 .homeAnchor:hover {
@@ -66,7 +66,7 @@ nav {
 /*Say Something Smart - Section*/
 #funFacts {
   user-select: none;
-  color: var(--primary-color);
+  color: var(--fontColor);
   font-style: normal;
   font-family: "Red Hat Mono", monospace;
   text-decoration-line: none;
@@ -75,7 +75,7 @@ nav {
 
 #funFacts:hover {
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--fontColor);
   text-decoration-line: underline;
 }
 
@@ -102,7 +102,7 @@ nav {
 }
 
 .nav-links a {
-  color: var(--primary-color);
+  color: var(--fontColor);
   text-decoration: none;
   font-family: "Red Hat Mono", monospace;
   font-size: 2rem;
@@ -111,7 +111,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: var(--primary-color);
+  color: var(--fontColor);
   text-decoration: underline;
 }
 
@@ -128,7 +128,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: var(--primary-color);
+  background-color: var(--fontColor);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -284,7 +284,7 @@ nav {
 
 #popUpTitle {
   user-select: none;
-  color: var(--primary-color);
+  color: var(--fontColor);
   padding-top: 2vh;
   padding-left: 2em;
   padding-right: 2em;
@@ -303,7 +303,7 @@ nav {
   padding: 1vh;
   float: right;
   border-radius: 2em;
-  background-color: var(--primary-color);
+  background-color: var(--fontColor);
 }
 
 #highlight_close:hover {
@@ -312,7 +312,7 @@ nav {
 
 .carousel {
   padding: 0.1rem;
-  border: 0.3rem double var(--primary-color);
+  border: 0.3rem double var(--fontColor);
   width: 60vw;
 }
 
@@ -325,7 +325,7 @@ nav {
 
 .card-body a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--fontColor);
 }
 
 .card-title {

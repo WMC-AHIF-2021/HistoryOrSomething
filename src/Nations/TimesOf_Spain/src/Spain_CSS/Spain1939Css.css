@@ -8,6 +8,7 @@
   --fontColor: black;
 }
 .dark-mode {
+  --primary-color: white;
   --background-color: #282828;
   --secbackground-color: #3a3a3a;
   --fontColor: white;

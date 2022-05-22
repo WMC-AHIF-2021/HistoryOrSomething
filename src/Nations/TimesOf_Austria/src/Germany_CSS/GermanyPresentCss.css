@@ -1,17 +1,17 @@
 /*Basic Styling for all Elements*/
 :root {
-  --background-color: #282828;
-  --secbackground-color: #3a3a3a;
-  --primary-color: darkgoldenrod;
-  --secondary-color: whitesmoke;
-  --border-color: #333;
-  --fontColor: white;
-}
-.light-mode {
   --background-color: whitesmoke;
   --secbackground-color: white;
+  --primary-color: black;
+  --border-color: #333;
   --secondary-color: #333;
   --fontColor: black;
+}
+.dark-mode {
+  --background-color: #282828;
+  --secbackground-color: #3a3a3a;
+  --fontColor: white;
+  --secondary-color: whitesmoke;
 }
 
 html {
@@ -24,6 +24,7 @@ html {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  color: var(--fontColor);
 }
 
 .wrapper {
@@ -50,29 +51,29 @@ nav {
 /*Text inside Logo Container*/
 .logo a {
   font-size: 2rem;
-  color: var(--primary-color);
+  color: var(--fontColor);
   text-decoration-line: none;
   cursor: pointer;
 }
 
 #logo-text:hover{
-  color: var(--primary-color);
+  color: var(--fontColor);
 }
 
 .homeAnchor {
   font-size: 33px;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--fontColor);
 }
 
 .homeAnchor:hover {
-  color: var(--primary-color);
+  color: var(--fontColor);
   cursor: pointer;
 }
 /*Say Something Smart - Section*/
 #funFacts {
   user-select: none;
-  color: var(--primary-color);
+  color: var(--fontColor);
   font-style: normal;
   font-family: "Red Hat Mono", monospace;
   text-decoration-line: none;
@@ -81,7 +82,7 @@ nav {
 
 #funFacts:hover {
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--fontColor);
   text-decoration-line: underline;
 }
 
@@ -110,14 +111,14 @@ nav {
 .nav-links a {
   user-select: none;
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--fontColor);
   text-decoration: none;
   font-family: "Red Hat Mono", monospace;
   font-size: 2rem;
 }
 
 .nav-links a:hover {
-  color: var(--primary-color);
+  color: var(--fontColor);
   text-decoration: underline;
 }
 
@@ -134,7 +135,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: var(--primary-color);
+  background-color: var(--fontColor);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -290,7 +291,7 @@ nav {
 
 #popUpTitle {
   user-select: none;
-  color: var(--primary-color);
+  color: var(--fontColor);
   padding-top: 2vh;
   padding-left: 2em;
   padding-right: 2em;
@@ -309,7 +310,7 @@ nav {
   padding: 1vh;
   float: right;
   border-radius: 2em;
-  background-color: var(--primary-color);
+  background-color: var(--fontColor);
 }
 
 #highlight_close:hover {
@@ -318,7 +319,7 @@ nav {
 
 .carousel {
   padding: 0.1rem;
-  border: 0.3rem double var(--primary-color);
+  border: 0.3rem double var(--fontColor);
   width: 60vw;
 }
 
@@ -331,7 +332,7 @@ nav {
 
 .card-body a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--fontColor);
 }
 
 .card-title {
