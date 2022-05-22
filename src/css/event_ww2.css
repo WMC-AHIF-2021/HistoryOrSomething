@@ -1,0 +1,283 @@
+@import url('event.css');
+@import url('root.css');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.introSection{
+    background-image: linear-gradient(var(--background-image-curtain), var(--background-image-curtain)) ,url("../Resources/backgroundImg/ww2BackgroundImg.png");
+}
+
+#introHeader-content{
+    font-family: 'Special Elite', cursive;
+}
+
+#content-table-Header{
+    font-family: 'Special Elite', cursive;
+}
+
+.sectionHeader{
+    font-family: 'Special Elite', cursive;
+}
+
+.smallHeadline{
+    font-size: 1.7rem;
+    text-decoration-line: underline;
+}
+
+.leftItem{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.rightItem{
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+}
+
+#leagueOfNationsImg{
+    height: 15em;
+    width: auto;
+}
+
+.smallGrid{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto auto;
+}
+
+.sudetenImgBox{
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sudetenImg{
+    height: 18em;
+    width: auto;
+}
+
+.northernImg{
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#denNorImg{
+    height: 18em;
+    width: auto;
+}
+
+#barbarossaImg{
+    height: 25em;
+    width: auto;
+}
+.text2{
+    grid-column: 2/span 3;
+}
+
+.secondHalf-grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.SecondHalf_text1{
+    grid-row: 1;
+    grid-column: 1/span 3;
+}
+
+.pacificImgBox{
+    grid-row: 1;
+    grid-column: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pacificImg{
+    height: 25em;
+    width: auto;
+}
+
+.victoryImgBox{
+    grid-row: 3;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#victoryImg{
+    height: 45em;
+    width: auto;
+}
+
+.victoryTextBox{
+    grid-row: 3;
+    grid-column: 2/span 4;
+}
+
+.ddayCircle{
+    grid-row: 4;
+    grid-column: 1/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-grid-container{
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.treatyText{
+    grid-column: 1/span 2;
+}
+
+.treaty1{
+    grid-column: 1;
+}
+
+.treaty2{
+    grid-column: 2;
+}
+
+@media only screen and (max-width: 1400px){
+    .smallHeadline{
+        font-size: 1.4rem;
+    }
+    .leftItem{
+        grid-column: 1/span 2;
+    }
+    .rightItem{
+        grid-row: 2;
+        grid-column: 1/span 2;
+        text-align: center;
+    }
+
+    .sudetenImgBox{
+        grid-column: 1/span 3;
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sudetenImg{
+        height: 16em;
+        width: auto;
+    }
+
+    .northernImg{
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .russianRev{
+        grid-row: 7;
+        grid-column: 1/span 4;
+    }
+
+    .russoImg{
+        grid-column: 1/span 4;
+        grid-row: 8;
+    }
+
+    .usaIntroText{
+        grid-row: 9;
+    }
+
+    .blueCircle{
+        grid-row: 10;
+        grid-column: 1/span 4;
+    }
+
+    .SecondHalf_text1{
+        grid-column: 1/span 4;
+    }
+
+    .pacificImgBox{
+        grid-row: 2;
+        grid-column: 1/span 4;
+    }
+
+    .victoryImgBox{
+        grid-column: 1/span 4;
+        grid-row: 4;
+    }
+
+    #victoryImg{
+        height: 30em;
+    }
+
+    .victoryTextBox{
+        grid-column: 1/span 4;
+    }
+    .ddayCircle{
+        grid-row: 5;
+        grid-column: 1/span 4;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    #pic1{
+        height: 12em;
+        width: auto;
+    }
+
+    #sudetenImg{
+        height: 12em;
+        width: auto;
+    }
+
+    .northernImg{
+        grid-row: 3;
+        grid-column: 1/span 4;
+    }
+
+    #denNorImg{
+        height: 12em;
+    }
+
+    .text2{
+        grid-column: 1/span 4;
+        grid-row: 4;
+    }
+
+    .text3{
+        grid-row: 5;
+    }
+
+    .img3{
+        grid-row: 6;
+    }
+
+    #barbarossaImg{
+        height: 15em;
+        width: auto;
+    }
+
+    #pacificImg{
+        height: 12em;
+        width: auto;
+    }
+
+    #victoryImg{
+        display: none;
+    }
+
+    .treaty1{
+        grid-column: 1/span 2;
+    }
+
+    .treaty2{
+        grid-column: 1/span 2;
+    }
+}

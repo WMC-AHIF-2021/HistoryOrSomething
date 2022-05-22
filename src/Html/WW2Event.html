@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event WW2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="../../build/tempJs.js"></script>
+    <link rel="stylesheet" href="../css/event_ww2.css">
+    <script src="../../build/eventJS.js"></script>
+</head>
+<body>
+<!--Preload-->
+<div class="preload">
+    <img class="globe" src="../Resources/neededImg/globe.png" alt="globe Image"/>
+    <h1>HistoryOrSomething</h1>
+</div>
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="../../index.html">
+            <span class="navItemStyle mainTitle">HistoryOrSomething</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+            </ul>
+            <ul class="d-flex navbar-nav me-5">
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <span class="navItemStyle" onclick="openForm()">Say Something Smart</span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../Html/aboutUs.html">
+                        <span class="navItemStyle">About us</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../Html/UserAuth.html">
+                        <span class="navItemStyle">Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Say something smart form-->
+<div class="popUp" id="myForm">
+    <img
+            src="../Resources/neededImg/remove.png"
+            onclick="closeForm()"
+            id="highlight_close"
+            alt="Close Icon"
+    />
+    <h2 id="popUpTitle">Did you know?</h2>
+    <p id="facts"></p>
+</div>
+
+<div class="content">
+    <div class="introSection">
+        <div class="introHeader">
+            <h1 id="introHeader-content">The Second World War</h1>
+            <h3 id="timeSpan">1939-1945</h3>
+        </div>
+    </div>
+
+    <div class="content-table">
+        <h4 id="content-table-Header">Content-Table</h4>
+        <ol class="content-table-list">
+            <li class="content-table-item">
+                <a class="content-table-link" href="#titel1">Overall</a>
+            </li>
+            <li class="content-table-item">
+                <a class="content-table-link" href="#title2">Events before 1939</a>
+            </li>
+            <li class="content-table-item">
+                <a class="content-table-link" href="#title3">The 1st Half</a>
+            </li>
+            <li class="content-table-item">
+                <a class="content-table-link" href="#title5">The 2nd Half</a>
+            </li>
+            <li class="content-table-item">
+                <a class="content-table-link" href="#title6">Peace</a>
+            </li>
+        </ol>
+    </div>
+
+    <div id="titel1" class="section">
+        <div class="sectionHeaderBox">
+            <h2 class="sectionHeader">Overall</h2>
+        </div>
+        <p class="normalText">
+            The second World War is a major global war between the Axis Powers and the allies between 1939 and 1945.
+            During the peak of this war, nations put full war effort into it,
+            using all capabilites of their ecnomies and civilian/military ressources.
+            It’s also the most brutal war with the most documented casualties ever recorded.
+            An estimated number counts up to 50 Million dead people during the war.
+            World War 2 is also known for its horrific war crimes commited by the axis powers like the Holocaust.
+        </p>
+        <div class="allianceTableBox">
+            <table class="allianceTable">
+                <tr>
+                    <th>Axis Powers</th>
+                    <th>Entente</th>
+                </tr>
+                <tr>
+                    <td>Nazi Germany</td>
+                    <td>France</td>
+                </tr>
+                <tr>
+                    <td>Fascist Italy</td>
+                    <td>United Kingdom</td>
+                </tr>
+                <tr>
+                    <td>Japanese Empire</td>
+                    <td>Ussr</td>
+                </tr>
+                <tr>
+                    <td>Bulgaria</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Hungary</td>
+                    <td>Greece</td>
+                </tr>
+                <tr>
+                    <td>Romania</td>
+                    <td>Benelux States</td>
+                </tr>
+                <tr>
+                    <td>Axis Protectorates</td>
+                    <td>United States</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Yugoslavia</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>MANY MORE</td>
+                </tr>
+            </table>
+        </div>
+
+        <p class="normalText">
+            The reason for the second world war is debuted, but like many wars, the causes link back to
+            many conflicts and political decisions, but sure is, that it roots back to World War 1.
+        </p>
+        <div class="backstoryBlock">
+            <h4>Backstory</h4>
+            <p class="normalText">
+                It’s the end of the 1st world war and europe has changed by a lot. Russia is controlled by the Bolsheviks,
+                which later became the Soviet Union, members of the central powers lost territory and were even completely dismantled like Austria-Hungary
+                or the Ottoman Empire and new countries were created like the new kingdom of Yugoslavia, which
+                should unite all southern slavs under one state, Czechoslovakia, and many more.
+            </p>
+            <div class="smallGrid">
+                <div class="leftItem">
+                    <h4 class="smallHeadline">The League of Nations</h4>
+                    <p class="normalText">
+                        The LN was formed to prevent future wars, but solve them diplomatically.
+                        Later, it shall become the UN, a slightly more successfull attempt to keep the world at peace.
+                    </p>
+                </div>
+                <div class="rightItem">
+                    <img id="leagueOfNationsImg" src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Symbol_of_the_League_of_Nations_%28simple%29.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="title2" class="section">
+        <div class="sectionHeaderBox">
+            <h2 class="sectionHeader">Before the war</h2>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-Header">
+                <img onclick="nextCountry(Direction.Left, SelectedEvent.WW2)" class="arrow" src="../Resources/neededImg/arrow-previous-left.png">
+                <h2 id="grid-Header-text"></h2>
+                <img onclick="nextCountry(Direction.Right, SelectedEvent.WW2)" class="arrow" src="../Resources/neededImg/arrow-next-right.png">
+            </div>
+            <div class="gridBigImgBox">
+                <img id="gridBigImg" src="">
+            </div>
+            <div class="gridFlagBox">
+                <img id="gridFlag" src="">
+            </div>
+            <div class="gridTextBox">
+                <p id="gridText" class="normalText"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="title3" class="section">
+        <div class="sectionHeaderBox">
+            <h2 class="sectionHeader">Events before 1939</h2>
+        </div>
+
+        <div class="StorySection">
+            <div class="part1">
+                <h4>'Anschluss'</h4>
+                <p class="normalText">
+                    In 1934, Austria is under the regime of Engelbert Dollfuss, called 'Austrofascism'. Dollfuss's goal is to keep his small nation
+                    stable, but more importantly independent namely from Germany. Sadly for him, he was murdered during attempted coup by austrian nationalists.
+                    His successor, Karl Schuschnigg, ruled Austria until 1938, and also tried to prevent the annexation of Austria, but the influence of the german
+                    nationalists was too great. He was pushed to hold a vote for a annexation referendum. On March 12, 1938, German troops marched into Austria and short
+                    time later, Austria was a part of Germany.
+
+                </p>
+            </div>
+            <div class="img1">
+                <img id="pic1" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/OstmarkMap.png">
+            </div>
+            <div class="part2">
+                <h4>Invasion of Czechoslovakia</h4>
+                <p id="section2Text" class="normalText">
+                    After the annexation of Austria, Hitler made further demands of territory. He claimed the Sudetenland, where many ethnic Germans are living and its
+                    immediate cession to Germany. France and Britain didn't want a war, and so they accepted demands of Hitler, although, the government of czechoslovakia wasn't
+                    involved in the talks. Between October 1 and 10, 1938, Germany annexed the Sudetenland.
+                    At first it looked like, that Hitler would really back down, and the allies were relieved that the situation deescalated.
+                    But in March 1939, the Czech part was invaded by the Germans. The remainder turned into the Protectorate of Bohemia and Moravia. The slovak part was declared
+                    independent and made a puppet state of Germany.
+                </p>
+            </div>
+            <div class="sudetenImgBox">
+                <img id="sudetenImg" src="../Resources/neededImg/sudetenlandImg.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id="title4" class="section">
+        <div class="sectionHeaderBox">
+            <h2 class="sectionHeader">The 1st Half</h2>
+        </div>
+        <div class="main-grid-container">
+            <div class="smallCircleBox">
+                <div class="circle">
+                    <div class="circleTextBox">
+                        <h4 class="circleTextHeader">Blitzkrieg</h4>
+                        <p class="circleText">
+                            The 'Blitzkrieg' tactic was designed to literally overwhelm the enemy by shear force, speed and superiority to
+                            create psychological shocks and disorganization on the enemy side.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text1">
+                <h4>The Attack on Poland</h4>
+                <p class="normalText">
+                    WW2 began with the invasion of Poland by both Germany and the Soviet Union.
+                    The two sides signed a non-aggressive pact shortly before the attack on August 23, 1939 (Molotov-Ribbentrop Pact).
+                    German troops broke through polish defence lines and literally overran the polish military.
+                    Britain and France declared war on Germany, beginning a period named the Phoney war (Okt 6, 1939- May 10,1940),
+                    were actually nothing mentionable things happened.
+                    After just one month, the capital Warsaw surrendered to the Germans.
+                    The polish government, however, fled and continued the fight in exile. Both Germany and the Ussr split Poland.
+                    Hitler sued for peace, but saying that Poland’s future will be decided by Germany and the Ussr.
+                    Britain and France rejected this offer, and Hitler ordered an immediate offensive against France,
+                    which was postponed until the spring of 1940 due to „bad weather“.
+                    The Ussr also forced the baltic states to sign pacts which granted Stalin more influence in the region.
+                    Finnland rejected, and on November 1939, the Soviets invaded.
+                    This war didn’t bring the result Stalin had hoped for and ended with some finnish territorial concessions.
+                    In June 1940, the baltic states and the romanian regions of Bessarabia,
+                    Northern Bukovina and the Hertsa Region, were occupied entirely by the Russians.
+
+                </p>
+            </div>
+            <div class="northernImg">
+                <img id="denNorImg" src="../Resources/neededImg/denmarkNorwayInvasionImg.PNG">
+            </div>
+            <div class="text2">
+                <h4>German Occupation of Denmark and Norway</h4>
+                <p class="normalText">
+                    The allies tried to intervene in the Russo-Finn war and secretly occupy german iron supply lines in Sweden.
+                    But when Germany realised what they planned, so they occupied Denmark and Norway, defeating Denmark in just 6 hours.
+                    The Germans informed the government of Denmark and Norway, that they were only protecting them from Franco-British aggression.
+                </p>
+            </div>
+            <div class="text3">
+                <h4>Battle of France</h4>
+                <p class="normalText">
+                    On May 10, German forces swept through Belgium and the Netherlands using a tactic named „Blitzkrieg“.
+                    Three days later, they arrived at the river Meuse and defeated french troops at Sedan.
+                    They surprised the allies by pushing the main force through the Ardenne forest, which they thought as naturally impenetrable.
+                    They quickly surrounded a large majority of the french and british army. The british forces were evacuated by sea from Dunkirk in late May.
+                    The rest of the french resistance in the south soon surrendered.
+                    Italy now officially formed an alliance with Germany, declaring war against France and the UK.
+                    On June 14, took over Paris and a new government was formed by Marshal Philippe Petain.
+                    Japan entered the war by invading French Indochina. France surrendered and was divided into two zones.
+                    One came under german occupation and the other became a satellite state known as French State.
+                </p>
+            </div>
+
+            <div class="img3">
+                <img id="pic3" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/France_map_Lambert-93_with_regions_and_departments-occupation-de.svg">
+            </div>
+
+            <div class="russoImg">
+                <img id="pic4" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Boulton_Paul_Defiant.jpg">
+            </div>
+
+            <div class="russianRev">
+                <h4>The Fight against Britain</h4>
+                <p class="normalText">
+                    Now, only had to focus on Britain, who luckily had the advantage to be an island. So he decided to urge them to surrender.
+                    The first step was Italy joining the war and the second letting France make a new government, which made it look like France switched sides.
+                    Germany also prepared for a big invasion and he let the Brits know.
+                    On September 27, 1940 Japan, Germany and Italy signed the Tripartite Pact, making Japan an official participant of the war on axis side.
+                    But at first they needed supperiority in the air, and despite being outnumbered, the Royal Airforce (RA) defeated the Luftwaffe in late October, 1940.
+                    The Brits were at their limits, but their luck, they received aid by the Americans by early 1941.
+                    This was a heavy blow for Hitler as he was postpone his plans for a future invasion.
+
+                </p>
+            </div>
+
+            <div class="usaIntroText">
+                <h4>Operation Barbarossa (1941-1942)</h4>
+                <p class="normalText">
+                    The Axis powers got new members as Hungary, Romania had joined by early 1941.
+                    German troops overran Yugoslavia and Greece. But the real reason behing the conquest was the preparation for an invasion of Ussr,
+                    because its territory would give the german „upper race“, the land they needed or what they called it „Lebensraum“.
+                    On June 22, 1941 Germany attacked the Soviet Union.
+                    Over the whole course of the operation more than 3 million active axis personnel – the largest invasion force in history - would fight against the Soviets.
+                    This attack marked the escalation of the Second World War and the formation of the Allied coalition adding the Ussr.
+                    Hitler also planned the extinction of all jews throughout europe.
+                    In the next 3 years more than 4 million jews would be put in the death camps and suffer horrible conditions.
+                </p>
+            </div>
+
+            <div class="blueCircle">
+                <img id="barbarossaImg" src="https://upload.wikimedia.org/wikipedia/commons/1/11/Marcks_Plan_for_Operation_Barbarossa.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id="title5" class="section">
+        <div class="sectionHeaderBox">
+            <h2 class="sectionHeader">The Second Half (1941-1945)</h2>
+        </div>
+
+        <div class="secondHalf-grid-container">
+            <div class="SecondHalf_text1">
+                <h4>WW2 in the Pacific</h4>
+                <p class="normalText">
+                    At this time, the US and Britain were the only ones that could compete in naval force to Japan.
+                    And with Britain facing Germany in Europe, the US was on its own.
+                    With Japans expansion into China and its seizing of European holdings in Asia, Japan made clear that it wanted more.
+                    Japan was short in oil, that it needed desperately for its machinery. At this time, Oceania possessed the largest known oil reserves.
+
+                    With the attack on Pearl Harbor on December 7th, 1941 they wanted to keep America out of their ambitions by threatening them.
+                    However, this backfired as the public opinion massively favoured entering the war and on December 8th, the US declared war on Japan.
+                    Germany and the other axis powers promptly declared war on the United States.
+                    In the beginning, Japan came out victorious but with the US entering the war the tides changed soon after.
+                    The Battle of Midway (June, 1942) marks the turning point of the 2nd World War in the Pacific. From late 1942 to early 1943,
+                    the allies managed to defeat the Japanese in multiple battles, ending with a large counterattack in mid-1943, in which the allied forces took multiple key island.
+                    This strategy named „island-hopping“ proved to be very successful. The ultimate goal to reach main-land Japan became more and more likely.
+                </p>
+            </div>
+            <div class="pacificImgBox">
+                <img id="pacificImg" src="../Resources/neededImg/PacificStrategyMap.jpg">
+            </div>
+            <div class="victoryImgBox">
+                <img id="victoryImg" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Second_world_war_europe_1943-1945_map_en.png">
+            </div>
+            <div class="victoryTextBox">
+                <h4>Allied Way to Victory</h4>
+                <p class="normalText">
+                    The axis were defeated in North Africa by 1943 and in July the Allies invaded Sicily, with the help of italian locals with american relatives
+                    and even the italian mafia. The Mussolini regime fell as the allies made their way up to northern Italy, however, their advance came to a hold until 1945.
+                    Germany wasn’t able to reach Moscow, and due to the harsh and cold winter and special forces by the Soviets, the Germans were pushed back.
+                    This forced Hitler to refocus his aims to Stalingrad and the regions in the south with a huge amount of oil reserves,
+                    because like Japan, Germany needed this oil for their machinery.
+                    The battle of Stalingrad faced one of the bloodiest combat of WW2 and ended in a soviet victory, largely due to their massive counterattack on November, 1942.
+                    The remaining german troops suffered from shortage of food and medical supplies, which was further worsened by the winter.
+                    The last german men surrendered in early January, 1943.
+                    With the invasion of Normandy, what’s later celebrated as „D-Day“, british, american and canadian soldiers successfully made it onto mainland France,
+                    opening a western front for Hitler. In response, they pulled their last remaining strength from the eastern front to stop allied advance in the west.
+                    This, however, only ensured soviet victory in the east. Soviet forces soon entered Poland, Hungary and Czechia
+                    while Hitler gathered his remaining troops for the last battle (Batlle of the Bulge, 1944/45).
+                    And before allied troops entered german mainland, heavy bombardment destructed more cities.
+                    And when Germany finally surrendered on May 8, 1945, the Soviet already took over a large amount of its territory in the east.
+                    Hitler was already dead, having died by suicide on April 30 in his Bunker.
+                </p>
+            </div>
+
+            <div class="ddayCircle">
+                <div class="circle">
+                    <div class="circleTextBox">
+                        <h4 class="circleTextHeader">
+                            D-Day
+                        </h4>
+                        <p class="circleText">
+                            The D-Day marks the day, when the allies managed to gain control over the beaches of Normandy.
+                            D-Day is the short version of 'Decision-Day'.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="title6" class="section">
+        <div class="sectionHeaderBox">
+            <h2 class="sectionHeader">Peace</h2>
+        </div>
+        <div class="last-grid-container">
+            <div class="text4">
+                <p class="normalText">
+                    However, the war wasn't entirely over, because Japan didn't yet surrender. In the last months the US managed to conquer major islands
+                    in the pacific until they finally got close enough to mainland Japan. Truman didnt want a invasion of Japan, as it would cost too much lives.
+                    So he decided to put their new weapon into use, the nuclear bomb. In early August, Hiroshima and Nagasaki were hit by the bomb.
+                    On August 15, Japan surrendered and accepted all terms of the Potsdam Declaration.
+                </p>
+            </div>
+            <div class="treaty1">
+                <div class="treatyIconBox">
+                    <img class="treatyIcon" src="../Resources/neededImg/writing.png">
+                </div>
+                <h3 class="treatyHeader">Potsdam Conference</h3>
+                <div class="treatyText">
+                    After german surrender in July/August 1945, Churchill, Stalin and US-President Harry S. Truman (Roosevelt died in July) discussed the still occurring
+                    war in Asia with Japan and the future of europe, in particular, Germany.
+                    Post-war Germany would be divided into 4 parts. One occupation zone for each power (US, Ussr, Britain, France).
+                    And because the US needed the support of the Soviets in the war against Japan, they compromised to Stalin over the matter of eastern europe.
+                </div>
+            </div>
+            <div class="treaty2">
+                <div class="treatyIconBox">
+                    <img class="treatyIcon" src="../Resources/neededImg/writing.png">
+                </div>
+                <h3 class="treatyHeader">Paris Peace Treaty, 1947</h3>
+                <div class="treatyText">
+                    Shortly before the war ended in europe, the victorious powers negotiated with Italy, Romania, Hungary, Bulgaria and Finland about the details of the treaty.
+                    The treaties allowed the defeated Axis powers to resume their responsibilities as sovereign states in international affairs
+                    and to qualify for membership in the United Nations. However, the treaties also included war reparations, commitments, etc.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottomTextBox">
+        <p id="bottomText">
+            We don't take any responsibility for any misunderstanding.<br/>
+            But we proudly encourage you to inform yourself about historical events<br/>
+            and their accuracy.<br/><br/>
+            ©HistoryOrSomething
+        </p>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
