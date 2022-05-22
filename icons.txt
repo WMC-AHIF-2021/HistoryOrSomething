@@ -38,3 +38,4 @@ Flags Attribution
 <a href="https://www.flaticon.com/free-icons/russia" title="russia icons">Russia icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/grave" title="grave icons">Grave icons created by KP Arts - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/communist" title="communist icons">Communist icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/scroll" title="scroll icons">Scroll icons created by Freepik - Flaticon</a>

@@ -412,6 +412,75 @@ td, th {
     background-color: #5d5d5d;
 }
 */
+
+.last-grid-container{
+    display: grid;
+    padding: 1em;
+    width: 100%;
+    grid-gap: 1em;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+}
+/*
+.last-grid-container div {
+    background-color: #5d5d5d;
+}
+*/
+.text4{
+    grid-row: 1;
+    grid-column: 1/span 3;
+}
+
+.treaty1{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.treaty2{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.treaty3{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.treatyIconBox{
+    text-align: center;
+}
+
+.treatyIcon{
+    height: 6em;
+    width: auto;
+    margin: 1em;
+}
+
+.treatyHeader, .treatyText{
+    text-align: center;
+}
+
+.treatyText{
+    padding: 0 6em;
+}
+
+.treatyText h4{
+    margin: 2em 0;
+}
+
+.bottomTextBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    padding: 1em;
+}
+
+#bottomText{
+    text-align: center;
+    font-family: 'Epilogue', sans-serif;
+}
+
 @media only screen and (max-width:1400px){
     .introHeader h1{
         font-size: 5rem;
@@ -657,5 +726,33 @@ td, th {
     .blueCircle{
         grid-row: 10;
         grid-column: 1 /span 4;
+    }
+
+    .text4{
+        grid-row: 1;
+        grid-column: 1/span 3;
+    }
+
+    .treaty1{
+        grid-row: 2;
+        grid-column: 1/span 3;
+    }
+
+    .treaty2{
+        grid-row: 3;
+        grid-column: 1/span 3;
+    }
+
+    .treaty3{
+        grid-row: 4;
+        grid-column: 1/span 3;
+    }
+
+    .treatyText{
+        padding: 0;
+    }
+
+    #bottomText{
+        font-size: 0.7rem;
     }
 }
