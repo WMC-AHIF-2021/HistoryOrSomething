@@ -103,11 +103,16 @@ html{
     font-family: 'UnifrakturMaguntia', cursive;
     width: 100%;
     border-bottom: solid black;
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
 }
 
 .normalText{
     font-family: 'Epilogue', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .allianceTableBox{
@@ -154,7 +159,6 @@ td, th {
     display: grid;
     padding: 1em 1em;
     width: 100%;
-    height: 45em;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto auto;
     grid-gap: 1em;
@@ -226,16 +230,8 @@ td, th {
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: 30% auto 30%;
     width: 100%;
-    height: 80%;
     padding: 1em;
     grid-gap: 1em;
-    background-color: #ababab;
-    padding: 1em;
-    border-radius: 0.5em;
-}
-
-#title3{
-    margin-top: 8em;
 }
 
 .part1{
@@ -259,6 +255,163 @@ td, th {
     grid-row: 2;
 }
 
+.main-grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    padding: 1em;
+    grid-gap: 1em;
+    width: 100%;
+}
+
+.smallCircleBox{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    background-color: #f6bf49;
+    height: 30em;
+    width: 30em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleText, .circleTextHeader{
+    text-align: center;
+}
+
+.circleTextHeader{
+    font-size: 2rem;
+}
+
+.circleText{
+    font-size: 1.3rem;
+    padding: 0 1.2em;
+}
+
+.text1{
+    grid-column: 2 /span 3;
+    grid-row: 1;
+}
+
+.killCountWW1{
+    grid-row: 2;
+    grid-column: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerBox{
+    text-align: center;
+    background-color: #ababab;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+#graveYardIcon{
+    height: 9em;
+    width: auto;
+    margin-bottom: 1em;
+}
+
+#warCrimeList li{
+    margin: 0.3em 0;
+}
+
+#warCrimeList li:last-child{
+    margin-bottom: 0;
+}
+
+.img2{
+    grid-column: 1/span 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pic2{
+    height: 20em;
+    width: auto;
+    border-radius: 0.5em;
+}
+
+.text2{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.text3{
+    grid-row: 3;
+    grid-column: 1/span 3;
+}
+
+.img3{
+    grid-row: 3;
+    grid-column: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pic3{
+    height: 25em;
+    width: auto;
+}
+
+.text4{
+    grid-row: 3;
+    grid-column: 3/span 2;
+}
+
+.russoImg{
+    grid-row: 4;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.russianRev{
+    grid-row: 4;
+    grid-column: 2 /span 4;
+}
+
+#pic4{
+    height: 25em;
+    width: auto;
+}
+
+#hammerIcon{
+    height: 1em;
+    padding-right: 0.2em;
+}
+
+.usaIntroText{
+    padding-top: 1em;
+    grid-column: 1/span 3;
+    grid-row: 5;
+}
+
+.blueCircle{
+    grid-column: 4;
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.main-grid-container div{
+    background-color: #5d5d5d;
+}
+*/
 @media only screen and (max-width:1400px){
     .introHeader h1{
         font-size: 5rem;
@@ -299,7 +452,8 @@ td, th {
     }
 
     #pic1{
-        width: 25em;
+        height: 25em;
+        width: auto;
     }
 
     #title3{
@@ -309,15 +463,86 @@ td, th {
     #title4{
         height: auto;
     }
+
+    .smallCircleBox{
+        grid-column: 1/span 4;
+    }
+
+    .text1{
+        grid-column: 1/span 4;
+        grid-row: 2;
+    }
+
+    .img2{
+        display: none;
+    }
+
+    .text2{
+        grid-column: 1/span 2;
+        grid-row: 3;
+    }
+
+    .killCountWW1{
+        grid-row: 3;
+        grid-column: 3/span 2;
+        margin-bottom: 1em;
+    }
+
+    .text3{
+        grid-row: 4;
+        grid-column: 1 /span 3;
+    }
+
+    .img3{
+        grid-row: 4;
+        grid-column: 4;
+    }
+
+    .russoImg{
+        grid-row: 5;
+        grid-column: 1;
+        align-items: unset;
+    }
+
+    #pic4{
+        height: 18em;
+    }
+
+    .russianRev{
+        grid-row: 5;
+        grid-column: 2 /span 3;
+    }
+
+    .usaIntroText{
+        grid-row: 6;
+        grid-column: 1 /span 4;
+    }
 }
 
 @media only screen and (max-width: 900px){
+    .section{
+        margin: 0.5em 0.5em;
+        padding: 0.5em 0.5em;
+    }
+
     .introSection{
         height: 50vh;
     }
 
     .introHeader h1{
         font-size: 2.4rem;
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+
+    .sectionHeader{
+        font-size: 2rem;
+    }
+
+    .normalText{
+        font-size: 1.2rem;
     }
 
     .content-table{
@@ -359,6 +584,78 @@ td, th {
     }
 
     #pic1{
-        width: 20em;
+        height: 20em;
+        width: auto;
+    }
+
+    .img2{
+        display: none;
+    }
+
+    .text2{
+        grid-column: 1/span 4;
+        grid-row: 4;
+    }
+
+    .circle{
+        height: 15em;
+        width: 15em;
+    }
+
+    .circleTextHeader{
+        font-size: 1.4rem;
+    }
+
+    .circleText{
+        font-size: 0.6rem;
+    }
+
+    .killCountWW1{
+        grid-row: 3;
+        grid-column: 1/span 4;
+        margin-bottom: 1em;
+    }
+
+    .text3{
+        grid-row: 5;
+        grid-column: 1 /span 4;
+    }
+
+    .img3{
+        grid-row: 6;
+        grid-column: 1 /span 4;
+    }
+
+    #pic3{
+        height: 15em;
+        width: auto;
+    }
+
+    .russianRev{
+        grid-row: 7;
+        grid-column: 1 /span 4;
+    }
+
+    .russoImg{
+        grid-row: 8;
+        grid-column: 1/span 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pic4{
+        height: 12em;
+        width: auto;
+    }
+
+    .usaIntroText{
+        grid-row: 9;
+        grid-column: 1 /span 4;
+    }
+
+    .blueCircle{
+        grid-row: 10;
+        grid-column: 1 /span 4;
     }
 }
