@@ -14,8 +14,10 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+let country = localStorage.getItem("quiz");
+
 let questions = [];
-fetch("questions.json")
+fetch("../Questions/" + country + ".json")
   .then((res) => {
     return res.json();
   })
