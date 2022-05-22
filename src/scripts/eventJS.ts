@@ -74,7 +74,7 @@ const ottoData: string[] = [
 ]
 const usData: string[] = [
     "United States",
-    "../Resources/BackgroundImg/united-states.png",
+    "../Resources/backgroundImg/united-states.png",
     "../Resources/flags/united-states_ww1.png",
     "Since the civil war, the US began to reconstruct and to modernise rapidly. " +
     "In the early 1800s, they experienced massive industrial growth and prosperity with the ‚Gilden Age‘. " +
@@ -83,7 +83,7 @@ const usData: string[] = [
 ]
 const italyData: string[] = [
     "Italy",
-    "../Resources/BackgroundImg/italyWW1Map.png",
+    "../Resources/backgroundImg/italyWW1Map.png",
     "../Resources/flags/italy_ww1.png",
     "Italy is in a tough position. " +
     "Although they are allied with Germany and Austria-Hungary, their recent achievement to conquer Libya from the Ottomans, sparked tensions between the Triple Alliance, " +
@@ -93,7 +93,7 @@ const italyData: string[] = [
 ]
 const bulgariaData: string[] = [
     "Bulgaria",
-    "../Resources/BackgroundImg/bulgaria.png",
+    "../Resources/backgroundImg/bulgaria.png",
     "../Resources/flags/bulgaria.png",
     "Bulgaria was busted from the recent balkan wars and it wanted to regain its lost territory. " +
     "It was political isolated and still recovering from its economic and demographic damage. " +
@@ -103,7 +103,7 @@ const bulgariaData: string[] = [
 ]
 const serbiaData: string[] = [
     "Serbia",
-    "../Resources/BackgroundImg/serbia.png",
+    "../Resources/backgroundImg/serbia.png",
     "../Resources/flags/serbia_flag.png",
     "In the last decades, Serbia managed to escape Austrias grip and develop industrial and modernise." +
     "Serbia become a harbour of serbian nationalism and future slavic scenarios, against Austria. " +
