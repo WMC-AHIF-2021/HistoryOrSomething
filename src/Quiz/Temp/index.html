@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="../../css/navbar.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#">
+            <span class="navItemStyle mainTitle">HistoryOrSomething</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+            </ul>
+            <ul class="d-flex navbar-nav me-5">
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <span class="navItemStyle" onclick="openForm()">Say Something Smart</span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="src/Html/aboutUs.html">
+                        <span class="navItemStyle">About us</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="src/Html/UserAuth.html">
+                        <span class="navItemStyle">Login</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="customContainer" style="margin-top: 6em">
+<div class="row">
+    <div class="customGrid">
+        <div class="col">
+            <div class="customGrid-item">
+                <div class="card">
+                    <img class="card-img" src="./img/Palace-of-Westminster-Parliament.jpg" alt="Rome"/>
+                    <div class="card-content">
+                        <h1 class="customCard-header">United Kingdom</h1>
+                          <p class="customCard-text">Questions 10</p>
+                        <button class="card-btn">Visit <span>&rarr;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="customGrid-item">
+                <div class="card">
+                    <img
+                            class="card-img"
+                            src="./img/grand-canyon.jpg"
+                            alt="Grand Canyon"
+                    />
+                    <div class="card-content">
+                        <h1 class="customCard-header">Grand Canyon</h1>
+                        <p class="customCard-text">
+                            One of the world's natural wonders, the iconic Grand Canyon draws
+                            oohs and aahs from visitors perched at the edge of its
+                            <strong>towering cliffs</strong>.
+                        </p>
+                        <button class="card-btn">Visit <span>&rarr;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="customGrid-item">
+                <div class="card">
+                    <img class="card-img" src="./img/maldives.jpg" alt="Maldives"/>
+                    <div class="card-content">
+                        <h1 class="customCard-header">Maldives</h1>
+                        <p class="customCard-text">
+                            The Maldives are known for their
+                            <strong>natural environment</strong> including the blue ocean,
+                            white beaches, and clean air, attracting tourists.
+                        </p>
+                        <button class="card-btn">Visit <span>&rarr;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="col">
+        <div class="customGrid-item">
+          <div class="customCard">
+            <img class="card-img" src="./img/maldives.jpg" alt="Maldives"/>
+            <div class="card-content">
+              <h1 class="customCard-header">Maldives</h1>
+              <p class="customCard-text">
+                The Maldives are known for their
+                <strong>natural environment</strong> including the blue ocean,
+                white beaches, and clean air, attracting tourists.
+              </p>
+              <button class="card-btn">Visit <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

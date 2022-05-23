@@ -26,6 +26,9 @@ const auth = getAuth();
 // collection ref
 const colRef = collection(db, "quizes");
 export class Server {
+    constructor() {
+        this.db = getFirestore();
+    }
     test() {
         console.log("database function working!");
     }
@@ -50,6 +53,10 @@ export class Server {
         })
             .catch((err) => console.log(err.message));
         return success;
+    }
+    // Check user Auth
+    checkUserAuth() {
+        return true;
     }
     signUpUser(email, password) {
         let success = false;

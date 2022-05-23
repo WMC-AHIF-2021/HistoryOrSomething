@@ -231,18 +231,18 @@ nav {
   color: var(--fontColor);
 }
 
-.links{
+.table-links{
   text-decoration-line: none;
   color: var(--fontColor);
   cursor: pointer;
 }
 
-.links:hover{
+.table-links:hover{
   text-decoration-line: underline;
   color: var(--fontColor);
 }
 
-.links:visited{
+.table-links:visited{
   .links
 }
 
@@ -339,7 +339,7 @@ nav {
   user-select: none;
 }
 
-.card-text{
+.customCard-text{
   user-select: none;
 }
 

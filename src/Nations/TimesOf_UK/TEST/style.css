@@ -1,0 +1,292 @@
+body{
+    background-color: #F2F4F3;
+    overflow: hidden;
+}
+
+
+/*General Style */
+.text{
+    color: #A9927D;
+    font-size: 7vw;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.subTitle{
+    font-size: 2.5vw;
+    margin: 0 1em;
+}
+
+
+.button{
+    background: #A9927D;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 1.5em;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 4vh;
+    z-index: 100;
+    margin-right: 0.5em;
+}
+
+.buttonMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+    font-size: 1.5em;
+    font-family: "Times New Roman", "sans-serif";
+}
+
+.link:hover{
+    text-decoration: 3px underline #A9927D;
+}
+
+.prev{
+    transform: rotate(90deg);
+}
+
+.next{
+    transform: rotate(-90deg);
+}
+
+/*Table */
+
+.table {
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.table-item{
+    font-family: "Times New Roman", "sans-serif";
+    color: #0A0908;
+}
+
+.table-links{
+    text-decoration-line: none;
+    color: #A9927D;
+    cursor: pointer;
+}
+
+.table-links:hover{
+    text-decoration-line: underline;
+    color: #A9927D;
+}
+
+.table-links:visited{
+.links
+}
+
+/*Carousel*/
+#carouselExampleSlidesOnly{
+    justify-content: center;
+    align-items: center;
+
+    border: 3px double #A9927D;
+    padding: 0.5em;
+}
+
+/*Card*/
+
+.customCard-text{
+    font-size: 1.3rem;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    color: #A9927D;
+    padding: 1em 0 0.5em 0;
+}
+
+
+
+/*Grid */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.linkItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentLeftItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentRightItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 90%;
+}
+
+.content-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    font-family: "Times New Roman", "sans-serif";
+}
+
+.content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+/*Custom Select */
+
+.select-box {
+    display: flex;
+    width: 12em;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+}
+
+.select-box .options-container {
+    background: #A9927D;
+    color: #f5f6fa;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+
+    order: 1;
+}
+
+.selected {
+    background: #A9927D;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #f5f6fa;
+    position: relative;
+
+    order: 0;
+}
+
+.select-box .options-container.active {
+    max-height: 100px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -6px;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected {
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.select-box .option:hover {
+    background: #a48971;
+}
+
+.select-box label {
+    cursor: pointer;
+}
+
+.select-box .option .radio {
+    display: none;
+}
+
+/*Mobile View*/
+
+@media only screen and (max-width: 600px) {
+    /*Grid*/
+    .grid-container{
+        grid-template-rows: 12% 40% 40% 5%;
+        grid-template-columns: 100%;
+    }
+
+    .contentRightItem{
+        width: 100%;
+    }
+
+    .linkItem{
+        align-items: end;
+    }
+
+    /*Other*/
+    .prev{
+        transform: rotate(0);
+    }
+
+    .next{
+        transform: rotate(0);
+    }
+
+    .bg{
+        width: 80%;
+    }
+
+    .button{
+        font-size: 5vw;
+    }
+
+    .subTitle{
+        font-size: 7vw;
+    }
+
+    .text{
+        font-size: 10vw;
+    }
+
+    .table{
+        font-size: 5vw;
+    }
+
+    .customCard-text{
+        font-size: 3vw;
+    }
+
+    .card-title{
+        font-size: 4vw;
+    }
+
+    .link{
+        font-size: 5vw;
+    }
+
+    .select-box{
+        width: 250px;
+        font-size: 20px;
+    }
+}

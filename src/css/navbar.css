@@ -18,6 +18,10 @@
     padding-left: 3em;
 }
 
+.nav-item:hover{
+    cursor: pointer;
+}
+
 .mainTitle {
     font-size: 2rem;
     font-family: 'IM Fell English SC', serif;
