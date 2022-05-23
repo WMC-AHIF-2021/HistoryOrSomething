@@ -252,6 +252,7 @@ nav {
   font-size: 4rem;
   font-family: 'Special Elite', cursive;
   text-align: center;
+  color: white;
 }
 
 .arrow {
@@ -396,7 +397,7 @@ nav {
 }
 
 .mainTitle-Item {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_the_Japanese_Emperor.svg");
+  background-image: url("../GreeceImg/Greece750BCImg/greeceFlag750BC.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
