@@ -232,18 +232,18 @@ nav {
   color: var(--fontColor);
 }
 
-.table-links{
+.links{
   cursor: pointer;
   text-decoration-line: none;
   color: var(--fontColor);
 }
 
-.table-links:hover{
+.links:hover{
   text-decoration-line: underline;
   color: var(--fontColor);
 }
 
-.table-links:visited{
+.links:visited{
   .links
 }
 

@@ -229,19 +229,15 @@ nav {
   color: var(--fontColor);
 }
 
-.table-links{
+.links{
   text-decoration-line: none;
   color: var(--fontColor);
   cursor: pointer;
 }
 
-.table-links:hover{
+.links:hover{
   text-decoration-line: underline;
   color: var(--fontColor);
-}
-
-.table-links:visited{
-  .links
 }
 
 .mainTitle {
