@@ -5,7 +5,7 @@ const europeNames: string[][] = [
     ["Italy", "../Resources/flags/italy.png", ""],
     ["Spain", "../Resources/flags/spain.png", "../Nations/TimesOf_Spain/src/SpainPresent.html"],
     ["The UK", "../Resources/flags/united-kingdom.png", "../Nations/TimesOf_UK/src/UK2022.html"],
-    ["Greece", "../Resources/flags/greece.png", ""],
+    ["Greece", "../Resources/flags/greece.png", "../Nations/TimesOf_Greece/src/Greece2022.html"],
     ["Russia", "../Resources/flags/russia.png", ""]
 ]
 
