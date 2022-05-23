@@ -8,6 +8,7 @@
   --fontColor: black;
 }
 .dark-mode {
+  --primary-color: white;
   --background-color: #282828;
   --secbackground-color: #3a3a3a;
   --fontColor: white;
@@ -43,7 +44,7 @@ nav {
 /*Elements inside Navbar*/
 /*Logo Container*/
 .logo {
-  color: var(--primary-color);
+  color: var(--fontColor);
   font-family: "IM Fell DW Pica SC", serif;
   user-select: none;
 }
