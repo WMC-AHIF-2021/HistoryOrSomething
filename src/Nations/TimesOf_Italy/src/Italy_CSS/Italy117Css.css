@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
 /*Basic Styling for all Elements*/
 :root {
   --background-color: whitesmoke;
@@ -225,7 +227,7 @@ nav {
 }
 
 .table-item{
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Luxurious Roman', cursive;
   color: var(--fontColor);
 }
 
@@ -242,10 +244,10 @@ nav {
 
 .mainTitle {
   font-size: 4rem;
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Luxurious Roman', cursive;
   text-align: center;
   user-select: none;
-  color: var(--primary-color);
+  color: white;
 }
 
 .arrow {
@@ -319,7 +321,7 @@ nav {
 }
 
 .card-body {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Luxurious Roman', cursive;
   background-color: var(--background-color);
   color: var(--secondary-color);
   user-select: none;
