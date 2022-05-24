@@ -19,15 +19,30 @@ body{
 
 
 .button{
-    background: #A9927D;
+    background: white;
     border: none;
+    width: 40%;
+    height: 80%;
     border-radius: 8px;
-    padding: 0.7em 1.5em;
-    color: white;
     font-size: 1.5em;
     margin-top: 4vh;
     z-index: 100;
-    margin-right: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #0A0908;
+}
+
+.buttonMenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button img {
+    width: 30%;
 }
 
 .buttonMenu{
@@ -158,15 +173,15 @@ body{
 
 .select-box {
     display: flex;
-    width: 12em;
+    width: 80%;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 2em;
     text-align: center;
 }
 
 .select-box .options-container {
-    background: #A9927D;
-    color: #f5f6fa;
+    background: white;
+    color: #0A0908;
     max-height: 0;
     width: 100%;
     opacity: 0;
@@ -178,10 +193,10 @@ body{
 }
 
 .selected {
-    background: #A9927D;
+    background-color: white;
     border-radius: 8px;
     margin-bottom: 8px;
-    color: #f5f6fa;
+    color: #0A0908;
     position: relative;
 
     order: 0;
@@ -216,7 +231,7 @@ body{
 }
 
 .select-box .option:hover {
-    background: #a48971;
+    background: whitesmoke;
 }
 
 .select-box label {
