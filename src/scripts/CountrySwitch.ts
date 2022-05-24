@@ -2,7 +2,7 @@ const europeNames: string[][] = [
     ["Germany", "../Resources/flags/germany.png", "../Nations/TimesOf_Germany/src/german-present.html"],
     ["Austria", "../Resources/flags/austria.png", "../Nations/TimesOf_Austria/src/austria-present.html"],
     ["France", "../Resources/flags/france.png", "../Nations/TimesOf_France/FrancePresent.html"],
-    ["Italy", "../Resources/flags/italy.png", ""],
+    ["Italy", "../Resources/flags/italy.png", "../Nations/TimesOf_Italy/src/Italy2022.html"],
     ["Spain", "../Resources/flags/spain.png", "../Nations/TimesOf_Spain/src/SpainPresent.html"],
     ["The UK", "../Resources/flags/united-kingdom.png", "../Nations/TimesOf_UK/src/UK2022.html"],
     ["Greece", "../Resources/flags/greece.png", "../Nations/TimesOf_Greece/src/Greece2022.html"],
