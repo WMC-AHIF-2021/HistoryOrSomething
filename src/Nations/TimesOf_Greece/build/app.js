@@ -22,12 +22,12 @@ navSlide();
 // Dark Mode
 let icon = document.getElementById("icon");
 icon.onclick = function () {
-    document.body.classList.toggle("dark-mode");
-    if (document.body.classList.contains("dark-mode")) {
-        icon.src = "Icons/sun.png";
+    document.body.classList.toggle("light-mode");
+    if (document.body.classList.contains("light-mode")) {
+        icon.src = "Icons/moon.png";
     }
     else {
-        icon.src = "Icons/moon.png";
+        icon.src = "Icons/sun.png";
     }
 };
 //# sourceMappingURL=app.js.map

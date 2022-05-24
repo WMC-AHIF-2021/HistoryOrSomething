@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 /*Basic Styling for all Elements*/
 :root {
   --background-color: whitesmoke;
@@ -240,10 +242,6 @@ nav {
   color: var(--fontColor);
 }
 
-.links:visited{
-  .links
-}
-
 .mainTitle {
   font-size: 4rem;
   font-family: 'Special Elite', cursive;
@@ -393,7 +391,7 @@ nav {
 }
 
 .mainTitle-Item {
-  background-image: url("../JapanImg/1942Img/BackgroundFlag.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Italy_%281861-1946%29_crowned.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

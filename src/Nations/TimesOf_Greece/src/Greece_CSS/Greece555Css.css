@@ -55,7 +55,7 @@ nav {
 
 /*Text inside Logo Container*/
 .logo h4 {
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 .homeAnchor {
@@ -215,8 +215,11 @@ nav {
 }
 
 .content-img {
+  width: 40vw;
+  height: auto;
   max-width: 80%;
   max-height: 80%;
+  border: 0.3rem double var(--primary-color);
 }
 
 .table {
@@ -230,9 +233,9 @@ nav {
 }
 
 .links{
+  cursor: pointer;
   text-decoration-line: none;
   color: var(--fontColor);
-  cursor: pointer;
 }
 
 .links:hover{
@@ -245,10 +248,10 @@ nav {
 }
 
 .mainTitle {
+  user-select: none;
   font-size: 4rem;
   font-family: 'Special Elite', cursive;
   text-align: center;
-  user-select: none;
 }
 
 .arrow {
@@ -393,7 +396,7 @@ nav {
 }
 
 .mainTitle-Item {
-  background-image: url("../JapanImg/1942Img/BackgroundFlag.png");
+  background-image: url("../GreeceImg/Greece555Img/ByzantiumFlag.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

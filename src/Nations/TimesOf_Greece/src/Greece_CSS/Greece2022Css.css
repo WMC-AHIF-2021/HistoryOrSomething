@@ -225,7 +225,7 @@ nav {
 }
 
 .table-item{
-  font-family: 'Special Elite', cursive;
+  font-family: 'Epilogue', sans-serif;
   color: var(--fontColor);
 }
 
@@ -246,7 +246,7 @@ nav {
 
 .mainTitle {
   font-size: 4rem;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Epilogue', sans-serif;
   text-align: center;
   user-select: none;
 }
@@ -322,7 +322,7 @@ nav {
 }
 
 .card-body {
-  font-family: 'Special Elite', cursive;
+  font-family: 'Epilogue', sans-serif;
   background-color: var(--background-color);
   color: var(--secondary-color);
   user-select: none;
@@ -393,7 +393,7 @@ nav {
 }
 
 .mainTitle-Item {
-  background-image: url("../JapanImg/1942Img/BackgroundFlag.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
