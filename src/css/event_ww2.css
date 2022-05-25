@@ -56,6 +56,8 @@
 #sudetenImg{
     height: 18em;
     width: auto;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 .northernImg{
@@ -69,11 +71,15 @@
 #denNorImg{
     height: 18em;
     width: auto;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 #barbarossaImg{
     height: 25em;
     width: auto;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 .text2{
     grid-column: 2/span 3;
@@ -103,6 +109,8 @@
 #pacificImg{
     height: 25em;
     width: auto;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 .victoryImgBox{
@@ -116,6 +124,8 @@
 #victoryImg{
     height: 45em;
     width: auto;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 .victoryTextBox{

@@ -39,6 +39,24 @@ html{
     background-size: cover;
 }
 
+#return-arrow{
+    height: 1.2em;
+    width: auto;
+    padding-left: 0.6em;
+}
+
+.return-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1.5em;
+    top: 9vh;
+    margin-top: 1.5em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 .introHeader h1{
     color: black;
     font-size: 7rem;
@@ -201,6 +219,8 @@ td, th {
 #gridFlag{
     height: 25em;
     user-select: none;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 .gridBigImgBox{
@@ -214,6 +234,8 @@ td, th {
 #gridBigImg{
     height: 30em;
     user-select: none;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 .gridTextBox{
@@ -248,6 +270,8 @@ td, th {
 #pic1{
     width: 80%;
     border-radius: 0.5em;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 .part2{
@@ -341,6 +365,8 @@ td, th {
     height: 20em;
     width: auto;
     border-radius: 0.5em;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 .text2{
@@ -364,6 +390,8 @@ td, th {
 #pic3{
     height: 25em;
     width: auto;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 .text4{
@@ -387,6 +415,8 @@ td, th {
 #pic4{
     height: 25em;
     width: auto;
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 #hammerIcon{
@@ -488,6 +518,14 @@ td, th {
 
     .introSection{
         height: 70vh;
+    }
+
+    .return-btn{
+        top: 13vh;
+    }
+
+    #return-arrow{
+        height: 0.8em;
     }
 
     .allianceTable{
@@ -600,6 +638,10 @@ td, th {
 
     .introHeader h1{
         font-size: 2.4rem;
+    }
+
+    .return-btn{
+        top: 13vh;
     }
 
     h4{

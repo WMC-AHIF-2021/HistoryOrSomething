@@ -37,6 +37,7 @@ Flags Attribution
 <a href="https://www.flaticon.com/free-icons/napoleon" title="napoleon icons">Napoleon icons created by Good Ware - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/russia" title="russia icons">Russia icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/grave" title="grave icons">Grave icons created by KP Arts - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Stockio - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/communist" title="communist icons">Communist icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/scroll" title="scroll icons">Scroll icons created by Freepik - Flaticon</a>
 <a href="https://commons.wikimedia.org/wiki/File:Roman_Empire_Trajan_117AD.png">Tataryn</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
