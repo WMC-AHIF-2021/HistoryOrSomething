@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timeSpace">
+        <h1>20th May, 1914</h1>
+    </div>
+
+    <!-- Draggable DIV -->
+    <img id="mydiv" src="imgs/ww1BackgroundImg-2.png" usemap="#image-map">
+
+    <div>show</div>
+    <div id="mapBlock">
+        <map name="image-map">
+            <area id="kukArea" target="" alt="Kuk" title="Austra-Hungary" shape="poly" onmouseover="detectHover(0)">
+            <area id="germanyArea" target="" alt="Germany" title="Germany"  shape="poly" onmouseover="detectHover(1)">
+            <area id="italyArea" target="" alt="Italy" title="Italy" shape="poly" onmouseover="detectHover(2)">
+            <area id="sardiniaArea" target="" alt="Italy" title="Italy" shape="poly" onmouseover="detectHover(6)">
+            <area id="rhodosArea" target="" alt="Italy" title="Italy" shape="poly" onmouseover="detectHover(3)">
+            <area id="italianGreece1Area" target="" alt="Italy" title="Italy" shape="poly" onmouseover="detectHover(4)">
+            <area id="italianGreece2Area" target="" alt="Italy" title="Italy" shape="poly" onmouseover="detectHover(5)">
+            <area id="russiaArea" target="" alt="Russia" title="Russia" shape="poly" onmouseover="detectHover(7)">
+            <area id="serbiaArea" target="" alt="Serbia" title="Serbia" shape="poly" onmouseover="detectHover(8)">
+            <area id="bulgariaArea" target="" alt="Bulgaria" title="Bulgaria" shape="poly" onmouseover="detectHover(9)">
+            <area id="turkeyArea" target="" alt="Ottoman Empire" title="Ottoman Empire" shape="poly" onmouseover="detectHover(10)">
+            <area id="franceArea" target="" alt="France" title="France" shape="poly" onmouseover="detectHover(11)">
+            <area id="algeriaArea" target="" alt="FrenchAlgeria" title="France" shape="poly" onmouseover="detectHover(12)">
+            <area id="corsicaArea" target="" alt="FrenchCorsica" title="France" shape="poly" onmouseover="detectHover(13)">
+            <area id="ukArea" target="" alt="UK" title="UK" shape="poly" onmouseover="detectHover(14)">
+            <area id="irelandArea" target="" alt="UK" title="UK" shape="poly" onmouseover="detectHover(15)">
+            <area id="maltaArea" target="" alt="UK" title="UK" shape="poly" onmouseover="detectHover(16)">
+            <area id="shetlandArea" target="" alt="UK" title="UK" shape="poly" onmouseover="detectHover(17)">
+            <area id="isleOfManArea" target="" alt="UK" title="UK" shape="poly" onmouseover="detectHover(18)">
+            <area id="crimeaArea" target="" alt="RussianEmpire" title="Russian Empire" shape="poly" onmouseover="detectHover(19)">
+        </map>
+    </div>
+    <div id="descriptionBox" onmouseover="holdOpen()">
+        <div class="description">
+            <div id="navbar" class="descriptionNav">
+                <h1 id="descriptionHeader"></h1>
+                <img id="removeIconID" class="removeIcon" src="imgs/cancel.png" onclick="closeDetails()">
+            </div>
+            <div class="descriptionImgBox">
+                <img id="descriptionImg">
+            </div>
+            <div class="descriptionTableBox">
+                <table id="descriptionTable">
+                    <tr>
+                        <th id="leaderTitle">
+                            Leader
+                        </th>
+                        <td id="leaderName">
+                            Yannik LISA
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Government
+                        </th>
+                        <td id="governmentType">
+                            military Dictatorship
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Population
+                        </th>
+                        <td id="populationCount">
+                            23,542,000
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Area
+                        </th>
+                        <td id="areaCount">
+                            901,254 km²
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Faction
+                        </th>
+                        <td id="alliance">
+                            Axis Powers
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="descriptionTextBox">
+                <p id="descriptionText"></p>
+            </div>
+        </div>
+    </div>
+    <div id="downIconBox">
+        <img id="upIcon" src="imgs/download.png">
+    </div>
+    <div id="curtain"></div>
+    <div id="content">
+
+    </div>
+
+    <script src="../build/mapRend.js"></script>
+    <script src="../build/mapAreas.js"></script>
+    <script src="../build/nationDescription.js"></script>
+    <script src="../build/makeDescriptionDivMovable.js"></script>
+    <script src="../build/contentJS.js"></script>
+</body>
+</html>

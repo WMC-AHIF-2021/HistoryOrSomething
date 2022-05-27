@@ -1,0 +1,206 @@
+*{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+body, html {
+    background-color: black;
+}
+
+.timeSpace{
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    display: flex;
+}
+
+.timeSpace h1{
+    font-size: 3rem;
+    color: white;
+    user-select: none;
+    background-color: #606060;
+    padding: 0.3em;
+    border-radius: 0 0 8px 0;
+}
+
+area{
+    cursor: pointer;
+}
+
+#mydiv {
+    position: absolute;
+    z-index: 7;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    user-select: none;
+    top: -70vh;
+    left: -70vh;
+}
+
+#descriptionBox{
+    height: 550px;
+    width: 700px;
+    position: absolute;
+    z-index: 8;
+    background-color: #606060;
+    border-radius: 8px;
+    display: none;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 1em;
+    height: 95%;
+}
+
+.description div {
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+    border-radius: 8px;
+}
+
+.descriptionNav{
+    grid-column: 1 /span 2;
+    grid-row: 1;
+    width: 100%;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.descriptionNav h1 {
+    float: left;
+    color: white;
+}
+
+.removeIcon{
+    user-select: none;
+    float: right;
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+}
+
+.descriptionImgBox{
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#descriptionImg{
+    height: 200px;
+    width: auto;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.descriptionTableBox{
+    grid-row: 2;
+    grid-column: 2;
+    background-color: #6c6c6c;
+}
+
+#descriptionTable{
+    width: 100%;
+    padding: 0.5em;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#descriptionTable th {
+    float: left;
+}
+
+#descriptionTable td {
+    float: right;
+}
+
+.descriptionTextBox{
+    grid-column: 1 /span 2;
+    grid-row: 3;
+    overflow-y: scroll;
+    background-color: #6c6c6c;
+}
+
+.descriptionTextBox > p {
+    padding: 0.5em 1em;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#upIconBox{
+    user-select: none;
+    transition: 1s;
+    z-index: 12;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+
+#downIconBox{
+    user-select: none;
+    transition: 1s;
+    z-index: 12;
+    position: absolute;
+    bottom: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+
+#upIcon{
+    cursor: pointer;
+    height: 3em;
+    width: auto;
+}
+
+#curtain{
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: 11;
+    /*background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255,255,255,0.8), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1)) ;*/
+}
+
+#hiddenCurtain{
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    /*background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255,255,255,0.8), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1)) ;*/
+}
+
+#hiddenContent{
+    transition: 1s;
+    height: 80vh;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: 13;
+    background-color: white;
+    transform: translateY(80vh);
+}
+
+#content{
+    transition: 1s;
+    height: 80vh;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: 13;
+    background-color: white;
+    transform: translateY(0);
+}
