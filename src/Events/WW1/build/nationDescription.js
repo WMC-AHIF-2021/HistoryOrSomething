@@ -81,7 +81,7 @@ const france = [
     "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg",
     "Prime minister",
     "Raymond Poincaré",
-    "parliamentary republic",
+    "parl. republic",
     "~40,000,000",
     "536,464",
     "Entente",

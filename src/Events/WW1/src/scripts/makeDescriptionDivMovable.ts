@@ -1,5 +1,5 @@
 // Make the DIV element draggable:
-const navbar: HTMLElement = document.getElementById('navbar');
+const navbar: HTMLElement = document.getElementById('descriptionNavbar');
 dragDIV(document.getElementById("descriptionBox"));
 
 function dragDIV(elmnt) {
