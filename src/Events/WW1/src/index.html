@@ -71,7 +71,15 @@
         <!-- Draggable DIV -->
         <img id="mydiv" src="" usemap="#image-map">
         <div id="mapBlock">
-            <map name="image-map">
+            <map name="image-map" id="imgMap">
+                <!--Event-Areas-->
+                <area id="assassinationEvent" alt="Assassination" title="Assassination of the austrian heir" href="https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand" shape="poly">
+                <area id="battleLiege" alt="LiegeBattle" title="Battle of Liege" href="https://en.wikipedia.org/wiki/Battle_of_Liège" shape="poly">
+                <area id="battleCharleroiMonse" alt="battleCharleroiMonse" title="Battle of Charleroi and Monse" href="https://en.wikipedia.org/wiki/Battle_of_Charleroi" shape="poly">
+                <area id="battleGumbinnen" alt="battleGumbinnen" title="Battle of Gumbinnen" href="https://en.wikipedia.org/wiki/Battle_of_Gumbinnen" shape="poly">
+                <area id="battleTannenberg" alt="battleTannenberg" title="Battle of Tannenberg" href="https://en.wikipedia.org/wiki/Battle_of_Tannenberg" shape="poly">
+                <area id="battleGalicia" alt="battleGalicia" title="Battle of Galicia" href="https://en.wikipedia.org/wiki/Battle_of_Galicia" shape="poly">
+                <!--Country-Areas-->
                 <area id="kukArea" target="" alt="Kuk" title="Austra-Hungary" shape="poly" onmouseover="detectHover(0)">
                 <area id="germanyArea" target="" alt="Germany" title="Germany"  shape="poly" onmouseover="detectHover(1)">
                 <area id="italyArea" target="" alt="Italy" title="Italy" shape="poly" onmouseover="detectHover(2)">
@@ -156,6 +164,10 @@
 
     <div id="downIconBox">
         <img class="iconSettings" id="upIcon" src="imgs/download.png">
+    </div>
+    <div id="fullImgBox">
+        <img class="iconSettings" id="fullImgCancel" src="imgs/cancel.png" onclick="removeFullImgBox()">
+        <img id="fullImg" src="imgs/DieNeueZeitung_Ultimatum.jpg">
     </div>
     <div id="curtain"></div>
     <div id="content">
