@@ -6,22 +6,23 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 .customContainer {
-  background-color: #eee;
+  font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+  margin-top: 5em;
+  padding: 10em;
 }
 
 .customGrid {
   display: grid;
-  width: 114em;
-  grid-gap: 6rem;
+  width:  114em;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: start;
 }
@@ -29,10 +30,12 @@ html {
 .customGrid-item {
   background-color: #fff;
   border-radius: 0.4rem;
+  max-width: 50em;
   overflow: hidden;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
+  margin: 1em 3em 8em 3em;
 }
 
 .customGrid-item:hover {
@@ -43,7 +46,7 @@ html {
 .card-img {
   display: block;
   width: 100%;
-  height: 20rem;
+  height: 14rem;
   object-fit: cover;
 }
 
@@ -52,7 +55,7 @@ html {
 }
 
 .customCard-header {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #0d0d0d;
   margin-bottom: 1.5rem;
@@ -70,7 +73,7 @@ html {
   display: block;
   width: 100%;
   padding: 1.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #3363ff;
   background-color: #d8e0fd;
@@ -97,10 +100,6 @@ html {
 }
 
 @media only screen and (max-width: 60em) {
-  body {
-    padding: 3rem;
-  }
-
   .customGrid {
     grid-gap: 3rem;
   }

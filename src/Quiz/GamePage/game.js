@@ -28,7 +28,7 @@ fetch("../Questions/" + country + ".json")
 
 //Constants
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 9;
 
 const startGame = () => {
   questionCounter = 0;
@@ -74,9 +74,9 @@ choices.forEach((choice) => {
     const selectedAnswer = selectChoice.dataset["number"];
 
     const classToApply =
-      selectedAnswer === currentQuestion.answer ? "correct" : "incorrect";
+      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
-    classToApply === "correct" && incrementScore(CORRECT_BONUS);
+    classToApply == "correct" && incrementScore(CORRECT_BONUS);
 
     selectChoice.parentElement.classList.add(classToApply);
 
