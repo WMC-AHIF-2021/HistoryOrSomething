@@ -303,12 +303,17 @@ area{
     overflow-y: scroll;
 }
 
-.rightSection{
+.rightSectionYellow{
     grid-column: 2;
     background-color: #f6bf49;
     padding: 1em;
     border-radius: 0.6em;
     overflow-y: scroll;
+}
+
+.rightSection{
+    grid-column: 2;
+    padding: 1em;
 }
 
 .normalText{
@@ -347,6 +352,11 @@ area{
 .allianceTable td, th {
     font-size: 1em;
     padding: 0.2em 0.5em;
+}
+
+.stepImg{
+    height: 100%;
+    width: auto;
 }
 
 .steps{

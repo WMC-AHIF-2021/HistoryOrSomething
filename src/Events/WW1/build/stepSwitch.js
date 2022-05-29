@@ -61,7 +61,7 @@ const codeContent = [
         "                    New technology and military tactics came into use, what the involved countries soon realised, would change the form of war, forever.\n" +
         "                </p>\n" +
         "            </div>\n" +
-        "            <div class=\"rightSection\">\n" +
+        "            <div class=\"rightSectionYellow\">\n" +
         "                <h3>Backstory</h3>\n" +
         "                <p class=\"normalText\">\n" +
         "                    The 1st World War is result of years of imperialism and global dominance by europe.\n" +
@@ -69,7 +69,50 @@ const codeContent = [
         "                    Politically as well as economically, leaving only a few nations independent.\n" +
         "                    However, since the unification of Germany, the balance of power in Europe has shifted.\n" +
         "                </p>\n" +
-        "            </div>"
+        "            </div>",
+    "<div class=\"leftSection\">\n" +
+        "                <h3>Assassination of Franz Ferdinand</h3>\n" +
+        "                <p class=\"normalText\">\n" +
+        "                    <strong>June 28, 1914 - Sarajevo:</strong> <br>\n" +
+        "                    To inspect the imperial armed forces, the austro-hungarian heir, Franz Ferdinand,\n" +
+        "                    visited the capital Sarajevo of the newly annexed provinces of Bosnia-Herzegovina.\n" +
+        "                    This annexation provoked serbian nationalists, who believed that Bosnia should be part of Serbia.\n" +
+        "                    Six assassins from a organisation known as Young Bosnia or Mlada Bosna, reinforced by the Black Hand, planned to kill the heir, in hope,\n" +
+        "                    that his death would free Bosnia from the Austrians. <br>\n" +
+        "                    The first attempt failed, injuring only some officers. However, one hour later,\n" +
+        "                    Ferdinand returned to visit the injured officers and his car took a wrong turn.\n" +
+        "                    Unfortunately, one of the assassins, Gavrilo Princip, was there and he took the chance to achieve his goal.<br><br>\n" +
+        "                    The heir and his wife were shot and died shortly after.\n" +
+        "                </p>\n" +
+        "            </div>\n" +
+        "            <div class=\"rightSection\">\n" +
+        "                <img class=\"stepImg\" src=\"../../../Resources/neededImg/assassination.jpg\">\n" +
+        "            </div>",
+    "<div style='overflow: hidden' class=\"leftSection\">\n" +
+        "                <img class=\"stepImg\" src=\"imgs/SerbiaUltimatum.jpg\">\n" +
+        "            </div>\n" +
+        "            <div style='overflow-y: scroll' class=\"rightSection\">\n" +
+        "                <h3>July Crisis</h3>\n" +
+        "                <p class=\"normalText\">\n" +
+        "                       What followed was the July crisis, in which Austria-Hungary accused Serbia to have helped in the murder against the heir. " +
+        "                       Austria wanted to estinguish serbian nationalism, however, Serbia had a big ally: Russia. <br>" +
+        "                       Because of this, Austria waited for support by Germany. " +
+        "                       Its emperor, Willhelm II., secretly assured their assistance in form of the ‚Blank check‘, which gave Austria Germany’s full support in any action. " +
+        "                       Austria sent an ultimatum, which included extremely harsh even unfair terms. <br><br>" +
+        "                       Knowing that Austria will declare war, Serbia began to mobilize its arms and on July 28th 1914, Austria-Hungary declared war on Serbia. " +
+        "                       One thing leads to another and peace in europe has ended." +
+        "                </p>\n" +
+        "            </div>",
+];
+const timeText = [
+    "May 20, 1914",
+    "June 28, 1914",
+    "July 28th 1914",
+];
+const imgContentList = [
+    "imgs/ww1BackgroundImg-2.png",
+    "imgs/backgroundJune28.png",
+    "imgs/backgroundJune28.png"
 ];
 right_Btn.addEventListener('click', () => {
     switchStep(Direction.right);
@@ -79,6 +122,8 @@ left_Btn.addEventListener('click', () => {
 });
 let current = 0;
 const stepCircles = document.getElementsByClassName('step');
+const timeDateBox = document.getElementById('timeDate');
+const myDIV = document.getElementById('mydiv');
 let temp;
 function jumpToStep(index) {
     current = index;
@@ -94,6 +139,8 @@ function switchStep(direction) {
     }
     const contentBox = document.getElementById('stepContentID');
     const step = stepCircles[current];
+    timeDateBox.innerText = timeText[current];
+    myDIV.src = imgContentList[current];
     contentBox.innerHTML = codeContent[current];
     changeStepCircle(step);
 }
