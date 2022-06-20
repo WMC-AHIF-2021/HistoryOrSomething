@@ -1,5 +1,5 @@
 //Creation of nations
-const austria_hungary = [
+let austria_hungary = [
     "Austro-Hungarian Empire",
     "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Austria-Hungary_%281869-1918%29.svg",
     "Emperor",
@@ -7,8 +7,8 @@ const austria_hungary = [
     "const. monarchy",
     "52,000,000",
     "676,443",
-    "Axis Powers",
-    "Austria-Hungary is was the second largest country in europe, furthermore, it was extremely ethnically diverse, " +
+    "Central Powers",
+    "Austria-Hungary is the second largest country in europe, furthermore, it was extremely ethnically diverse, " +
         "having 11 language-groups across the empire: " +
         "Germans, Hungarians, Polish, Czech, Ukrainian, Slovak, Slovene, Croatians, Serbs, Italians and Romanians. " +
         "Since 1867, the Empire had two entites: the Kingdom of Hungary and the Austrian Empire, " +
@@ -21,7 +21,7 @@ const austria_hungary = [
         "He supposed that only a federal solution could rescue the multi-ethnic state. " +
         "However, in 1914, Franz Ferdinand was killed in Sarajevo by a group of serbian nationalists during a official state visit."
 ];
-const germany = [
+let germany = [
     "German Empire",
     "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Germany_%281867%E2%80%931918%29.svg",
     "Emperor",
@@ -29,7 +29,7 @@ const germany = [
     "const. monarchy",
     "~66,700,000",
     "540,857",
-    "Axis Powers",
+    "Central Powers",
     "Since the unification Germany has become one the dominant powers in not only european but also international politics. " +
         "It industrialized rapidly, modernised its political structure. This improvement clearly made its part in the influence of the German Empire." +
         "At first, Otto von Bismarck, first chancellor of the German Empire, wanted a strong relationship with Russia to isolate France " +
@@ -38,7 +38,7 @@ const germany = [
         "Since the coronation of Willhelm II. and after he forced Bismarck to retire, " +
         "Germany became more isolated in both relations with Russia and the UK."
 ];
-const italy = [
+let italy = [
     "Kingdom of Italy",
     "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Italy_%281861-1946%29_crowned.svg",
     "King",
@@ -53,7 +53,7 @@ const italy = [
         "Furthermore, Italy wanted italian lands in Austria-Hungary, which put Italy at odds with the dual monarchy. " +
         "1914 was marked with politcal instability for Italy, putting the far right against the radical left."
 ];
-const russia = [
+let russia = [
     "Russian Empire",
     "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Russia_%281914-1917%29.svg",
     "Tsar",
@@ -76,11 +76,11 @@ const russia = [
         "Resulting in a conflict with the Austro-Hungarian Empire. " +
         "They supported Serbia and its ambitions, due to their similar slavic background."
 ];
-const france = [
+let france = [
     "3rd Republic of France",
     "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg",
     "Prime minister",
-    "Raymond Poincaré",
+    "Raymond P.",
     "parl. republic",
     "~40,000,000",
     "536,464",
@@ -90,7 +90,7 @@ const france = [
         "In 1894 they formed an defensive alliance with Russia, after they abondoned their relation with Germany. " +
         "And luckily for France, the UK ended its isolated policy and formed an alliance with France. "
 ];
-const serbia = [
+let serbia = [
     "Kingdom of Serbia",
     "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Kingdom_of_Serbia_from_1882-1918.png",
     "King",
@@ -104,7 +104,7 @@ const serbia = [
         "Tensions started to rise as more nationalist groups formed in Austria-Hungary, especially in the newly annexed region of Bosnia-Herzegovina, " +
         "in which many Serbs wanted all slavs to be united."
 ];
-const turkey = [
+let turkey = [
     "Ottoman Empire",
     "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg",
     "Sultan",
@@ -112,15 +112,15 @@ const turkey = [
     "const. monarchy",
     "24,000,000",
     "~1,800,000",
-    "Axis powers",
+    "neutral",
     "The Ottoman Empire was commonly known as „the sick man of europe“, due to its weakening grip on african and balkan territories " +
         "since its defeat by the combined force of Austrians, Germans and Poles in the 17th century. Weak sultans and like many other powers, " +
         "the Ottomans were confronted with nationalism and opposition, which lead to territorial losses like Algeria to France, Egypt to Britain " +
         "and the wars in the Balkans.Its alignment before WW1 was questionable. Many people in the empire wanted to stay neutral, " +
         "others wanted to ally with Germany, but there also were many who supported allied alignment. " +
-        "However, it was Germany’s strong position against Russia, that lead to the Ottomans decision to ally with Germany."
+        "However, it is Germany’s strong position against Russia, that lead to the Ottomans decision to favour Germany."
 ];
-const uk = [
+let uk = [
     "The United Kingdom",
     "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg",
     "King",
@@ -139,7 +139,7 @@ const uk = [
         "However, in the beginning of the 20th century this policy changed and the UK, also, began to create Alliances. " +
         "British diplomats formed the Entente Cordianale with France, leading to the Triple Entente in 1907 with Russia."
 ];
-const bulgaria = [
+let bulgaria = [
     "Kingdom of Bulgaria",
     "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg",
     "Tsar",

@@ -624,6 +624,11 @@ td, th {
         grid-row: 6;
         grid-column: 1 /span 4;
     }
+
+    .blueCircle{
+        grid-column: 1 /span 4;
+        grid-row: 7;
+    }
 }
 
 @media only screen and (max-width: 900px){

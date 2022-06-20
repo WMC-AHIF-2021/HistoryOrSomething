@@ -105,6 +105,7 @@ const rhodosArea = document.getElementById('rhodosArea');
 const italianGreece1Area = document.getElementById('italianGreece1Area');
 const italianGreece2Area = document.getElementById('italianGreece2Area');
 const crimeaArea = document.getElementById('crimeaArea');
+const easternPrussiaArea = document.getElementById('easternPrussiaArea');
 const countryAreas = [
     kukArea,
     germanyArea,
