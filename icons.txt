@@ -40,6 +40,25 @@ Flags Attribution
 <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Stockio - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/communist" title="communist icons">Communist icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/scroll" title="scroll icons">Scroll icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/gun" title="gun icons">Gun icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/military" title="military icons">Military icons created by Good Ware - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/battle" title="battle icons">Battle icons created by Umeicon - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/warship" title="warship icons">Warship icons created by iconixar - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/white-flag" title="white-flag icons">White-flag icons created by Vitaly Gorbachev - Flaticon</a>
+<a href="https://commons.wikimedia.org/wiki/File:Flag_of_the_Soviet_Union_(1924%E2%80%931936).svg">Supreme Dragon</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Flag_of_Turkey.svg">David Benbennick (original author)</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Flag_of_Germany_(3-2_aspect_ratio).svg">User:Mmxx</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B0527-0001-810,_Berlin,_Brandenburger_Tor,_Novemberrevolution.jpg">Bundesarchiv, Bild 183-B0527-0001-810 / Autor/-in unbekanntUnknown author / CC-BY-SA 3.0</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">CC BY-SA 3.0 DE</a>, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:The_German_Spring_Offensive,_March-july_1918_Q8619.jpg">David McLellan</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Flag_of_the_Russian_Soviet_Federative_Socialist_Republic_(1918%E2%80%931925).svg">Sergey Chekhonin</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Manifestaci%C3%B3nAFavorDeLaRep%C3%BAblicaPetrogrado1917--russiainrevolut00jone.jpg">Jones, Stinton</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Balfour_portrait_and_declaration.JPG">see original image descriptions</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Zimmermann_Telegram.jpeg">The U.S. National Archives</a>, No restrictions, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Soldats-fran%C3%A7ais-attaque.jpg">Collier and Son</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Bundesarchiv_DVM_10_Bild-23-61-17,_Untergang_der_%22Lusitania%22.jpg">Bundesarchiv, DVM 10 Bild-23-61-17 / CC-BY-SA 3.0</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.en">CC BY-SA 3.0 DE</a>, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:1915_New_York_Times_Armenian_Genocide_article.png">New York Times</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:Column_of_deportees_walking_through_Harput_vilayet_during_the_Armenian_genocide.jpg">Unknown authorUnknown author</a>, Public domain, via Wikimedia Commons
+<a href="https://commons.wikimedia.org/wiki/File:G.C._18_March_1915_Gallipoli_Campaign_Article.jpg">LoudHmen</a>, Public domain, via Wikimedia Commons
 <a href="https://commons.wikimedia.org/wiki/File:Roman_Empire_Trajan_117AD.png">Tataryn</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
 <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Kingdom_of_Lombardy-Venetia.svg">AnonymousUnknown author</a>, Public domain, via Wikimedia Commons
 <a href="https://commons.wikimedia.org/wiki/File:Aistulf%27s_Italy-en.png">Aistulf&#039;s Italy-it.svg: Castagnaderivative work: InvaderCito</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
@@ -73,3 +92,7 @@ Flags Attribution
 <a href="https://commons.wikimedia.org/wiki/File:Flag_of_France_(1794%E2%80%931815,_1830%E2%80%931974,_2020%E2%80%93present).svg">The original uploader was Skopp at  Wikimedia Commons.</a>, Public domain, via Wikimedia Commons
 <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Germany_(1935%E2%80%931945).svg">German government</a>, Public domain, via Wikimedia Commons
 <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Italy_(1861-1946)_crowned.svg">F l a n k e r</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>, via Wikimedia Commons
+<a href="https://www.flaticon.com/free-icons/winter-clothes" title="winter clothes icons">Winter clothes icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/boy" title="boy icons">Boy icons created by monkik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/sad" title="sad icons">Sad icons created by Prosymbols Premium - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/black-man" title="black-man icons">Black-man icons created by Freepik - Flaticon</a>
