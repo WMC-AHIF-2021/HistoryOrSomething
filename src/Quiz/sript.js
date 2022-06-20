@@ -1,4 +1,4 @@
 function goToQuiz(value){
     localStorage.setItem('quiz', value);
-    window.location.href = "http://localhost:63342/HistoryOrSomethingMain/src/Quiz/Temp/index.html?_ijt=d0hod6blklucefevklnitokn0";
+    window.location.href = "http://HistoryOrSomethingMain/src/Quiz/Temp/index.html";
 }
