@@ -19,7 +19,7 @@ const newspaperSrc = [
     "imgs/",
 ];
 const imgContentList = [
-    "imgs/backgroundEnd.png"
+    "imgs/map1936January.png"
 ];
 right_Btn.addEventListener('click', () => {
     switchStep(Direction.right);
