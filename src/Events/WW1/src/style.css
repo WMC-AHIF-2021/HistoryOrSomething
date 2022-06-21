@@ -16,6 +16,15 @@ body, html {
     background-color: black;
 }
 
+.stateLink{
+    color: black;
+    text-decoration-line: none;
+}
+
+.stateLink:hover{
+    color: #545454;
+}
+
 #navbar{
     position: fixed;
     top: 0;

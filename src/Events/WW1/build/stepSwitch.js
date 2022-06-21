@@ -64,11 +64,11 @@ const codeContent = [
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td>German Empire</td>\n" +
-        "                            <td>France</td>\n" +
+        "                            <td><a class='stateLink' href='../../../Nations/TimesOf_France/France1939.html'>France</a></td>\n" +
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td>Austro-Hungarian Empire</td>\n" +
-        "                            <td>United Kingdom</td>\n" +
+        "                            <td><a class='stateLink' href='../../../Nations/TimesOf_UK/src/UK1922.html'>United Kingdom</a></td>\n" +
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td>Ottoman Empire</td>\n" +
@@ -76,7 +76,7 @@ const codeContent = [
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td>Bulgaria</td>\n" +
-        "                            <td>Italy</td>\n" +
+        "                            <td><a class='stateLink' href='../../../Nations/TimesOf_Italy/src/Italy1914.html'>Italy</a></td>\n" +
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td></td>\n" +
@@ -84,11 +84,11 @@ const codeContent = [
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td></td>\n" +
-        "                            <td>Belgium & Luxemburg</td>\n" +
+        "                            <td><a class='stateLink' href='../../../Nations/TimesOf_Greece/src/Greece1890.html'>Greece</a></td>\n" +
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td></td>\n" +
-        "                            <td>Japan</td>\n" +
+        "                            <td><a class='stateLink' href='../../../Nations/TimesOf_Japan/src/Japan1905.html'>Japan</a></td>\n" +
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td></td>\n" +
