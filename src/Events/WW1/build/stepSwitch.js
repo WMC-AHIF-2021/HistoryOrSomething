@@ -63,7 +63,7 @@ const codeContent = [
         "                            <th>Entente</th>\n" +
         "                        </tr>\n" +
         "                        <tr>\n" +
-        "                            <td>German Empire</td>\n" +
+        "                            <td><a class='stateLink' href='../../../Nations/TimesOf_Germany/src/german-1914.html'>German Empire</a></td>\n" +
         "                            <td><a class='stateLink' href='../../../Nations/TimesOf_France/France1939.html'>France</a></td>\n" +
         "                        </tr>\n" +
         "                        <tr>\n" +
