@@ -1,5 +1,20 @@
 # HistoryOrSomething
+<p style="text-align: center">
+"You learn best when you live it!"
+</p>
+<p style="text-align: center; transform: translateX(80px)">
+- unknown, maybe me
+</p>
+<br>
+<p style="text-align: center">
+You have difficulties to see through the events of history?<br>
+HistoryOrSomething can help you and even more than that!
+</p>
+
+<br>
 Our Website: https://wmc-ahif-2021.github.io/HistoryOrSomething/
+
+#Description
 
 This is our amazing team:
 
