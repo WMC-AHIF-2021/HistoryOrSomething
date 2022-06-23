@@ -6,40 +6,40 @@ const europeNames: string[][] = [
     ["Spain", "../Resources/flags/spain.png", "../Nations/TimesOf_Spain/src/SpainPresent.html"],
     ["The UK", "../Resources/flags/united-kingdom.png", "../Nations/TimesOf_UK/src/UK2022.html"],
     ["Greece", "../Resources/flags/greece.png", "../Nations/TimesOf_Greece/src/Greece2022.html"],
-    ["Russia", "../Resources/flags/russia.png", ""]
+    ["Russia", "../Resources/flags/russia.png", "ComingSoon.html"]//missing content
 ]
 
 const asiaNames: string[][] = [
     ["Japan", "../Resources/flags/japan.png", "../Nations/TimesOf_Japan/src/Japan2022.html"],
-    ["China", "../Resources/flags/china.png", ""],
-    ["India", "../Resources/flags/india.png", ""],
-    ["Korea", "../Resources/flags/south-korea.png", ""],
-    ["Iran", "../Resources/flags/iran.png", ""],
-    ["Saudi-Arabia", "../Resources/flags/saudi-arabia.png", ""]
+    ["China", "../Resources/flags/china.png", "ComingSoon.html"],//missing content
+    ["India", "../Resources/flags/india.png", "ComingSoon.html"],//missing content
+    ["Korea", "../Resources/flags/south-korea.png", "ComingSoon.html"],//missing content
+    ["Iran", "../Resources/flags/iran.png", "ComingSoon.html"],//missing content
+    ["Saudi-Arabia", "../Resources/flags/saudi-arabia.png", "ComingSoon.html"]//missing content
 ]
 /*
 const africaNames: string[][] = [
-    ["Ethiopia","../Resources/flags/ethiopia.png",""],
-    ["South Africa","../Resources/flags/south-africa.png",""],
-    ["Morocco","../Resources/flags/morocco.png",""],
-    ["Egypt","../Resources/flags/egypt.png",""],
-    ["Nigeria","../Resources/flags/nigeria.png",""]
+    ["Ethiopia","../Resources/flags/ethiopia.png","ComingSoon.html"],//missing content
+    ["South Africa","../Resources/flags/south-africa.png","ComingSoon.html"],//missing content
+    ["Morocco","../Resources/flags/morocco.png","ComingSoon.html"],//missing content
+    ["Egypt","../Resources/flags/egypt.png","ComingSoon.html"],//missing content
+    ["Nigeria","../Resources/flags/nigeria.png","ComingSoon.html"]//missing content
 ]
 
 const northAmerica: string[][] = [
-    ["USA","../Resources/flags/united-states.png",""],
-    ["Canada","../Resources/flags/canada.png",""],
-    ["Mexico","../Resources/flags/mexico.png",""],
-    ["Honduras","../Resources/flags/honduras.png",""],
-    ["Cuba","../Resources/flags/cuba.png",""],
+    ["USA","../Resources/flags/united-states.png","ComingSoon.html"],//missing content
+    ["Canada","../Resources/flags/canada.png","ComingSoon.html"],//missing content
+    ["Mexico","../Resources/flags/mexico.png","ComingSoon.html"],//missing content
+    ["Honduras","../Resources/flags/honduras.png","ComingSoon.html"],//missing content
+    ["Cuba","../Resources/flags/cuba.png","ComingSoon.html"],//missing content
 ]
 
 const southAmerica: string[][] = [
-    ["Brazil","../Resources/flags/brazil.png",""],
-    ["Colombia","../Resources/flags/colombia.png",""],
-    ["Argentina","../Resources/flags/argentina.png",""],
-    ["Venezuela","../Resources/flags/venezuela.png",""],
-    ["Peru","../Resources/flags/peru.png",""],
+    ["Brazil","../Resources/flags/brazil.png","ComingSoon.html"],//missing content
+    ["Colombia","../Resources/flags/colombia.png","ComingSoon.html"],//missing content
+    ["Argentina","../Resources/flags/argentina.png","ComingSoon.html"],//missing content
+    ["Venezuela","../Resources/flags/venezuela.png","ComingSoon.html"],//missing content
+    ["Peru","../Resources/flags/peru.png","ComingSoon.html"],//missing content
 ]
 */
 enum Direction {
