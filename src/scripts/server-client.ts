@@ -2,13 +2,16 @@ import { initializeApp } from 'firebase/app'
 import {
     getFirestore, collection, query, where,
     addDoc, deleteDoc, doc, onSnapshot, orderBy,
-    updateDoc, getDocs} from "firebase/firestore"
+    updateDoc, getDocs, setDoc, getDoc} from "firebase/firestore"
 
 
-import { getAuth, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword } from "firebase/auth"
+import { getAuth, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword, onAuthStateChanged} from "firebase/auth"
 import {QuerySnapshot} from "@firebase/firestore";
 import firebase from "firebase/compat";
 import Firestore = firebase.firestore.Firestore;
+import messaging = firebase.messaging;
+import DocumentSnapshot = firebase.firestore.DocumentSnapshot;
+import DocumentData = firebase.firestore.DocumentData;
 
 const firebaseConfig = {
     apiKey: "AIzaSyCr7_Es7xBQzlXHejZukEr1ovanvYYo_Z4",
@@ -31,73 +34,128 @@ const colRef = collection(db, "quizes");
 
 export class Server {
     private readonly db = getFirestore();
+    public static id = "";
+    public userData = {};
 
     public test(): void {
         console.log("database function working!");
     }
 
     // Log in User
-    public async loginUser(email: string, password: string,): Promise <boolean> {
-        let success: boolean = false
+    public async loginUser(email: string, password: string,): Promise <object> {
+        let returnValue: object = {success: false, message: "", data: {}};
 
-        const userCred = await signInWithEmailAndPassword(auth, email, password);
+        try{
+            const userCred = await signInWithEmailAndPassword(auth, email, password);
+            if (userCred) {
 
-        if (userCred) {
-            success = true;
+                try {
+                    (returnValue as any).data = await this.getData("users", userCred.user.uid);
+                }catch(error){
+
+                }
+
+                Server.id = userCred.user.uid;
+                console.log(Server.id);
+                (returnValue as any).success = true;
+                this.userData = (returnValue as any).data;
+            }
+
+        }catch(error){
+            (returnValue as any).message = error.message;
         }
 
-        return success;
+
+        return returnValue;
     }
 
     // Sign out User
-    public logoutUser(): boolean {
+    public async logoutUser(): Promise<boolean> {
         let success: boolean = false;
-        signOut(auth)
-            .then(() => {
-                console.log("the user signed out");
-                success = true;
-            })
-            .catch((err) => console.log(err.message))
-
+        await signOut(auth);
+        success = true;
         return success;
     }
 
     // Check user Auth
     public checkUserAuth(): boolean{
+        if (!auth){
+            return false;
+        }
         return true;
     }
 
-    public signUpUser(email: string, password: string):boolean {
-        let success: boolean = false;
+    public async signUpUser(email: string, password: string):Promise<object> {
+        let returnValue: object = {success: false, message: "", data: {}};
 
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((cred) => {
-                (db as any).collection("users").doc(cred.user.uid).set({
-                    score: 1
-                })
-                    .then(() => {
-                        console.log("doc success");
-                        success = true;
-                    });
-                //setDoc(doc(db, "/users", cred.user.uid), {score: 0})
-                console.log('user created: ', cred.user);
-            })
-            .catch((err) => console.log(err.message));
+        try{
+            const userCred = await createUserWithEmailAndPassword(auth, email, password);
+
+            let id: string = userCred.user.uid;
+
+            if (userCred){
+                try{
+                    await this.setNewDoc(id);
+                    try {
+                        (returnValue as any).data = await this.getData("users", id);
+
+                    }catch(error){
+
+                    }
+                    (returnValue as any).success = true;
+                }catch (error){
+                    (returnValue as any).message = error.message;
+                }
+            }
+
+        }catch(error){
+            (returnValue as any).message = error.message;
+        }
+
+        return returnValue;
+    }
+
+    //Creates a new user document => Working
+    public async setNewDoc(id: string): Promise<boolean>{
+        let success = false;
+        try{
+            await setDoc(doc(db, "users", id), {
+                score: 1,
+                id: id
+            });
+            success = true;
+        }catch (error){
+            console.log(error);
+            return false;
+        }
 
         return success;
     }
 
-    public async getData(path:string):Promise <any> {
-        const colRef = collection(db, path);
-        let test = [];
+    public async getData(path:string, id: string):Promise <any> {
+        //const colRef = collection(db, path);
+        const docRef = doc(db, path, id);
+        let test:any = [];
 
-        const snapshot: QuerySnapshot<any>= await getDocs(colRef);
-                test = [];
-                snapshot.docs.map((doc) => {
-                    test.push({...doc.data()});
-                });
+        try{
+            const snapshot = await getDoc(docRef);
+                test = snapshot.data();
+        }
+        catch(e){
+            console.log(e);
+        }
 
-        console.log(test);
+
+        // try{
+        //     const snapshot: QuerySnapshot<any> = await getDocs(colRef);
+        //     test = [];
+        //     snapshot.docs.map((doc) => {
+        //         test.push({...doc.data()});
+        //     });
+        // }catch(e){
+        //     console.log(e);
+        // }
+
 
         return test;
     }

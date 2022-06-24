@@ -1,3 +1,13 @@
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+import { Server } from "./server-client";
 let things = [
     "The Mayan people worshipped turkeys like Gods.",
     "Napoleon was once attacked by a horde of bunnies.",
@@ -29,6 +39,8 @@ let things = [
     "Charlie Chaplin once entered a Charlie Chaplin lookalike contest – and came in 20th place."
 ];
 let ran = Math.floor(Math.random() * things.length);
+let server;
+const navBar = document.getElementById("user");
 function openForm() {
     ran = Math.floor(Math.random() * things.length);
     document.getElementById("myForm").style.display = "block";
@@ -63,6 +75,51 @@ function reveal() {
         }
     }
 }
+function logout() {
+    console.log("logout Method");
+    let loggedOut = server.logoutUser();
+    if (loggedOut) {
+        navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"src/Html/UserAuth.html\">" +
+            "<span class=\"navItemStyle\">Login</span>" +
+            "</a>";
+    }
+}
 reveal();
+document.addEventListener('DOMContentLoaded', (event) => __awaiter(void 0, void 0, void 0, function* () {
+    server = new Server();
+    if (server.checkUserAuth()) {
+        let data = yield getData();
+        // navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"#\">\n" +
+        //     "<span id=\"logOut\" class=\"navItemStyle\">Score: \n" +
+        //     (data as any).score +
+        //     "</span>\n" +
+        //     "</a>\n"
+        navBar.innerHTML = "<div class=\"dropdown\">\n" +
+            "  <button>Account</button>\n" +
+            "  <div>\n" +
+            "    <a href=\"#\">Dashoard</a>\n" +
+            "    <a href=\"#\">Score: " +
+            data.score +
+            "    </a>\n" +
+            "    <a id=\"logOut\" href=\"#\">Logout</a>\n" +
+            "  </div>\n" +
+            "</div>";
+    }
+    document.getElementById("logOut").addEventListener("click", () => {
+        logout();
+    });
+}));
+function getData() {
+    return __awaiter(this, void 0, void 0, function* () {
+        let data;
+        try {
+            data = yield server.getData("users", window.localStorage.getItem("userId"));
+        }
+        catch (error) {
+            alert("Error: " + error);
+        }
+        return data;
+    });
+}
 window.addEventListener("scroll", reveal);
 //# sourceMappingURL=tempJs.js.map

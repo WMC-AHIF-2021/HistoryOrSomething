@@ -3,15 +3,23 @@
 }
 
 
-#modal-signup {
-    display: none;
+#modal-register {
+    background-color: #f4f3ee;
+    width: 30%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-right: 2em;
 }
 
 
 #modal-login {
     background-color: #f4f3ee;
     width: 30%;
-    height: 60%;
+    height: 50%;
     border-radius: 20px;
     padding: 1em;
     justify-content: center;
@@ -37,6 +45,7 @@
 
 .modal-content h1 {
     color: #463f3a;
+    text-align: center;
 }
 
 .textInput {

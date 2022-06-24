@@ -7,7 +7,8 @@ module.exports = {
     watch: true,
     entry:  {
         server: "./build/server-client.js",
-        userAuthBundle: "./build/userAuth.js"
+        userAuthBundle: "./build/userAuth.js",
+        general: "./build/tempJs.js"
     },
     output: {
         path: path.resolve(__dirname, 'bundles'),

@@ -12,16 +12,47 @@ let server;
 document.addEventListener('DOMContentLoaded', (event) => __awaiter(void 0, void 0, void 0, function* () {
     server = new Server();
 }));
-//Login
+//Login and Registration
 const loginForm = document.querySelector(".login");
+const signupForm = document.querySelector(".register");
+signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    reg();
+});
 loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const email = loginForm.email.value;
-    const password = loginForm.password.value;
-    let success = server.loginUser(email, password);
-    console.log(success);
-    if (success) {
-        window.location.assign("../../index.html");
-    }
+    log();
 });
+function reg() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const email = signupForm.signupEmail.value;
+        const password = signupForm.signupPassword.value;
+        let returnValue = yield server.signUpUser(email, password).then((data) => {
+            window.localStorage.setItem("userId", data.data.id);
+            return data;
+        });
+        if (returnValue.success) {
+            window.location.assign("../../index.html");
+        }
+        else {
+            alert("Registration: " + returnValue.message);
+        }
+    });
+}
+function log() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const email = loginForm.email.value;
+        const password = loginForm.password.value;
+        let returnValue = yield server.loginUser(email, password).then((data) => {
+            window.localStorage.setItem("userId", data.data.id);
+            return data;
+        });
+        if (returnValue.success) {
+            window.location.assign("../../index.html");
+        }
+        else {
+            alert(returnValue.message);
+        }
+    });
+}
 //# sourceMappingURL=userAuth.js.map

@@ -1,3 +1,5 @@
+import {Server} from "./server-client"
+
 let things = [
   "The Mayan people worshipped turkeys like Gods.",
   "Napoleon was once attacked by a horde of bunnies.",
@@ -30,6 +32,9 @@ let things = [
 
 ];
 let ran = Math.floor(Math.random() * things.length);
+let server;
+const navBar = document.getElementById("user");
+
 
 function openForm() {
   ran = Math.floor(Math.random() * things.length);
@@ -51,8 +56,6 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-
-
 const loginForm = document.getElementById("modal-login");
 
 function openLogin() {
@@ -73,7 +76,57 @@ function reveal() {
   }
 }
 
+function logout(){
+  console.log("logout Method");
+  let loggedOut = server.logoutUser();
+  if (loggedOut){
+    navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"src/Html/UserAuth.html\">" +
+        "<span class=\"navItemStyle\">Login</span>" +
+        "</a>"
+  }
+}
+
 reveal();
+
+document.addEventListener('DOMContentLoaded', async (event) => {
+  server = new Server();
+
+  if (server.checkUserAuth()){
+    let data  = await getData();
+
+    // navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"#\">\n" +
+    //     "<span id=\"logOut\" class=\"navItemStyle\">Score: \n" +
+    //     (data as any).score +
+    //     "</span>\n" +
+    //     "</a>\n"
+
+    navBar.innerHTML = "<div class=\"dropdown\">\n" +
+        "  <button>Account</button>\n" +
+        "  <div>\n" +
+        "    <a href=\"#\">Dashoard</a>\n" +
+        "    <a href=\"#\">Score: " +
+             (data as any).score +
+        "    </a>\n" +
+        "    <a id=\"logOut\" href=\"#\">Logout</a>\n" +
+        "  </div>\n" +
+        "</div>";
+  }
+
+  document.getElementById("logOut").addEventListener("click", () => {
+    logout();
+  })
+});
+
+async function getData(): Promise<object> {
+  let data;
+  try {
+    data = await server.getData("users", window.localStorage.getItem("userId"));
+  }catch(error){
+    alert("Error: " + error);
+  }
+
+  return data;
+}
 
 window.addEventListener("scroll", reveal);
 

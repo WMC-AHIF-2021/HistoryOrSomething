@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { getFirestore, collection, doc, setDoc, getDoc } from "firebase/firestore";
 import { getAuth, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword } from "firebase/auth";
 const firebaseConfig = {
     apiKey: "AIzaSyCr7_Es7xBQzlXHejZukEr1ovanvYYo_Z4",
@@ -28,6 +28,7 @@ const colRef = collection(db, "quizes");
 export class Server {
     constructor() {
         this.db = getFirestore();
+        this.userData = {};
     }
     test() {
         console.log("database function working!");
@@ -35,60 +36,114 @@ export class Server {
     // Log in User
     loginUser(email, password) {
         return __awaiter(this, void 0, void 0, function* () {
-            let success = false;
-            const userCred = yield signInWithEmailAndPassword(auth, email, password);
-            if (userCred) {
-                success = true;
+            let returnValue = { success: false, message: "", data: {} };
+            try {
+                const userCred = yield signInWithEmailAndPassword(auth, email, password);
+                if (userCred) {
+                    try {
+                        returnValue.data = yield this.getData("users", userCred.user.uid);
+                    }
+                    catch (error) {
+                    }
+                    Server.id = userCred.user.uid;
+                    console.log(Server.id);
+                    returnValue.success = true;
+                    this.userData = returnValue.data;
+                }
             }
-            return success;
+            catch (error) {
+                returnValue.message = error.message;
+            }
+            return returnValue;
         });
     }
     // Sign out User
     logoutUser() {
-        let success = false;
-        signOut(auth)
-            .then(() => {
-            console.log("the user signed out");
+        return __awaiter(this, void 0, void 0, function* () {
+            let success = false;
+            yield signOut(auth);
             success = true;
-        })
-            .catch((err) => console.log(err.message));
-        return success;
+            return success;
+        });
     }
     // Check user Auth
     checkUserAuth() {
+        if (!auth) {
+            return false;
+        }
         return true;
     }
     signUpUser(email, password) {
-        let success = false;
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((cred) => {
-            db.collection("users").doc(cred.user.uid).set({
-                score: 1
-            })
-                .then(() => {
-                console.log("doc success");
-                success = true;
-            });
-            //setDoc(doc(db, "/users", cred.user.uid), {score: 0})
-            console.log('user created: ', cred.user);
-        })
-            .catch((err) => console.log(err.message));
-        return success;
-    }
-    getData(path) {
         return __awaiter(this, void 0, void 0, function* () {
-            const colRef = collection(db, path);
+            let returnValue = { success: false, message: "", data: {} };
+            try {
+                const userCred = yield createUserWithEmailAndPassword(auth, email, password);
+                let id = userCred.user.uid;
+                if (userCred) {
+                    try {
+                        yield this.setNewDoc(id);
+                        try {
+                            returnValue.data = yield this.getData("users", id);
+                        }
+                        catch (error) {
+                        }
+                        returnValue.success = true;
+                    }
+                    catch (error) {
+                        returnValue.message = error.message;
+                    }
+                }
+            }
+            catch (error) {
+                returnValue.message = error.message;
+            }
+            return returnValue;
+        });
+    }
+    //Creates a new user document => Working
+    setNewDoc(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let success = false;
+            try {
+                yield setDoc(doc(db, "users", id), {
+                    score: 1,
+                    id: id
+                });
+                success = true;
+            }
+            catch (error) {
+                console.log(error);
+                return false;
+            }
+            return success;
+        });
+    }
+    getData(path, id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            //const colRef = collection(db, path);
+            const docRef = doc(db, path, id);
             let test = [];
-            const snapshot = yield getDocs(colRef);
-            test = [];
-            snapshot.docs.map((doc) => {
-                test.push(Object.assign({}, doc.data()));
-            });
-            console.log(test);
+            try {
+                const snapshot = yield getDoc(docRef);
+                test = snapshot.data();
+            }
+            catch (e) {
+                console.log(e);
+            }
+            // try{
+            //     const snapshot: QuerySnapshot<any> = await getDocs(colRef);
+            //     test = [];
+            //     snapshot.docs.map((doc) => {
+            //         test.push({...doc.data()});
+            //     });
+            // }catch(e){
+            //     console.log(e);
+            // }
             return test;
         });
     }
 }
+Server.id = "";
 /*
 // queries
 const q = query(colRef,
