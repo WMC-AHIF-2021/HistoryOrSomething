@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentText{
+    text-align: center;
+}
+
+.contentText *{
+    font-family: 'Epilogue', serif;
+    color: red;
+}
+
+#title{
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+}
+
+#icon{
+    height: 4em;
+    width: auto;
+}
+
+.linkBox{
+    margin-top: 2em;
+}
+
+.link-return{
+    font-size: 0.7rem;
+    text-decoration-line: underline;
+}
+
+@media only screen and (max-width: 800px){
+    .link-return{
+        font-size: 0.9rem;
+    }
+}

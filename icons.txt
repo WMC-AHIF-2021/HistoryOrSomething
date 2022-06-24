@@ -16,8 +16,13 @@ Flags Attribution
 <a href="https://www.flaticon.com/free-icons/peru" title="peru icons">Peru icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/venezuela" title="venezuela icons">Venezuela icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/argentina" title="argentina icons">Argentina icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/crab" title="crab icons">Crab icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/colombia" title="colombia icons">Colombia icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/explorer" title="explorer icons">Explorer icons created by max.icons - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/brazil" title="brazil icons">Brazil icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/dwarf" title="dwarf icons">Dwarf icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/pigeon" title="pigeon icons">Pigeon icons created by Nikita Golubev - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/cooking" title="cooking icons">Cooking icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/egypt" title="egypt icons">Egypt icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/morocco" title="morocco icons">Morocco icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/nigeria" title="nigeria icons">Nigeria icons created by Freepik - Flaticon</a>
@@ -96,3 +101,4 @@ Flags Attribution
 <a href="https://www.flaticon.com/free-icons/boy" title="boy icons">Boy icons created by monkik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/sad" title="sad icons">Sad icons created by Prosymbols Premium - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/black-man" title="black-man icons">Black-man icons created by Freepik - Flaticon</a>
+<a href='https://www.freepik.com/vectors/north-america'>North america vector created by macrovector - www.freepik.com</a>

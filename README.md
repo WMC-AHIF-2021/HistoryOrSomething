@@ -1,5 +1,14 @@
 # HistoryOrSomething
+"You learn best when you live it!" -
+unknown, maybe me
+
+You have difficulties to see through the events of history?
+HistoryOrSomething can help you and even more than that!
+
+
 Our Website: https://wmc-ahif-2021.github.io/HistoryOrSomething/
+
+# Description
 
 This is our amazing team:
 

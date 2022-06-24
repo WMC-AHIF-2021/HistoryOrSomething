@@ -226,6 +226,7 @@ nav {
 }
 
 .table-links{
+  cursor: pointer;
   text-decoration-line: none;
   color: var(--fontColor);
 }
@@ -251,6 +252,7 @@ nav {
   opacity: 0.2;
   transition: 1s ease-out;
   color: var(--secondary-color);
+  cursor: pointer;
 }
 
 .gg-arrow-down-r {
@@ -394,7 +396,7 @@ nav {
 }
 
 .mainTitle-Item {
-  background-image: url("../Images/1939/BackgroundImg/poland-1939.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Germany_%281935%E2%80%931945%29.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

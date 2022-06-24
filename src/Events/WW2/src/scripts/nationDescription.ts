@@ -39,7 +39,7 @@ let italy: string[] = [
     "A few years later, a man named Adolf Hitler would try to model himself on him."
 ]
 let russia: string[] = [
-    "Ussr",
+    "Soviet Union",
     "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_the_Soviet_Union_%281924%E2%80%931936%29.svg",
     "Leader",
     "Josef Stalin",
@@ -57,8 +57,8 @@ let russia: string[] = [
 let france: string[] = [
     "3rd Republic of France",
     "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg",
-    "Prime minister",
-    "Raymond P.",
+    "President",
+    "Albert Lebrun",
     "parl. republic",
     "~40,000,000",
     "550,960",
@@ -79,89 +79,48 @@ let uk: string[] = [
     "King",
     "George V.",
     "const. monarchy",
-    "45,300,000",
-    "313,884",
+    "531,000,000",
+    "~34,000,000",
     "Allies",
     "After the war, the UK had severe financial problems, with inflation rising and the declining of the Pound Sterling. " +
     "It also saw the outbreak of the Irish War of Independence in 1919, which remained a british dominion in the British Empire. " +
     "In the 1930s, the UK had to face the problems of far-right nationalism in Germany, Italy and Japan as they push through their expansionist ambitions."
 ]
-let bulgaria: string[] = [
-    "Kingdom of Bulgaria",
-    "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg",
-    "Tsar",
-    "Ferdinand I.",
-    "const. monarchy",
-    "4,580,000",
-    "122,134",
+let us: string[] = [
+    "United States of America",
+    "https://upload.wikimedia.org/wikipedia/commons/f/f5/Flag_of_the_United_States_%281912-1959%29.svg",
+    "President",
+    "D. Roosevelt",
+    "federal republic",
+    "128,054,000",
+    "3,531,905",
     "neutral",
-    "Bulgaria was busted from the recent balkan wars and it wanted to regain its lost territory. " +
-    "It was political isolated and still recovering from its economic and demographic damage. " +
-    "They were blamed for the dissolution of the balkan league and their defeat in the 2nd Balkan war focused their policy on revanchism, " +
-    "which was the reason for their big support for the central powers. "
+    "After WW1, the US again isolated itself from europe a little more. " +
+    "Overall, while not supporting the Treaty of Versailles, due to its harshness, " +
+    "they either did not join the League of Nations. " +
+    "They first dealt with their home problem: Alcohol. This led to the ban of alcohol. " +
+    "Good for them is, that alcohol consumption decreased, however, " +
+    "the consequences were the rise of criminal gangster mobs and their influence and power. " +
+    "After the prosperous 20s, the United States had to deal with the Great Depression, " +
+    "following the enter into a period of isolationism until the near beginning of the 1940s."
 ]
 
 //Variable declaration
 let descriptionBox: HTMLElement = document.getElementById('descriptionBox');
-let loaded: boolean = false;
-
-const nations: string[][] = [
-    germany,
-    italy,
-    italy,
-    italy,
-    italy,
-    italy,
-    russia,
-    bulgaria,
-    france,
-    france,
-    france,
-    uk,
-    uk,
-    uk,
-    uk,
-    uk,
-    russia,
-    germany
-]
-
-const nationsArea: HTMLAreaElement[] = [
-    germanyArea,
-    italyArea,
-    rhodosArea,
-    italianGreece1Area,
-    italianGreece2Area,
-    sardiniaArea,
-    russiaArea,
-    bulgariaArea,
-    franceArea,
-    algeriaArea,
-    corsicaArea,
-    ukArea,
-    irelandArea,
-    maltaArea,
-    shetlandArea,
-    isleOfManArea,
-    crimeaArea,
-    easternPrussiaArea
-]
 
 window.addEventListener('contextmenu', (e)=>{
     e.preventDefault();
 }, false);
 
-function detectHover(index: number){
-    let area: HTMLAreaElement = nationsArea[index];
-    let countryData: string[] = nations[index];
-    if(descriptionBox.style.display === "none"){
+function detectHover(area: HTMLAreaElement, countryData: string[]){
+    if(descriptionBox.style.display === 'none'){
         let header: HTMLElement = document.getElementById('descriptionHeader');
         let img: HTMLImageElement = document.getElementById('descriptionImg') as HTMLImageElement;
         let title: HTMLElement = document.getElementById('leaderTitle');
         let name: HTMLElement = document.getElementById('leaderName');
         let government: HTMLElement = document.getElementById('governmentType');
         let population: HTMLElement = document.getElementById('populationCount');
-        let area: HTMLElement = document.getElementById('areaCount');
+        let landArea: HTMLElement = document.getElementById('areaCount');
         let faction: HTMLElement = document.getElementById('alliance');
         let text: HTMLElement = document.getElementById('descriptionText');
         header.innerText = countryData[0];
@@ -170,10 +129,9 @@ function detectHover(index: number){
         name.innerText = countryData[3];
         government.innerText = countryData[4];
         population.innerText = countryData[5];
-        area.innerText = countryData[6] + " km²";
+        landArea.innerText = countryData[6] + " km²";
         faction.innerText = countryData[7];
         text.innerText = countryData[8];
-        loaded = true;
     }
 
     area.onmousedown = openDetails;
