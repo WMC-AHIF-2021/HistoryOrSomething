@@ -2,59 +2,10 @@
 @import url("css/saySomethingSmart.css");
 @import url("css/root.css");
 @import url("css/preload.css");
+@import url("css/dropdown.css");
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
-.dropdown{
-    margin-top: 0.2em;
-    display:inline-block;
-    position:relative;
-}
-
-.dropdown button{
-    font-family: 'IM Fell English SC', serif;
-    border: 1px solid #3b4248;
-    padding:8px 35px;
-    background-color: transparent;
-    color: #0A0908;
-    transition:.3s;
-    cursor:pointer;
-}
-
-.dropdown:hover button{
-    background-color:var(--secbackground-color);
-}
-
-.dropdown div{
-    background-color:#fff;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2);
-    z-index:1;
-    visibility:hidden;
-    position:absolute;
-    min-width: 100%;
-    opacity:0;
-    transition:.3s;
-}
-
-.dropdown:hover div{
-    visibility:visible;
-    opacity:1;
-}
-
-.dropdown div a{
-    font-family: 'IM Fell English SC', serif;
-    display:block;
-    text-decoration:none;
-    padding:8px;
-    color:#000;
-    transition:.1s;
-    white-space:nowrap;
-}
-
-.dropdown div a:hover{
-    background-color: var(--primary-color);
-    color:#0A0908;
-}
 
 /*Layout of main page */
 .grid-container {

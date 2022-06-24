@@ -8,7 +8,8 @@ module.exports = {
     entry:  {
         server: "./build/server-client.js",
         userAuthBundle: "./build/userAuth.js",
-        general: "./build/tempJs.js"
+        general: "./build/tempJs.js",
+        scriptBundle: "./build/script.js"
     },
     output: {
         path: path.resolve(__dirname, 'bundles'),

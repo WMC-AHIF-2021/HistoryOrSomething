@@ -6,12 +6,6 @@ import {
 
 
 import { getAuth, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword, onAuthStateChanged} from "firebase/auth"
-import {QuerySnapshot} from "@firebase/firestore";
-import firebase from "firebase/compat";
-import Firestore = firebase.firestore.Firestore;
-import messaging = firebase.messaging;
-import DocumentSnapshot = firebase.firestore.DocumentSnapshot;
-import DocumentData = firebase.firestore.DocumentData;
 
 const firebaseConfig = {
     apiKey: "AIzaSyCr7_Es7xBQzlXHejZukEr1ovanvYYo_Z4",
@@ -27,15 +21,17 @@ initializeApp(firebaseConfig);
 
 // init services
 const db = getFirestore();
-const auth = getAuth();
 
 // collection ref
 const colRef = collection(db, "quizes");
+
+let auth = getAuth();
 
 export class Server {
     private readonly db = getFirestore();
     public static id = "";
     public userData = {};
+    public static userLogged: boolean = false;
 
     public test(): void {
         console.log("database function working!");
@@ -44,6 +40,7 @@ export class Server {
     // Log in User
     public async loginUser(email: string, password: string,): Promise <object> {
         let returnValue: object = {success: false, message: "", data: {}};
+        auth =getAuth();
 
         try{
             const userCred = await signInWithEmailAndPassword(auth, email, password);
@@ -51,6 +48,7 @@ export class Server {
 
                 try {
                     (returnValue as any).data = await this.getData("users", userCred.user.uid);
+                    Server.userLogged = true;
                 }catch(error){
 
                 }
@@ -69,24 +67,35 @@ export class Server {
         return returnValue;
     }
 
+    public
     // Sign out User
     public async logoutUser(): Promise<boolean> {
         let success: boolean = false;
-        await signOut(auth);
-        success = true;
+        const value = await signOut(auth).then(() => {
+            Server.userLogged = true;
+            success = true;
+            return success;
+        });
+
+        if (value == true){
+            auth = null;
+        }
+
+        console.log(value);
         return success;
     }
 
     // Check user Auth
     public checkUserAuth(): boolean{
-        if (!auth){
-            return false;
+        if (auth != null){
+            return true;
         }
-        return true;
+        return false;
     }
 
     public async signUpUser(email: string, password: string):Promise<object> {
         let returnValue: object = {success: false, message: "", data: {}};
+        auth = getAuth();
 
         try{
             const userCred = await createUserWithEmailAndPassword(auth, email, password);

@@ -33,7 +33,7 @@
             <ul class="d-flex navbar-nav me-5">
                 <li class="nav-item">
                     <div class="nav-link">
-                        <span class="navItemStyle" onclick="openForm()">Say Something Smart</span>
+                        <span class="navItemStyle" id="openForm">Say Something Smart</span>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li id="user" class="nav-item">
-                    <a  class="nav-link" aria-current="page" href="src/Html/UserAuth.html">
+                    <a  class="nav-link" aria-current="page" href="src/Authentication/index.html">
                         <span class="navItemStyle">Login</span>
                     </a>
                 </li>
@@ -55,7 +55,6 @@
 <div class="popUp" id="myForm">
     <img
             src="src/Resources/neededImg/remove.png"
-            onclick="closeForm()"
             id="highlight_close"
             alt="Close Icon"
     />
@@ -147,6 +146,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-<script src="bundles/general.js"></script>
+<!--<script src="bundles/general.js"></script>-->
+<script src="bundles/scriptBundle.js"></script>
 </body>
 </html>

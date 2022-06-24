@@ -22,9 +22,9 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 // init services
 const db = getFirestore();
-const auth = getAuth();
 // collection ref
 const colRef = collection(db, "quizes");
+let auth = getAuth();
 export class Server {
     constructor() {
         this.db = getFirestore();
@@ -37,11 +37,13 @@ export class Server {
     loginUser(email, password) {
         return __awaiter(this, void 0, void 0, function* () {
             let returnValue = { success: false, message: "", data: {} };
+            auth = getAuth();
             try {
                 const userCred = yield signInWithEmailAndPassword(auth, email, password);
                 if (userCred) {
                     try {
                         returnValue.data = yield this.getData("users", userCred.user.uid);
+                        Server.userLogged = true;
                     }
                     catch (error) {
                     }
@@ -61,21 +63,29 @@ export class Server {
     logoutUser() {
         return __awaiter(this, void 0, void 0, function* () {
             let success = false;
-            yield signOut(auth);
-            success = true;
+            const value = yield signOut(auth).then(() => {
+                Server.userLogged = true;
+                success = true;
+                return success;
+            });
+            if (value == true) {
+                auth = null;
+            }
+            console.log(value);
             return success;
         });
     }
     // Check user Auth
     checkUserAuth() {
-        if (!auth) {
-            return false;
+        if (auth != null) {
+            return true;
         }
-        return true;
+        return false;
     }
     signUpUser(email, password) {
         return __awaiter(this, void 0, void 0, function* () {
             let returnValue = { success: false, message: "", data: {} };
+            auth = getAuth();
             try {
                 const userCred = yield createUserWithEmailAndPassword(auth, email, password);
                 let id = userCred.user.uid;
@@ -144,6 +154,7 @@ export class Server {
     }
 }
 Server.id = "";
+Server.userLogged = false;
 /*
 // queries
 const q = query(colRef,

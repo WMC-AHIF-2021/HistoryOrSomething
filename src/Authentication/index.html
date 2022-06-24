@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="preload">
+		<img class="globe" src="../Resources/neededImg/globe.png" alt="globe Image"/>
+		<h1>HistoryOrSomething</h1>
+	</div>
+	<img alt="wave image" class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img alt="background image" src="img/bg.svg">
+		</div>
+		<div id="modal-login" class="login-content">
+			<form class="login">
+				<img src="img/hIcon.png">
+				<h2 class="title">Welcome</h2>
+				<h3 class="title">Login</h3>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Email</h5>
+           		   		<input name="email" type="email" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input name="password" type="password" class="input">
+            	   </div>
+            	</div>
+            	<input type="submit" class="btn" value="Login">
+				<span class="question">Don't have an account yet?</span>
+				<span id="signUpBtn" class="registerBtn">Sign up</span>
+
+				<a href="../../index.html">Cancel</a>
+            </form>
+        </div>
+
+		<div id="modal-register" class="login-content">
+			<form class="register">
+				<img src="img/hIcon.png">
+				<h2 class="title">Welcome</h2>
+				<h3 class="title">Sign Up</h3>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						<h5>Email</h5>
+						<input name="email" type="text" class="input">
+					</div>
+				</div>
+				<div class="input-div pass">
+					<div class="i">
+						<i class="fas fa-lock"></i>
+					</div>
+					<div class="div">
+						<h5>Password</h5>
+						<input name="password" type="password" class="input">
+					</div>
+				</div>
+				<input type="submit" class="btn" value="Sign Up">
+				<span class="question">Already have an account?</span>
+				<span id="loginBtn" class="registerBtn">Login</span>
+
+				<a href="../../index.html">Cancel</a>
+			</form>
+		</div>
+	</div>
+	<script src="../../bundles/userAuthBundle.js"></script>
+</body>
+</html>
