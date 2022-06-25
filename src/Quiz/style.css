@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--primary-font);
 }
 
 .customWrapper{
@@ -23,7 +23,6 @@
     top: 3em;
     font-size: 3rem;
     font-weight: bolder;
-
     text-decoration: underline;
 }
 
@@ -122,7 +121,7 @@ body{
 
 
 .customContainer .customCard .customContent p{
-    font-size: 1em;
+    font-size: 1.2em;
     color: var(--dark-text-color);
     font-weight: 300;
 }
