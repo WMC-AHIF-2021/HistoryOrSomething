@@ -57,7 +57,8 @@ signupForm.addEventListener("submit", (e) => __awaiter(void 0, void 0, void 0, f
     });
     if (returnValue.success) {
         preload.classList.remove("preload-finish");
-        window.location.assign("../../index.html");
+        history.back();
+        //window.location.assign("../../index.html");
     }
     else {
         preload.classList.add("preload-finish");
@@ -69,13 +70,16 @@ loginForm.addEventListener("submit", (e) => __awaiter(void 0, void 0, void 0, fu
     const email = loginForm.email.value;
     const password = loginForm.password.value;
     preload.classList.remove("preload-finish");
+    preload.innerHTML = "\t\t<img class=\"globe\" src=\"../Resources/neededImg/globe.png\" alt=\"globe Image\"/>\n" +
+        "\t\t<h1>Logging in</h1>";
     let returnValue = yield server.loginUser(email, password).then((data) => {
         window.localStorage.setItem("userId", data.data.id);
         return data;
     });
     if (returnValue.success) {
         preload.classList.add("preload-finish");
-        window.location.assign("../../index.html");
+        history.back();
+        //window.location.assign("../../index.html");
     }
     else {
         preload.classList.add("preload-finish");

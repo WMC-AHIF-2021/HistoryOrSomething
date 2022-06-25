@@ -19,7 +19,7 @@
 </div>
 
 <div class="content">
-<!--Navbar-->
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand ms-5" href="../../index.html">
@@ -35,7 +35,7 @@
                 <ul class="d-flex navbar-nav me-5">
                     <li class="nav-item">
                         <div class="nav-link">
-                            <span class="navItemStyle" onclick="m">Say Something Smart</span>
+                            <span class="navItemStyle" id="openForm">Say Something Smart</span>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -43,8 +43,8 @@
                             <span class="navItemStyle">About us</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../Html/ComingSoon.html">
+                    <li id="user" class="nav-item">
+                        <a  class="nav-link" aria-current="page" href="../Authentication/index.html">
                             <span class="navItemStyle">Login</span>
                         </a>
                     </li>
@@ -53,18 +53,16 @@
         </div>
     </nav>
 
-<!--Say something smart form-->
+    <!--Say something smart form-->
     <div class="popUp" id="myForm">
         <img
-                src="../Resources/neededImg/remove.png"
-                onclick="closeForm()"
+                src="src/Resources/neededImg/remove.png"
                 id="highlight_close"
                 alt="Close Icon"
         />
         <h2 id="popUpTitle">Did you know?</h2>
         <p id="facts"></p>
     </div>
-
 <!--Container-->
     <div class="grid-container">
         <div id="sectionHeaderBackground" class="item1">

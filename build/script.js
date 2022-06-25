@@ -28,12 +28,33 @@ function logout() {
     console.log("logout Method");
     let loggedOut = server.logoutUser();
     if (loggedOut) {
-        navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"src/Authentication/index.html\">" +
-            "<span class=\"navItemStyle\">Login</span>" +
-            "</a>";
+        // navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"src/Authentication/index.html\">" +
+        //     "<span class=\"navItemStyle\">Login</span>" +
+        //     "</a>"
+        location.reload();
     }
 }
 let data;
+//Get path to dashboard
+function getPath() {
+    let scripts = document.getElementsByTagName("script"), src = scripts[scripts.length - 1].src;
+    const scriptAttr = scripts[scripts.length - 1].attributes;
+    let currentPath = window.location.pathname;
+    let htmlPage = currentPath.split("/").pop();
+    let almostPath = scriptAttr.src.nodeValue.split("/");
+    console.log(almostPath);
+    let fullPath = almostPath.pop();
+    let finalPath;
+    let dotsInFront = "";
+    for (let i = 0; i < almostPath.length; i++) {
+        if (almostPath[i] == "..") {
+            dotsInFront += "../";
+        }
+    }
+    finalPath = dotsInFront;
+    console.log(finalPath);
+    return finalPath;
+}
 // After page loaded check if user is logged in
 document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, void 0, function* () {
     server = new Server();
@@ -41,11 +62,12 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
     preload.classList.remove("preload-finish");
     onAuthStateChanged(auth, ((user) => __awaiter(void 0, void 0, void 0, function* () {
         data = yield getData();
+        let path = getPath();
         if (user) {
             navBar.innerHTML = "<div class=\"dropdown\">\n" +
                 "  <button>Account</button>\n" +
                 "  <div>\n" +
-                "    <a href=\"src/Html/ComingSoon.html\">Dashoard</a>\n" +
+                "    <a id=\"dashboard\">Dashoard</a>\n" +
                 "    <a href=\"#\">Score: " +
                 data.score +
                 "    </a>\n" +
@@ -55,6 +77,9 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
             preload.classList.add("preload-finish");
             document.getElementById("logOut").addEventListener("click", () => {
                 logout();
+            });
+            document.getElementById("dashboard").addEventListener("click", () => {
+                window.location.href = "https://wmc-ahif-2021.github.io/HistoryOrSomething/src/Html/ComingSoon.html";
             });
             return data;
         }

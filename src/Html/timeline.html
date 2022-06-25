@@ -9,51 +9,55 @@
     <link rel="stylesheet" href="../css/timeline.css">
 </head>
 <body>
+<div class="preload">
+    <img class="globe" src="../Resources/neededImg/globe.png" alt="globe Image"/>
+    <h1>HistoryOrSomething</h1>
+</div>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="../../index.html">
-                <span class="navItemStyle mainTitle">HistoryOrSomething</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                </ul>
-                <ul class="d-flex navbar-nav me-5">
-                    <li class="nav-item">
-                        <div class="nav-link">
-                            <span class="navItemStyle" onclick="openForm()">Say Something Smart</span>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-current="page" href="../Html/aboutUs.html">
-                            <span class="navItemStyle">About us</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-current="page" href="../Html/UserAuth.html">
-                            <span class="navItemStyle">Login</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="../../index.html">
+            <span class="navItemStyle mainTitle">HistoryOrSomething</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+            </ul>
+            <ul class="d-flex navbar-nav me-5">
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <span class="navItemStyle" id="openForm">Say Something Smart</span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../Html/aboutUs.html">
+                        <span class="navItemStyle">About us</span>
+                    </a>
+                </li>
+                <li id="user" class="nav-item">
+                    <a  class="nav-link" aria-current="page" href="../Authentication/index.html">
+                        <span class="navItemStyle">Login</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
-    <!--Say something smart form-->
-    <div class="popUp" id="myForm">
-        <img
-                src="../Resources/neededImg/remove.png"
-                onclick="closeForm()"
-                id="highlight_close"
-                alt="Close Icon"
-        />
-        <h2 id="popUpTitle">Did you know?</h2>
-        <p id="facts"></p>
     </div>
+</nav>
+
+<!--Say something smart form-->
+<div class="popUp" id="myForm">
+    <img
+            src="src/Resources/neededImg/remove.png"
+            id="highlight_close"
+            alt="Close Icon"
+    />
+    <h2 id="popUpTitle">Did you know?</h2>
+    <p id="facts"></p>
+</div>
 
     <div class="container">
         <div class="timeline">
@@ -145,7 +149,7 @@
                     <div class="timeline-content">
                         <h2 class="date">1939-1945</h2>
                         <h1>
-                            <img class="icon" src="../Resources/neededImg/shockwave.png">
+                            <img alt="shockwave" class="icon" src="../Resources/neededImg/shockwave.png">
                             WW2
                         </h1>
                         <p>
