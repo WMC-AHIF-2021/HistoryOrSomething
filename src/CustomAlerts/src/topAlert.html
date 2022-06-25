@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Warning Alert Notification</title>
+    <link rel="stylesheet" href="topAlert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<button id="alertButton">Show Alert</button>
+<div id="alertId" class="alert hide">
+    <span class="fas fa-exclamation-circle"></span>
+    <span class="msg">Warning: This is a warning alert!</span>
+    <div id="closeButton" class="close-btn">
+        <span class="fas fa-times"></span>
+    </div>
+</div>
+
+<a href="#" id="clickBtn" class="click">Delete Account</a>
+<div id="popupBoxContainer" class="popup_box">
+    <i class="fas fa-exclamation"></i>
+    <h1>Your account will be deleted Permanently!</h1>
+    <label>Are you sure to proceed?</label>
+    <div class="btns">
+        <a href="#" id="btn1" class="btn1">Cancel</a>
+        <a href="#" id="btn2" class="btn2">Buy 1 Try 50</a>
+    </div>
+</div>
+
+<script src="../build/topAlert.js"></script>
+</body>
+</html>

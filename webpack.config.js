@@ -9,7 +9,9 @@ module.exports = {
         server: "./build/server-client.js",
         userAuthBundle: "./build/userAuth.js",
         general: "./build/tempJs.js",
-        scriptBundle: "./build/script.js"
+        scriptBundle: "./build/script.js",
+        endOfQuizBundle: "./build/endOfQuiz.js",
+        quizBundle: "./build/quiz.js"
     },
     output: {
         path: path.resolve(__dirname, 'bundles'),

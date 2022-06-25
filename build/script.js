@@ -28,18 +28,19 @@ function logout() {
     console.log("logout Method");
     let loggedOut = server.logoutUser();
     if (loggedOut) {
-        navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"src/Authentication/index.html\">" +
+        navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"src/Authentication/topAlert.html\">" +
             "<span class=\"navItemStyle\">Login</span>" +
             "</a>";
     }
 }
+let data;
 // After page loaded check if user is logged in
 document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, void 0, function* () {
     server = new Server();
     const preload = document.querySelector(".preload");
     preload.classList.remove("preload-finish");
     onAuthStateChanged(auth, ((user) => __awaiter(void 0, void 0, void 0, function* () {
-        let data = yield getData();
+        data = yield getData();
         if (user) {
             navBar.innerHTML = "<div class=\"dropdown\">\n" +
                 "  <button>Account</button>\n" +
@@ -55,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
             document.getElementById("logOut").addEventListener("click", () => {
                 logout();
             });
+            return data;
         }
         else {
             preload.classList.add("preload-finish");
@@ -118,4 +120,33 @@ document.getElementById("highlight_close").addEventListener("click", (() => {
 window.addEventListener("load", () => {
     const preload = document.querySelector(".preload");
 });
+//custom alert
+const alertContainer = document.getElementById("alertId");
+// document.getElementById("alertButton").addEventListener("click", (() => {
+//     alertContainer.classList.add("show");
+//     alertContainer.classList.remove("hide");
+//     alertContainer.classList.add("showAlert");
+//     setTimeout(function () {
+//         alertContainer.classList.remove("show");
+//         alertContainer.classList.add("hide");
+//     }, 5000);
+// }));
+// document.getElementById("closeButton").addEventListener("click", (() => {
+//     alertContainer.classList.remove("show");
+//     alertContainer.classList.add("hide");
+// }));
+//quiz related
+// const trysEasy = document.getElementById("trysEasy");
+// const trysMedium = document.getElementById("trysMedium");
+// const trysHard = document.getElementById("trysHard");
+//
+// document.addEventListener("DOMContentLoaded", (() => {
+//     onAuthStateChanged(auth, (async (user) => {
+//         data  = await getData();
+//
+//         trysEasy.innerText = (data as any).EasyQuiz + "/" + (data as any).MaxPlayAmount
+//         trysMedium.innerText = (data as any).MediumQuiz + "/" + (data as any).MaxPlayAmount;
+//         trysHard.innerText = (data as any).HardQuiz + "/" + (data as any).MaxPlayAmount;
+//     }))
+// }))
 //# sourceMappingURL=script.js.map

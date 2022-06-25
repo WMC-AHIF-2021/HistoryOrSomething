@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, doc, setDoc, getDoc } from "firebase/firestore";
+import { getFirestore, collection, doc, updateDoc, setDoc, getDoc } from "firebase/firestore";
 import { getAuth, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword } from "firebase/auth";
 const firebaseConfig = {
     apiKey: "AIzaSyCr7_Es7xBQzlXHejZukEr1ovanvYYo_Z4",
@@ -28,7 +28,6 @@ let auth = getAuth();
 export class Server {
     constructor() {
         this.db = getFirestore();
-        this.userData = {};
     }
     test() {
         console.log("database function working!");
@@ -50,7 +49,7 @@ export class Server {
                     Server.id = userCred.user.uid;
                     console.log(Server.id);
                     returnValue.success = true;
-                    this.userData = returnValue.data;
+                    Server.userData = returnValue.data;
                 }
             }
             catch (error) {
@@ -116,8 +115,12 @@ export class Server {
             let success = false;
             try {
                 yield setDoc(doc(db, "users", id), {
-                    score: 1,
-                    id: id
+                    score: 0,
+                    id: id,
+                    EasyQuiz: 0,
+                    HardQuiz: 0,
+                    MediumQuiz: 0,
+                    MaxPlayAmount: 3
                 });
                 success = true;
             }
@@ -152,8 +155,24 @@ export class Server {
             return test;
         });
     }
+    updateScore(score, path, quiz) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const data = yield this.getData("users", window.localStorage.getItem("userId"));
+            console.log(data);
+            const docRef = doc(db, path, window.localStorage.getItem("userId"));
+            const updated = yield updateDoc(docRef, {
+                score: data.score + score,
+                [quiz]: data[quiz] + 1,
+            }).then(() => {
+                return true;
+            });
+            console.log(updated);
+            return updated;
+        });
+    }
 }
 Server.id = "";
+Server.userData = {};
 Server.userLogged = false;
 /*
 // queries

@@ -30,7 +30,7 @@ let auth = getAuth();
 export class Server {
     private readonly db = getFirestore();
     public static id = "";
-    public userData = {};
+    public static userData = {};
     public static userLogged: boolean = false;
 
     public test(): void {
@@ -56,7 +56,7 @@ export class Server {
                 Server.id = userCred.user.uid;
                 console.log(Server.id);
                 (returnValue as any).success = true;
-                this.userData = (returnValue as any).data;
+                Server.userData = (returnValue as any).data;
             }
 
         }catch(error){
@@ -129,8 +129,12 @@ export class Server {
         let success = false;
         try{
             await setDoc(doc(db, "users", id), {
-                score: 1,
-                id: id
+                score: 0,
+                id: id,
+                EasyQuiz: 0,
+                HardQuiz: 0,
+                MediumQuiz: 0,
+                MaxPlayAmount: 3
             });
             success = true;
         }catch (error){
@@ -167,6 +171,22 @@ export class Server {
 
 
         return test;
+    }
+
+    public async updateScore(score: number, path: string, quiz: string): Promise<boolean>{
+        const data = await this.getData("users", window.localStorage.getItem("userId"));
+            console.log(data);
+            const docRef = doc(db, path, window.localStorage.getItem("userId"));
+            const updated = await updateDoc(docRef, {
+                score: data.score + score,
+                [quiz]: data[quiz] + 1,
+            }).then(() => {
+                return true;
+            })
+
+        console.log(updated);
+
+        return updated;
     }
 }
 

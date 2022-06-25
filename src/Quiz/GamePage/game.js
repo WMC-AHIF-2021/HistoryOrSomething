@@ -16,9 +16,9 @@ let questions = [];
 
 let api;
 switch (window.localStorage.getItem("quiz")){
-  case "easy": api = 'https://opentdb.com/api.php?amount=10&category=23&difficulty=easy&type=multiple';break;
-  case "medium": api = "https://opentdb.com/api.php?amount=10&category=23&difficulty=medium&type=multiple"; CORRECT_BONUS = 30; break;
-  case "hard": api = "https://opentdb.com/api.php?amount=10&category=23&difficulty=hard&type=multiple"; CORRECT_BONUS = 50; break;
+  case "EasyQuiz": api = 'https://opentdb.com/api.php?amount=50&category=23&difficulty=easy&type=multiple';break;
+  case "MediumQuiz": api = "https://opentdb.com/api.php?amount=50&category=23&difficulty=medium&type=multiple"; CORRECT_BONUS = 30; break;
+  case "HardQuiz": api = "https://opentdb.com/api.php?amount=50&category=23&difficulty=hard&type=multiple"; CORRECT_BONUS = 50; break;
 }
 // fetch("../Questions/" + country + ".json")
 //   .then((res) => {
@@ -62,7 +62,7 @@ fetch(
     });
 
 //CONSTANTS
-const MAX_QUESTIONS = 20;
+const MAX_QUESTIONS = 10;
 
 startGame = () => {
   questionCounter = 0;

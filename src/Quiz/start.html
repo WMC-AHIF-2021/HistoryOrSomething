@@ -60,6 +60,16 @@
     <p id="facts"></p>
 </div>
 
+<!--<div id="popupBoxContainer" class="popup_box">-->
+<!--    <i class="fas fa-exclamation"></i>-->
+<!--    <h1>Your account will be deleted Permanently!</h1>-->
+<!--    <label>Are you sure to proceed?</label>-->
+<!--    <div class="btns">-->
+<!--        <a href="#" id="btn1" class="btn1">Cancel</a>-->
+<!--        <a href="#" id="btn2" class="btn2">Buy 1 Try 50</a>-->
+<!--    </div>-->
+<!--</div>-->
+
 <div class="customWrapper">
     <h1>Hover over items below!</h1>
     <div class="customContainer">
@@ -67,39 +77,42 @@
             <div class="customContent">
                 <!--            <h2>O3</h2>-->
                 <h3>Level: Easy</h3>
+                <h2 id="trysEasy">0/3</h2>
                 <img src="img/easy.png" alt="knight">
                 <ul>
                     <li><p>Random Questions</p></li>
                     <li><p>Questions: 10</p></li>
                     <li><p>Points/Question: 10</p></li>
                 </ul>
-                <span onclick="goToQuiz('easy')">Play</span>
+                <span id="EasyQuiz">Play</span>
             </div>
         </div>
         <div class="customCard">
             <div class="customContent">
                 <!--            <h2>O3</h2>-->
                 <h3>Level: Medium</h3>
+                <h2 id="trysMedium">0/3</h2>
                 <img src="img/medium.png" alt="knight">
                 <ul>
                     <li><p>Random Questions</p></li>
                     <li><p>Questions: 10</p></li>
                     <li><p>Points/Question: 30</p></li>
                 </ul>
-                <span onclick="goToQuiz('medium')">Play</span>
+                <span id="MediumQuiz">Play</span>
             </div>
         </div>
         <div class="customCard">
             <div class="customContent">
                 <!--            <h2>O3</h2>-->
                 <h3>Level: Hard</h3>
+                <h2 id="trysHard">0/3</h2>
                 <img src="img/hard.png" alt="knight">
                 <ul>
                     <li><p>Random Questions</p></li>
                     <li><p>Questions: 10</p></li>
                     <li><p>Points/Question: 50</p></li>
                 </ul>
-                <span onclick="goToQuiz('hard')">Play</span>
+                <span id="HardQuiz">Play</span>
             </div>
         </div>
     </div>
@@ -117,6 +130,6 @@
     });
 </script>
 <script src="../../bundles/scriptBundle.js"></script>
-<script src="../../build/quiz.js"></script>
+<script src="../../bundles/quizBundle.js"></script>
 </body>
 </html>
