@@ -28,7 +28,7 @@ function logout() {
     console.log("logout Method");
     let loggedOut = server.logoutUser();
     if (loggedOut) {
-        navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"src/Authentication/topAlert.html\">" +
+        navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"src/Authentication/index.html\">" +
             "<span class=\"navItemStyle\">Login</span>" +
             "</a>";
     }
