@@ -16,6 +16,8 @@
 .preload h1 {
     position: absolute;
     top: 75%;
+    font-size: 2em;
+    font-weight: normal;
     color: var(--secondary-color);
     font-family: 'IM Fell English SC', serif;
 }

@@ -74,7 +74,7 @@ loginForm.addEventListener("submit", (e) => __awaiter(void 0, void 0, void 0, fu
         return data;
     });
     if (returnValue.success) {
-        preload.classList.remove("preload-finish");
+        preload.classList.add("preload-finish");
         window.location.assign("../../index.html");
     }
     else {

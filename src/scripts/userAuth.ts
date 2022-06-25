@@ -86,7 +86,7 @@ loginForm.addEventListener("submit", async (e) => {
     });
 
     if ((returnValue as any).success){
-        preload.classList.remove("preload-finish");
+        preload.classList.add("preload-finish");
         window.location.assign("../../index.html");
     }
     else {
