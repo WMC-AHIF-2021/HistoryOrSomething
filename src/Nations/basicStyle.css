@@ -1,15 +1,4 @@
 /*Basic Styling for all Elements*/
-:root {
-  --background-color: #282828;
-  --primary-color: darkgoldenrod;
-  --secondary-color: whitesmoke;
-  --border-color: #333;
-}
-.light-mode {
-  --background-color: whitesmoke;
-  --secondary-color: #333;
-}
-
 html {
   scroll-behavior: smooth;
   overflow: hidden;

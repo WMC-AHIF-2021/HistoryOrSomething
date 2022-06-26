@@ -23,55 +23,67 @@ initializeApp(firebaseConfig);
 let auth = getAuth();
 let server;
 const navBar = document.getElementById("user");
+const darkModeIcon = document.getElementById("darkMode");
+const lightModeIcon = document.getElementById("lightMode");
+let preload = document.querySelector(".preload");
+darkModeIcon.addEventListener("click", (() => {
+    switchToDark();
+}));
+lightModeIcon.addEventListener("click", (() => {
+    switchToLight();
+}));
+function switchToDark() {
+    window.localStorage.setItem("mode", "dark");
+    document.body.classList.add("dark-mode");
+    darkModeIcon.style.display = "none";
+    lightModeIcon.style.display = "block";
+}
+function switchToLight() {
+    window.localStorage.setItem("mode", "light");
+    document.body.classList.remove("dark-mode");
+    darkModeIcon.style.display = "block";
+    lightModeIcon.style.display = "none";
+}
 // Log out user and change navbar
 function logout() {
-    console.log("logout Method");
-    let loggedOut = server.logoutUser();
-    if (loggedOut) {
-        // navBar.innerHTML = "<a  class=\"nav-link\" aria-current=\"page\" href=\"src/Authentication/index.html\">" +
-        //     "<span class=\"navItemStyle\">Login</span>" +
-        //     "</a>"
-        location.reload();
-    }
+    return __awaiter(this, void 0, void 0, function* () {
+        console.log("logout Method");
+        yield server.updateMode(window.localStorage.getItem("mode"), "users").then(() => __awaiter(this, void 0, void 0, function* () {
+            let loggedOut = yield server.logoutUser();
+            if (loggedOut) {
+                location.reload();
+            }
+        }));
+    });
 }
 let data;
-//Get path to dashboard
-function getPath() {
-    let scripts = document.getElementsByTagName("script"), src = scripts[scripts.length - 1].src;
-    const scriptAttr = scripts[scripts.length - 1].attributes;
-    let currentPath = window.location.pathname;
-    let htmlPage = currentPath.split("/").pop();
-    let almostPath = scriptAttr.src.nodeValue.split("/");
-    console.log(almostPath);
-    let fullPath = almostPath.pop();
-    let finalPath;
-    let dotsInFront = "";
-    for (let i = 0; i < almostPath.length; i++) {
-        if (almostPath[i] == "..") {
-            dotsInFront += "../";
-        }
-    }
-    finalPath = dotsInFront;
-    console.log(finalPath);
-    return finalPath;
-}
 // After page loaded check if user is logged in
 document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, void 0, function* () {
+    if (window.localStorage.getItem("mode") == "light") {
+        if (preload.classList.contains("dark-mode")) {
+            preload.classList.remove("dark-mode");
+        }
+    }
+    else {
+        preload.classList.add("dark-mode");
+    }
     server = new Server();
-    const preload = document.querySelector(".preload");
     preload.classList.remove("preload-finish");
+    console.log(preload.classList);
     onAuthStateChanged(auth, ((user) => __awaiter(void 0, void 0, void 0, function* () {
         data = yield getData();
-        let path = getPath();
         if (user) {
+            let checkAuthCount = parseInt(window.localStorage.getItem("checkAuth"));
+            checkAuthCount = checkAuthCount + 1;
+            window.localStorage.setItem("checkAuth", checkAuthCount.toString());
             navBar.innerHTML = "<div class=\"dropdown\">\n" +
                 "  <button>Account</button>\n" +
                 "  <div>\n" +
-                "    <a id=\"dashboard\">Dashoard</a>\n" +
-                "    <a href=\"#\">Score: " +
+                "    <span id=\"dashboard\">Dashoard</span>\n" +
+                "    <span>Score: " +
                 data.score +
-                "    </a>\n" +
-                "    <a id=\"logOut\">Logout</a>\n" +
+                "    </span>\n" +
+                "    <span id=\"logOut\">Logout</span>\n" +
                 "  </div>\n" +
                 "</div>";
             preload.classList.add("preload-finish");
@@ -81,10 +93,38 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
             document.getElementById("dashboard").addEventListener("click", () => {
                 window.location.href = "https://wmc-ahif-2021.github.io/HistoryOrSomething/src/Html/ComingSoon.html";
             });
+            // if ((data as any).mode == window.localStorage.getItem("mode")){
+            //     switchToLight();
+            // }
+            // else if ((data as any).mode ==){
+            //     switchToDark();
+            // }
+            if (parseInt(window.localStorage.getItem("checkAuth")) == 1) {
+                if (data.mode == "light") {
+                    switchToLight();
+                }
+                else {
+                    switchToDark();
+                }
+            }
+            else {
+                if (window.localStorage.getItem("mode") == "light") {
+                    switchToLight();
+                }
+                else {
+                    switchToDark();
+                }
+            }
             return data;
         }
         else {
             preload.classList.add("preload-finish");
+            if (window.localStorage.getItem("mode") == "light") {
+                switchToLight();
+            }
+            else {
+                switchToDark();
+            }
         }
     })));
 }));
@@ -142,11 +182,28 @@ document.getElementById("highlight_close").addEventListener("click", (() => {
     document.getElementById("myForm").style.display = "none";
 }));
 //Preload for every page
-window.addEventListener("load", () => {
-    const preload = document.querySelector(".preload");
-});
+// window.addEventListener("load", () => {
+//     if (window.localStorage.getItem("mode") == "light"){
+//         if (preload.classList.contains("dark-mode")){
+//             preload.classList.remove("dark-mode");
+//         }
+//     }
+//     else{
+//         preload.classList.add("dark-mode");
+//     }
+//
+// });
+// icon.onclick = function () {
+//     document.body.classList.toggle("light-mode");
+//
+//
+//     if (document.body.classList.contains("light-mode")) {
+//         icon.src = "Icons/moon.png";
+//     } else {
+//         icon.src = "Icons/sun.png";
+//     }
 //custom alert
-const alertContainer = document.getElementById("alertId");
+//const alertContainer = document.getElementById("alertId");
 // document.getElementById("alertButton").addEventListener("click", (() => {
 //     alertContainer.classList.add("show");
 //     alertContainer.classList.remove("hide");

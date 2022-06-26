@@ -2,7 +2,36 @@
 @import url("../css/saySomethingSmart.css");
 @import url("../css/preload.css");
 @import url("../css/dropdown.css");
-@import url("../CustomAlerts/src/topAlert.css");
+@import url("../css/theme.css");
+
+.navbar {
+    background-color: transparent;
+    padding-top: 1em;
+}
+
+.navItemStyle {
+    color:  #F8F9FA;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dropdown button {
+    font-family: 'IM Fell English SC', serif;
+    border: 1px solid #F8F9FA;
+    padding: 8px 35px;
+    background-color: transparent;
+    color:  #F8F9FA;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.dropdown:hover button{
+    background-color: transparent;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +48,7 @@
 }
 
 .customWrapper h1{
-    color: var(--light-text-color);
+    color: #F8F9FA;
     position: absolute;
     top: 3em;
     font-size: 3rem;
@@ -31,29 +60,6 @@ body{
     background-image: url("img/backgroundImg.jpg");
     background-size: cover;
 }
-
-/*body::before{*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background: linear-gradient(#f00, #f0f);*/
-/*    clip-path: circle(30% at right 70%);*/
-/*}*/
-
-/*body::after{*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background: linear-gradient(#2196f3, #e91363);*/
-/*    clip-path: circle(20% at 10% 70%);*/
-/*}*/
-
 
 .customContainer{
     position: relative;
@@ -111,7 +117,7 @@ body{
 
 .customContainer .customCard .customContent h3{
     font-size: 1.8em;
-    color: var(--dark-text-color);
+    color: #212529;
     z-index: 1;
 }
 
@@ -123,7 +129,7 @@ body{
 
 .customContainer .customCard .customContent p{
     font-size: 1.2em;
-    color: var(--dark-text-color);
+    color: #212529;
     font-weight: 300;
 }
 
@@ -134,7 +140,7 @@ body{
 
     margin-top: 15px;
     background: #fff;
-    color: #000;
+    color: #212529;
     border-radius: 20px;
     text-decoration: none;
     font-weight: 500;
@@ -143,21 +149,22 @@ body{
 }
 
 .customContainer .customCard .customContent span:hover{
-    color: var(--light-text-color);
-    background-color: var(--light-dark-background-color);
+    color: #F8F9FA;
+    background-color: #343A40;
 }
+
 @media only screen and (max-width: 600px){
     .customContainer .customCard .customContent p{
-        color: var(--light-text-color);
+        color: #212529;
         font-weight: bold;
     }
     .customContainer .customCard .customContent h3{
-        color: var(--light-text-color);
+        color: #212529;
         font-weight: bold;
     }
 
     .customContainer .customCard .customContent ul{
-        color: var(--light-text-color);
+        color: #212529;
     }
 
     .customWrapper h1{

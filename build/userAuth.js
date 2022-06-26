@@ -10,10 +10,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 import { Server } from "./server-client";
 let server;
 const preload = document.querySelector(".preload");
-window.addEventListener("load", () => {
-    preload.classList.add("preload-finish");
-});
 document.addEventListener('DOMContentLoaded', () => {
+    if (window.localStorage.getItem("mode") == "light") {
+        if (preload.classList.contains("dark-mode")) {
+            preload.classList.remove("dark-mode");
+            document.body.classList.remove("dark-mode");
+        }
+    }
+    else {
+        preload.classList.add("dark-mode");
+        document.body.classList.add("dark-mode");
+    }
+    preload.classList.add("preload-finish");
     server = new Server();
 });
 const inputs = document.querySelectorAll(".input");
@@ -48,6 +56,14 @@ signupForm.addEventListener("submit", (e) => __awaiter(void 0, void 0, void 0, f
     e.preventDefault();
     const email = signupForm.email.value;
     const password = signupForm.password.value;
+    if (window.localStorage.getItem("mode") == "light") {
+        if (preload.classList.contains("dark-mode")) {
+            preload.classList.remove("dark-mode");
+        }
+    }
+    else {
+        preload.classList.add("dark-mode");
+    }
     preload.classList.remove("preload-finish");
     preload.innerHTML = "\t\t<img class=\"globe\" src=\"../Resources/neededImg/globe.png\" alt=\"globe Image\"/>\n" +
         "\t\t<h1>Creating your account</h1>";
@@ -58,7 +74,7 @@ signupForm.addEventListener("submit", (e) => __awaiter(void 0, void 0, void 0, f
     if (returnValue.success) {
         preload.classList.remove("preload-finish");
         history.back();
-        //window.location.assign("../../index.html");
+        //window.location.assign("../../present.html");
     }
     else {
         preload.classList.add("preload-finish");
@@ -69,6 +85,14 @@ loginForm.addEventListener("submit", (e) => __awaiter(void 0, void 0, void 0, fu
     e.preventDefault();
     const email = loginForm.email.value;
     const password = loginForm.password.value;
+    if (window.localStorage.getItem("mode") == "light") {
+        if (preload.classList.contains("dark-mode")) {
+            preload.classList.remove("dark-mode");
+        }
+    }
+    else {
+        preload.classList.add("dark-mode");
+    }
     preload.classList.remove("preload-finish");
     preload.innerHTML = "\t\t<img class=\"globe\" src=\"../Resources/neededImg/globe.png\" alt=\"globe Image\"/>\n" +
         "\t\t<h1>Logging in</h1>";
@@ -79,7 +103,7 @@ loginForm.addEventListener("submit", (e) => __awaiter(void 0, void 0, void 0, fu
     if (returnValue.success) {
         preload.classList.add("preload-finish");
         history.back();
-        //window.location.assign("../../index.html");
+        //window.location.assign("../../present.html");
     }
     else {
         preload.classList.add("preload-finish");

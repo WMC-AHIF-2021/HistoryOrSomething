@@ -5,7 +5,7 @@
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@
     top: 75%;
     font-size: 2em;
     font-weight: normal;
-    color: var(--secondary-color);
+    color: var(--dark-text-color);
     font-family: 'IM Fell English SC', serif;
 }
 

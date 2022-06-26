@@ -511,6 +511,7 @@ td, th {
     font-family: 'Epilogue', sans-serif;
 }
 
+
 @media only screen and (max-width:1400px){
     .introHeader h1{
         font-size: 5rem;

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 .navbar {
-    background-color: #F2F4F3;
+    background-color: var(--primary-color);
     padding-top: 1em;
 }
 
 .navItemStyle {
-    color:  #5E503F;
+    color:  var(--dark-text-color);
     font-family: 'IM Fell English SC', serif;
     font-size: 1.4rem;
     cursor: pointer;
@@ -16,6 +16,8 @@
 .nav-item {
     text-align: left;
     padding-left: 3em;
+    padding-bottom: 5px;
+    z-index: 10000;
 }
 
 .nav-item:hover{
@@ -28,7 +30,7 @@
 }
 
 .nav-item:hover{
-    text-decoration-line: underline;
+    text-decoration:  underline var(--secondary-color);
 }
 
 @media only screen and (max-width: 600px){

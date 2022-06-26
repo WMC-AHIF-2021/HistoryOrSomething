@@ -50,6 +50,7 @@ export class Server {
                     console.log(Server.id);
                     returnValue.success = true;
                     Server.userData = returnValue.data;
+                    window.localStorage.setItem("checkAuth", "0");
                 }
             }
             catch (error) {
@@ -167,6 +168,18 @@ export class Server {
                 return true;
             });
             console.log(updated);
+            return updated;
+        });
+    }
+    updateMode(mode, path) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const data = yield this.getData("users", window.localStorage.getItem("userId"));
+            const docRef = doc(db, path, window.localStorage.getItem("userId"));
+            const updated = yield updateDoc(docRef, {
+                mode: mode
+            }).then(() => {
+                return true;
+            });
             return updated;
         });
     }

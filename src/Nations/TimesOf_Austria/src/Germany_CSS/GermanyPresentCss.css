@@ -1,12 +1,4 @@
-/*Basic Styling for all Elements*/
-:root {
-  --background-color: whitesmoke;
-  --secbackground-color: white;
-  --primary-color: black;
-  --border-color: #333;
-  --secondary-color: #333;
-  --fontColor: black;
-}
+
 .dark-mode {
   --background-color: #282828;
   --secbackground-color: #3a3a3a;

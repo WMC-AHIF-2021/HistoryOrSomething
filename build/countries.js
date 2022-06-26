@@ -19,28 +19,11 @@ const navSlide = () => {
     });
 };
 navSlide();
-//
-// var scripts = document.getElementsByTagName("script"),
-//     src = scripts[scripts.length-1].src;
-//
-// const scriptQ = scripts[scripts.length - 1].attributes
-//
-// var path = window.location.pathname;
-// var page = path.split("/").pop();
-// console.log( page);
-//
-// var almostPath = scriptQ.src.nodeValue.split("/");
-//
-// var fullPath = almostPath.pop();
-//
-// let finalPath: string;
-//
-// for (let i = 0; i < almostPath.length; i++){
-//     finalPath += almostPath[i];
-//     finalPath += "/";
-// }
-//
-// finalPath +=  page;
-//
-// console.log(finalPath);
+function onLinkClick(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
+function goToQuiz(value) {
+    localStorage.setItem('quiz', value);
+    window.location.href = "http://localhost:63342/HistoryOrSomething/src/Quiz/index.html";
+}
 //# sourceMappingURL=countries.js.map

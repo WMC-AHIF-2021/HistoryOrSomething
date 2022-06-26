@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-
-/*Basic Styling for all Elements*/
-:root {
-  --background-color: whitesmoke;
-  --secbackground-color: white;
-  --primary-color: black;
-  --border-color: #333;
-  --secondary-color: #333;
-  --fontColor: black;
-}
-.dark-mode {
-  --primary-color: white;
-  --background-color: #282828;
-  --secbackground-color: #3a3a3a;
-  --fontColor: white;
-  --secondary-color: whitesmoke;
-}
 
 html {
   scroll-behavior: smooth;

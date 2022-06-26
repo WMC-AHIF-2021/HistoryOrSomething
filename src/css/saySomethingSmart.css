@@ -18,12 +18,12 @@
 }
 
 #popUpTitle {
-
     padding-top: 2vh;
     padding-left: 2em;
     padding-right: 2em;
     font-size: 3rem;
     user-select: none;
+    color: var(--dark-text-color);
 }
 
 #facts {
@@ -31,7 +31,7 @@
     color: var(--secondary-color);
     padding: 2vh;
     font-size: 2vh;
-    font-family: 'Epilogue', sans-serif;
+    font-family: var(--primary-font);
 }
 
 #highlight_close {
@@ -40,7 +40,7 @@
     padding: 1vh;
     float: right;
     background-color: var(--color-optional);
-    border-radius: 0 10px 0 0;
+    border-radius: 0 10px 0 10px;
 }
 
 @media only screen and (max-width: 700px){

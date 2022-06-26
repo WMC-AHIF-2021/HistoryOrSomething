@@ -3,6 +3,7 @@
 @import url("css/root.css");
 @import url("css/preload.css");
 @import url("css/dropdown.css");
+@import url("css/theme.css");
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
@@ -46,12 +47,12 @@
     margin-top: 3em;
     border-top: 1px solid var(--secondary-color);
     padding-top: 1em;
+    color: var(--dark-text-color);
 }
-
 
 .introduction-text {
     font-family: 'IM Fell English SC', serif;
-    color: var(--secondary-color);
+    color: var(--dark-text-color);
     text-align: center;
 
     font-size: 1.5rem;
@@ -78,7 +79,7 @@
 }
 
 .box:hover {
-    background-color: white;
+    background-color: var(--background-color-2);
     transition: background-color 0.5s;
 }
 
@@ -89,7 +90,7 @@
 
 .box a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--dark-text-color);
 }
 
 .reveal{

@@ -57,6 +57,7 @@ export class Server {
                 console.log(Server.id);
                 (returnValue as any).success = true;
                 Server.userData = (returnValue as any).data;
+                window.localStorage.setItem("checkAuth", "0");
             }
 
         }catch(error){
@@ -67,7 +68,6 @@ export class Server {
         return returnValue;
     }
 
-    public
     // Sign out User
     public async logoutUser(): Promise<boolean> {
         let success: boolean = false;
@@ -185,6 +185,18 @@ export class Server {
             })
 
         console.log(updated);
+
+        return updated;
+    }
+
+    public async updateMode(mode: string, path: "users"): Promise<boolean>{
+        const data = await this.getData("users", window.localStorage.getItem("userId"));
+            const docRef = doc(db, path, window.localStorage.getItem("userId"));
+            const updated = await updateDoc(docRef, {
+                mode: mode
+            }).then(() => {
+                return true;
+            })
 
         return updated;
     }

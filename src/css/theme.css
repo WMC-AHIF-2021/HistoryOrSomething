@@ -1,0 +1,19 @@
+#darkMode{
+    width: 75%;
+    height: 60%;
+    display: block;
+}
+
+#lightMode{
+    width: 75%;
+    height: 60%;
+    display: none;
+}
+
+.iconContainer{
+    width: 2.5em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

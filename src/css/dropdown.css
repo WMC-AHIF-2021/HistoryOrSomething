@@ -4,22 +4,22 @@
     position:relative;
 }
 
-.dropdown button{
+.dropdown button {
     font-family: 'IM Fell English SC', serif;
-    border: 1px solid #3b4248;
-    padding:8px 35px;
+    border: 1px solid var(--secondary-color);
+    padding: 8px 35px;
     background-color: transparent;
-    color: #0A0908;
-    transition:.3s;
-    cursor:pointer;
+    color: var(--dark-text-color);
+    transition: .3s;
+    cursor: pointer;
 }
 
 .dropdown:hover button{
-    background-color:var(--secbackground-color);
+    background-color:var(--background-color-1);
 }
 
 .dropdown div{
-    background-color:#fff;
+    background-color: var(--background-color-1);
     box-shadow:0 4px 8px rgba(0,0,0,0.2);
     z-index:1;
     visibility:hidden;
@@ -34,17 +34,17 @@
     opacity:1;
 }
 
-.dropdown div a{
+.dropdown div span{
     font-family: 'IM Fell English SC', serif;
-    display:block;
+    display: block;
     text-decoration:none;
     padding:8px;
-    color:#000;
+    color: var(--dark-text-color);
     transition:.1s;
     white-space:nowrap;
 }
 
-.dropdown div a:hover{
-    background-color: var(--primary-color);
-    color:#0A0908;
+.dropdown div span:hover{
+    background-color: var(--background-color-2);
+    color: var(--dark-text-color);
 }

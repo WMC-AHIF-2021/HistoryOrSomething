@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>That's too soon!</title>
     <link rel="stylesheet" href="../css/comingSoon.css">
-    <script src="../../bundles/scriptBundle.js"></script>
+
 </head>
+
 <body>
-<div class="preload">
-    <img class="globe" src="src/Resources/neededImg/globe.png" alt="globe Image"/>
-    <h1>HistoryOrSomething</h1>
-</div>
-<div class="content">
+<div class="content" id="content">
     <div class="contentText">
         <h1 id="title">Coming soon!</h1>
         <p class="messageText">
@@ -23,10 +20,11 @@
             <img id="icon" src="../Resources/neededImg/spaguetti.png">
         </p>
         <div class="linkBox">
-            <a class="link-return" href="../../index.html">Back</a>
+            <a class="link-return" onclick="goBack()">Back</a>
         </div>
     </div>
 </div>
-<script src="../../bundles/scriptBundle.js"></script>
+
+<script src="../../build/comingSoon.js"></script>
 </body>
 </html>

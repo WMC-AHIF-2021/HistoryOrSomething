@@ -3,11 +3,18 @@ let server: Server;
 
 const preload = document.querySelector(".preload");
 
-window.addEventListener("load", () => {
-    preload.classList.add("preload-finish");
-});
-
 document.addEventListener('DOMContentLoaded', () => {
+    if (window.localStorage.getItem("mode") == "light"){
+        if (preload.classList.contains("dark-mode")){
+            preload.classList.remove("dark-mode");
+            document.body.classList.remove("dark-mode");
+        }
+    }
+    else{
+        preload.classList.add("dark-mode");
+        document.body.classList.add("dark-mode");
+    }
+    preload.classList.add("preload-finish");
     server = new Server();
 });
 
@@ -54,6 +61,16 @@ signupForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = (signupForm as any).email.value;
     const password = (signupForm as any).password.value;
+
+    if (window.localStorage.getItem("mode") == "light"){
+        if (preload.classList.contains("dark-mode")){
+            preload.classList.remove("dark-mode");
+        }
+    }
+    else{
+        preload.classList.add("dark-mode");
+    }
+
     preload.classList.remove("preload-finish");
 
     preload.innerHTML = "\t\t<img class=\"globe\" src=\"../Resources/neededImg/globe.png\" alt=\"globe Image\"/>\n" +
@@ -67,7 +84,7 @@ signupForm.addEventListener("submit", async (e) => {
     if ((returnValue as any).success){
         preload.classList.remove("preload-finish");
         history.back();
-        //window.location.assign("../../index.html");
+        //window.location.assign("../../present.html");
     }
     else {
         preload.classList.add("preload-finish");
@@ -79,6 +96,17 @@ loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = (loginForm as any).email.value;
     const password = (loginForm as any).password.value;
+
+
+    if (window.localStorage.getItem("mode") == "light"){
+        if (preload.classList.contains("dark-mode")){
+            preload.classList.remove("dark-mode");
+        }
+    }
+    else{
+        preload.classList.add("dark-mode");
+    }
+
     preload.classList.remove("preload-finish");
 
     preload.innerHTML = "\t\t<img class=\"globe\" src=\"../Resources/neededImg/globe.png\" alt=\"globe Image\"/>\n" +
@@ -92,7 +120,7 @@ loginForm.addEventListener("submit", async (e) => {
     if ((returnValue as any).success){
         preload.classList.add("preload-finish");
         history.back();
-        //window.location.assign("../../index.html");
+        //window.location.assign("../../present.html");
     }
     else {
         preload.classList.add("preload-finish");
