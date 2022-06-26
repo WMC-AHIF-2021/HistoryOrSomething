@@ -75,14 +75,26 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
         if (user) {
             let checkAuthCount = parseInt(window.localStorage.getItem("checkAuth"));
             checkAuthCount = checkAuthCount + 1;
+            let coinPath = navBar.getAttribute("data-coin");
+            let ticketPath = navBar.getAttribute("data-ticket");
+            let pathToDashboard = navBar.getAttribute("data-dashboard");
             window.localStorage.setItem("checkAuth", checkAuthCount.toString());
             navBar.innerHTML = "<div class=\"dropdown\">\n" +
                 "  <button>Account</button>\n" +
                 "  <div>\n" +
                 "    <span id=\"dashboard\">Dashoard</span>\n" +
-                "    <span>Score: " +
+                "    <span>Points: " +
                 data.score +
+                "<img alt=\"coin\" class=\"icon\" src=\"" +
+                coinPath +
+                "\">" +
                 "    </span>\n" +
+                "    <span>Tickets: " +
+                data.tickets +
+                "<img alt=\"ticket\" class=\"icon\" src=\"" +
+                ticketPath +
+                "\">" +
+                "</span>\n" +
                 "    <span id=\"logOut\">Logout</span>\n" +
                 "  </div>\n" +
                 "</div>";
@@ -91,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
                 logout();
             });
             document.getElementById("dashboard").addEventListener("click", () => {
-                window.location.href = "https://wmc-ahif-2021.github.io/HistoryOrSomething/src/Html/ComingSoon.html";
+                window.location.assign(pathToDashboard);
             });
             // if ((data as any).mode == window.localStorage.getItem("mode")){
             //     switchToLight();

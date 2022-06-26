@@ -3,9 +3,6 @@ import {Server} from "./server-client";
 let auth = getAuth();
 let server: Server;
 
-const trysEasy = document.getElementById("trysEasy");
-const trysMedium = document.getElementById("trysMedium");
-const trysHard = document.getElementById("trysHard");
 
 const easyQuiz = document.getElementById("EasyQuiz");
 const mediumQuiz = document.getElementById("MediumQuiz");
@@ -19,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (() => {
         console.log(data);
 
         mediumQuiz.addEventListener("click", (() => {
-            if ((data as any).MediumQuiz < (data as any).MaxPlayAmount) {
+            if ((data as any).tickets > 0) {
                 console.log("pressed medium");
                 localStorage.setItem('quiz', "EasyQuiz");
                 window.location.assign("GamePage/game.html");
@@ -28,7 +25,7 @@ document.addEventListener("DOMContentLoaded", (() => {
 
 
         hardQuiz.addEventListener("click", (() => {
-            if ((data as any).HardQuiz < (data as any).MaxPlayAmount) {
+            if ((data as any).tickets > 0) {
                 console.log("pressed hard");
                 localStorage.setItem('quiz', "HardQuiz");
                 window.location.assign("GamePage/game.html");
@@ -36,16 +33,11 @@ document.addEventListener("DOMContentLoaded", (() => {
         }));
 
         easyQuiz.addEventListener("click", (() => {
-            if ((data as any).EasyQuiz <  (data as any).MaxPlayAmount) {
+            if ((data as any).tickets > 0) {
                 console.log("pressed easy");
                 localStorage.setItem('quiz', "EasyQuiz");
                 window.location.assign("GamePage/game.html");
             }
         }));
-
-
-        trysEasy.innerText = (data as any).EasyQuiz + "/" + (data as any).MaxPlayAmount
-        trysMedium.innerText = (data as any).MediumQuiz + "/" + (data as any).MaxPlayAmount;
-        trysHard.innerText = (data as any).HardQuiz + "/" + (data as any).MaxPlayAmount;
     }))
 }))

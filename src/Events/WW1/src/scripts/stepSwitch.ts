@@ -70,7 +70,7 @@ const codeContent: string[] = [
     "                        </tr>\n" +
     "                        <tr>\n" +
     "                            <td>Austro-Hungarian Empire</td>\n" +
-    "                            <td><a class='stateLink' href='../../../Nations/TimesOf_UK/src/UK1922.html'>United Kingdom</a></td>\n" +
+    "                            <td><a class='stateLink' href='../../../Nations/united-kingdom/src/UK1922.html'>United Kingdom</a></td>\n" +
     "                        </tr>\n" +
     "                        <tr>\n" +
     "                            <td>Ottoman Empire</td>\n" +

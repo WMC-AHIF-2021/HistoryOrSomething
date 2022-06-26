@@ -5,7 +5,7 @@ sidebarToggle = body.querySelector(".sidebar-toggle");
 
 let getMode = localStorage.getItem("mode");
 if(getMode && getMode ==="dark"){
-    body.classList.toggle("dark");
+    body.classList.toggle("dark-mode");
 }
 
 let getStatus = localStorage.getItem("status");
@@ -14,8 +14,8 @@ if(getStatus && getStatus ==="close"){
 }
 
 modeToggle.addEventListener("click", () =>{
-    body.classList.toggle("dark");
-    if(body.classList.contains("dark")){
+    body.classList.toggle("dark-mode");
+    if(body.classList.contains("dark-mode")){
         localStorage.setItem("mode", "dark");
     }else{
         localStorage.setItem("mode", "light");

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+<!--Preload-->
+<div class="preload dark-mode">
+    <img class="globe" src="../../Resources/neededImg/globe.png" alt="globe Image"/>
+    <h1>HistoryOrSomething</h1>
+</div>
+
+<nav>
+    <div class="menu-items">
+        <ul class="nav-links">
+            <li><a href="../index.html">
+                <i class="uil uil-estate"></i>
+                <span class="link-name">Dashboard</span>
+            </a></li>
+            <li><a href="#">
+                <i class="uil uil-shopping-bag"></i>
+                <span class="link-name">Store</span>
+            </a></li>
+            <li><a href="../../../index.html">
+                <i class="uil uil-corner-up-left-alt"></i>
+                <span class="link-name">Leave</span>
+            </a></li>
+        </ul>
+
+        <ul class="logout-mode">
+            <li><a href="#">
+                <i class="uil uil-signout"></i>
+                <span class="link-name">Logout</span>
+            </a></li>
+
+            <li class="mode">
+                <a href="#">
+                    <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                    <span class="switch"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<section class="dashboard">
+    <div class="top">
+        <i class="uil uil-bars sidebar-toggle"></i>
+
+        <div id="topInfo" data-ticket="../../Resources/neededImg/ticket.png"
+             data-coin="../../Resources/neededImg/coins.png">
+        </div>
+    </div>
+
+    <div class="dash-content">
+        <div class="customWrapper">
+            <h1>Countries</h1>
+            <div class="customItemWrapper">
+                <div class="customContainer">
+                    <div class="customCard">
+                        <div class="customContent">
+                            <h3>France</h3>
+                            <img src="images/bastille-day.png" alt="france">
+                            <span class="country" data-points="50" data-country="france">Unlock = 50</span>
+                        </div>
+                    </div>
+                    <div class="customCard">
+                        <div class="customContent">
+                            <h3>Germany</h3>
+                            <img src="images/german.png" alt="germany">
+                            <span class="country" data-points="50" data-country="germany">Unlock = 50</span>
+                        </div>
+                    </div>
+                    <div class="customCard">
+                        <div class="customContent">
+                            <h3>Japan</h3>
+                            <img src="images/fuji.png" alt="japan">
+                            <span class="country" data-points="50" data-country="japan">Unlock = 50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Tickets</h1>
+            <div class="customItemWrapper">
+                <div class="customContainer">
+                    <div class="customCard">
+                        <div class="customContent">
+                            <h3>Buy 1 Ticket</h3>
+                            <img src="../../Resources/neededImg/ticket.png" alt="knight">
+                            <span class="ticket" data-points="50" data-ticket="1">50 Points</span>
+                        </div>
+                    </div>
+                    <div class="customCard">
+                        <div class="customContent">
+                            <h3>Buy 2 Ticket</h3>
+                            <img src="../../Resources/neededImg/ticket.png" alt="knight">
+                            <span class="ticket" data-points="80" data-ticket="2">80 Points</span>
+                        </div>
+                    </div>
+                    <div class="customCard">
+                        <div class="customContent">
+                            <h3>Buy 3 Tickets</h3>
+                            <img src="../../Resources/neededImg/ticket.png" alt="knight">
+                            <span class="ticket" data-points="120" data-ticket="3">120 Points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../scripts/vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".customCard"), {
+        max: 25,
+        speed: 400
+    });
+</script>
+<script src="../script.js"></script>
+<script src="../../../bundles/shopBundle.js"></script>
+</body>
+</html>

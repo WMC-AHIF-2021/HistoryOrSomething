@@ -1,3 +1,5 @@
+@import url("../../css/root.css");
+
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
@@ -17,12 +19,14 @@
 .choice-prefix {
   padding: 1.5rem 2.5rem;
   background-color: #56a5eb;
-  color: white;
 }
+
+
 
 .choice-text {
   padding: 1.5rem;
   width: 100%;
+  font-size: 2rem;
 }
 
 .correct {
@@ -48,6 +52,7 @@
 .hud-main-text {
   text-align: center;
 }
+
 
 #progressBar {
   width: 20rem;

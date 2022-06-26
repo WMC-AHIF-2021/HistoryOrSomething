@@ -4,7 +4,7 @@ const europeNames = [
     ["France", "../Resources/flags/france.png", "ComingSoon.html"],
     ["Italy", "../Resources/flags/italy.png", "ComingSoon.html"],
     ["Spain", "../Resources/flags/spain.png", "ComingSoon.html"],
-    ["The UK", "../Resources/flags/united-kingdom.png", "../Nations/TimesOf_UK/Times/present.html"],
+    ["The UK", "../Resources/flags/united-kingdom.png", "../Nations/united-kingdom/Times/present.html"],
     ["Greece", "../Resources/flags/greece.png", "ComingSoon.html"],
     ["Russia", "../Resources/flags/russia.png", "ComingSoon.html"] //missing content
 ];

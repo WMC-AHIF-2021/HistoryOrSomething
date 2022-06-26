@@ -11,7 +11,9 @@ module.exports = {
         general: "./build/tempJs.js",
         scriptBundle: "./build/script.js",
         endOfQuizBundle: "./build/endOfQuiz.js",
-        quizBundle: "./build/quiz.js"
+        quizBundle: "./build/quiz.js",
+        dashboardBundle: "./build/dashboard.js",
+        shopBundle: "./build/shop.js"
     },
     output: {
         path: path.resolve(__dirname, 'bundles'),

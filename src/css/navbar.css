@@ -27,6 +27,7 @@
 .mainTitle {
     font-size: 2rem;
     font-family: 'IM Fell English SC', serif;
+    z-index: 10000;
 }
 
 .nav-item:hover{

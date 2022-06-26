@@ -1,0 +1,148 @@
+@import url("../style.css");
+@import url("../../css/root.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+.customWrapper{
+    min-height: 100%;
+}
+
+.customItemWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customWrapper h1{
+    color: var(--dark-text-color);
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.customContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.customContainer .customCard{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.customContainer .customCard .customContent{
+    padding: 40px;
+    text-align: center;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.customContainer .customCard .customContent img{
+    width: 60%;
+}
+
+.customContainer .customCard .customContent h2{
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+
+.customContainer .customCard .customContent h3{
+    font-size: 1.8em;
+    color: var(--dark-text-color);
+    z-index: 1;
+}
+
+.customContainer .customCard .customContent ul{
+    margin-top: 2em;
+    line-height: 0.5em;
+}
+
+
+.customContainer .customCard .customContent p{
+    font-size: 1.2em;
+    color: #212529;
+    font-weight: 300;
+}
+
+.customContainer .customCard .customContent span{
+    position: relative;
+    display: inline-block;
+    padding: 8px 25px;
+
+    margin-top: 15px;
+    background: var(--primary-color);
+    color: var(--dark-text-color);
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.customContainer .customCard .customContent span a{
+    color: var(--dark-text-color);
+    text-decoration: none;
+}
+
+.customContainer .customCard .customContent span:hover{
+    color: var(--light-text-color);
+    background-color: var(--secondary-color);
+}
+
+.customContainer .customCard .customContent span:hover a:hover{
+    color: var(--light-text-color);
+}
+
+@media only screen and (max-width: 600px){
+    .customContainer .customCard .customContent p{
+        color: #212529;
+        font-weight: bold;
+    }
+    .customContainer .customCard .customContent h3{
+        color: #212529;
+        font-weight: bold;
+    }
+
+    .customContainer .customCard .customContent ul{
+        color: #212529;
+    }
+
+    .customWrapper h1{
+        top: 3em;
+        font-size: 1.5rem;
+    }
+
+    .customContainer{
+        margin-top: 6em;
+    }
+}

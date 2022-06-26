@@ -68,7 +68,7 @@ const codeContent = [
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td>Austro-Hungarian Empire</td>\n" +
-        "                            <td><a class='stateLink' href='../../../Nations/TimesOf_UK/bin/src/UK1922.html'>United Kingdom</a></td>\n" +
+        "                            <td><a class='stateLink' href='../../../Nations/united-kingdom/src/UK1922.html'>United Kingdom</a></td>\n" +
         "                        </tr>\n" +
         "                        <tr>\n" +
         "                            <td>Ottoman Empire</td>\n" +

@@ -129,12 +129,11 @@ export class Server {
         let success = false;
         try{
             await setDoc(doc(db, "users", id), {
-                score: 0,
+                score: 100,
                 id: id,
-                EasyQuiz: 0,
-                HardQuiz: 0,
-                MediumQuiz: 0,
-                MaxPlayAmount: 3
+                tickets: 9,
+                countryName: ["uk", "france", "japan", "germany"],
+                countryState: [true, false, false, false],
             });
             success = true;
         }catch (error){
@@ -173,13 +172,12 @@ export class Server {
         return test;
     }
 
-    public async updateScore(score: number, path: string, quiz: string): Promise<boolean>{
+    public async updateScore(score: number, path: string): Promise<boolean>{
         const data = await this.getData("users", window.localStorage.getItem("userId"));
-            console.log(data);
             const docRef = doc(db, path, window.localStorage.getItem("userId"));
             const updated = await updateDoc(docRef, {
                 score: data.score + score,
-                [quiz]: data[quiz] + 1,
+                tickets: data.tickets -1,
             }).then(() => {
                 return true;
             })
@@ -188,6 +186,34 @@ export class Server {
 
         return updated;
     }
+
+    public async buyTicket(currentScore: number, points: number, currentTickets: number, tickets: number, path: string): Promise<boolean>{
+        const docRef = doc(db, path, window.localStorage.getItem("userId"));
+        const updated = await updateDoc(docRef, {
+            score: currentScore - points,
+            tickets: currentTickets + tickets,
+        }).then(() => {
+            return true;
+        })
+
+        console.log(updated);
+
+        return updated;
+    }
+
+    public async buyCountry(currentPoints: number, points: number, newCountryState: boolean[], path: string): Promise<boolean>{
+        const docRef = doc(db, path, window.localStorage.getItem("userId"));
+        const updated = await updateDoc(docRef, {
+            countryState: newCountryState,
+            score: currentPoints - points,
+        }).then(() => {
+            return true;
+        })
+
+        return updated;
+    }
+
+
 
     public async updateMode(mode: string, path: "users"): Promise<boolean>{
         const data = await this.getData("users", window.localStorage.getItem("userId"));

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
             score: mostRecentScore,
             name: username.value,
         };
-        yield server.updateScore(parseInt(score.score), "users", window.localStorage.getItem("quiz"));
+        yield server.updateScore(parseInt(score.score), "users");
         highScore.push(score);
         highScore.sort((a, b) => b.score - a.score);
         highScore.splice(5);

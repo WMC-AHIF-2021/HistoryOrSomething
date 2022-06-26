@@ -23,6 +23,7 @@ body{
     transform: translateY(-100%);
     transition: transform 0.5s ease-in, opacity 0.5s ease-in-out;
     opacity: 0;
+    z-index: 3;
 }
 
 .nav-links li {
@@ -59,7 +60,7 @@ body{
 .burger {
     display: block;
     cursor: pointer;
-    z-index: 10000;
+    z-index: 10;
 }
 
 .burger div {
@@ -68,7 +69,7 @@ body{
     background-color: var(--secondary-color);
     margin: 5px;
     transition: all 0.3s ease;
-    z-index: 10000;
+    z-index: 10;
 }
 
 /*Each Line of the Burger*/

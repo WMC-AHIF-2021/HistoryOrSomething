@@ -116,12 +116,11 @@ export class Server {
             let success = false;
             try {
                 yield setDoc(doc(db, "users", id), {
-                    score: 0,
+                    score: 100,
                     id: id,
-                    EasyQuiz: 0,
-                    HardQuiz: 0,
-                    MediumQuiz: 0,
-                    MaxPlayAmount: 3
+                    tickets: 9,
+                    countryName: ["uk", "france", "japan", "germany"],
+                    countryState: [true, false, false, false],
                 });
                 success = true;
             }
@@ -156,18 +155,42 @@ export class Server {
             return test;
         });
     }
-    updateScore(score, path, quiz) {
+    updateScore(score, path) {
         return __awaiter(this, void 0, void 0, function* () {
             const data = yield this.getData("users", window.localStorage.getItem("userId"));
-            console.log(data);
             const docRef = doc(db, path, window.localStorage.getItem("userId"));
             const updated = yield updateDoc(docRef, {
                 score: data.score + score,
-                [quiz]: data[quiz] + 1,
+                tickets: data.tickets - 1,
             }).then(() => {
                 return true;
             });
             console.log(updated);
+            return updated;
+        });
+    }
+    buyTicket(currentScore, points, currentTickets, tickets, path) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const docRef = doc(db, path, window.localStorage.getItem("userId"));
+            const updated = yield updateDoc(docRef, {
+                score: currentScore - points,
+                tickets: currentTickets + tickets,
+            }).then(() => {
+                return true;
+            });
+            console.log(updated);
+            return updated;
+        });
+    }
+    buyCountry(currentPoints, points, newCountryState, path) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const docRef = doc(db, path, window.localStorage.getItem("userId"));
+            const updated = yield updateDoc(docRef, {
+                countryState: newCountryState,
+                score: currentPoints - points,
+            }).then(() => {
+                return true;
+            });
             return updated;
         });
     }

@@ -10,7 +10,13 @@
     --light-text-color: #F8F9FA;
     --light-dark-background-color: #343A40;
     --primary-font: 'IM Fell English SC', serif;
-    --white: #fff;
+    --white: #000;
+
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+
 }
 
 .dark-mode {
@@ -25,5 +31,5 @@
     --light-text-color: #212529;
     --light-dark-background-color: #E9ECEF;
     --primary-font: 'IM Fell English SC', serif;
-    --white: #000;
+    --white: #fff;
 }

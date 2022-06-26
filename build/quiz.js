@@ -11,9 +11,6 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { Server } from "./server-client";
 let auth = getAuth();
 let server;
-const trysEasy = document.getElementById("trysEasy");
-const trysMedium = document.getElementById("trysMedium");
-const trysHard = document.getElementById("trysHard");
 const easyQuiz = document.getElementById("EasyQuiz");
 const mediumQuiz = document.getElementById("MediumQuiz");
 const hardQuiz = document.getElementById("HardQuiz");
@@ -24,29 +21,26 @@ document.addEventListener("DOMContentLoaded", (() => {
         const data = yield server.getData("users", window.localStorage.getItem("userId"));
         console.log(data);
         mediumQuiz.addEventListener("click", (() => {
-            if (data.MediumQuiz < data.MaxPlayAmount) {
+            if (data.tickets > 0) {
                 console.log("pressed medium");
                 localStorage.setItem('quiz', "EasyQuiz");
                 window.location.assign("GamePage/game.html");
             }
         }));
         hardQuiz.addEventListener("click", (() => {
-            if (data.HardQuiz < data.MaxPlayAmount) {
+            if (data.tickets > 0) {
                 console.log("pressed hard");
                 localStorage.setItem('quiz', "HardQuiz");
                 window.location.assign("GamePage/game.html");
             }
         }));
         easyQuiz.addEventListener("click", (() => {
-            if (data.EasyQuiz < data.MaxPlayAmount) {
+            if (data.tickets > 0) {
                 console.log("pressed easy");
                 localStorage.setItem('quiz', "EasyQuiz");
                 window.location.assign("GamePage/game.html");
             }
         }));
-        trysEasy.innerText = data.EasyQuiz + "/" + data.MaxPlayAmount;
-        trysMedium.innerText = data.MediumQuiz + "/" + data.MaxPlayAmount;
-        trysHard.innerText = data.HardQuiz + "/" + data.MaxPlayAmount;
     })));
 }));
 //# sourceMappingURL=quiz.js.map

@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
 
 
-        await server.updateScore(parseInt(score.score), "users", window.localStorage.getItem("quiz"));
+        await server.updateScore(parseInt(score.score), "users");
         highScore.push(score);
         highScore.sort((a, b) => b.score - a.score);
         highScore.splice(5);
