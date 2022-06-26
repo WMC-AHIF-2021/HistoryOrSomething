@@ -17,6 +17,11 @@
     user-select: none;
 }
 
+.mainTitle {
+    font-size: 2rem;
+    font-family: 'IM Fell English SC', serif;
+}
+
 .dropdown button {
     font-family: 'IM Fell English SC', serif;
     border: 1px solid #F8F9FA;

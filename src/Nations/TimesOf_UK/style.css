@@ -1,8 +1,8 @@
-@import url("../../../css/theme.css");
-@import url("../../../css/saySomethingSmart.css");
-@import url("../../../css/dropdown.css");
-@import url("../../../css/navbar.css");
-@import url("../../../css/preload.css");
+@import url("../../css/theme.css");
+@import url("../../css/saySomethingSmart.css");
+@import url("../../css/dropdown.css");
+@import url("../../css/navbar.css");
+@import url("../../css/preload.css");
 
 body{
     background-color: var(--primary-color);
@@ -31,18 +31,18 @@ body{
     color: var(--light-text-color);
 }
 
-.nav-links a, span{
+.burgerMenu a, p{
     color: var(--dark-text-color);
     text-decoration: none;
     font-family: var(--primary-font);
     user-select: none;
     cursor: pointer;
     z-index: 100;
-    font-size: 2rem;
+    font-size: 1.5rem
 }
 
-.nav-links span{
-    font-weight: bolder;
+.nav-links p{
+    font-size: 1.7rem;
     color: var(--color-optional-2)
 }
 .nav-links a:hover {
