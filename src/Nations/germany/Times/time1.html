@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Germany</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="preload dark-mode">
+    <img class="globe" src="../../../Resources/neededImg/globe.png" alt="globe Image"/>
+    <h1>HistoryOrSomething</h1>
+</div>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5" style="z-index: 10000" href="../../../../index.html">
+            <span class="navItemStyle mainTitle">HistoryOrSomething</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+            </ul>
+            <ul class="nav-links burgerMenu">
+                <li><a href="present.html">Present</a></li>
+                <li><p class="active">1956</p></li>
+                <li><a href="time2.html">1939</a></li>
+                <li><a href="time3.html">1914</a></li>
+                <li><a href="time4.html">1190</a></li>
+            </ul>
+            <div class="burger navbar-nav m-auto">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="d-flex navbar-nav me-5">
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <span class="navItemStyle" id="openForm">Say Something Smart</span>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../../../Html/aboutUs.html">
+                        <span class="navItemStyle">About us</span>
+                    </a>
+                </li>
+
+                <li id="user" class="nav-item">
+                    <a  class="nav-link" aria-current="page" href="../../../Authentication/index.html">
+                        <span class="navItemStyle">Login</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <div class="iconContainer">
+                        <img id="lightMode" src="../../../Resources/neededImg/sun.png" alt="theme icon">
+                        <img id="darkMode" src="../../../Resources/neededImg/moon.png" alt="theme icon">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="popUp" id="myForm">
+    <img
+            src="../img/close.png"
+            id="highlight_close"
+            alt="Close Icon"
+    />
+    <h2 id="popUpTitle">Did you know?</h2>
+    <p id="facts"></p>
+</div>
+
+
+<!--Slide 1: Header-->
+<div class="grid-container" id="slide1">
+    <div class="linkItem">
+        <span class="link next" onclick="onLinkClick('slide1')"></span>
+    </div>
+    <div class="contentLeftItem">
+        <div class="content-left">
+            <span class="text">FRG & GDR</span>
+            <div class="buttonMenu">
+                <button onclick="onLinkClick('slide2')" id="exploreBtn" class="button" style="margin-right: 0.5em">
+                    <img alt="brain" src="../../../Resources/neededImg/explorer.png"/>
+                    <span>Explore</span>
+                </button>
+                <button onclick="goToQuiz('Germany')" id="quizBtn" class="button">
+                    <img alt="brain" src="../../../Resources/neededImg/brain.png"/>
+                    <span>Quiz</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contentRightItem">
+        <img src="../img/germany1.jpg" class="bg" alt="Big Ben">
+    </div>
+
+    <div class="linkItem">
+        <span class="link prev" onclick="onLinkClick('slide1')"></span>
+    </div>
+
+
+</div>
+
+
+
+
+<!--Slide 2: General Info-->
+<div class="grid-container" id="slide2">
+    <div class="linkItem">
+        <span class="link next" onclick="onLinkClick('slide1')">prev</span>
+    </div>
+
+    <div class="contentLeftItem">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/West_Germany_1956-1990.svg" class="bg" alt="France 1939 Map">
+    </div>
+
+    <div class="contentRightItem">
+        <table class="table">
+            <thead>
+            <tr class="table-item">
+                <th scope="col" colspan="2">Federal Republic of West Germany</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-item">
+                <th scope="row">Capital</th>
+                <td>
+                    <a class="table-links" href="https://en.wikipedia.org/wiki/Bonn">Bonn</a>
+                </td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">Chancellor</th>
+                <td>
+                    <a class="table-links" href="https://en.wikipedia.org/wiki/Konrad_Adenauer">Konrad Adenauer</a>
+                </td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">Type of Government</th>
+                <td>
+                    <a class="table-links" href="https://en.wikipedia.org/wiki/Federation">federal</a>
+                    <a class="table-links" href="https://en.wikipedia.org/wiki/parliamentary_system">parliamentary Republic</a>
+                </td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">Population</th>
+                <td>50.96 million</td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">Land Area</th>
+                <td>248,717 km²</td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">Currency</th>
+                <td>
+                    <a class="table-links" href="https://en.wikipedia.org/wiki/Deutsche_Mark">Deutsche Mark</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="linkItem">
+        <span class="link prev" onclick="onLinkClick('slide3')">next</span>
+    </div>
+</div>
+
+
+<!--Slide 3: General Info-->
+<div class="grid-container" id="slide3">
+    <div class="linkItem">
+        <span class="link next" onclick="onLinkClick('slide2')">prev</span>
+    </div>
+
+    <div class="contentLeftItem">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/East_Germany_1956-1990.svg" class="bg" alt="France 1939 Map">
+    </div>
+
+    <div class="contentRightItem">
+        <table class="table">
+            <thead>
+            <tr class="table-item">
+                <th scope="col" colspan="2">German Democratic Republic</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-item">
+                <th scope="row">Capital</th>
+                <td>
+                    <a class="table-links" href="https://en.wikipedia.org/wiki/East_Berlin">East Berlin</a>
+                </td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">General Secretary</th>
+                <td>
+                    <a class="table-links" href="https://en.wikipedia.org/wiki/Walter_Ulbricht">Walter Ulbricht</a>
+                </td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">Type of Government</th>
+                <td>
+                    <a class="table-links" href="https://en.wikipedia.org/wiki/Socialist_state">socialist Republic</a>
+                </td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">Population</th>
+                <td>18.39 million</td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">Land Area</th>
+                <td>108,333 km²</td>
+            </tr>
+            <tr class="table-item">
+                <th scope="row">Currency</th>
+                <td>
+                    <a class="table-links" href="https://en.wikipedia.org/wiki/East_German_Mark">East German Mark</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="linkItem">
+        <span class="link prev" onclick="onLinkClick('slide4')">next</span>
+    </div>
+</div>
+
+
+<!--Slide 4: More Info-->
+<div class="grid-container" id="slide4">
+    <div class="linkItem">
+        <span class="link next" onclick="onLinkClick('slide3')">prev</span>
+    </div>
+
+    <div class="contentLeftItem">
+        <div class="content-left" style="overflow-y: scroll">
+            <h5 class="card-title">A divided nation</h5>
+            <p class="card-text">
+                After Germany lost the Second World War, the german territories were being occupied by the winner forces.
+                The US, UK, France and the Ussr each got a chunk of Germany, with the Ussr and the Us having the biggest part.
+                At the beginning they planned to make Germany a single state again, however, with the beginning of the cold war, the soviets didn't leave the
+                eastern part of Germany and this ended in the creation of two german nations, the FRG and the GDR.
+            </p>
+            <h5 class="card-title">Two opposing brothers</h5>
+            <p class="card-text">
+                The GDR was a socialist one-party state and a puppet of the big Ussr. Its economy is fully state-owned and the people are under strict
+                control. Meanwhile, in Western Germany, things start to get a lot better. The "Wirtschaftswunder" gave the people new hope and wealth. GDP
+                increased and soon after the FRG was far more ahead economically than its eastern brother.
+            </p>
+        </div>
+    </div>
+
+    <div class="contentRightItem">
+        <div class="content-right">
+            <div
+                    id="carouselExampleSlidesOnly"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                                src="../bin/src/Images/1956/ContentImg/contentImg1.jpg"
+                                class="d-block w-100"
+                                alt="eastGermany"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="../bin/src/Images/1956/ContentImg/contentImg2.jfif"
+                                class="d-block w-100"
+                                alt="Wirtschaftswunder"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="../bin/src/Images/1956/ContentImg/contentImg3.jpg"
+                                class="d-block w-100"
+                                alt="Adenauer"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="../bin/src/Images/1956/ContentImg/contentImg4.jfif"
+                                class="d-block w-100"
+                                alt="berlinWall"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="linkItem">
+        <span class="link prev" onclick="onLinkClick('slide1')">start</span>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="../../../../build/countries.js"></script>
+<script src="../../../../bundles/scriptBundle.js"></script>
+</body>
+</html>

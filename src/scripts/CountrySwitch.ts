@@ -1,7 +1,7 @@
 const europeNames: string[][] = [
-    ["Germany", "../Resources/flags/germany.png", "ComingSoon.html"],
+    ["Germany", "../Resources/flags/germany.png", "../Nations/germany/Times/present.html"],
     ["Austria", "../Resources/flags/austria.png", "ComingSoon.html"],
-    ["France", "../Resources/flags/france.png", "ComingSoon.html"],
+    ["France", "../Resources/flags/france.png", "../Nations/france/Times/present.html"],
     ["Italy", "../Resources/flags/italy.png", "ComingSoon.html"],
     ["Spain", "../Resources/flags/spain.png", "ComingSoon.html"],
     ["The UK", "../Resources/flags/united-kingdom.png", "../Nations/united-kingdom/Times/present.html"],
@@ -10,7 +10,7 @@ const europeNames: string[][] = [
 ]
 
 const asiaNames: string[][] = [
-    ["Japan", "../Resources/flags/japan.png", "ComingSoon.html"],
+    ["Japan", "../Resources/flags/japan.png", "../Nations/japan/Times/present.html"],
     ["China", "../Resources/flags/china.png", "ComingSoon.html"],//missing content
     ["India", "../Resources/flags/india.png", "ComingSoon.html"],//missing content
     ["Korea", "../Resources/flags/south-korea.png", "ComingSoon.html"],//missing content
