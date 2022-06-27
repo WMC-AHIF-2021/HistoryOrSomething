@@ -21,7 +21,6 @@ const navBar = document.getElementById("user");
 
 const darkModeIcon = document.getElementById("darkMode");
 const lightModeIcon = document.getElementById("lightMode");
-let preload = document.querySelector(".preload");
 
 darkModeIcon.addEventListener("click", (() => {
     switchToDark();
@@ -61,6 +60,7 @@ let data: object;
 
 // After page loaded check if user is logged in
 document.addEventListener('DOMContentLoaded', async () => {
+    const preload = document.querySelector(".preload");
     if (window.localStorage.getItem("mode") == "light"){
         if (preload.classList.contains("dark-mode")){
             preload.classList.remove("dark-mode");
