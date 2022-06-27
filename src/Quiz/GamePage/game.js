@@ -20,14 +20,7 @@ switch (window.localStorage.getItem("quiz")){
   case "MediumQuiz": api = "https://opentdb.com/api.php?amount=50&category=23&difficulty=medium&type=multiple"; CORRECT_BONUS = 30; break;
   case "HardQuiz": api = "https://opentdb.com/api.php?amount=50&category=23&difficulty=hard&type=multiple"; CORRECT_BONUS = 50; break;
 }
-// fetch("../Questions/" + country + ".json")
-//   .then((res) => {
-//     return res.json();
-//   })
-//   .then((loadedQuestions) => {
-//     questions = loadedQuestions;
-//     startGame();
-//   });
+
 fetch(
     api
 )
