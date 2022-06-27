@@ -18,23 +18,23 @@ let auth = getAuth();
 let server: Server;
 
 const europeNames: string[][] = [
-    ["Germany", "../Resources/flags/germany.png", "ComingSoon.html"],
-    ["Austria", "../Resources/flags/austria.png", "ComingSoon.html"],
-    ["France", "../Resources/flags/france.png", "ComingSoon.html"],
-    ["Italy", "../Resources/flags/italy.png", "ComingSoon.html"],
-    ["Spain", "../Resources/flags/spain.png", "ComingSoon.html"],
-    ["The UK", "../Resources/flags/united-kingdom.png", "../Nations/united-kingdom/Times/present.html"],
-    ["Greece", "../Resources/flags/greece.png", "ComingSoon.html"],
-    ["Russia", "../Resources/flags/russia.png", "ComingSoon.html"]//missing content
+    ["germany", "../Resources/flags/germany.png", "ComingSoon.html"],
+    ["austria", "../Resources/flags/austria.png", "ComingSoon.html"],
+    ["france", "../Resources/flags/france.png", "ComingSoon.html"],
+    ["italy", "../Resources/flags/italy.png", "ComingSoon.html"],
+    ["spain", "../Resources/flags/spain.png", "ComingSoon.html"],
+    ["united-kingdom", "../Resources/flags/united-kingdom.png", "../Nations/united-kingdom/Times/present.html"],
+    ["greece", "../Resources/flags/greece.png", "ComingSoon.html"],
+    ["russia", "../Resources/flags/russia.png", "ComingSoon.html"]//missing content
 ]
 
 const asiaNames: string[][] = [
-    ["Japan", "../Resources/flags/japan.png", "ComingSoon.html"],
-    ["China", "../Resources/flags/china.png", "ComingSoon.html"],//missing content
-    ["India", "../Resources/flags/india.png", "ComingSoon.html"],//missing content
-    ["Korea", "../Resources/flags/south-korea.png", "ComingSoon.html"],//missing content
-    ["Iran", "../Resources/flags/iran.png", "ComingSoon.html"],//missing content
-    ["Saudi-Arabia", "../Resources/flags/saudi-arabia.png", "ComingSoon.html"]//missing content
+    ["japan", "../Resources/flags/japan.png", "ComingSoon.html"],
+    ["china", "../Resources/flags/china.png", "ComingSoon.html"],//missing content
+    ["india", "../Resources/flags/india.png", "ComingSoon.html"],//missing content
+    ["korea", "../Resources/flags/south-korea.png", "ComingSoon.html"],//missing content
+    ["iran", "../Resources/flags/iran.png", "ComingSoon.html"],//missing content
+    ["saudi-Arabia", "../Resources/flags/saudi-arabia.png", "ComingSoon.html"]//missing content
 ]
 
 /*
@@ -81,6 +81,14 @@ const arr = [
 let current: number = 0;
 let preload = document.querySelector(".preload");
 
+document.getElementById("right").addEventListener("click", (() => {
+    switchContinent(Direction.right)
+}));
+
+document.getElementById("left").addEventListener("click", (() => {
+    switchContinent(Direction.left)
+}));
+
 
 function switchContinent(direction: Direction){
     let sectionHeader = document.getElementById('sectionHeaderTS');
@@ -111,15 +119,37 @@ function changeContent(arr: string[][]){
         }
         else{
             onAuthStateChanged(auth, (async (user) => {
-                await getData().then(() => {
-                    box.style.display = "flex";
-                    box.addEventListener('click', () => {
-                        location.href = arr[x][2];
-                    })
-                    box.innerHTML =
-                        "<img src='" + arr[x][1] + "' alt='" + arr[x][0] + " Flag' />\n" +
-                        "<span>" + arr[x][0] + "</span>";
-                });
+                if (user){
+                    preload.classList.remove("preload-finish");
+                    await getData().then((data ) => {
+                        box.addEventListener('click', () => {
+                            location.href = arr[x][2];
+                        })
+
+                        box.innerHTML =
+                            "<img src='" + arr[x][1] + "' alt='" + arr[x][0] + " Flag' />\n" +
+                            "<span>" + arr[x][0] + "</span>";
+
+                        for (let i = 0; i < (data as any).countryName.length; i++){
+                            if ((data as any).countryName[i] == arr[x][0] && (data as any).countryState[i] == true){
+                                box.style.display = "flex";
+                                break;
+                            }
+                            else{
+                                box.style.display = "none";
+                            }
+                        }
+
+                        preload.classList.add("preload-finish");
+                    });
+                }else{
+                    if (arr[x][0] == "united-kingdom"){
+                        box.style.display  = "flex";
+                    }else{
+                        box.style.display = "none";
+                    }
+                }
+
             }));
 
         }
