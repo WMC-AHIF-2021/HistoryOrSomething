@@ -118,7 +118,7 @@ export class Server {
                 yield setDoc(doc(db, "users", id), {
                     score: 100,
                     id: id,
-                    tickets: 9,
+                    tickets: 5,
                     countryName: ["united-kingdom", "france", "japan", "germany"],
                     countryState: [true, false, false, false],
                 });
