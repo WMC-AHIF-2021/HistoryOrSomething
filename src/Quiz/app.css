@@ -121,7 +121,7 @@ input {
   padding: 1.5rem;
   font-size: 1.8rem;
   border: none;
-  color: var(--light-text-color);
+  color: black;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(217, 194, 178, 0.74);
 }
 
