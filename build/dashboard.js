@@ -29,15 +29,20 @@ function logout() {
         console.log("logout Method");
         yield server.updateMode(window.localStorage.getItem("mode"), "users").then(() => __awaiter(this, void 0, void 0, function* () {
             let loggedOut = yield server.logoutUser();
-            if (loggedOut) {
-                location.reload();
-            }
         }));
     });
 }
 let data;
 // After page loaded check if user is logged in
 document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, void 0, function* () {
+    const logOut = document.getElementById("logOut");
+    logOut.addEventListener("click", (() => __awaiter(void 0, void 0, void 0, function* () {
+        preload.classList.remove("preload-finish");
+        yield logout().then(() => {
+            window.location.assign("../../index.html");
+            preload.classList.add("preload-finish");
+        });
+    })));
     preload.classList.add("preload-finish");
     if (window.localStorage.getItem("mode") == "light") {
         if (preload.classList.contains("dark-mode")) {

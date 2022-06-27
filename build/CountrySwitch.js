@@ -1,3 +1,27 @@
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+import { Server } from "./server-client";
+import { initializeApp } from 'firebase/app';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+const firebaseConfig = {
+    apiKey: "AIzaSyCr7_Es7xBQzlXHejZukEr1ovanvYYo_Z4",
+    authDomain: "historyorsomething-9.firebaseapp.com",
+    projectId: "historyorsomething-9",
+    storageBucket: "historyorsomething-9.appspot.com",
+    messagingSenderId: "603241360494",
+    appId: "1:603241360494:web:90f27fa38c0b46fecd4a7f"
+};
+// init firebase app
+initializeApp(firebaseConfig);
+let auth = getAuth();
+let server;
 const europeNames = [
     ["Germany", "../Resources/flags/germany.png", "ComingSoon.html"],
     ["Austria", "../Resources/flags/austria.png", "ComingSoon.html"],
@@ -57,6 +81,7 @@ const arr = [
     */
 ];
 let current = 0;
+let preload = document.querySelector(".preload");
 function switchContinent(direction) {
     let sectionHeader = document.getElementById('sectionHeaderTS');
     let continent = sectionHeader.innerText;
@@ -82,17 +107,35 @@ function changeContent(arr) {
             box.innerHTML = "";
         }
         else {
-            box.style.display = "flex";
-            box.addEventListener('click', () => {
-                location.href = arr[x][2];
-            });
-            box.innerHTML =
-                "<img src='" + arr[x][1] + "' alt='" + arr[x][0] + " Flag' />\n" +
-                    "<span>" + arr[x][0] + "</span>";
+            onAuthStateChanged(auth, ((user) => __awaiter(this, void 0, void 0, function* () {
+                yield getData().then(() => {
+                    box.style.display = "flex";
+                    box.addEventListener('click', () => {
+                        location.href = arr[x][2];
+                    });
+                    box.innerHTML =
+                        "<img src='" + arr[x][1] + "' alt='" + arr[x][0] + " Flag' />\n" +
+                            "<span>" + arr[x][0] + "</span>";
+                });
+            })));
         }
     }
 }
-document.addEventListener('DOMContentLoaded', () => {
+//Get specific user data
+function getData() {
+    return __awaiter(this, void 0, void 0, function* () {
+        let data;
+        try {
+            data = yield server.getData("users", window.localStorage.getItem("userId"));
+        }
+        catch (error) {
+            alert("Error: " + error);
+        }
+        return data;
+    });
+}
+document.addEventListener('DOMContentLoaded', (() => {
     switchContinent(Direction.none);
-});
-//# sourceMappingURL=CountrySwitch.js.map
+    server = new Server();
+}));
+//# sourceMappingURL=countrySwitch.js.map

@@ -16,24 +16,30 @@ initializeApp(firebaseConfig);
 let server: Server;
 let preload = document.querySelector(".preload");
 const topInfo = document.getElementById("topInfo");
-const dashContent = document.getElementById("dash-content");
+const logOut = document.getElementById("logOut");
 
-// Log out user and change navbar
 async function logout(){
     console.log("logout Method");
     await server.updateMode(window.localStorage.getItem("mode"), "users").then(async () => {
         let loggedOut = await server.logoutUser();
-        if (loggedOut){
-            location.reload();
-        }
     });
 }
+
 
 let data: object;
 const countryBtn = document.querySelectorAll(".country");
 
 // After page loaded check if user is logged in
 document.addEventListener('DOMContentLoaded', async () => {
+
+    logOut.addEventListener("click", ( async () => {
+        preload.classList.remove("preload-finish");
+        await logout().then(() => {
+            window.location.assign("../../../index.html")
+            preload.classList.add("preload-finish");
+        });
+    }));
+
     preload.classList.add("preload-finish");
     if (window.localStorage.getItem("mode") == "light"){
         if (preload.classList.contains("dark-mode")){
@@ -73,8 +79,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         for (let i = 0; i < ticketBtn.length; i++){
             ticketBtn[i].addEventListener("click", (async () => {
-                preload.classList.remove("preload-finish");
                 if ((data as any).score >= parseInt(ticketBtn[i].getAttribute("data-points"))){
+                    preload.classList.remove("preload-finish");
                     await server.buyTicket((data as any).score, parseInt(ticketBtn[i].getAttribute("data-points")),
                         (data as any).tickets, parseInt(ticketBtn[i].getAttribute("data-ticket")), "users").then(() => {
                         window.location.reload();
@@ -88,9 +94,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         for (let i = 0; i < countryBtn.length; i++){
             countryBtn[i].addEventListener("click", (async () => {
-                preload.classList.remove("preload-finish");
                 if ((data as any).score >= parseInt(countryBtn[i].getAttribute("data-points"))){
-
+                    preload.classList.remove("preload-finish");
                     let points: number = parseInt(countryBtn[i].getAttribute("data-points"));
                     let cIndex: number = getIndex(countryBtn[i], data);
                     (data as any).countryState[cIndex] = true;
