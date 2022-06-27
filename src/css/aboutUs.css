@@ -86,6 +86,7 @@
 
 .section-header{
     padding: 0 2em;
+    color: var(--dark-text-color);
 }
 
 .grid-section{

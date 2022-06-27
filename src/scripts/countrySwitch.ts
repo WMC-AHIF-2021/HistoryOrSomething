@@ -22,7 +22,7 @@ const europeNames: string[][] = [
     ["austria", "../Resources/flags/austria.png", "../Nations/austria/Times/present.html"],
     ["france", "../Resources/flags/france.png", "../Nations/france/Times/present.html"],
     ["italy", "../Resources/flags/italy.png", "../Nations/italy/Times/present.html"],
-    ["spain", "../Resources/flags/spain.png", "../Nations/span/Times/present.html"],
+    ["spain", "../Resources/flags/spain.png", "../Nations/spain/Times/present.html"],
     ["united-kingdom", "../Resources/flags/united-kingdom.png", "../Nations/united-kingdom/Times/present.html"],
     ["greece", "../Resources/flags/greece.png", "../Nations/greece/Times/present.html"],
     ["russia", "../Resources/flags/russia.png", "../Nations/russia/Times/present.html"]//missing content
@@ -31,7 +31,7 @@ const europeNames: string[][] = [
 const asiaNames: string[][] = [
     ["japan", "../Resources/flags/japan.png", "../Nations/japan/Times/present.html"],
     ["china", "../Resources/flags/china.png", "../Nations/china/Times/present.html"],//missing content
-    ["india", "../Resources/flags/india.png", "../Nations/korea/india/present.html"],//missing content
+    ["india", "../Resources/flags/india.png", "../Nations/india/india/present.html"],//missing content
     ["korea", "../Resources/flags/south-korea.png", "../Nations/korea/Times/present.html"],//missing content
     ["iran", "../Resources/flags/iran.png", "../Nations/iran/Times/present.html"],//missing content
     ["saudi-arabia", "../Resources/flags/saudi-arabia.png", "../Nations/saudi-arabia/Times/present.html"]//missing content
