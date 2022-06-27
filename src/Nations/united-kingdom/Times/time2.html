@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<div class="preload dark-mode">
+<div class="preload">
     <img class="globe" src="../../../Resources/neededImg/globe.png" alt="globe Image"/>
     <h1>HistoryOrSomething</h1>
 </div>
@@ -17,7 +17,7 @@
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand ms-5" href="#">
+        <a class="navbar-brand ms-5" style="z-index: 10000" href="../../../../index.html">
             <span class="navItemStyle mainTitle">HistoryOrSomething</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -27,8 +27,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
             </ul>
-            <ul class="nav-links">
+            <ul class="nav-links burgerMenu">
+                <li><a href="present.html">Present</a></li>
                 <li><a href="../../../Html/Countries.html">Countries</a></li>
+                <li><a href="time1.html">1900</a></li>
+                <li><p class="active" >1800</p></li>
             </ul>
             <div class="burger navbar-nav m-auto">
                 <div class="line1"></div>
@@ -49,12 +52,12 @@
                     </a>
                 </li>
 
-                <li id="user" class="nav-item">
+                <li id="user" class="nav-item" data-dashboard="../../../Dashboard/index.html" data-ticket="../../../Resources/neededImg/ticket.png"
+                    data-coin="../../../Resources/neededImg/coins.png">
                     <a  class="nav-link" aria-current="page" href="../../../Authentication/index.html">
                         <span class="navItemStyle">Login</span>
                     </a>
                 </li>
-
                 <li class="nav-item">
                     <div class="iconContainer">
                         <img id="lightMode" src="../../../Resources/neededImg/sun.png" alt="theme icon">
@@ -84,13 +87,13 @@
     </div>
     <div class="contentLeftItem">
         <div class="content-left">
-            <span class="text">United Kingdom</span>
+            <span class="text">UK 1800</span>
             <div class="buttonMenu">
                 <button onclick="onLinkClick('slide2')" id="exploreBtn" class="button" style="margin-right: 0.5em">
                     <img alt="brain" src="../../../Resources/neededImg/explorer.png"/>
                     <span>Explore</span>
                 </button>
-                <button onclick="goToQuiz('United-Kingdom')" id="quizBtn" class="button">
+                <button style="display: none" onclick="goToQuiz('United-Kingdom')" id="quizBtn" class="button">
                     <img alt="brain" src="../../../Resources/neededImg/brain.png"/>
                     <span>Quiz</span>
                 </button>

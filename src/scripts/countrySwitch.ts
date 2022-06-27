@@ -18,23 +18,23 @@ let auth = getAuth();
 let server: Server;
 
 const europeNames: string[][] = [
-    ["germany", "../Resources/flags/germany.png", "ComingSoon.html"],
-    ["austria", "../Resources/flags/austria.png", "ComingSoon.html"],
-    ["france", "../Resources/flags/france.png", "ComingSoon.html"],
-    ["italy", "../Resources/flags/italy.png", "ComingSoon.html"],
-    ["spain", "../Resources/flags/spain.png", "ComingSoon.html"],
+    ["germany", "../Resources/flags/germany.png", "../Nations/germany/Times/present.html"],
+    ["austria", "../Resources/flags/austria.png", "../Nations/austria/Times/present.html"],
+    ["france", "../Resources/flags/france.png", "../Nations/france/Times/present.html"],
+    ["italy", "../Resources/flags/italy.png", "../Nations/italy/Times/present.html"],
+    ["spain", "../Resources/flags/spain.png", "../Nations/span/Times/present.html"],
     ["united-kingdom", "../Resources/flags/united-kingdom.png", "../Nations/united-kingdom/Times/present.html"],
-    ["greece", "../Resources/flags/greece.png", "ComingSoon.html"],
-    ["russia", "../Resources/flags/russia.png", "ComingSoon.html"]//missing content
+    ["greece", "../Resources/flags/greece.png", "../Nations/greece/Times/present.html"],
+    ["russia", "../Resources/flags/russia.png", "../Nations/russia/Times/present.html"]//missing content
 ]
 
 const asiaNames: string[][] = [
-    ["japan", "../Resources/flags/japan.png", "ComingSoon.html"],
-    ["china", "../Resources/flags/china.png", "ComingSoon.html"],//missing content
-    ["india", "../Resources/flags/india.png", "ComingSoon.html"],//missing content
-    ["korea", "../Resources/flags/south-korea.png", "ComingSoon.html"],//missing content
-    ["iran", "../Resources/flags/iran.png", "ComingSoon.html"],//missing content
-    ["saudi-Arabia", "../Resources/flags/saudi-arabia.png", "ComingSoon.html"]//missing content
+    ["japan", "../Resources/flags/japan.png", "../Nations/japan/Times/present.html"],
+    ["china", "../Resources/flags/china.png", "../Nations/china/Times/present.html"],//missing content
+    ["india", "../Resources/flags/india.png", "../Nations/korea/india/present.html"],//missing content
+    ["korea", "../Resources/flags/south-korea.png", "../Nations/korea/Times/present.html"],//missing content
+    ["iran", "../Resources/flags/iran.png", "../Nations/iran/Times/present.html"],//missing content
+    ["saudi-arabia", "../Resources/flags/saudi-arabia.png", "../Nations/saudi-arabia/Times/present.html"]//missing content
 ]
 
 /*
