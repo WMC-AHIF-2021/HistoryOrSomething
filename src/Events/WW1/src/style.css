@@ -20,7 +20,7 @@ body, html {
 }
 
 .stateLink{
-    color: black;
+    color: var(--dark-text-color);
     text-decoration-line: none;
 }
 
@@ -109,7 +109,7 @@ area{
 
 #bigTitle{
     font-family: 'UnifrakturMaguntia', cursive;
-    color: black;
+    color: var(--dark-text-color);
     font-size: 9rem;
 }
 
@@ -143,6 +143,10 @@ area{
     grid-template-columns: auto auto;
     padding: 0 1em;
     height: 95%;
+}
+
+#descriptionHeader{
+    color: var(--dark-text-color);
 }
 
 .description div {
@@ -198,7 +202,7 @@ area{
 #descriptionTable{
     width: 95%;
     margin: 0.5em;
-    color: black;
+    color: var(--dark-text-color);
     font-size: 1.2rem;
     font-family: 'Epilogue', sans-serif;
 }
@@ -221,7 +225,7 @@ area{
 
 .descriptionTextBox > p {
     padding: 0.5em 1em;
-    color: black;
+    color: var(--dark-text-color);
     font-size: 1.2rem;
     font-family: 'Epilogue', sans-serif;
 }
@@ -294,7 +298,7 @@ area{
     bottom: 0;
     position: absolute;
     z-index: 13;
-    background-color: var(--background-color-2);
+    background-color: var(--background-color-1);
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 1em;
@@ -309,6 +313,7 @@ area{
     grid-gap: 1em;
     height: 50vh;
     overflow-y: scroll;
+    color: var(--dark-text-color);
 }
 
 .stepContent div {
@@ -354,21 +359,21 @@ area{
 }
 
 .middleItem{
-    background-color: #e7e1e1;
     border-radius: 8px;
     padding: 1em;
     width: 60vw;
+    background-color: var(--background-color-2);
 }
 
 .leftItem{
-    background-color: #e7e1e1;
+    background-color: var(--background-color-2);
     border-radius: 8px;
     padding: 1em;
     grid-column: 1;
 }
 
 .rightItem{
-    background-color: #e7e1e1;
+    background-color: var(--background-color-2);
     border-radius: 8px;
     padding: 1em;
     grid-column: 2;
@@ -562,6 +567,7 @@ area{
     bottom: 4em;
     font-family: 'Epilogue', sans-serif;
     transform: translateX(-2.5em);
+    color: var(--dark-text-color);
 }
 
 #overall{

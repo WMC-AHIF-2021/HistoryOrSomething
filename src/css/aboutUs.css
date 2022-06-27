@@ -16,6 +16,7 @@
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    background-color: var(--primary-color);
 }
 
 .intro-section{
@@ -36,6 +37,7 @@
 .intro-section-item{
     width: 100%;
     text-align: left;
+    color: var(--dark-text-color);
 }
 
 #before-aspect{
@@ -57,6 +59,7 @@
 }
 
 .begin-section-item{
+    color: var(--dark-text-color);
     text-align: center;
 }
 
@@ -99,13 +102,17 @@
     border-radius: 1.5em;
 }
 
+.dev-content{
+    color: var(--dark-text-color);
+}
+
 #developer-1, #developer-2, #developer-3{
     transition: 0.5s;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    background-color: var(--background-color-2);
 }
 
 #developer-1{
-    background-color: #dedede;
     grid-row: 1;
     grid-column: 1;
 }
@@ -119,7 +126,6 @@
 }
 
 #developer-2{
-    background-color: #dedede;
     grid-row: 2;
     grid-column: 2;
     cursor: pointer;
@@ -131,6 +137,7 @@
     grid-column: 1;
     justify-content: center;
     align-items: center;
+    color: var(--dark-text-color);
 }
 
 #crabPos{
@@ -145,7 +152,6 @@
 }
 
 #developer-3{
-    background-color: #dedede;
     grid-row: 3;
     grid-column: 1;
 }
