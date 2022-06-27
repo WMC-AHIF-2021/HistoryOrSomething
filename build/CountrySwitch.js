@@ -114,12 +114,12 @@ function changeContent(arr) {
         }
         else {
             onAuthStateChanged(auth, ((user) => __awaiter(this, void 0, void 0, function* () {
+                box.addEventListener('click', () => {
+                    location.href = arr[x][2];
+                });
                 if (user) {
                     preload.classList.remove("preload-finish");
                     yield getData().then((data) => {
-                        box.addEventListener('click', () => {
-                            location.href = arr[x][2];
-                        });
                         box.innerHTML =
                             "<img src='" + arr[x][1] + "' alt='" + arr[x][0] + " Flag' />\n" +
                                 "<span>" + arr[x][0] + "</span>";
