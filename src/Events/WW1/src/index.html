@@ -7,53 +7,67 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
 </head>
 <body>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="../../../../index.html">
-                <span class="navItemStyle mainTitle">HistoryOrSomething</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                </ul>
-                <ul class="d-flex navbar-nav me-5">
-                    <li class="nav-item">
-                        <div class="nav-link">
-                            <span class="navItemStyle" onclick="openForm()">Say Something Smart</span>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../../Html/aboutUs.html">
-                            <span class="navItemStyle">About us</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../../Html/ComingSoon.html">
-                            <span class="navItemStyle">Login</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!--Preload-->
+<div class="preload dark-mode">
+    <img class="globe" src="src/Resources/neededImg/globe.png" alt="globe Image"/>
+    <h1>HistoryOrSomething</h1>
+</div>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="../../../../index.html">
+            <span class="navItemStyle mainTitle">HistoryOrSomething</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+            </ul>
+            <ul class="d-flex navbar-nav me-5">
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <span class="navItemStyle" id="openForm">Say Something Smart</span>
+                    </div>
+                </li>
 
-    <!--Say something smart form-->
-    <div class="popUp" id="myForm">
-        <img
-                src="../../../Resources/neededImg/remove.png"
-                onclick="closeForm()"
-                id="highlight_close"
-                alt="Close Icon"
-        />
-        <h2 id="popUpTitle">Did you know?</h2>
-        <p id="facts"></p>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../../../Html/aboutUs.html">
+                        <span class="navItemStyle">About us</span>
+                    </a>
+                </li>
+
+                <li id="user" class="nav-item" data-dashboard="../../../Dashboard/index.html" data-ticket="src/Resources/neededImg/ticket.png"
+                    data-coin="src/Resources/neededImg/coins.png">
+                    <a  class="nav-link" aria-current="page" href="../../../Authentication/index.html">
+                        <span class="navItemStyle">Login</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <div class="iconContainer">
+                        <img id="lightMode" src="../../../Resources/neededImg/sun.png" alt="theme icon">
+                        <img id="darkMode" src="../../../Resources/neededImg/moon.png" alt="theme icon">
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
+</nav>
+
+<!--Say something smart form-->
+<div class="popUp" id="myForm">
+    <img
+            src="src/Resources/neededImg/remove.png"
+            id="highlight_close"
+            alt="Close Icon"
+    />
+    <h2 id="popUpTitle">Did you know?</h2>
+    <p id="facts"></p>
+</div>
 
     <div id="timeSpan" class="timeSpace">
         <h1 id="timeDate">20th May, 1914</h1>
@@ -240,7 +254,7 @@
     <script src="../build/nationDescription.js"></script>
     <script src="../build/makeDescriptionDivMovable.js"></script>
     <script src="../build/contentJS.js"></script>
-    <script src="../../../../build/tempJs.js"></script>
+    <script src="../../../../bundles/scriptBundle.js"></script>
     <script src="../build/stepSwitch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -1,5 +1,8 @@
 @import url("../../../css/navbar.css");
 @import url('../../../css/root.css');
+@import url(../../../css/dropdown.css);
+@import url(../../../css/preload.css);
+@import url("../../../css/theme.css");
 @import url('../../../css/saySomethingSmart.css');
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
@@ -53,7 +56,7 @@ body, html {
 
 .timeSpace h1{
     font-size: 1.6rem;
-    color: black;
+    color: var(--dark-text-color);
     user-select: none;
     background-color: var(--background-color-2);
     padding: 0.5em;
@@ -158,7 +161,7 @@ area{
 
 .descriptionNav h1 {
     float: left;
-    color: black;
+    color: var(--light-text-color);
     font-family: 'UnifrakturMaguntia', cursive;
 }
 
