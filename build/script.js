@@ -183,7 +183,7 @@ let things = [
     "A lot of History's Disasters were caused by lack of sleep.",
     "Before alarm clocks existed, there literally were people whose jobs was to knock an your window and wake you up for work.",
     "Charlie Chaplin once entered a Charlie Chaplin lookalike contest – and came in 20th place.",
-    "'Underidoderidoderiododeridoo' - Winston Churchill"
+    "\"Underidoderidoderiododeridoo\" - <br>Winston Churchill"
 ];
 let ran = Math.floor(Math.random() * things.length);
 document.getElementById("openForm").addEventListener("click", (() => {
