@@ -13,7 +13,8 @@ module.exports = {
         endOfQuizBundle: "./build/endOfQuiz.js",
         quizBundle: "./build/quiz.js",
         dashboardBundle: "./build/dashboard.js",
-        shopBundle: "./build/shop.js"
+        shopBundle: "./build/shop.js",
+        countrySwitchBundle: "./build/countrySwitch.js",
     },
     output: {
         path: path.resolve(__dirname, 'bundles'),

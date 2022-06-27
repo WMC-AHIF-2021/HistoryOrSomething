@@ -11,6 +11,14 @@
     min-height: 100vh;
 }
 
+.hidden{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
 body{
     background-color: var(--primary-color);
     overflow-x: hidden;
@@ -27,7 +35,6 @@ body{
 }
 
 .countryBox {
-    display: flex;
     flex-direction: column;
     text-align: center;
 

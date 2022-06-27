@@ -23,9 +23,6 @@ async function logout(){
     console.log("logout Method");
     await server.updateMode(window.localStorage.getItem("mode"), "users").then(async () => {
         let loggedOut = await server.logoutUser();
-        if (loggedOut){
-            location.reload();
-        }
     });
 }
 
@@ -33,6 +30,15 @@ let data: object;
 
 // After page loaded check if user is logged in
 document.addEventListener('DOMContentLoaded', async () => {
+    const logOut = document.getElementById("logOut");
+    logOut.addEventListener("click", ( async () => {
+        preload.classList.remove("preload-finish");
+        await logout().then(() => {
+            window.location.assign("../../index.html")
+            preload.classList.add("preload-finish");
+        });
+    }));
+
     preload.classList.add("preload-finish");
     if (window.localStorage.getItem("mode") == "light"){
         if (preload.classList.contains("dark-mode")){

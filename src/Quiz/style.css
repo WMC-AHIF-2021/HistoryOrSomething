@@ -3,6 +3,7 @@
 @import url("../css/preload.css");
 @import url("../css/dropdown.css");
 @import url("../css/theme.css");
+@import url("../css/root.css");
 
 .navbar {
     background-color: transparent;

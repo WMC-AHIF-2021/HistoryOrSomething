@@ -132,7 +132,7 @@ export class Server {
                 score: 100,
                 id: id,
                 tickets: 9,
-                countryName: ["uk", "france", "japan", "germany"],
+                countryName: ["united-kingdom", "france", "japan", "germany"],
                 countryState: [true, false, false, false],
             });
             success = true;

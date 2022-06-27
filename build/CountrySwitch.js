@@ -1,20 +1,44 @@
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+import { Server } from "./server-client";
+import { initializeApp } from 'firebase/app';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+const firebaseConfig = {
+    apiKey: "AIzaSyCr7_Es7xBQzlXHejZukEr1ovanvYYo_Z4",
+    authDomain: "historyorsomething-9.firebaseapp.com",
+    projectId: "historyorsomething-9",
+    storageBucket: "historyorsomething-9.appspot.com",
+    messagingSenderId: "603241360494",
+    appId: "1:603241360494:web:90f27fa38c0b46fecd4a7f"
+};
+// init firebase app
+initializeApp(firebaseConfig);
+let auth = getAuth();
+let server;
 const europeNames = [
-    ["Germany", "../Resources/flags/germany.png", "ComingSoon.html"],
-    ["Austria", "../Resources/flags/austria.png", "ComingSoon.html"],
-    ["France", "../Resources/flags/france.png", "ComingSoon.html"],
-    ["Italy", "../Resources/flags/italy.png", "ComingSoon.html"],
-    ["Spain", "../Resources/flags/spain.png", "ComingSoon.html"],
-    ["The UK", "../Resources/flags/united-kingdom.png", "../Nations/united-kingdom/Times/present.html"],
-    ["Greece", "../Resources/flags/greece.png", "ComingSoon.html"],
-    ["Russia", "../Resources/flags/russia.png", "ComingSoon.html"] //missing content
+    ["germany", "../Resources/flags/germany.png", "ComingSoon.html", "hidden"],
+    ["austria", "../Resources/flags/austria.png", "ComingSoon.html", "hidden"],
+    ["france", "../Resources/flags/france.png", "ComingSoon.html", "hidden"],
+    ["italy", "../Resources/flags/italy.png", "ComingSoon.html", "hidden"],
+    ["spain", "../Resources/flags/spain.png", "ComingSoon.html", "hidden"],
+    ["united-kingdom", "../Resources/flags/united-kingdom.png", "../Nations/united-kingdom/Times/present.html", "hidden"],
+    ["greece", "../Resources/flags/greece.png", "ComingSoon.html", "show"],
+    ["russia", "../Resources/flags/russia.png", "ComingSoon.html", "hidden"] //missing content
 ];
 const asiaNames = [
-    ["Japan", "../Resources/flags/japan.png", "ComingSoon.html"],
-    ["China", "../Resources/flags/china.png", "ComingSoon.html"],
-    ["India", "../Resources/flags/india.png", "ComingSoon.html"],
-    ["Korea", "../Resources/flags/south-korea.png", "ComingSoon.html"],
-    ["Iran", "../Resources/flags/iran.png", "ComingSoon.html"],
-    ["Saudi-Arabia", "../Resources/flags/saudi-arabia.png", "ComingSoon.html"] //missing content
+    ["japan", "../Resources/flags/japan.png", "ComingSoon.html", "hidden"],
+    ["china", "../Resources/flags/china.png", "ComingSoon.html", "hidden"],
+    ["india", "../Resources/flags/india.png", "ComingSoon.html", "hidden"],
+    ["korea", "../Resources/flags/south-korea.png", "ComingSoon.html", "hidden"],
+    ["iran", "../Resources/flags/iran.png", "ComingSoon.html", "hidden"],
+    ["saudi-Arabia", "../Resources/flags/saudi-arabia.png", "ComingSoon.html", "hidden"] //missing content
 ];
 /*
 const africaNames: string[][] = [
@@ -57,6 +81,12 @@ const arr = [
     */
 ];
 let current = 0;
+document.getElementById("right").addEventListener("click", (() => {
+    switchContinent(Direction.left);
+}));
+document.getElementById("left").addEventListener("click", (() => {
+    switchContinent(Direction.right);
+}));
 function switchContinent(direction) {
     let sectionHeader = document.getElementById('sectionHeaderTS');
     let continent = sectionHeader.innerText;
@@ -78,21 +108,66 @@ function changeContent(arr) {
     for (let x = 0; x < arr.length || x < boxes.length; x++) {
         let box = boxes.item(x);
         if (x >= arr.length) {
-            box.style.display = "none";
             box.innerHTML = "";
         }
         else {
-            box.style.display = "flex";
-            box.addEventListener('click', () => {
-                location.href = arr[x][2];
-            });
-            box.innerHTML =
-                "<img src='" + arr[x][1] + "' alt='" + arr[x][0] + " Flag' />\n" +
-                    "<span>" + arr[x][0] + "</span>";
+            onAuthStateChanged(auth, ((user) => __awaiter(this, void 0, void 0, function* () {
+                if (user) {
+                    preload.classList.remove("preload-finish");
+                    yield getData().then((data) => {
+                        box.setAttribute("data-country", arr[x][0]);
+                        box.addEventListener('click', () => {
+                            location.href = arr[x][2];
+                        });
+                        box.innerHTML =
+                            "<img src='" + arr[x][1] + "' alt='" + arr[x][0] + " Flag' />\n" +
+                                "<span>" + arr[x][0] + "</span>";
+                        console.log(box);
+                        for (let i = 0; i < data.countryName.length; i++) {
+                            console.log(data.countryName[i], arr[x][0]);
+                            if (data.countryName[i] == arr[x][0] && data.countryState[i] == true) {
+                                console.log("inside");
+                                box.style.display = "flex";
+                                break;
+                            }
+                            else {
+                                box.style.display = "none";
+                            }
+                        }
+                        console.log(box);
+                        preload.classList.add("preload-finish");
+                    });
+                }
+                else {
+                    if (arr[x][0] == "united-kingdom") {
+                        box.style.display = "flex";
+                    }
+                    else {
+                        box.style.display = "none";
+                    }
+                }
+            })));
         }
     }
 }
+let data;
+let preload = document.querySelector(".preload");
+const country = document.querySelectorAll(".countryBox");
 document.addEventListener('DOMContentLoaded', () => {
+    server = new Server();
     switchContinent(Direction.none);
 });
-//# sourceMappingURL=CountrySwitch.js.map
+//Get specific user data
+function getData() {
+    return __awaiter(this, void 0, void 0, function* () {
+        let data;
+        try {
+            data = yield server.getData("users", window.localStorage.getItem("userId"));
+        }
+        catch (error) {
+            alert("Error: " + error);
+        }
+        return data;
+    });
+}
+//# sourceMappingURL=countrySwitch.js.map
