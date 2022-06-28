@@ -21,21 +21,30 @@ document.addEventListener("DOMContentLoaded", (() => {
         const data = yield server.getData("users", window.localStorage.getItem("userId"));
         console.log(data);
         mediumQuiz.addEventListener("click", (() => {
-            if (data.tickets > 0) {
+            if (!user) {
+                alert("You need to login to play the quiz");
+            }
+            else if (data.tickets > 0) {
                 console.log("pressed medium");
                 localStorage.setItem('quiz', "EasyQuiz");
                 window.location.assign("GamePage/game.html");
             }
         }));
         hardQuiz.addEventListener("click", (() => {
-            if (data.tickets > 0) {
+            if (!user) {
+                alert("You need to login to play the quiz");
+            }
+            else if (data.tickets > 0) {
                 console.log("pressed hard");
                 localStorage.setItem('quiz', "HardQuiz");
                 window.location.assign("GamePage/game.html");
             }
         }));
         easyQuiz.addEventListener("click", (() => {
-            if (data.tickets > 0) {
+            if (!user) {
+                alert("You need to login to play the quiz");
+            }
+            else if (data.tickets > 0) {
                 console.log("pressed easy");
                 localStorage.setItem('quiz', "EasyQuiz");
                 window.location.assign("GamePage/game.html");

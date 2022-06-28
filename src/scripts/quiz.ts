@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", (() => {
         console.log(data);
 
         mediumQuiz.addEventListener("click", (() => {
-            if ((data as any).tickets > 0) {
+            if (!user){
+                alert("You need to login to play the quiz");
+            }else if ((data as any).tickets > 0) {
                 console.log("pressed medium");
                 localStorage.setItem('quiz', "EasyQuiz");
                 window.location.assign("GamePage/game.html");
@@ -25,7 +27,9 @@ document.addEventListener("DOMContentLoaded", (() => {
 
 
         hardQuiz.addEventListener("click", (() => {
-            if ((data as any).tickets > 0) {
+            if (!user){
+                alert("You need to login to play the quiz");
+            }else if ((data as any).tickets > 0) {
                 console.log("pressed hard");
                 localStorage.setItem('quiz', "HardQuiz");
                 window.location.assign("GamePage/game.html");
@@ -33,7 +37,9 @@ document.addEventListener("DOMContentLoaded", (() => {
         }));
 
         easyQuiz.addEventListener("click", (() => {
-            if ((data as any).tickets > 0) {
+            if (!user){
+                alert("You need to login to play the quiz");
+            }else if ((data as any).tickets > 0) {
                 console.log("pressed easy");
                 localStorage.setItem('quiz', "EasyQuiz");
                 window.location.assign("GamePage/game.html");
