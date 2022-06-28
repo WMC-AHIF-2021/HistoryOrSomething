@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.log(preload.classList);
 
     onAuthStateChanged(auth, (async (user) => {
-        data  = await getData();
         if (user){
+            data  = await getData();
             let checkAuthCount = parseInt(window.localStorage.getItem("checkAuth"));
             checkAuthCount = checkAuthCount + 1;
             let coinPath  = navBar.getAttribute("data-coin");
